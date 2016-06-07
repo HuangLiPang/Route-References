@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<gpx version="1.1" creator="ESTC"
+<gpx version="1.1" creator="ESTC" 
 xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">'
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
 
 <wpt lat="21.46666667" lon="39.10166667"><name>1</name></wpt>
 <wpt lat="21.465" lon="39.13333333"><name>2</name></wpt>
@@ -20,10 +20,9 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
 <wpt lat="14.33333333" lon="53"><name>15</name></wpt>
 <wpt lat="7.583333333" lon="78"><name>16</name></wpt>
 <wpt lat="7.008333333" lon="79.79166667"><name>17</name></wpt>
-<wpt lat="7.008333333" lon="79.79166667"><name>18</name></wpt>
-<wpt lat="6.960833333" lon="79.84333333"><name>19</name></wpt>
-<wpt lat="6.95" lon="79.84833333"><name>20</name></wpt>
-<wpt lat="6.943333333" lon="79.85"><name>21</name></wpt>
+<wpt lat="6.960833333" lon="79.84333333"><name>18</name></wpt>
+<wpt lat="6.95" lon="79.84833333"><name>19</name></wpt>
+<wpt lat="6.943333333" lon="79.85"><name>20</name></wpt>
 
 <rte>
 <name>SGMA-JED-CMB</name>
@@ -44,9 +43,8 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
     <rtept lat="14.33333333" lon="53"><name>15</name></rtept>
     <rtept lat="7.583333333" lon="78"><name>16</name></rtept>
     <rtept lat="7.008333333" lon="79.79166667"><name>17</name></rtept>
-    <rtept lat="7.008333333" lon="79.79166667"><name>18</name></rtept>
-    <rtept lat="6.960833333" lon="79.84333333"><name>19</name></rtept>
-    <rtept lat="6.95" lon="79.84833333"><name>20</name></rtept>
-    <rtept lat="6.943333333" lon="79.85"><name>21</name></rtept>
+    <rtept lat="6.960833333" lon="79.84333333"><name>18</name></rtept>
+    <rtept lat="6.95" lon="79.84833333"><name>19</name></rtept>
+    <rtept lat="6.943333333" lon="79.85"><name>20</name></rtept>
 </rte>
 </gpx>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<gpx version="1.1" creator="ESTC"
+<gpx version="1.1" creator="ESTC" 
 xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">'
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
 
 <wpt lat="34.64666667" lon="33.01666667"><name>1</name></wpt>
 <wpt lat="34.655" lon="33.04166667"><name>2</name></wpt>
@@ -15,9 +15,8 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
 <wpt lat="37.675" lon="23.75833333"><name>10</name></wpt>
 <wpt lat="37.84166667" lon="23.65833333"><name>11</name></wpt>
 <wpt lat="37.91666667" lon="23.59333333"><name>12</name></wpt>
-<wpt lat="37.91833333" lon="23.59"><name>13</name></wpt>
-<wpt lat="37.93116667" lon="23.60933333"><name>14</name></wpt>
-<wpt lat="37.95" lon="23.59416667"><name>15</name></wpt>
+<wpt lat="37.93116667" lon="23.60933333"><name>13</name></wpt>
+<wpt lat="37.95" lon="23.59416667"><name>14</name></wpt>
 
 <rte>
 <name>PHNX-LMA-PIR</name>
@@ -33,8 +32,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
     <rtept lat="37.675" lon="23.75833333"><name>10</name></rtept>
     <rtept lat="37.84166667" lon="23.65833333"><name>11</name></rtept>
     <rtept lat="37.91666667" lon="23.59333333"><name>12</name></rtept>
-    <rtept lat="37.91833333" lon="23.59"><name>13</name></rtept>
-    <rtept lat="37.93116667" lon="23.60933333"><name>14</name></rtept>
-    <rtept lat="37.95" lon="23.59416667"><name>15</name></rtept>
+    <rtept lat="37.93116667" lon="23.60933333"><name>13</name></rtept>
+    <rtept lat="37.95" lon="23.59416667"><name>14</name></rtept>
 </rte>
 </gpx>

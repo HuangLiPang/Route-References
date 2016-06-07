@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<gpx version="1.1" creator="ESTC"
+<gpx version="1.1" creator="ESTC" 
 xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">'
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
 
 <wpt lat="31.45" lon="32.41083333"><name>1</name></wpt>
 <wpt lat="31.58333333" lon="32.38333333"><name>2</name></wpt>
@@ -10,6 +10,11 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
 <wpt lat="32.13333333" lon="33.83333333"><name>5</name></wpt>
 <wpt lat="31.86666667" lon="34.5"><name>6</name></wpt>
 <wpt lat="31.855" lon="34.615"><name>7</name></wpt>
+<wpt lat="31.85166667" lon="34.63666667"><name>8</name></wpt>
+<wpt lat="31.84333333" lon="34.64"><name>9</name></wpt>
+<wpt lat="31.83" lon="34.63833333"><name>10</name></wpt>
+<wpt lat="31.82666667" lon="34.64"><name>11</name></wpt>
+<wpt lat="31.825" lon="34.64333333"><name>12</name></wpt>
 
 <rte>
 <name>SALU-PSD-ASH</name>
@@ -20,5 +25,10 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
     <rtept lat="32.13333333" lon="33.83333333"><name>5</name></rtept>
     <rtept lat="31.86666667" lon="34.5"><name>6</name></rtept>
     <rtept lat="31.855" lon="34.615"><name>7</name></rtept>
+    <rtept lat="31.85166667" lon="34.63666667"><name>8</name></rtept>
+    <rtept lat="31.84333333" lon="34.64"><name>9</name></rtept>
+    <rtept lat="31.83" lon="34.63833333"><name>10</name></rtept>
+    <rtept lat="31.82666667" lon="34.64"><name>11</name></rtept>
+    <rtept lat="31.825" lon="34.64333333"><name>12</name></rtept>
 </rte>
 </gpx>

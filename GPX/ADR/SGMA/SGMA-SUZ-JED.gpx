@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<gpx version="1.1" creator="ESTC"
+<gpx version="1.1" creator="ESTC" 
 xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">'
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
 
 <wpt lat="29.8525" lon="32.554"><name>1</name></wpt>
 <wpt lat="29.81" lon="32.53"><name>2</name></wpt>
@@ -18,9 +18,8 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
 <wpt lat="21.63333333" lon="38.78333333"><name>13</name></wpt>
 <wpt lat="21.49383333" lon="39.08"><name>14</name></wpt>
 <wpt lat="21.46666667" lon="39.10166667"><name>15</name></wpt>
-<wpt lat="21.46666667" lon="39.10166667"><name>16</name></wpt>
-<wpt lat="21.465" lon="39.13333333"><name>17</name></wpt>
-<wpt lat="21.465" lon="39.15333333"><name>18</name></wpt>
+<wpt lat="21.465" lon="39.13333333"><name>16</name></wpt>
+<wpt lat="21.465" lon="39.15333333"><name>17</name></wpt>
 
 <rte>
 <name>SGMA-SUZ-JED</name>
@@ -39,8 +38,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
     <rtept lat="21.63333333" lon="38.78333333"><name>13</name></rtept>
     <rtept lat="21.49383333" lon="39.08"><name>14</name></rtept>
     <rtept lat="21.46666667" lon="39.10166667"><name>15</name></rtept>
-    <rtept lat="21.46666667" lon="39.10166667"><name>16</name></rtept>
-    <rtept lat="21.465" lon="39.13333333"><name>17</name></rtept>
-    <rtept lat="21.465" lon="39.15333333"><name>18</name></rtept>
+    <rtept lat="21.465" lon="39.13333333"><name>16</name></rtept>
+    <rtept lat="21.465" lon="39.15333333"><name>17</name></rtept>
 </rte>
 </gpx>

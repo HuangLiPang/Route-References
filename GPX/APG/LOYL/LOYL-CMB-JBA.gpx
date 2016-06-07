@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<gpx version="1.1" creator="ESTC"
+<gpx version="1.1" creator="ESTC" 
 xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">'
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
 
 <wpt lat="6.95" lon="79.84783333"><name>1</name></wpt>
 <wpt lat="6.958" lon="79.845"><name>2</name></wpt>
@@ -20,6 +20,9 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
 <wpt lat="25.83333333" lon="55.34333333"><name>15</name></wpt>
 <wpt lat="25.40833333" lon="54.89666667"><name>16</name></wpt>
 <wpt lat="25.155" lon="54.89666667"><name>17</name></wpt>
+<wpt lat="25.03233333" lon="55.03583333"><name>18</name></wpt>
+<wpt lat="25.025" lon="55.04"><name>19</name></wpt>
+<wpt lat="25.02666667" lon="55.05666667"><name>20</name></wpt>
 
 <rte>
 <name>LOYL-CMB-JBA</name>
@@ -40,5 +43,8 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
     <rtept lat="25.83333333" lon="55.34333333"><name>15</name></rtept>
     <rtept lat="25.40833333" lon="54.89666667"><name>16</name></rtept>
     <rtept lat="25.155" lon="54.89666667"><name>17</name></rtept>
+    <rtept lat="25.03233333" lon="55.03583333"><name>18</name></rtept>
+    <rtept lat="25.025" lon="55.04"><name>19</name></rtept>
+    <rtept lat="25.02666667" lon="55.05666667"><name>20</name></rtept>
 </rte>
 </gpx>

@@ -9,8 +9,7 @@
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
         
         <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         
         <script type="text/javascript" src="route.js"></script>
         <script type="text/javascript" src="map_function.js"></script>
@@ -28,14 +27,18 @@
                         <option value="#">Route</option>
                 </select>
                 
-                <button id="download" onclick="download()" class="menu_download" disabled>Download CSV</button>
-                
-                <button id="downloadgpx" onclick="downloadgpx()" class="menu_downloadgpx" disabled>Download GPX</button>
-                
-                <button id="button" onclick="clearroute()" class="menu_button">Remove Routes</button>
+                <button id="GPX" onclick="downloadGPX()" class="menu_GPX" disabled> Download GPX</button>
+                <button id="CSV" onclick="downloadCSV()" class="menu_CSV" disabled>Download CSV</button>
+                        
+                <button id="reset" onclick="clearroute()" class="menu_RESET">Reset</button>
             </div>
+                        
             <div id='showmap'></div>
+            <div id='maptile'>
+                <button id='tile' onclick="changetile()">Satellite Map</button>
+            </div>
         </div>
+        
         <script>
             //Auto size the screen
             autosize();
@@ -44,18 +47,32 @@
             initial_line();
             
             //Mapbox token
-            L.mapbox.accessToken = 'pk.eyJ1Ijoicm9ib2RvY2siLCJhIjoiY2luOGk0Z3J2MWZjcHRta3N1ZnJzdmRmNyJ9.qADuiCgEGOXMFm-vUaIMsw';
+            L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5bHpmN3ZnNm11dSJ9.1kSYNfN3L-uzTzqmBsIekw';
             
-            var map = L.mapbox.map('showmap', 'mapbox.streets', {
+            var map = L.mapbox.map('showmap','' , {
                             minZoom: 2,
                             maxZoom: 18,
                             zoomControl: false
                         }).setView([25.154, 121.377], 4);
-                        
-            var p = "";      //String variable for for the data path of the route
+            
+            //tilelayer style variable
+            var satellitegroup = L.layerGroup().addTo(map);
+            
+            var streetsgroup = L.layerGroup().addTo(map);
+            
+            var tilesatellite = L.mapbox.tileLayer("mapbox.streets-satellite");
+            
+            var tilestreet = L.mapbox.tileLayer("mapbox.streets");
+            
+            tilestreet.addTo(streetsgroup);
+            
+            
+            var p = "";     //String variable for for the data path of the route
+            
             var geo = "";   //Variable for geojson data path
-            var csv = "";   //Variable for csv data path
             var gpx = "";   //Variable for gpx data path
+            var csv = "";   //Variable for csv data path
+            
             
             //Route geojson layergroup
             var geolayerGroup = L.layerGroup().addTo(map);
@@ -67,20 +84,20 @@
             var ECAsNOxLayer = L.mapbox.featureLayer().loadURL("eca.geojson")
                                 .on('ready', function(){
                                     this.setStyle({
-                                        "color": "#180e3a",
+                                        "color": "#ff5555",
                                         "weight": "2"
                                     })
                                 }).addTo(ECAlayerGroup);
             
             ECAsNOxLayer.on('mouseover', function(){
                 this.setStyle({
-                    "color": "#ff5555",
+                    "color": "#ff0000",
                     "weight": "5"
                 })
             });
             ECAsNOxLayer.on('mouseout', function(){
                 this.setStyle({
-                    "color": "#180e3a",
+                    "color": "#ff5555",
                     "weight": "2"
                 })
             });
@@ -91,15 +108,15 @@
 
                 geo = "GeoJSON/" + p + route.value;
                 
-                csv = "CSV/" + p + route.value.replace('.geojson', '.csv');
                 gpx = "GPX/" + p + route.value.replace('.geojson', '.gpx');
+                csv = "CSV/" + p + route.value.replace('.geojson', '.csv');
                 
                 var geoLayer = L.mapbox.featureLayer()
                                 .loadURL(geo)
                                 .addTo(geolayerGroup);
                 
-                document.getElementById("download").disabled = false;
-                document.getElementById("downloadgpx").disabled = false;
+                document.getElementById("GPX").disabled = false;
+                document.getElementById("CSV").disabled = false;
     
                 geoLayer.on('ready', function() {
                     map.fitBounds(geoLayer.getBounds());
@@ -114,10 +131,11 @@
                 map.setView([25.154, 121.377], 4);
                 P = "";
                 geo = "";
-                csv = "";
                 gpx = "";
-                document.getElementById("download").disabled = true;
-                document.getElementById("downloadgpx").disabled = true;
+                csv = "";
+                document.getElementById("GPX").disabled = true;
+                document.getElementById("CSV").disabled = true;
+                
                 initial_line();
             };
             

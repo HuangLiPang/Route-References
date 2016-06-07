@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<gpx version="1.1" creator="ESTC"
+<gpx version="1.1" creator="ESTC" 
 xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">'
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
 
 <wpt lat="22.74333333" lon="69.715"><name>1</name></wpt>
 <wpt lat="22.73833333" lon="69.72333333"><name>2</name></wpt>
@@ -18,12 +18,13 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
 <wpt lat="15.66666667" lon="71.33333333"><name>13</name></wpt>
 <wpt lat="12.4" lon="74"><name>14</name></wpt>
 <wpt lat="9" lon="76"><name>15</name></wpt>
-<wpt lat="7.008333333" lon="79.79166667"><name>16</name></wpt>
-<wpt lat="7" lon="79.80416667"><name>17</name></wpt>
-<wpt lat="6.976666667" lon="79.8325"><name>18</name></wpt>
-<wpt lat="6.961" lon="79.844"><name>19</name></wpt>
-<wpt lat="6.95425" lon="79.84633333"><name>20</name></wpt>
-<wpt lat="6.947" lon="79.86"><name>21</name></wpt>
+<wpt lat="7.816666667" lon="77.18333333"><name>16</name></wpt>
+<wpt lat="7.008333333" lon="79.79166667"><name>17</name></wpt>
+<wpt lat="7" lon="79.80416667"><name>18</name></wpt>
+<wpt lat="6.976666667" lon="79.8325"><name>19</name></wpt>
+<wpt lat="6.961" lon="79.844"><name>20</name></wpt>
+<wpt lat="6.95425" lon="79.84633333"><name>21</name></wpt>
+<wpt lat="6.947" lon="79.86"><name>22</name></wpt>
 
 <rte>
 <name>RDNT-MUN-CMB</name>
@@ -42,11 +43,12 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
     <rtept lat="15.66666667" lon="71.33333333"><name>13</name></rtept>
     <rtept lat="12.4" lon="74"><name>14</name></rtept>
     <rtept lat="9" lon="76"><name>15</name></rtept>
-    <rtept lat="7.008333333" lon="79.79166667"><name>16</name></rtept>
-    <rtept lat="7" lon="79.80416667"><name>17</name></rtept>
-    <rtept lat="6.976666667" lon="79.8325"><name>18</name></rtept>
-    <rtept lat="6.961" lon="79.844"><name>19</name></rtept>
-    <rtept lat="6.95425" lon="79.84633333"><name>20</name></rtept>
-    <rtept lat="6.947" lon="79.86"><name>21</name></rtept>
+    <rtept lat="7.816666667" lon="77.18333333"><name>16</name></rtept>
+    <rtept lat="7.008333333" lon="79.79166667"><name>17</name></rtept>
+    <rtept lat="7" lon="79.80416667"><name>18</name></rtept>
+    <rtept lat="6.976666667" lon="79.8325"><name>19</name></rtept>
+    <rtept lat="6.961" lon="79.844"><name>20</name></rtept>
+    <rtept lat="6.95425" lon="79.84633333"><name>21</name></rtept>
+    <rtept lat="6.947" lon="79.86"><name>22</name></rtept>
 </rte>
 </gpx>

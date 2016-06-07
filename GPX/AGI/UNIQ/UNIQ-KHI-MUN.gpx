@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<gpx version="1.1" creator="ESTC"
+<gpx version="1.1" creator="ESTC" 
 xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">'
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
 
 <wpt lat="24.83333333" lon="66.97816667"><name>1</name></wpt>
 <wpt lat="24.82216667" lon="66.9715"><name>2</name></wpt>
@@ -24,9 +24,6 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
 <wpt lat="22.72833333" lon="69.72333333"><name>19</name></wpt>
 <wpt lat="22.73833333" lon="69.72333333"><name>20</name></wpt>
 <wpt lat="22.74333333" lon="69.715"><name>21</name></wpt>
-<wpt lat="24.81466667" lon="66.972"><name>22</name></wpt>
-<wpt lat="24.82216667" lon="66.9715"><name>23</name></wpt>
-<wpt lat="24.84166667" lon="66.97816667"><name>24</name></wpt>
 
 <rte>
 <name>UNIQ-KHI-MUN</name>
@@ -51,8 +48,5 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
     <rtept lat="22.72833333" lon="69.72333333"><name>19</name></rtept>
     <rtept lat="22.73833333" lon="69.72333333"><name>20</name></rtept>
     <rtept lat="22.74333333" lon="69.715"><name>21</name></rtept>
-    <rtept lat="24.81466667" lon="66.972"><name>22</name></rtept>
-    <rtept lat="24.82216667" lon="66.9715"><name>23</name></rtept>
-    <rtept lat="24.84166667" lon="66.97816667"><name>24</name></rtept>
 </rte>
 </gpx>

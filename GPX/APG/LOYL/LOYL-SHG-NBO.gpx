@@ -1,28 +1,62 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<gpx version="1.1" creator="ESTC"
+<gpx version="1.1" creator="ESTC" 
 xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">'
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
 
-<wpt lat="31.09833333" lon="122.43"><name>1</name></wpt>
-<wpt lat="31.09" lon="122.5333333"><name>2</name></wpt>
-<wpt lat="31.09" lon="122.85045"><name>3</name></wpt>
-<wpt lat="30.5" lon="123.0666667"><name>4</name></wpt>
-<wpt lat="30.19166667" lon="123.0666667"><name>5</name></wpt>
-<wpt lat="29.69166667" lon="122.5933333"><name>6</name></wpt>
-<wpt lat="29.69166667" lon="122.5333333"><name>7</name></wpt>
-<wpt lat="29.74333333" lon="122.3266667"><name>8</name></wpt>
-<wpt lat="29.75916667" lon="122.305"><name>9</name></wpt>
+<wpt lat="31.37666667" lon="121.6016667"><name>1</name></wpt>
+<wpt lat="31.32333333" lon="121.71"><name>2</name></wpt>
+<wpt lat="31.31833333" lon="121.725"><name>3</name></wpt>
+<wpt lat="31.26833333" lon="121.86"><name>4</name></wpt>
+<wpt lat="31.23216667" lon="122.0793333"><name>5</name></wpt>
+<wpt lat="31.22233333" lon="122.106"><name>6</name></wpt>
+<wpt lat="31.175" lon="122.1816667"><name>7</name></wpt>
+<wpt lat="31.14" lon="122.24"><name>8</name></wpt>
+<wpt lat="31.10666667" lon="122.2966667"><name>9</name></wpt>
+<wpt lat="31.10166667" lon="122.3066667"><name>10</name></wpt>
+<wpt lat="31.10166667" lon="122.3666667"><name>11</name></wpt>
+<wpt lat="31.09833333" lon="122.3933333"><name>12</name></wpt>
+<wpt lat="31.09833333" lon="122.43"><name>13</name></wpt>
+<wpt lat="31.09" lon="122.5333333"><name>14</name></wpt>
+<wpt lat="31.09" lon="122.85045"><name>15</name></wpt>
+<wpt lat="30.5" lon="123.0666667"><name>16</name></wpt>
+<wpt lat="30.19166667" lon="123.0666667"><name>17</name></wpt>
+<wpt lat="29.69166667" lon="122.5933333"><name>18</name></wpt>
+<wpt lat="29.69166667" lon="122.5333333"><name>19</name></wpt>
+<wpt lat="29.74333333" lon="122.3266667"><name>20</name></wpt>
+<wpt lat="29.75916667" lon="122.305"><name>21</name></wpt>
+<wpt lat="29.808" lon="122.24"><name>22</name></wpt>
+<wpt lat="29.835" lon="122.2133333"><name>23</name></wpt>
+<wpt lat="29.925" lon="122.1626667"><name>24</name></wpt>
+<wpt lat="29.925" lon="122.0833333"><name>25</name></wpt>
+<wpt lat="29.89166667" lon="122.05"><name>26</name></wpt>
 
 <rte>
 <name>LOYL-SHG-NBO</name>
-    <rtept lat="31.09833333" lon="122.43"><name>1</name></rtept>
-    <rtept lat="31.09" lon="122.5333333"><name>2</name></rtept>
-    <rtept lat="31.09" lon="122.85045"><name>3</name></rtept>
-    <rtept lat="30.5" lon="123.0666667"><name>4</name></rtept>
-    <rtept lat="30.19166667" lon="123.0666667"><name>5</name></rtept>
-    <rtept lat="29.69166667" lon="122.5933333"><name>6</name></rtept>
-    <rtept lat="29.69166667" lon="122.5333333"><name>7</name></rtept>
-    <rtept lat="29.74333333" lon="122.3266667"><name>8</name></rtept>
-    <rtept lat="29.75916667" lon="122.305"><name>9</name></rtept>
+    <rtept lat="31.37666667" lon="121.6016667"><name>1</name></rtept>
+    <rtept lat="31.32333333" lon="121.71"><name>2</name></rtept>
+    <rtept lat="31.31833333" lon="121.725"><name>3</name></rtept>
+    <rtept lat="31.26833333" lon="121.86"><name>4</name></rtept>
+    <rtept lat="31.23216667" lon="122.0793333"><name>5</name></rtept>
+    <rtept lat="31.22233333" lon="122.106"><name>6</name></rtept>
+    <rtept lat="31.175" lon="122.1816667"><name>7</name></rtept>
+    <rtept lat="31.14" lon="122.24"><name>8</name></rtept>
+    <rtept lat="31.10666667" lon="122.2966667"><name>9</name></rtept>
+    <rtept lat="31.10166667" lon="122.3066667"><name>10</name></rtept>
+    <rtept lat="31.10166667" lon="122.3666667"><name>11</name></rtept>
+    <rtept lat="31.09833333" lon="122.3933333"><name>12</name></rtept>
+    <rtept lat="31.09833333" lon="122.43"><name>13</name></rtept>
+    <rtept lat="31.09" lon="122.5333333"><name>14</name></rtept>
+    <rtept lat="31.09" lon="122.85045"><name>15</name></rtept>
+    <rtept lat="30.5" lon="123.0666667"><name>16</name></rtept>
+    <rtept lat="30.19166667" lon="123.0666667"><name>17</name></rtept>
+    <rtept lat="29.69166667" lon="122.5933333"><name>18</name></rtept>
+    <rtept lat="29.69166667" lon="122.5333333"><name>19</name></rtept>
+    <rtept lat="29.74333333" lon="122.3266667"><name>20</name></rtept>
+    <rtept lat="29.75916667" lon="122.305"><name>21</name></rtept>
+    <rtept lat="29.808" lon="122.24"><name>22</name></rtept>
+    <rtept lat="29.835" lon="122.2133333"><name>23</name></rtept>
+    <rtept lat="29.925" lon="122.1626667"><name>24</name></rtept>
+    <rtept lat="29.925" lon="122.0833333"><name>25</name></rtept>
+    <rtept lat="29.89166667" lon="122.05"><name>26</name></rtept>
 </rte>
 </gpx>

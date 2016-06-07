@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<gpx version="1.1" creator="ESTC"
+<gpx version="1.1" creator="ESTC" 
 xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">'
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
 
 <wpt lat="6.948333333" lon="79.835"><name>1</name></wpt>
 <wpt lat="6.97" lon="79.835"><name>2</name></wpt>
@@ -23,12 +23,11 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
 <wpt lat="1.633333333" lon="102.7916667"><name>18</name></wpt>
 <wpt lat="1.425" lon="103.1333333"><name>19</name></wpt>
 <wpt lat="1.211666667" lon="103.3916667"><name>20</name></wpt>
-<wpt lat="1.211666667" lon="103.3916667"><name>21</name></wpt>
-<wpt lat="1.166666667" lon="103.4666667"><name>22</name></wpt>
-<wpt lat="1.245" lon="103.5383333"><name>23</name></wpt>
-<wpt lat="1.311666667" lon="103.5566667"><name>24</name></wpt>
-<wpt lat="1.325" lon="103.5558333"><name>25</name></wpt>
-<wpt lat="1.358333333" lon="103.545"><name>26</name></wpt>
+<wpt lat="1.166666667" lon="103.4666667"><name>21</name></wpt>
+<wpt lat="1.245" lon="103.5383333"><name>22</name></wpt>
+<wpt lat="1.311666667" lon="103.5566667"><name>23</name></wpt>
+<wpt lat="1.325" lon="103.5558333"><name>24</name></wpt>
+<wpt lat="1.358333333" lon="103.545"><name>25</name></wpt>
 
 <rte>
 <name>SGMA-CMB-PTP</name>
@@ -52,11 +51,10 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
     <rtept lat="1.633333333" lon="102.7916667"><name>18</name></rtept>
     <rtept lat="1.425" lon="103.1333333"><name>19</name></rtept>
     <rtept lat="1.211666667" lon="103.3916667"><name>20</name></rtept>
-    <rtept lat="1.211666667" lon="103.3916667"><name>21</name></rtept>
-    <rtept lat="1.166666667" lon="103.4666667"><name>22</name></rtept>
-    <rtept lat="1.245" lon="103.5383333"><name>23</name></rtept>
-    <rtept lat="1.311666667" lon="103.5566667"><name>24</name></rtept>
-    <rtept lat="1.325" lon="103.5558333"><name>25</name></rtept>
-    <rtept lat="1.358333333" lon="103.545"><name>26</name></rtept>
+    <rtept lat="1.166666667" lon="103.4666667"><name>21</name></rtept>
+    <rtept lat="1.245" lon="103.5383333"><name>22</name></rtept>
+    <rtept lat="1.311666667" lon="103.5566667"><name>23</name></rtept>
+    <rtept lat="1.325" lon="103.5558333"><name>24</name></rtept>
+    <rtept lat="1.358333333" lon="103.545"><name>25</name></rtept>
 </rte>
 </gpx>

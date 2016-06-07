@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<gpx version="1.1" creator="ESTC"
+<gpx version="1.1" creator="ESTC" 
 xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">'
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
 
 <wpt lat="13.08333333" lon="100.8533333"><name>1</name></wpt>
 <wpt lat="13.08833333" lon="100.8308333"><name>2</name></wpt>
@@ -17,13 +17,18 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
 <wpt lat="10" lon="109.6666667"><name>12</name></wpt>
 <wpt lat="16" lon="112.9166667"><name>13</name></wpt>
 <wpt lat="22.1" lon="114.4166667"><name>14</name></wpt>
-<wpt lat="22.12166667" lon="104.4166667"><name>15</name></wpt>
+<wpt lat="22.12166667" lon="114.4166667"><name>15</name></wpt>
 <wpt lat="22.12833333" lon="114.3833333"><name>16</name></wpt>
 <wpt lat="22.12833333" lon="114.3416667"><name>17</name></wpt>
 <wpt lat="22.13333333" lon="114.255"><name>18</name></wpt>
 <wpt lat="22.15833333" lon="114.2166667"><name>19</name></wpt>
 <wpt lat="22.21083333" lon="114.175"><name>20</name></wpt>
 <wpt lat="22.21333333" lon="114.1716667"><name>21</name></wpt>
+<wpt lat="22.24833333" lon="114.1241667"><name>22</name></wpt>
+<wpt lat="22.29766667" lon="114.0973333"><name>23</name></wpt>
+<wpt lat="22.30666667" lon="114.0966667"><name>24</name></wpt>
+<wpt lat="22.315" lon="114.1"><name>25</name></wpt>
+<wpt lat="22.32666667" lon="114.12"><name>26</name></wpt>
 
 <rte>
 <name>LUCD-LCH-HKG</name>
@@ -41,12 +46,17 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
     <rtept lat="10" lon="109.6666667"><name>12</name></rtept>
     <rtept lat="16" lon="112.9166667"><name>13</name></rtept>
     <rtept lat="22.1" lon="114.4166667"><name>14</name></rtept>
-    <rtept lat="22.12166667" lon="104.4166667"><name>15</name></rtept>
+    <rtept lat="22.12166667" lon="114.4166667"><name>15</name></rtept>
     <rtept lat="22.12833333" lon="114.3833333"><name>16</name></rtept>
     <rtept lat="22.12833333" lon="114.3416667"><name>17</name></rtept>
     <rtept lat="22.13333333" lon="114.255"><name>18</name></rtept>
     <rtept lat="22.15833333" lon="114.2166667"><name>19</name></rtept>
     <rtept lat="22.21083333" lon="114.175"><name>20</name></rtept>
     <rtept lat="22.21333333" lon="114.1716667"><name>21</name></rtept>
+    <rtept lat="22.24833333" lon="114.1241667"><name>22</name></rtept>
+    <rtept lat="22.29766667" lon="114.0973333"><name>23</name></rtept>
+    <rtept lat="22.30666667" lon="114.0966667"><name>24</name></rtept>
+    <rtept lat="22.315" lon="114.1"><name>25</name></rtept>
+    <rtept lat="22.32666667" lon="114.12"><name>26</name></rtept>
 </rte>
 </gpx>
