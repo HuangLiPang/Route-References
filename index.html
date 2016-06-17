@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Route References</title>
+        
+        <!-- Include meta tag to ensure proper rendering and touch zooming -->
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+        <!-- Include jQuery Mobile stylesheets -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        
+        <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        
+        <script type="text/javascript" src="route.js"></script>
+        <script type="text/javascript" src="map_function.js"></script>
+        <script type="text/javascript" src="mobile_detect.js"></script>
+        
+        <link id="css" href="main.css" rel="stylesheet" type="text/css" />
+        <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+    </head>
+    <body>
+        <div id="container">
+            <div id="menu">
+                <select id="line" onchange="changeline()" class="menu_line"></select>
+          
+                <select id="route" onchange="createroute()" class="menu_route" disabled>
+                        <option value="#">Route</option>
+                </select>
+                
+                <button id="download" onclick="download()" class="menu_download" disabled>Download CSV</button>
+                
+                <button id="button" onclick="clearroute()" class="menu_button">Remove Routes</button>
+            </div>
+            
+            
+            <div id='showmap'></div>
+            <div id='maptile'>
+                <button id='tile' onclick="changetile()">Satellite Map</button>
+            </div>
+        </div>
+        
+        <script>
+            //Auto size the screen
+            autosize();
+
+            //Load lines
+            initial_line();
+            
+            //Mapbox token
+            L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5bHpmN3ZnNm11dSJ9.1kSYNfN3L-uzTzqmBsIekw';
+            
+            var map = L.mapbox.map('showmap','' , {
+                            minZoom: 2,
+                            maxZoom: 18,
+                            zoomControl: false
+                        }).setView([25.154, 121.377], 4);
+            
+            //tilelayer style variable
+            var satellitegroup = L.layerGroup().addTo(map);
+            
+            var streetsgroup = L.layerGroup().addTo(map);
+            
+            var tilesatellite = L.mapbox.tileLayer("mapbox.streets-satellite");
+            
+            var tilestreet = L.mapbox.tileLayer("mapbox.streets");
+            
+            tilestreet.addTo(streetsgroup);
+            
+            
+            var p = "";     //String variable for for the data path of the route
+            
+            var geo = "";   //Variable for geojson data path
+            
+            var csv = "";   //Variable for csv data path
+            
+            //Route geojson layergroup
+            var geolayerGroup = L.layerGroup().addTo(map);
+            
+            //ECA geojson layergroup
+            var ECAlayerGroup = L.layerGroup().addTo(map);
+            
+            //ECA geojson layer
+            var ECAsNOxLayer = L.mapbox.featureLayer().loadURL("eca.geojson")
+                                .on('ready', function(){
+                                    this.setStyle({
+                                        "color": "#ff5555",
+                                        "weight": "2"
+                                    })
+                                }).addTo(ECAlayerGroup);
+            
+            ECAsNOxLayer.on('mouseover', function(){
+                this.setStyle({
+                    "color": "#ff0000",
+                    "weight": "5"
+                })
+            });
+            ECAsNOxLayer.on('mouseout', function(){
+                this.setStyle({
+                    "color": "#ff5555",
+                    "weight": "2"
+                })
+            });
+            
+            //Function allows the selection showing on the map
+            function createroute(){
+                var route = document.getElementById("route");   
+
+                geo = "GeoJSON/" + p + route.value;
+                
+                csv = "CSV/" + p + route.value.replace('.geojson', '.csv');
+                
+                var geoLayer = L.mapbox.featureLayer()
+                                .loadURL(geo)
+                                .addTo(geolayerGroup);
+                
+                document.getElementById("download").disabled = false;
+    
+                geoLayer.on('ready', function() {
+                    map.fitBounds(geoLayer.getBounds());
+                });
+                
+            };
+         
+            
+            //Clear all route
+            function clearroute(){
+                geolayerGroup.clearLayers();
+                map.setView([25.154, 121.377], 4);
+                P = "";
+                geo = "";
+                csv = "";
+                document.getElementById("download").disabled = true;
+                initial_line();
+            };
+            
+        </script>
+    </body>
+</html>
