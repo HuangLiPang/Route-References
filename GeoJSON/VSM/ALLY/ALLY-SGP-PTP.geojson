@@ -6,7 +6,7 @@
          "title": "WPT#1",
          "description": "1°11.7' N, 103°38.0' E",
          "marker-symbol": "star",
-         "marker-color": "#8FE95E",
+         "marker-color": "#75132E",
          "marker-size": "large"
       },
       "geometry": {
@@ -20,7 +20,7 @@
          "title": "WPT#2",
          "description": "1°13.2' N, 103°33.0' E",
          "marker-symbol": "2",
-         "marker-color": "#8FE95E"
+         "marker-color": "#75132E"
       },
       "geometry": {
           "type": "Point",
@@ -33,7 +33,7 @@
          "title": "WPT#3",
          "description": "1°14.7' N, 103°32.3' E",
          "marker-symbol": "3",
-         "marker-color": "#8FE95E"
+         "marker-color": "#75132E"
       },
       "geometry": {
           "type": "Point",
@@ -44,7 +44,7 @@
     { "type": "Feature",
       "properties": {
           "title": "#1=>#2 COG:284.0",
-          "stroke": "#8FE95E",
+          "stroke": "#75132E",
           "stroke-width": "5"
        },
       "geometry": {
@@ -57,7 +57,7 @@
     { "type": "Feature",
       "properties": {
           "title": "#2=>#3 COG:335.0",
-          "stroke": "#8FE95E",
+          "stroke": "#75132E",
           "stroke-width": "5"
        },
       "geometry": {
