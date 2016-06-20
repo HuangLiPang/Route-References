@@ -10,77 +10,6 @@ body{
     width: 100%;
 }
 
-.menu_line{
-    position: absolute;
-    font-size: 16px;
-    left: 0%;
-    height: 100%;
-    width: 20%;
-}
-
-.menu_route{
-    position: absolute;
-    font-size: 16px;
-    left: 20%;
-    height: 100%; 
-    width: 40%;
-}
-
-.menu_download{
-    position: absolute;
-    left: 60%;
-    height: 100%;
-    width: 20%;
-    text-align: center;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    border-radius: 0%;
-}
-
-.menu_button{
-    position: absolute;
-    left: 80%;
-    height: 100%;
-    width: 20%;
-    text-align: center;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    border-radius: 0%;
-}
-
-#button{
-    border-radius: 0%;
-}
-
-#download{
-    border-radius: 0%; 
-}
-
-#maptile{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    width: 80px;
-    height: 80px;
-    margin: 0px;
-    padding: 0px;
-    border-radius: 0%;
-    opacity: 0.7;
-    z-index: 2;
-}
-
-#tile{
-    font-size: 16px;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    border-radius: 0%;
-    
-}
-
 #container{
     height: 100%;
     width: 100%;
@@ -100,6 +29,70 @@ body{
     z-index: 1;
 }
 
+.menu_line{
+    position: absolute;
+    font-size: 16px;
+    left: 0%;
+    height: 100%;
+    width: 20%;
+}
+
+.menu_route{
+    position: absolute;
+    font-size: 16px;
+    left: 20%;
+    height: 100%; 
+    width: 30%;
+}
+
+.menu_GPX{
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+.menu_CSV{
+    position: absolute;
+    left: 70%;
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0px;
+}
+
+.menu_RESET{
+    position: absolute;
+    left: 90%;
+    height: 100%;
+    width: 10%;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+/*
+#reset{
+    border-radius: 0%;
+}
+*/
+/*
+#download{
+    border-radius: 0%; 
+}
+*/
+
 #showmap{
     position: absolute;
     width: 100%;
@@ -107,3 +100,26 @@ body{
     height: 96.5%;
     z-index: 0;
 }
+
+#maptile{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0;
+    opacity: 0.7;
+    z-index: 2;
+}
+
+#tile{
+    font-size: 16px;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+}
+
