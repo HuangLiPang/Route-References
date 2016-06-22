@@ -82,17 +82,6 @@ body{
     border-radius: 0;
 }
 
-/*
-#reset{
-    border-radius: 0%;
-}
-*/
-/*
-#download{
-    border-radius: 0%; 
-}
-*/
-
 #showmap{
     position: absolute;
     width: 100%;
@@ -110,7 +99,7 @@ body{
     margin: 0px;
     padding: 0px;
     border-radius: 0;
-    opacity: 0.7;
+    opacity: 0.75;
     z-index: 2;
 }
 
@@ -123,3 +112,23 @@ body{
     border-radius: 0;
 }
 
+.mouseposition{
+  font-family: sans-serif;
+  background: #fff;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  padding: 10px;
+  z-index: 100;
+  border-radius: 3px;
+  }
+
+#mouseclick{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#mousemove{
+    font-size: 16px;
+    font-family: sans-serif;
+}

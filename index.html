@@ -32,13 +32,18 @@
                         
                 <button id="reset" onclick="clearroute()" class="menu_RESET">Reset</button>
             </div>
-                        
+            
+            <div id='mouseposition' class='mouseposition'>
+                Click: <code id='mouseclick'></code><br/>
+                Mousemove: <code id='mousemove'></code><br/>
+            </div>            
+            
             <div id='showmap'></div>
             <div id='maptile'>
                 <button id='tile' onclick="changetile()">Satellite Map</button>
             </div>
         </div>
-        
+    
         <script>
             //Auto size the screen
             autosize();
@@ -54,6 +59,16 @@
                             maxZoom: 18,
                             zoomControl: false
                         }).setView([25.154, 121.377], 4);
+            //@@
+            //Mouse position code starts
+            var click = document.getElementById('mouseclick'),
+                mousemove = document.getElementById('mousemove');
+            
+            map.on('mousemove click', function(e){
+                window[e.type].innerHTML = e.latlng.toString();
+            });
+            //Mouse position code ends
+            //@@
             
             //tilelayer style variable
             var satellitegroup = L.layerGroup().addTo(map);
