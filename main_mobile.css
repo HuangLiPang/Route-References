@@ -20,51 +20,39 @@ body{
     position: absolute;
     font-size: 20px; 
     width: 100%;
+    /*-webkit-appearance: none;*/
 }
 
 .menu_GPX{
     position: absolute;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     border-radius: 0;
-    -webkit-appearance: none;
+    /*-webkit-appearance: none;*/
 }
 
 .menu_CSV{
     position: absolute;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     border-radius: 0;
-    -webkit-appearance: none;
+    /*-webkit-appearance: none;*/
 }
 
 .menu_RESET{
     position: absolute;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
-    /*
-    -webkit-appearance: none;
-    */
+    /*-webkit-appearance: none;*/
 }
-
-/*
-#reset{
-    border-radius: 0%; 
-}
-*/
-/*
-#download{
-    border-radius: 0%; 
-}
-*/
 
 #maptile{
     position: absolute;
@@ -85,8 +73,7 @@ body{
     left: 0%;
     height: 100%;
     width: 100%;
-    border-radius: 0;
-    
+    -webkit-border-radius: 0; 
 }
 
 #container {

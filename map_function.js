@@ -34,6 +34,7 @@ function autosize() {
             $("#css").attr("href", "main_mobile.css");
             mobileallsize();
         } else {
+            $("#css").attr("href", "main_mobile_rotate.css");
             menusize();
         }
             
@@ -277,13 +278,13 @@ function changetile() {
                     
                     tilestreet.addTo(streetsgroup);
                     
-                    document.getElementById("tile").innerHTML = "Satellite Map";
+                    document.getElementById("tile").innerHTML = "Satellite</br>Map";
                 }
                 else{
                     streetsgroup.removeLayer(tilestreet);
                     
                     tilesatellite.addTo(satellitegroup);
                     
-                    document.getElementById("tile").innerHTML = "Streets Map";
+                    document.getElementById("tile").innerHTML = "Streets</br>Map";
                 }
             }

@@ -27,20 +27,20 @@
                         <option value="#">Route</option>
                 </select>
                 
-                <button id="GPX" onclick="downloadGPX()" class="menu_GPX" disabled> Download GPX</button>
+                <button id="GPX" onclick="downloadGPX()" class="menu_GPX" disabled>Download GPX</button>
                 <button id="CSV" onclick="downloadCSV()" class="menu_CSV" disabled>Download CSV</button>
                         
                 <button id="reset" onclick="clearroute()" class="menu_RESET">Reset</button>
             </div>
             
             <div id='mouseposition' class='mouseposition'>
-                Click: <code id='mouseclick'></code><br/>
-                Mousemove: <code id='mousemove'></code><br/>
+                <p class='mouseclick'>Click: <code id='mouseclick'></code><br/></p>
+                <p class='mousemove'>Mousemove: <code id='mousemove'></code><br/></p>
             </div>            
             
             <div id='showmap'></div>
             <div id='maptile'>
-                <button id='tile' onclick="changetile()">Satellite Map</button>
+                <button id='tile' onclick="changetile()">Satellite<br/>Map</button>
             </div>
         </div>
     
@@ -65,7 +65,22 @@
                 mousemove = document.getElementById('mousemove');
             
             map.on('mousemove click', function(e){
-                window[e.type].innerHTML = e.latlng.toString();
+                
+                var lat = e.latlng.lat.toPrecision(9),
+                    lng = e.latlng.lng.toPrecision(9),
+                    latdeg = parseInt(lat),
+                    lngdeg = parseInt(lng),
+                    latf = Math.abs(lat - parseFloat(latdeg)),
+                    lngf = Math.abs(lng - parseFloat(lngdeg)),
+                    latmin = (latf * 60).toPrecision(5),
+                    lngmin = (lngf * 60).toPrecision(5)/*,
+                    latff = Math.abs(lat * 100 - Math.floor(lat * 100)),
+                    lngff = Math.abs(lng * 100 - Math.floor(lng * 100)),
+                    latsec = Math.floor(latff * 60),
+                    lngsec = Math.floor(lngff * 60)*/;
+                
+                
+                window[e.type].innerHTML = latdeg.toString() + '° ' + latmin.toString() + "' " /*+ latsec.toString() + '"'+e.latlng.lat.toPrecision(5) */+ ', ' + lngdeg.toString() + '° ' + lngmin.toString() + "' " /*+ lngsec.toString() + '"' +e.latlng.lng.toPrecision(5)*/;
             });
             //Mouse position code ends
             //@@
