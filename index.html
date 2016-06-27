@@ -47,6 +47,7 @@
         <script>
             //Auto size the screen
             autosize();
+            window.addEventListener("resize", autosize);
 
             //Load lines
             initial_line();
@@ -59,28 +60,40 @@
                             maxZoom: 18,
                             zoomControl: false
                         }).setView([25.154, 121.377], 4);
+            
+            L.control.scale({position: 'topleft', maxWidth: 200}).addTo(map);
             //@@
             //Mouse position code starts
             var click = document.getElementById('mouseclick'),
                 mousemove = document.getElementById('mousemove');
             
-            map.on('mousemove click', function(e){
+            map.on('mousemove click', function(a){
                 
-                var lat = e.latlng.lat.toPrecision(9),
-                    lng = e.latlng.lng.toPrecision(9),
+                var lat = Math.abs(a.latlng.lat.toPrecision(9)),
+                    lng = Math.abs(a.latlng.wrap(-180, 180).lng.toPrecision(9)),
                     latdeg = parseInt(lat),
                     lngdeg = parseInt(lng),
                     latf = Math.abs(lat - parseFloat(latdeg)),
                     lngf = Math.abs(lng - parseFloat(lngdeg)),
                     latmin = (latf * 60).toPrecision(5),
-                    lngmin = (lngf * 60).toPrecision(5)/*,
-                    latff = Math.abs(lat * 100 - Math.floor(lat * 100)),
-                    lngff = Math.abs(lng * 100 - Math.floor(lng * 100)),
-                    latsec = Math.floor(latff * 60),
-                    lngsec = Math.floor(lngff * 60)*/;
+                    lngmin = (lngf * 60).toPrecision(5);
+                var we = '', ns = '';
                 
+                if(a.latlng.lat>=0){
+                    ns = 'N';
+                }
+                else{
+                    ns = 'S';
+                }
                 
-                window[e.type].innerHTML = latdeg.toString() + '° ' + latmin.toString() + "' " /*+ latsec.toString() + '"'+e.latlng.lat.toPrecision(5) */+ ', ' + lngdeg.toString() + '° ' + lngmin.toString() + "' " /*+ lngsec.toString() + '"' +e.latlng.lng.toPrecision(5)*/;
+                if(a.latlng.lng>=0){
+                    we = 'E';
+                }
+                else{
+                    we = 'W';
+                }
+                
+                window[a.type].innerHTML = latdeg.toString() + '° ' + latmin.toString() + "' " + ns + ', ' + lngdeg.toString() + '° ' + lngmin.toString() + "' " + we;
             });
             //Mouse position code ends
             //@@
