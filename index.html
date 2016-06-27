@@ -86,7 +86,7 @@
                     ns = 'S';
                 }
                 
-                if(a.latlng.lng>=0){
+                if(a.latlng.wrap(-180, 180).lng>=0){
                     we = 'E';
                 }
                 else{
