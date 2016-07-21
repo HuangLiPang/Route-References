@@ -30,7 +30,7 @@ function autosize() {
     android = MobileEsp.DetectAndroidPhone();
     
     if (device || ios || android) {
-        if (win >= winwidth) {
+        if (win > winwidth) {
             $("#css").attr("href", "main_mobile.css");
             mobileallsize();
         } else {
@@ -41,8 +41,6 @@ function autosize() {
     } else {
         menusize();
     }
-    
-    window.onresize = function () {menusize(); };
 
     //Minimize the menu bar's height in 30px
     function menusize() {
@@ -269,22 +267,28 @@ function changeline() {
     };
 }
 
-function changetile() {
+function change_tile(){
                 
-                var satellite = satellitegroup.hasLayer(tilesatellite);
-                
-                if(satellite){
-                    satellitegroup.removeLayer(tilesatellite);
+                if(tile_switch){
+                    tile_group.removeLayer(tile_satellite);
                     
-                    tilestreet.addTo(streetsgroup);
+                    tile_street.addTo(tile_group);
                     
                     document.getElementById("tile").innerHTML = "Satellite</br>Map";
+                    
+                    distanceline.setStyle({color: 'black'});
+                    
+                    tile_switch = tile_group.hasLayer(tile_satellite);
                 }
                 else{
-                    streetsgroup.removeLayer(tilestreet);
+                    tile_group.removeLayer(tile_street);
                     
-                    tilesatellite.addTo(satellitegroup);
+                    tile_satellite.addTo(tile_group);
                     
                     document.getElementById("tile").innerHTML = "Streets</br>Map";
-                }
-            }
+                    
+                    distanceline.setStyle({color: 'white'});
+                    
+                    tile_switch = tile_group.hasLayer(tile_satellite);
+                };
+            };

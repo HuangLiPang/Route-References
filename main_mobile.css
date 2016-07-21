@@ -54,6 +54,26 @@ body{
     /*-webkit-appearance: none;*/
 }
 
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+#menu{
+    position:absolute;
+    list-style-type: none ;
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    width: 100%;
+}
+
+#showmap{
+    position: absolute;
+    width: 100%;
+}
+
 #maptile{
     position: absolute;
     bottom: 10px;
@@ -76,22 +96,49 @@ body{
     -webkit-border-radius: 0; 
 }
 
-#container {
-    height: 100%;
-    width: 100%;
+#markerposition{
+  font-family: sans-serif;
+  background:rgba(0,0,0,0.5);
+  color:#fff;
+  position: absolute;
+  bottom: 150px;
+  left: 10px;
+  padding: 10px;
+  z-index: 2;
+  border-radius: 3px;
 }
 
-#menu{
-    position:absolute;
-    list-style-type: none ;
-    font-family: sans-serif;
+#distance_button_div{
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
     margin: 0px;
     padding: 0px;
-    background-color: white;
-    width: 100%;
+    border-radius: 0;
+    opacity: 0.75;
+    z-index: 2;
 }
 
-#showmap{
-    position: absolute;
+#distance_button{
+    font-size: 12px;
+    top: 0%;
+    left: 0%;
+    height: 100%;
     width: 100%;
+    border-radius: 0;
+}
+
+#distance_kilometer{
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+#distance_nauticalmile{
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
 }

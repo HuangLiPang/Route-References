@@ -120,7 +120,7 @@ body{
   top: 50px;
   right: 10px;
   padding: 10px;
-  z-index: 100;
+  z-index: 2;
   border-radius: 3px;
   }
 
@@ -132,4 +132,51 @@ body{
 #mouseclick, #mousemove{
     font-size: 16px;
     font-family: sans-serif;
+}
+
+#markerposition{
+  font-family: sans-serif;
+  background:rgba(0,0,0,0.5);
+  color:#fff;
+  position: absolute;
+  bottom: 190px;
+  left: 10px;
+  padding: 10px;
+  z-index: 2;
+  border-radius: 3px;
+}
+
+#distance_button_div{
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0;
+    opacity: 0.75;
+    z-index: 2;
+}
+
+#distance_button{
+    font-size: 16px;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+}
+
+#distance_kilometer{
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+#distance_nauticalmile{
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
 }

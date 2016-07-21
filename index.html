@@ -35,19 +35,31 @@
             
             <div id='mouseposition' class='mouseposition'>
                 <p class='mouseclick'>Click: <code id='mouseclick'></code><br/></p>
-                <p class='mousemove'>Mousemove: <code id='mousemove'></code><br/></p>
+                <p class='mousemove'>Cursor: <code id='mousemove'></code><br/></p>
             </div>            
             
+            <div id='distance_button_div'>
+                <button id='distance_button' onclick='distance_button()'>Measure Distance</button>
+            </div>
+            
+            <div id='markerposition'>
+                
+                <pre id=distance_kilometer>0.000 km</pre>
+                <pre id=distance_nauticalmile>0.000 nm</pre>
+                
+            </div>
+                        
             <div id='showmap'></div>
             <div id='maptile'>
-                <button id='tile' onclick="changetile()">Satellite<br/>Map</button>
+                <button id='tile' onclick="change_tile()">Satellite<br/>Map</button>
             </div>
+            
         </div>
     
         <script>
             //Auto size the screen
             autosize();
-            window.addEventListener("resize", autosize);
+            window.addEventListener("onresize", autosize);
 
             //Load lines
             initial_line();
@@ -59,9 +71,116 @@
                             minZoom: 2,
                             maxZoom: 18,
                             zoomControl: false
-                        }).setView([25.154, 121.377], 4);
-            
+                        });
+            map.setView([25.154, 121.377], 4);
             L.control.scale({position: 'topleft', maxWidth: 200}).addTo(map);
+            
+            //M
+            //Marker Distance
+            
+            var distance_button_switch = false;
+            
+            var dkilometer = document.getElementById('distance_kilometer'),
+                dnauticalmile = document.getElementById('distance_nauticalmile'); 
+            
+            var center_position = [25.154, 121.377];
+            
+            var markerlayer = L.mapbox.featureLayer().addTo(map),
+                linelayer = L.mapbox.featureLayer().addTo(map);
+            
+            var marker1 = L.marker(center_position, {
+                draggable: true,
+                icon: L.mapbox.marker.icon({
+                    'marker-size': 'large',
+                    'marker-symbol': 'ferry',
+                    'marker-color': '#FF8040',
+                    }),
+                zIndexOffset: 1000
+            }),
+                
+                marker2 = L.marker(center_position, {
+                draggable: true,
+                icon: L.mapbox.marker.icon({
+                    'marker-size': 'large',
+                    'marker-symbol': 'harbor',
+                    'marker-color': '#FF8040',
+                    }),
+                zIndexOffset: 990
+            });
+            
+            var distanceline = L.polyline([center_position, center_position]);
+            
+            var kilometer = (marker1.getLatLng().distanceTo(marker2.getLatLng())/1000).toFixed(3), 
+                nauticalmile = (kilometer / 1.852).toFixed(3);
+            
+            marker1.on('move', distance);
+            marker2.on('move', distance);
+            
+            map.on('move', center_marker_position);
+            
+            function center_marker_position(){
+                
+                if(!distance_button_switch){
+                    
+                    center_position = map.getCenter();
+                    
+                    marker1.setLatLng(center_position);
+
+                    marker2.setLatLng(center_position);
+                    
+                    distanceline.setLatLngs([center_position, center_position]);
+                };   
+            };
+            
+            function distance_button(){
+                if(distance_button_switch){
+                    markerlayer.clearLayers();
+                    linelayer.clearLayers();
+                    dkilometer.innerHTML = '0.000 km';
+                    dnauticalmile.innerHTML = "0.000 nm";
+                    distance_button_switch = false;
+                }
+                else{
+                    marker1.addTo(markerlayer);
+                    marker2.addTo(markerlayer);
+                    distanceline.addTo(linelayer);
+                    dkilometer.innerHTML = kilometer + ' km';
+                    dnauticalmile.innerHTML = nauticalmile + " nm";
+                    distance_button_switch = true;
+                };
+            };
+            
+            function distance(){
+                
+                var m1 = marker1.getLatLng(),
+                    m2 = marker2.getLatLng();
+                
+                kilometer = (m1.distanceTo(m2)/1000).toFixed(3), 
+                nauticalmile = (kilometer / 1.852).toFixed(3);
+                
+                dkilometer.innerHTML = kilometer + ' km';
+                dnauticalmile.innerHTML = nauticalmile + " nm";
+                
+                linelayer.clearLayers();
+                
+                distanceline = L.polyline([[m1.lat, m1.lng], [m2.lat, m2.lng]]);
+                
+                if(tile_switch){
+                    distanceline.setStyle({color: 'white'});
+                }
+                else{
+                    distanceline.setStyle({color: 'black'});
+                };
+                
+                if(distance_button_switch){
+                    
+                    distanceline.addTo(linelayer);
+                
+                };
+            };
+            //Marker Distance
+            //M
+            
             //@@
             //Mouse position code starts
             var click = document.getElementById('mouseclick'),
@@ -94,21 +213,21 @@
                 }
                 
                 window[a.type].innerHTML = latdeg.toString() + '° ' + latmin.toString() + "' " + ns + ', ' + lngdeg.toString() + '° ' + lngmin.toString() + "' " + we;
+                
             });
             //Mouse position code ends
             //@@
             
             //tilelayer style variable
-            var satellitegroup = L.layerGroup().addTo(map);
+            var tile_group = L.layerGroup().addTo(map),
+                
+                tile_satellite = L.mapbox.tileLayer("mapbox.streets-satellite"),
             
-            var streetsgroup = L.layerGroup().addTo(map);
+                tile_street = L.mapbox.tileLayer("mapbox.streets"),
             
-            var tilesatellite = L.mapbox.tileLayer("mapbox.streets-satellite");
+                tile_switch = tile_group.hasLayer(tile_satellite);
             
-            var tilestreet = L.mapbox.tileLayer("mapbox.streets");
-            
-            tilestreet.addTo(streetsgroup);
-            
+            tile_street.addTo(tile_group);
             
             var p = "";     //String variable for for the data path of the route
             
