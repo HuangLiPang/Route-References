@@ -82,6 +82,20 @@ body{
     border-radius: 0;
 }
 
+<<<<<<< HEAD
+=======
+/*
+#reset{
+    border-radius: 0%;
+}
+*/
+/*
+#download{
+    border-radius: 0%; 
+}
+*/
+
+>>>>>>> 47e9b285f65f77def32c423f0646e25390f10cdd
 #showmap{
     position: absolute;
     width: 100%;
@@ -99,7 +113,11 @@ body{
     margin: 0px;
     padding: 0px;
     border-radius: 0;
+<<<<<<< HEAD
     opacity: 0.75;
+=======
+    opacity: 0.7;
+>>>>>>> 47e9b285f65f77def32c423f0646e25390f10cdd
     z-index: 2;
 }
 
@@ -112,6 +130,7 @@ body{
     border-radius: 0;
 }
 
+<<<<<<< HEAD
 .mouseposition{
   font-family: sans-serif;
   background:rgba(0,0,0,0.5);
@@ -180,3 +199,5 @@ body{
     padding: 0px;
     margin: 0px;
 }
+=======
+>>>>>>> 47e9b285f65f77def32c423f0646e25390f10cdd

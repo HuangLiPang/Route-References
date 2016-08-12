@@ -27,11 +27,16 @@
                         <option value="#">Route</option>
                 </select>
                 
+<<<<<<< HEAD
                 <button id="GPX" onclick="downloadGPX()" class="menu_GPX" disabled>Download GPX</button>
+=======
+                <button id="GPX" onclick="downloadGPX()" class="menu_GPX" disabled> Download GPX</button>
+>>>>>>> 47e9b285f65f77def32c423f0646e25390f10cdd
                 <button id="CSV" onclick="downloadCSV()" class="menu_CSV" disabled>Download CSV</button>
                         
                 <button id="reset" onclick="clearroute()" class="menu_RESET">Reset</button>
             </div>
+<<<<<<< HEAD
             
             <div id='mouseposition' class='mouseposition'>
                 <p class='mouseclick'>Click: <code id='mouseclick'></code><br/></p>
@@ -60,6 +65,18 @@
             //Auto size the screen
             autosize();
             window.addEventListener("onresize", autosize);
+=======
+                        
+            <div id='showmap'></div>
+            <div id='maptile'>
+                <button id='tile' onclick="changetile()">Satellite Map</button>
+            </div>
+        </div>
+        
+        <script>
+            //Auto size the screen
+            autosize();
+>>>>>>> 47e9b285f65f77def32c423f0646e25390f10cdd
 
             //Load lines
             initial_line();
@@ -71,6 +88,7 @@
                             minZoom: 2,
                             maxZoom: 18,
                             zoomControl: false
+<<<<<<< HEAD
                         });
             map.setView([25.154, 121.377], 4);
             L.control.scale({position: 'topleft', maxWidth: 200}).addTo(map);
@@ -228,6 +246,21 @@
                 tile_switch = tile_group.hasLayer(tile_satellite);
             
             tile_street.addTo(tile_group);
+=======
+                        }).setView([25.154, 121.377], 4);
+            
+            //tilelayer style variable
+            var satellitegroup = L.layerGroup().addTo(map);
+            
+            var streetsgroup = L.layerGroup().addTo(map);
+            
+            var tilesatellite = L.mapbox.tileLayer("mapbox.streets-satellite");
+            
+            var tilestreet = L.mapbox.tileLayer("mapbox.streets");
+            
+            tilestreet.addTo(streetsgroup);
+            
+>>>>>>> 47e9b285f65f77def32c423f0646e25390f10cdd
             
             var p = "";     //String variable for for the data path of the route
             

@@ -30,17 +30,29 @@ function autosize() {
     android = MobileEsp.DetectAndroidPhone();
     
     if (device || ios || android) {
+<<<<<<< HEAD
         if (win > winwidth) {
             $("#css").attr("href", "main_mobile.css");
             mobileallsize();
         } else {
             $("#css").attr("href", "main_mobile_rotate.css");
+=======
+        if (win >= winwidth) {
+            $("#css").attr("href", "main_mobile.css");
+            mobileallsize();
+        } else {
+>>>>>>> 47e9b285f65f77def32c423f0646e25390f10cdd
             menusize();
         }
             
     } else {
         menusize();
     }
+<<<<<<< HEAD
+=======
+    
+    window.onresize = function () {menusize(); };
+>>>>>>> 47e9b285f65f77def32c423f0646e25390f10cdd
 
     //Minimize the menu bar's height in 30px
     function menusize() {
@@ -267,6 +279,7 @@ function changeline() {
     };
 }
 
+<<<<<<< HEAD
 function change_tile(){
                 
                 if(tile_switch){
@@ -292,3 +305,24 @@ function change_tile(){
                     tile_switch = tile_group.hasLayer(tile_satellite);
                 };
             };
+=======
+function changetile() {
+                
+                var satellite = satellitegroup.hasLayer(tilesatellite);
+                
+                if(satellite){
+                    satellitegroup.removeLayer(tilesatellite);
+                    
+                    tilestreet.addTo(streetsgroup);
+                    
+                    document.getElementById("tile").innerHTML = "Satellite Map";
+                }
+                else{
+                    streetsgroup.removeLayer(tilestreet);
+                    
+                    tilesatellite.addTo(satellitegroup);
+                    
+                    document.getElementById("tile").innerHTML = "Streets Map";
+                }
+            }
+>>>>>>> 47e9b285f65f77def32c423f0646e25390f10cdd

@@ -20,37 +20,61 @@ body{
     position: absolute;
     font-size: 20px; 
     width: 100%;
+<<<<<<< HEAD
     /*-webkit-appearance: none;*/
+=======
+>>>>>>> 47e9b285f65f77def32c423f0646e25390f10cdd
 }
 
 .menu_GPX{
     position: absolute;
     text-align: center;
+<<<<<<< HEAD
     font-size: 16px;
     margin: 0;
     padding: 0;
     border-radius: 0;
     /*-webkit-appearance: none;*/
+=======
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+>>>>>>> 47e9b285f65f77def32c423f0646e25390f10cdd
 }
 
 .menu_CSV{
     position: absolute;
     text-align: center;
+<<<<<<< HEAD
     font-size: 16px;
     margin: 0;
     padding: 0;
     border-radius: 0;
     /*-webkit-appearance: none;*/
+=======
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+>>>>>>> 47e9b285f65f77def32c423f0646e25390f10cdd
 }
 
 .menu_RESET{
     position: absolute;
     text-align: center;
+<<<<<<< HEAD
     font-size: 16px;
+=======
+    font-size: 20px;
+>>>>>>> 47e9b285f65f77def32c423f0646e25390f10cdd
     margin: 0;
     padding: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
+<<<<<<< HEAD
     /*-webkit-appearance: none;*/
 }
 
@@ -73,6 +97,23 @@ body{
     position: absolute;
     width: 100%;
 }
+=======
+    /*
+    -webkit-appearance: none;
+    */
+}
+
+/*
+#reset{
+    border-radius: 0%; 
+}
+*/
+/*
+#download{
+    border-radius: 0%; 
+}
+*/
+>>>>>>> 47e9b285f65f77def32c423f0646e25390f10cdd
 
 #maptile{
     position: absolute;
@@ -93,6 +134,7 @@ body{
     left: 0%;
     height: 100%;
     width: 100%;
+<<<<<<< HEAD
     -webkit-border-radius: 0; 
 }
 
@@ -141,4 +183,28 @@ body{
     font-family: sans-serif;
     padding: 0px;
     margin: 0px;
+=======
+    border-radius: 0;
+    
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+#menu{
+    position:absolute;
+    list-style-type: none ;
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    width: 100%;
+}
+
+#showmap{
+    position: absolute;
+    width: 100%;
+>>>>>>> 47e9b285f65f77def32c423f0646e25390f10cdd
 }
