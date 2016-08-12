@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Route References</title>
+
+		<!-- Include meta tag to ensure proper rendering and touch zooming -->
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+		
+		<!-- mapbox.js 已包含呼叫 leaflet.js ?
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.js"></script>
+		-->
+		<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+		<script type="text/javascript" src="route.js"></script>
+		<script type="text/javascript" src="map_function.js"></script>
+		<script type="text/javascript" src="mobile_detect.js"></script>
+
+		<link type="text/css" rel="stylesheet" href="windyty.css" />
+		<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+		<!-- Include jQuery Mobile stylesheets -->
+		
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		
+	</head>
+	<body>
+		<div id="container">
+			<div id="menu">
+					<select id="line" onchange="changeline()" class="menu_line"></select>
+
+					<select id="route" class="menu_route" disabled>
+									<option value="#">Route</option>
+					</select>
+
+					<button id="GPX" onclick="downloadGPX()" class="menu_GPX" disabled> Download GPX</button>
+					<button id="CSV" onclick="downloadCSV()" class="menu_CSV" disabled>Download CSV</button>
+
+					<button id="reset" class="menu_RESET">Reset</button>
+			</div>
+
+			<div id="windyty"></div>		
+			
+            <div>
+                <button id="windytyButtonWind" class="windytyButton" style="right: 420px; opacity: 1">Wind</button>
+                <button id="windytyButtonTemp" class="windytyButton" style="right: 330px">Temp</button>
+                <button id="windytyButtonPressure" class="windytyButton" style="right: 240px">Pressure</button>
+                <button id="windytyButtonWaves" class="windytyButton" style="right: 150px">Waves</button>
+                <button id="windytyButtonCurrents" class="windytyButton" style="right: 60px">Currents</button>
+			</div>
+            
+			<div id="timeline">
+				<input type="range" id="slider" value="0">
+				<input type="text" id="calender" value="">
+			</div>
+			
+            <div id='mouseposition' class='mouseposition'>
+                <!--<p class='mouseclick'>Click: <code id='mouseclick1'></code><br/></p>-->
+                <p class='mousemove'>Cursor: <code id='mousemove'></code><br/></p>
+            </div>
+            
+            <div id='distance_button_div'>
+                <button id='distance_button'>Measure Distance</button>
+            </div>
+            <div id='markerposition'>
+                
+                <pre id=distance_kilometer>0.000 km</pre>
+                <pre id=distance_nauticalmile>0.000 nm</pre>
+                
+            </div>
+            
+            <div id='maptile'>
+                <button id='tile' onclick="change_tile()" !disabled>Satellite<br/>Map</button>
+            </div>
+		</div>
+        
+		<script>
+			//Auto size the screen
+			//windyty 會自行處理?
+			//autosize();
+
+			//Load lines
+			initial_line();            
+            
+			//Mapbox API token
+			L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5bHpmN3ZnNm11dSJ9.1kSYNfN3L-uzTzqmBsIekw';
+			
+            //tilelayer style variable
+            var tile_group = L.layerGroup(),
+                
+                tile_satellite = L.mapbox.tileLayer("mapbox.streets-satellite", {format: 'jpg70', zIndex: 0}),
+            
+                tile_dark = L.mapbox.tileLayer("mapbox.dark", {format: 'jpg70', zIndex: 1000}),
+            
+                tile_switch = tile_group.hasLayer(tile_satellite),
+            
+                tile_switch_empty = true;
+            
+			//Route geojson layergroup
+			var geolayerGroup = L.layerGroup();
+
+			//ECA geojson layergroup
+			var ECAlayerGroup = L.layerGroup();
+
+			//ECA geojson layer
+			var ECAsNOxLayer = L.mapbox.featureLayer().loadURL("eca.geojson")
+								.on('ready', function(){
+									this.setStyle({
+										"color": "white",
+										"weight": "2"
+								    })
+								}).addTo(ECAlayerGroup);
+            
+			ECAsNOxLayer.on('mouseover', function(){
+                                            this.setStyle({
+                                                "color": "#ff0000",
+                                                "weight": "5"
+                                            })
+						                 });
+			ECAsNOxLayer.on('mouseout', function(){
+                                            this.setStyle({
+                                                "color": "white",
+                                                "weight": "2"
+                                            })
+                                        });
+
+            //marker distance layers
+            var markerlayerGroup = new L.layerGroup();
+            var markerlayer = new L.mapbox.featureLayer();
+            var linelayer = new L.mapbox.featureLayer();
+            
+            var distance_button_switch = false;
+
+            var dkilometer = document.getElementById('distance_kilometer'),
+                dnauticalmile = document.getElementById('distance_nauticalmile'); 
+
+            var center_position = [25.154, 121.377];
+            
+            var marker1 = L.marker(center_position, {
+                    draggable: true,
+                    icon: L.mapbox.marker.icon({
+                        'marker-size': 'large',
+                        'marker-symbol': 'ferry',
+                        'marker-color': '#FF8040',
+                        }),
+                    zIndexOffset: 50
+                }),
+
+                marker2 = L.marker(center_position, {
+                    draggable: true,
+                    icon: L.mapbox.marker.icon({
+                        'marker-size': 'large',
+                        'marker-symbol': 'harbor',
+                        'marker-color': '#FF8040',
+                        }),
+                    zIndexOffset: 49
+                });
+
+            var distanceline = L.polyline([center_position, center_position], {zIndex: 200});
+            
+            //
+            ////animation marker
+            
+            var j = 0,
+                count = 0,
+                t = 500,
+                timer,
+                marker3;
+            
+            var animate_marker = {};
+            var animatelayer = L.mapbox.featureLayer();
+            
+            
+			// 初始相關變數值
+			var p = "";     //String variable for for the data path of the route
+			var geo = "";   //Variable for geojson data path
+			var gpx = "";   //Variable for gpx data path
+			var csv = "";   //Variable for csv data path
+
+			//起始 windyty
+			var windytyInit = {
+				// Required: API key
+				key: 'f647J2Y278pjYbG',
+				// Optional: Initial state of the map
+				lat: 25.154,
+				lon: 121.377,
+				zoom: 6
+            };
+
+			// windyty主函式
+			function windytyMain(map) {
+                
+                //Default mapbox tile
+                map.setView([25.154, 121.377], 6);
+                
+                //Mapbox scale
+                L.control.scale({position: 'topleft', maxWidth: 200}).addTo(map);
+				
+                //ECA layer
+                ECAlayerGroup.addTo(map);
+                
+                //Route layer
+				geolayerGroup.addTo(map);
+                
+                //Measure marker layers
+                markerlayerGroup.addTo(map);
+                
+                markerlayer.addTo(markerlayerGroup);
+                linelayer.addTo(markerlayerGroup);
+                
+                //Tile layers
+                tile_group.addTo(map);
+                
+                //Distance button control
+                var distance_button1 = document.getElementById("distance_button");
+                distance_button1.onclick = function(){distance_button();};
+                
+                //Route button control
+				var route = document.getElementById("route");
+				route.onchange = function(){
+					createroute();
+					};
+				
+				var resetButton = document.getElementById('reset');
+				resetButton.onclick = function(){
+					clearroute();
+					};							
+				
+				var now = new Date();
+				document.getElementById("calender").value = now.toISOString() + ' (UTC)';
+				
+				var range = document.getElementById('slider');
+				range.max = W.timeline.end;
+                
+                //range.min sets getTime() to get the present time
+				range.min = now.getTime();
+                range.addEventListener('change', time_change);
+				
+                function time_change(){					  
+				    document.getElementById("calender").value = new Date(parseInt(this.value)).toISOString() + ' (UTC)';
+                    W.setTimestamp(event.target.value);
+                };
+					
+				// 選擇 windyty overlay
+				windytyOverlaySelect();				
+				
+				
+				// 選擇 windyty overlay
+				function windytyOverlaySelect(){				
+					var btnWind = document.getElementById('windytyButtonWind');
+					btnWind.onclick = function(){
+						W.setOverlay("wind");												
+						setButtonState();
+						this.style.opacity='1';
+                        document.getElementById("tile").disabled = false;
+				    };
+
+					var btnTemp = document.getElementById("windytyButtonTemp");
+					btnTemp.onclick = function(){
+						W.setOverlay("temp");												
+						setButtonState();
+						this.style.opacity='1';	
+                        document.getElementById("tile").disabled = false;
+				    };
+
+					var btnPressure = document.getElementById("windytyButtonPressure");
+					btnPressure.onclick = function(){
+						W.setOverlay("pressure");						
+						setButtonState();
+						this.style.opacity='1';
+                        document.getElementById("tile").disabled = false;
+				    };
+										
+					var btnWaves = document.getElementById("windytyButtonWaves");
+					btnWaves.onclick = function(){
+						W.setOverlay("waves");						
+						setButtonState();						
+						this.style.opacity='1';
+                        tile_switch_empty = false;
+                        tile_switch = false;
+                        tile_group.clearLayers();
+                        change_tile();
+                        document.getElementById("tile").disabled = true;
+					};
+					
+					var btnCurrents = document.getElementById("windytyButtonCurrents");
+					btnCurrents.onclick = function(){
+						W.setOverlay("currents");						
+						setButtonState();
+						document.getElementById("timeline").style.display="none";
+						this.style.opacity='1';
+                        tile_switch_empty = false;
+                        tile_switch = false;
+                        tile_group.clearLayers();
+                        change_tile();
+                        document.getElementById("tile").disabled = true;
+					};
+					
+					function setButtonState(){
+						btnWind.style.opacity='0.3';
+						btnTemp.style.opacity='0.3';
+						btnPressure.style.opacity='0.3';
+						btnCurrents.style.opacity='0.3';
+						btnWaves.style.opacity='0.3';
+						now = new Date();
+						range.max = W.timeline.end;
+        		        //range.min use getTime() to set the present time
+						range.min = now.getTime();						
+						document.getElementById("timeline").style.display="block";
+				    };
+					
+				};//End of windytyOverlaySelect()
+                
+                //M
+                //Marker Distance
+                
+                var kilometer = (marker1.getLatLng().distanceTo(marker2.getLatLng())/1000).toFixed(3), 
+                    nauticalmile = (kilometer / 1.852).toFixed(3);
+                
+                marker1.on('move', distance);
+                marker2.on('move', distance);
+
+                map.on('move', center_marker_position);
+
+                function center_marker_position(){
+                    
+                    if(!distance_button_switch){
+                        
+                        center_position = map.getCenter();
+
+                        marker1.setLatLng(center_position);
+
+                        marker2.setLatLng(center_position);
+
+                        distanceline.setLatLngs([center_position, center_position]);
+                    };   
+                };
+                
+                function distance_button(){
+                    if(distance_button_switch){
+                        markerlayer.clearLayers();
+                        linelayer.clearLayers();
+                        dkilometer.innerHTML = '0.000 km';
+                        dnauticalmile.innerHTML = "0.000 nm";
+                        distance_button_switch = false;
+                    }
+                    else{
+                        marker1.addTo(markerlayer);
+                        marker2.addTo(markerlayer);
+                        distanceline.addTo(linelayer);
+                        dkilometer.innerHTML = kilometer + ' km';
+                        dnauticalmile.innerHTML = nauticalmile + " nm";
+                        distance_button_switch = true;
+                    };
+                };
+
+                function distance(){
+
+                    var m1 = marker1.getLatLng(),
+                        m2 = marker2.getLatLng();
+
+                    kilometer = (m1.distanceTo(m2)/1000).toFixed(3), 
+                    nauticalmile = (kilometer / 1.852).toFixed(3);
+
+                    dkilometer.innerHTML = kilometer + ' km';
+                    dnauticalmile.innerHTML = nauticalmile + " nm";
+
+                    linelayer.clearLayers();
+
+                    distanceline = L.polyline([[m1.lat, m1.lng], [m2.lat, m2.lng]]);
+                    
+                    distanceline.setStyle({color: 'white'});
+                    
+                    if(tile_switch_empty){
+                        distanceline.setStyle({color: 'black'}); 
+                    }
+                    else{
+                        distanceline.setStyle({color: 'white'});
+                    };
+
+                    if(distance_button_switch){
+
+                        distanceline.addTo(linelayer);
+
+                    };
+                };
+                //Marker Distance
+                //M
+                
+                
+                //@@
+                //Mouse position code starts
+                var mousemove = document.getElementById('mousemove');
+
+                map.on('mousemove', cursor);
+                       
+                function cursor(a){
+                    var lat = Math.abs(a.latlng.lat.toPrecision(9)),
+                        lng = Math.abs(a.latlng.wrap(-180, 180).lng.toPrecision(9)),
+                        latdeg = parseInt(lat),
+                        lngdeg = parseInt(lng),
+                        latf = Math.abs(lat - parseFloat(latdeg)),
+                        lngf = Math.abs(lng - parseFloat(lngdeg)),
+                        latmin = (latf * 60).toPrecision(5),
+                        lngmin = (lngf * 60).toPrecision(5);
+                    var we = '', ns = '';
+
+                    if(a.latlng.lat>=0){
+                        ns = 'N';
+                    }
+                    else{
+                        ns = 'S';
+                    }
+
+                    if(a.latlng.wrap(-180, 180).lng>=0){
+                        we = 'E';
+                    }
+                    else{
+                        we = 'W';
+                    }
+
+                    window[a.type].innerHTML = latdeg.toString() + '° ' + latmin.toString() + "' " + ns + ', ' + lngdeg.toString() + '° ' + lngmin.toString() + "' " + we;
+
+                };
+                //Mouse position code ends
+                //@@
+                
+                
+                //
+                ////animation marker
+                
+                //load geojson to fetch coordinates
+                function load(url1){
+                    animatelayer.clearLayers();
+                    $.ajax({
+                        headers: {
+                            'Accept': 'application'
+                        },
+                        xhrFields: {
+                          withCredentials: false
+                        },
+                        dataType: 'json',
+                        url: url1,
+                        success: animation_marker
+                        });
+                };
+
+                function animation_marker(geojson){
+                    marker3 = L.marker(
+                              [geojson.features[0].geometry.coordinates[1], geojson.features[0].geometry.coordinates[0]], {
+                                    icon: L.mapbox.marker.icon({
+                                      'marker-size': 'large',
+                                      'marker-color': '#f86767',
+                                      'marker-symbol': 'ferry'
+                                      }),
+                                    zIndexOffset: 51
+                                }).addTo(animatelayer);
+                    animatelayer.addTo(geolayerGroup);
+                    animate_marker = geojson;
+                    tick();
+                };
+
+                function tick(){
+
+                    count = animate_marker.features[j].geometry.type.length;
+                    if(count == 5){
+
+                        marker3.setLatLng(L.latLng(
+                            animate_marker.features[j].geometry.coordinates[1], animate_marker.features[j].geometry.coordinates[0]
+                        ));
+                        ++j;
+                        timer = setTimeout(tick, t);
+                    }
+                    else{
+                        j = 0;
+                        clearTimeout(timer);
+                        timer = setTimeout(tick, t);
+                    };
+
+
+                };
+
+                ////animation marker
+                //
+
+                function createroute(){
+                    geo = "GeoJSON/" + p + route.value;                
+                    gpx = "GPX/" + p + route.value.replace('.geojson', '.gpx');
+                    csv = "CSV/" + p + route.value.replace('.geojson', '.csv');
+                    
+                    var geoLayer = new L.mapbox.featureLayer();
+                    geoLayer.loadURL(geo).addTo(geolayerGroup);
+                    
+                    geoLayer.on('ready', function() {
+                                        map.fitBounds(geoLayer.getBounds());
+                                    });
+                    
+                    document.getElementById("GPX").disabled = false;
+                    document.getElementById("CSV").disabled = false;
+                    //   
+                    //animarion marker
+                    j = 0;
+                    clearTimeout(timer);
+                    load(geo);
+                    //
+                    //
+                };
+                
+                
+                function clearroute(){
+                    geolayerGroup.clearLayers();
+                    map.setView([25.154, 121.377], 6);
+                    P = "";
+                    geo = "";
+                    gpx = "";
+                    csv = "";
+                    document.getElementById("GPX").disabled = true;
+                    document.getElementById("CSV").disabled = true;
+                    //   
+                    //animarion marker
+                    j = 0;
+                    count = 0;
+                    animate_marker = {};
+                    clearTimeout(timer);
+                    timer = null;
+                    marker3 = null;
+                    //
+                    //
+                    now = new Date();
+                    range.min = now.getTime();
+                    range.value = range.min;
+                    W.setTimestamp(now.getTime());
+                    document.getElementById("calender").value = now.toISOString() + '(UTC)';
+                    initial_line();
+                };
+                
+			};//End of windytyMain()
+			
+
+            
+            
+		</script>
+		<script async defer src="http://api.windyty.com/v2.1/boot.js"></script>
+	</body>
+</html>
