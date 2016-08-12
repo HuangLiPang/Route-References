@@ -269,26 +269,36 @@ function changeline() {
 
 function change_tile(){
                 
-                if(tile_switch){
+                if(tile_switch && !tile_switch_empty){
                     tile_group.removeLayer(tile_satellite);
                     
-                    tile_street.addTo(tile_group);
+                    tile_dark.addTo(tile_group);
+                    
+                    document.getElementById("tile").innerHTML = "Normal</br>Map";
+                    
+                    distanceline.setStyle({color: 'white'});
+                    
+                    tile_switch = tile_group.hasLayer(tile_satellite);
+                }
+                else if(!tile_switch && !tile_switch_empty){
+                    tile_group.removeLayer(tile_dark);
                     
                     document.getElementById("tile").innerHTML = "Satellite</br>Map";
                     
                     distanceline.setStyle({color: 'black'});
                     
-                    tile_switch = tile_group.hasLayer(tile_satellite);
+                    tile_switch_empty = true;
                 }
                 else{
-                    tile_group.removeLayer(tile_street);
                     
                     tile_satellite.addTo(tile_group);
                     
-                    document.getElementById("tile").innerHTML = "Streets</br>Map";
+                    document.getElementById("tile").innerHTML = "Dark</br>Map";
                     
                     distanceline.setStyle({color: 'white'});
                     
                     tile_switch = tile_group.hasLayer(tile_satellite);
+                    
+                    tile_switch_empty = false;
                 };
             };
