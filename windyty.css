@@ -112,30 +112,6 @@ body{
     border-radius: 0;
 }
 
-.windytyButton {
-	position: absolute;
-	background-color: black;
-	color : white;
-    top: 4%;
-    border : 0px;
-    width: 80px;
-    height: 32px;
-    margin: 0px;
-    padding: 0px;
-    opacity: 0.3;
-    z-index: 20;
-	border-radius: 6px;
-	cursor: pointer;
-    -webkit-border-radius: 6px;
-	font-family: sans-serif;
-	font-size: 16px;
-}
-.windytyButton:hover {
-	transition-duration: 1s;
-	background-color: white;
-	color : black;
-}
-
 input[type=range] {
     -webkit-appearance: none; 
     /* Hides the slider so that custom slider can be made */
@@ -186,71 +162,59 @@ input[type=range]::-webkit-slider-thumb {
 	z-index: 20;
 }
 
+.mouseposition{
+  font-family: sans-serif;
+  font-size: 16px;
+  background:rgba(0,0,0,0.5);
+  color:#fff;
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  padding: 10px;
+  z-index: 5;
+  border-radius: 3px;
+  }
+
+.mousemove{
+    padding: 0px;
+    margin: 0px;
+}
+
+#mousemove{
+    background:rgba(0,0,0,0);
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #fff;
+}
+
 #markerposition{
   font-family: sans-serif;
   background:rgba(0,0,0,0.5);
   color:#fff;
   position: absolute;
-  bottom: 260px;
+  bottom: 170px;
   left: 10px;
   padding: 10px;
   z-index: 5;
   border-radius: 3px;
 }
 
-.mouseposition{
-  font-family: sans-serif;
-  background:rgba(0,0,0,0.5);
-  color:#fff;
-  position: absolute;
-  top: 10%;
-  right: 10px;
-  padding: 10px;
-  z-index: 5;
-  border-radius: 3px;
-  }
-
-.mouseclick, .mousemove{
-    padding: 0px;
-    margin: 0px;
-}
-
-#mouseclick1, #mousemove{
-    font-size: 16px;
-    font-family: sans-serif;
-}
-
-#distance_button_div{
-    position: absolute;
-    bottom: 170px;
-    left: 10px;
-    width: 80px;
-    height: 80px;
-    margin: 0px;
-    padding: 0px;
-    border-radius: 0;
-    opacity: 0.75;
-    z-index: 5;
-}
-
-#distance_button{
-    font-size: 16px;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    border-radius: 0;
-}
-
 #distance_kilometer{
+    background:rgba(0,0,0,0);
+    color: #fff;
     font-size: 16px;
     font-family: sans-serif;
     padding: 0px;
     margin: 0px;
+    border:0px;
 }
+
 #distance_nauticalmile{
+    background:rgba(0,0,0,0);
     font-size: 16px;
     font-family: sans-serif;
     padding: 0px;
     margin: 0px;
+    border: 0px;
+    color: #fff;
 }
