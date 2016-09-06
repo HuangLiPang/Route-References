@@ -42,6 +42,7 @@
 			<div id="timeline">
 				<input type="range" id="slider" value="0">
 				<input type="text" id="calender" value="">
+                <!--<p id="date"></p>-->
 			</div>
 			
             <div id='mouseposition' class='mouseposition'>
@@ -54,9 +55,11 @@
                 <pre id=distance_nauticalmile>0.000 nm</pre>
                 
             </div>
-            
-            <div id='maptile'>
-                <button id='tile' onclick="change_tile()" !disabled>Satellite<br/>Map</button>
+            <div id='flaticon'>
+                Icons from 
+                <a href="http://www.flaticon.com" title="Flaticon">
+                   Flaticon
+                </a> 
             </div>
 		</div>
         
@@ -220,8 +223,21 @@
                                                     setButtonState();
                                                     document.getElementById("tile").disabled = false;
                                                 },
-                                            title: "Temp",
+                                            title: "Temperature",
                                             icon: '<img src="/Icons/temp.png">'
+                                        }]
+                                    }),
+                    
+                rain_button = L.easyButton({
+                                        states: [{
+                                            stateName: "rain-button",
+                                            onClick: function(){
+                                                    W.setOverlay("clouds");												
+                                                    setButtonState();
+                                                    document.getElementById("tile").disabled = false;
+                                                },
+                                            title: "Rain",
+                                            icon: '<img src="/Icons/rain.png">'
                                         }]
                                     }),
                     
@@ -254,6 +270,7 @@
                                             icon: '<img src="/Icons/waves.png">'
                                         }]
                                     }),
+                    
                 currents_button = L.easyButton({
                                         states: [{
                                             stateName: "currents-button",
@@ -272,7 +289,7 @@
                                         }]
                                     });
                 
-                L.easyBar([wind_button, temp_button, pressure_button, waves_button, currents_button]).addTo(map);
+                L.easyBar([wind_button, temp_button, rain_button, pressure_button, waves_button, currents_button]).addTo(map);
                 
                 var measuring_button = L.easyButton({
                                         states: [{
@@ -281,7 +298,16 @@
                                             title: "Measure Distance",
                                             icon: '<img src="/Icons/measuring.png">'
                                         }]
-                                    }).addTo(map);
+                                    }).addTo(map),
+                    
+                    maptile_button = L.easyButton({
+                                            states: [{
+                                                stateName: "maptile-button",
+                                                onClick: change_tile,
+                                                title: "Maps",
+                                                icon: '<img src="/Icons/maptile.png">'
+                                            }]
+                                        }).addTo(map);
                 
                 //LayerGroups
                 ECAlayerGroup.addTo(map);       //ECA layerGroup

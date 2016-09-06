@@ -270,20 +270,18 @@ function changeline() {
 function change_tile(){
                 
                 if(tile_switch && !tile_switch_empty){
+                   
                     tile_group.removeLayer(tile_satellite);
                     
                     tile_dark.addTo(tile_group);
-                    
-                    document.getElementById("tile").innerHTML = "Normal</br>Map";
                     
                     distanceline.setStyle({color: 'white'});
                     
                     tile_switch = tile_group.hasLayer(tile_satellite);
                 }
                 else if(!tile_switch && !tile_switch_empty){
-                    tile_group.removeLayer(tile_dark);
                     
-                    document.getElementById("tile").innerHTML = "Satellite</br>Map";
+                    tile_group.removeLayer(tile_dark);
                     
                     distanceline.setStyle({color: 'black'});
                     
@@ -292,8 +290,6 @@ function change_tile(){
                 else{
                     
                     tile_satellite.addTo(tile_group);
-                    
-                    document.getElementById("tile").innerHTML = "Dark</br>Map";
                     
                     distanceline.setStyle({color: 'white'});
                     
