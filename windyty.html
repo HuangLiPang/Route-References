@@ -24,6 +24,7 @@
 	</head>
 	<body>
 		<div id="container">
+            
 			<div id="menu">
 					<select id="line" onchange="changeline()" class="menu_line"></select>
 
@@ -201,13 +202,16 @@
                 $(".leaflet-control-zoom-out").text("");
                 
                 //
-                //Right side buttons                
+                //Right side buttons
+                
                 var wind_button = L.easyButton({
                                         states: [{
                                             stateName: "wind-button",
                                             onClick: function(){
                                                     W.setOverlay("wind");												
                                                     setButtonState();
+                                                    map_tile_switch = false;
+                                                    map_tile_change();
                                                     document.getElementById("tile").disabled = false;
                                                 },
                                             title: "Wind",
@@ -215,79 +219,89 @@
                                         }]
                                     }),
                 
-                temp_button = L.easyButton({
-                                        states: [{
-                                            stateName: "temp-button",
-                                            onClick: function(){
-                                                    W.setOverlay("temp");												
-                                                    setButtonState();
-                                                    document.getElementById("tile").disabled = false;
-                                                },
-                                            title: "Temperature",
-                                            icon: '<img src="/Icons/temp.png">'
-                                        }]
-                                    }),
-                    
-                rain_button = L.easyButton({
-                                        states: [{
-                                            stateName: "rain-button",
-                                            onClick: function(){
-                                                    W.setOverlay("clouds");												
-                                                    setButtonState();
-                                                    document.getElementById("tile").disabled = false;
-                                                },
-                                            title: "Rain",
-                                            icon: '<img src="/Icons/rain.png">'
-                                        }]
-                                    }),
-                    
-                pressure_button = L.easyButton({
-                                        states: [{
-                                            stateName: "pressure-button",
-                                            onClick: function(){
-                                                    W.setOverlay("pressure");												
-                                                    setButtonState();
-                                                    document.getElementById("tile").disabled = false;
-                                                },
-                                            title: "Pressure",
-                                            icon: '<img src="/Icons/pressure.png">'
-                                        }]
-                                    }),
-                    
-                waves_button = L.easyButton({
-                                        states: [{
-                                            stateName: "waves-button",
-                                            onClick: function(){
-                                                    W.setOverlay("waves");												
-                                                    setButtonState();
-                                                    tile_switch_empty = false;
-                                                    tile_switch = false;
-                                                    tile_group.clearLayers();
-                                                    change_tile();
-                                                    document.getElementById("tile").disabled = true;
-                                                },
-                                            title: "Waves",
-                                            icon: '<img src="/Icons/waves.png">'
-                                        }]
-                                    }),
-                    
-                currents_button = L.easyButton({
-                                        states: [{
-                                            stateName: "currents-button",
-                                            onClick: function(){
-                                                    W.setOverlay("currents");												
-                                                    setButtonState();
-                                                    document.getElementById("timeline").style.display="none";
-                                                    tile_switch_empty = false;
-                                                    tile_switch = false;
-                                                    tile_group.clearLayers();
-                                                    change_tile();
-                                                    document.getElementById("tile").disabled = true;
-                                                },
-                                            title: "Currents",
-                                            icon: '<img src="/Icons/currents.png">'
-                                        }]
-                                    });
+                    temp_button = L.easyButton({
+                                            states: [{
+                                                stateName: "temp-button",
+                                                onClick: function(){
+                                                        W.setOverlay("temp");												
+                                                        setButtonState();
+                                                        map_tile_switch = false;
+                                                        map_tile_change();
+                                                        document.getElementById("tile").disabled = false;
+                                                    },
+                                                title: "Temperature",
+                                                icon: '<img src="/Icons/temp.png">'
+                                            }]
+                                        }),
+
+                    rain_button = L.easyButton({
+                                            states: [{
+                                                stateName: "rain-button",
+                                                onClick: function(){
+                                                        W.setOverlay("clouds");												
+                                                        setButtonState();
+                                                        map_tile_switch = false;
+                                                        map_tile_change();
+                                                        document.getElementById("tile").disabled = false;
+                                                    },
+                                                title: "Rain",
+                                                icon: '<img src="/Icons/rain.png">'
+                                            }]
+                                        }),
+
+                    pressure_button = L.easyButton({
+                                            states: [{
+                                                stateName: "pressure-button",
+                                                onClick: function(){
+                                                        W.setOverlay("pressure");	
+                                                        setButtonState(); 
+                                                        map_tile_switch = false;
+                                                        map_tile_change();
+                                                        document.getElementById("tile").disabled = false;
+                                                    },
+                                                title: "Pressure",
+                                                icon: '<img src="/Icons/pressure.png">'
+                                            }]
+                                        }),
+
+                    waves_button = L.easyButton({
+                                            states: [{
+                                                stateName: "waves-button",
+                                                onClick: function(){
+                                                        W.setOverlay("waves");												
+                                                        setButtonState();
+                                                        tile_switch_empty = false;
+                                                        tile_switch = false;
+                                                        tile_group.clearLayers();
+                                                        change_tile();
+                                                        map_tile_switch = true;
+                                                        map_tile_change();                                                      
+                                                        document.getElementById("tile").disabled = true;
+                                                    },
+                                                title: "Waves",
+                                                icon: '<img src="/Icons/waves.png">'
+                                            }]
+                                        }),
+
+                    currents_button = L.easyButton({
+                                            states: [{
+                                                stateName: "currents-button",
+                                                onClick: function(){
+                                                        W.setOverlay("currents");												
+                                                        setButtonState();
+                                                        document.getElementById("timeline").style.display="none";
+                                                        tile_switch_empty = false;
+                                                        tile_switch = false;
+                                                        tile_group.clearLayers();
+                                                        change_tile();
+                                                        map_tile_switch = true;
+                                                        map_tile_change();
+                                                        document.getElementById("tile").disabled = true;
+                                                    },
+                                                title: "Currents",
+                                                icon: '<img src="/Icons/currents.png">'
+                                            }]
+                                        });
                 
                 L.easyBar([wind_button, temp_button, rain_button, pressure_button, waves_button, currents_button]).addTo(map);
                 
@@ -307,7 +321,24 @@
                                                 title: "Maps",
                                                 icon: '<img src="/Icons/maptile.png">'
                                             }]
-                                        }).addTo(map);
+                                        }).addTo(map),
+                    map_tile_switch = true,
+                    map_tile_count = 1;
+                
+                function map_tile_change(){
+                    if(map_tile_switch){
+                        if(map_tile_count == 1){
+                            maptile_button.removeFrom(map);
+                            map_tile_count --;
+                        }
+                    }
+                    else if(!map_tile_switch){
+                            if(map_tile_count == 0){
+                                maptile_button.addTo(map);
+                                map_tile_count ++;
+                            }
+                    }
+                };
                 
                 //LayerGroups
                 ECAlayerGroup.addTo(map);       //ECA layerGroup
