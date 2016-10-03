@@ -16,34 +16,33 @@
         <script type="text/javascript" src="easybutton.js"></script>
 
 		<link type="text/css" rel="stylesheet" href="windyty.css" />
+        <link type="text/css" rel="stylesheet" href="timeline.css" />
         <link type="text/css" rel="stylesheet" href="easybutton.css" />
 		
         <link rel='stylesheet' href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' />
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
         
 	</head>
 	<body>
-		<div id="container">
-            
-			<div id="menu">
-					<select id="line" onchange="changeline()" class="menu_line"></select>
+		<div data-role='page' id="container">
+			<div data-role='header' id="menu">
+				<select id="line" onchange="changeline()" class="menu_line"></select>
+				<select id="route" class="menu_route" disabled>
+				    <option value="#">Route</option>
+				</select>
 
-					<select id="route" class="menu_route" disabled>
-								<option value="#">Route</option>
-					</select>
-
-					<button id="GPX" onclick="downloadGPX()" class="menu_GPX" disabled> Download GPX</button>
-					<button id="CSV" onclick="downloadCSV()" class="menu_CSV" disabled>Download CSV</button>
-
-					<button id="reset" class="menu_RESET">Reset</button>
+				<button id="GPX" onclick="downloadGPX()" class="menu_GPX" disabled> Download GPX</button>
+				<button id="CSV" onclick="downloadCSV()" class="menu_CSV" disabled>Download CSV</button>
+				<button id="reset" class="menu_RESET">Reset</button>
 			</div>
 
-			<div id="windyty"></div>
+			<div data-role='main' id="windyty"></div>
             
 			<div id="timeline">
-				<input type="range" id="slider" value="0">
-				<input type="text" id="calender" value="">
-                <!--<p id="date"></p>-->
+                <div data-role='rangeslider'>
+				    <input type="range" id="slider" value="0" data-popup-enabled="true" data-highlight="true">
+                </div>
+				<input  id="timepointer" value="">
+                <span id='timetip'>timetip</span>
 			</div>
 			
             <div id='mouseposition' class='mouseposition'>
@@ -58,28 +57,31 @@
             </div>
             <div id='flaticon'>
                 Icons from 
-                <a href="http://www.flaticon.com" title="Flaticon">
+                <a href="http://www.flaticon.com" title="Flaticon" target="_blank">
                    Flaticon
                 </a> 
             </div>
+            
+            <div id='calendarpointer'>
+                <div id='calendarpointer-pointer'></div>
+            </div>
+                        
+            <div id='calendar'>
+                <table id='calendar-table'>
+                    <tr id='calendar-table-tr'>
+                        <td id='calendar-table-0'></td>
+                        <td id='calendar-table-1'></td>
+                        <td id='calendar-table-2'></td>
+                        <td id='calendar-table-3'></td>
+                        <td id='calendar-table-4'></td>
+                        <td id='calendar-table-5'></td>
+                        <td id='calendar-table-6'></td>
+                    </tr>
+                </table>
+            </div>
 		</div>
-        
-		<script>
-			//Auto size the screen
-			//windyty 會自行處理?
-			//autosize();
-           
-            /*
-            var test = L.Class.extend({
-                initialize: function(){
-                    return 1;
-                },
-            });
-            
-            var a = new test();
-            document.getElementById('mousemove').innerHTML = a;
-            */
-            
+        <div id='test'></div>
+       	<script>
 			//Load lines
 			initial_line();            
             
@@ -177,7 +179,7 @@
 			var geo = "";   //Variable for geojson data path
 			var gpx = "";   //Variable for gpx data path
 			var csv = "";   //Variable for csv data path
-
+            
 			//起始 windyty
 			var windytyInit = {
 				// Required: API key
@@ -290,6 +292,8 @@
                                                         W.setOverlay("currents");												
                                                         setButtonState();
                                                         document.getElementById("timeline").style.display="none";
+                                                        document.getElementById("calendar").style.display="none";
+                                                        document.getElementById("calendarpointer").style.display="none";
                                                         tile_switch_empty = false;
                                                         tile_switch = false;
                                                         tile_group.clearLayers();
@@ -360,10 +364,63 @@
 					clearroute();
 					};							
 				
+                /*
 				var now = new Date();
 				document.getElementById("calender").value = now.toISOString() + ' (UTC)';
-				
-				var range = document.getElementById('slider');
+				*/
+                //
+                ////
+                
+                var weekdays = ['Sun.', 'Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.'],
+                    months = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'];
+                var now = new Date(),
+                    presentHour = now.getHours(),
+                    presentHourSec = presentHour * 3600000,
+                    timelineEnd = 7 * 24 * 3600000,
+                    presentWeekday = now.getDay(),
+                    presentDate = now.getDate(),
+                    presentMonth = now.getMonth(),
+                    presentTime = months[presentMonth] + ' ' +  presentDate + '  ' + weekdays[presentWeekday] + ' ' + presentHour + ':00';
+                
+                var range = document.getElementById('slider');
+				range.min = W.timeline.start;
+                range.step = 3600000;
+                range.max = W.timeline.start + timelineEnd;
+                range.value = W.timeline.start + presentHourSec;
+                
+                var presentIntTime = parseInt(range.value),
+                    calendar_pointer = (((parseInt(range.value) - W.timeline.start) / 3600000) / 168) * 100;
+                
+                range.addEventListener('input', time_change);
+                
+                document.getElementById("timepointer").value = presentTime;
+                document.getElementById('calendarpointer-pointer').style.left = calendar_pointer + '%';
+                
+                function time_change(){
+                    var slider_time = new Date(parseInt(event.target.value))
+                    document.getElementById("timepointer").value = months[slider_time.getMonth()] + ' ' +  slider_time.getDate() + '  ' + weekdays[slider_time.getDay()] + ' ' + slider_time.getHours() + ':00';
+                    W.setTimestamp(event.target.value);
+                    
+                    var calendar_pointer_left = (((parseInt(event.target.value) - W.timeline.start) / 3600000) / 168) * 100;
+                    
+                    document.getElementById('calendarpointer-pointer').style.left = calendar_pointer_left + '%';
+                };
+                
+                for(i = 0; i <= 6; i++){
+                    var j = (i + presentWeekday) % 7,
+                        table_name = 'calendar-table-',
+                        date_counter = i * 86400000;
+                    presentDate = new Date(W.timeline.start + date_counter).getDate();
+                    table_name += i;
+                    document.getElementById(table_name).innerHTML = weekdays[j] + ' ' + presentDate;
+                }
+                
+                
+                ////
+				//
+                
+                /*
+                var range = document.getElementById('slider');
 				range.max = W.timeline.end;
                 
                 //range.min sets getTime() to get the present time
@@ -374,13 +431,14 @@
 				    document.getElementById("calender").value = new Date(parseInt(this.value)).toISOString() + ' (UTC)';
                     W.setTimestamp(event.target.value);
                 };			
-                
+                */
                 function setButtonState(){
-						now = new Date();
-						range.max = W.timeline.end;
+						range.max = W.timeline.start + timelineEnd;
         		        //range.min use getTime() to set the present time
-						range.min = now.getTime();						
-						document.getElementById("timeline").style.display="block";
+						range.min = W.timeline.start;						
+						document.getElementById("timeline").style.display = "block";
+                        document.getElementById("calendar").style.display = "block";
+                        document.getElementById("calendarpointer").style.display = "block";
 				    };
                 //M
                 //Marker Distance
@@ -588,7 +646,7 @@
                     document.getElementById("GPX").disabled = true;
                     document.getElementById("CSV").disabled = true;
                     //   
-                    //animarion marker
+                    //animation marker
                     j = 0;
                     count = 0;
                     animate_marker = {};
@@ -597,11 +655,10 @@
                     marker3 = null;
                     //
                     //
-                    now = new Date();
-                    range.min = now.getTime();
-                    range.value = range.min;
+                    range.value = range.value = W.timeline.start + presentHourSec;
                     W.setTimestamp(now.getTime());
-                    document.getElementById("calender").value = now.toISOString() + '(UTC)';
+                    document.getElementById("timepointer").value = presentTime;
+                    document.getElementById('calendarpointer-pointer').style.left = calendar_pointer + '%';
                     initial_line();
                 };
                 
