@@ -1,197 +1,15 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Route References</title>
-
-		<!-- Include meta tag to ensure proper rendering and touch zooming -->
-		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
-        
-		<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="http://cdn.leafletjs.com/leaflet-0.7.7/leaflet.js?2"></script>   
-        
-		<script type="text/javascript" src="route.js"></script>
-		<script type="text/javascript" src="map_function.js"></script>
-		<script type="text/javascript" src="mobile_detect.js"></script>
-        <script type="text/javascript" src="easybutton.js"></script>
-
-		<link type="text/css" rel="stylesheet" href="windyty.css" />
-        <link type="text/css" rel="stylesheet" href="timeline.css" />
-        <link type="text/css" rel="stylesheet" href="easybutton.css" />
-		
-        <link rel='stylesheet' href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' />
-        
-	</head>
-	<body>
-		<div data-role='page' id="container">
-			<div data-role='header' id="menu">
-				<select id="line" onchange="changeline()" class="menu_line"></select>
-				<select id="route" class="menu_route" disabled>
-				    <option value="#">Route</option>
-				</select>
-
-				<button id="GPX" onclick="downloadGPX()" class="menu_GPX" disabled> Download GPX</button>
-				<button id="CSV" onclick="downloadCSV()" class="menu_CSV" disabled>Download CSV</button>
-				<button id="reset" class="menu_RESET">Reset</button>
-			</div>
-
-			<div data-role='main' id="windyty"></div>
-            
-			<div id="timeline">
-                <div data-role='rangeslider'>
-				    <input type="range" id="slider" value="0" data-popup-enabled="true" data-highlight="true">
-                </div>
-				<input  id="timepointer" value="">
-                <span id='timetip'>timetip</span>
-			</div>
-			
-            <div id='mouseposition' class='mouseposition'>
-                <p class='mousemove'>Cursor: <code id='mousemove'></code><br/></p>
-            </div>
-            
-            <div id='markerposition'>
-                
-                <pre id=distance_kilometer>0.000 km</pre>
-                <pre id=distance_nauticalmile>0.000 nm</pre>
-                
-            </div>
-            <div id='flaticon'>
-                Icons from 
-                <a href="http://www.flaticon.com" title="Flaticon" target="_blank">
-                   Flaticon
-                </a> 
-            </div>
-            
-            <div id='calendarpointer'>
-                <div id='calendarpointer-pointer'></div>
-            </div>
-                        
-            <div id='calendar'>
-                <table id='calendar-table'>
-                    <tr id='calendar-table-tr'>
-                        <td id='calendar-table-0'></td>
-                        <td id='calendar-table-1'></td>
-                        <td id='calendar-table-2'></td>
-                        <td id='calendar-table-3'></td>
-                        <td id='calendar-table-4'></td>
-                        <td id='calendar-table-5'></td>
-                        <td id='calendar-table-6'></td>
-                    </tr>
-                </table>
-            </div>
-		</div>
-        <div id='test'></div>
-       	<script>
-			//Load lines
-			initial_line();            
-            
-			//Mapbox API token
-			L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5bHpmN3ZnNm11dSJ9.1kSYNfN3L-uzTzqmBsIekw';
-			
-            //tilelayer style variable
-            var tile_group = L.layerGroup(),
-                
-                tile_satellite = L.mapbox.tileLayer("mapbox.streets-satellite", {format: 'jpg70', zIndex: 0}),
-            
-                tile_dark = L.mapbox.tileLayer("mapbox.dark", {format: 'jpg70', zIndex: 1000}),
-            
-                tile_switch = tile_group.hasLayer(tile_satellite),
-            
-                tile_switch_empty = true;
-            
-			//Route geojson layergroup
-			var geolayerGroup = L.layerGroup();
-
-			//ECA geojson layergroup
-			var ECAlayerGroup = L.layerGroup();
-
-			//ECA geojson layer
-			var ECAsNOxLayer = L.mapbox.featureLayer().loadURL("eca.geojson")
-								.on('ready', function(){
-									this.setStyle({
-										"color": "white",
-										"weight": "2"
-								    })
-								}).addTo(ECAlayerGroup);
-            
-			ECAsNOxLayer.on('mouseover', function(){
-                                            this.setStyle({
-                                                "color": "#ff0000",
-                                                "weight": "5"
-                                            })
-						                 });
-			ECAsNOxLayer.on('mouseout', function(){
-                                            this.setStyle({
-                                                "color": "white",
-                                                "weight": "2"
-                                            })
-                                        });
-
-            //marker distance layers
-            var markerlayerGroup = new L.layerGroup();
-            var markerlayer = new L.mapbox.featureLayer();
-            var linelayer = new L.mapbox.featureLayer();
-            
-            var distance_button_switch = false;
-
-            var dkilometer = document.getElementById('distance_kilometer'),
-                dnauticalmile = document.getElementById('distance_nauticalmile'); 
-
-            var center_position = [25.154, 121.377];
-            
-            var marker1 = L.marker(center_position, {
-                    draggable: true,
-                    icon: L.mapbox.marker.icon({
-                        'marker-size': 'large',
-                        'marker-symbol': 'ferry',
-                        'marker-color': '#FF8040',
-                        }),
-                    zIndexOffset: 50
-                }),
-
-                marker2 = L.marker(center_position, {
-                    draggable: true,
-                    icon: L.mapbox.marker.icon({
-                        'marker-size': 'large',
-                        'marker-symbol': 'harbor',
-                        'marker-color': '#FF8040',
-                        }),
-                    zIndexOffset: 49
-                });
-
-            var distanceline = L.polyline([center_position, center_position], {zIndex: 200});
-            
-            //
-            ////animation marker
-            
-            var j = 0,
-                count = 0,
-                t = 500,
-                timer,
-                marker3;
-            
-            var animate_marker = {};
-            var animatelayer = L.mapbox.featureLayer();
-            
-            
-			// 初始相關變數值
-			var p = "";     //String variable for for the data path of the route
-			var geo = "";   //Variable for geojson data path
-			var gpx = "";   //Variable for gpx data path
-			var csv = "";   //Variable for csv data path
-            
-			//起始 windyty
-			var windytyInit = {
+//起始 windyty
+var windytyInit = {
 				// Required: API key
 				key: 'f647J2Y278pjYbG',
 				// Optional: Initial state of the map
 				lat: 25.154,
 				lon: 121.377,
 				zoom: 6
-            };
+            };            
 
-			// windyty主函式
-			function windytyMain(map) {
+// windyty主函式
+function windytyMain(map) {
                 
                 //Default mapbox tile
                 map.setView([25.154, 121.377], 6);
@@ -205,6 +23,20 @@
                 
                 //
                 //Right side buttons
+                function map_tile_change(){
+                    if(map_tile_switch){
+                        if(map_tile_count == 1){
+                            maptile_button.removeFrom(map);
+                            map_tile_count --;
+                        }
+                    }
+                    else if(!map_tile_switch){
+                            if(map_tile_count == 0){
+                                maptile_button.addTo(map);
+                                map_tile_count ++;
+                            }
+                    }
+                };
                 
                 var wind_button = L.easyButton({
                                         states: [{
@@ -214,7 +46,6 @@
                                                     setButtonState();
                                                     map_tile_switch = false;
                                                     map_tile_change();
-                                                    document.getElementById("tile").disabled = false;
                                                 },
                                             title: "Wind",
                                             icon: '<img src="/Icons/wind.png">'
@@ -229,7 +60,6 @@
                                                         setButtonState();
                                                         map_tile_switch = false;
                                                         map_tile_change();
-                                                        document.getElementById("tile").disabled = false;
                                                     },
                                                 title: "Temperature",
                                                 icon: '<img src="/Icons/temp.png">'
@@ -244,7 +74,6 @@
                                                         setButtonState();
                                                         map_tile_switch = false;
                                                         map_tile_change();
-                                                        document.getElementById("tile").disabled = false;
                                                     },
                                                 title: "Rain",
                                                 icon: '<img src="/Icons/rain.png">'
@@ -259,7 +88,6 @@
                                                         setButtonState(); 
                                                         map_tile_switch = false;
                                                         map_tile_change();
-                                                        document.getElementById("tile").disabled = false;
                                                     },
                                                 title: "Pressure",
                                                 icon: '<img src="/Icons/pressure.png">'
@@ -277,8 +105,7 @@
                                                         tile_group.clearLayers();
                                                         change_tile();
                                                         map_tile_switch = true;
-                                                        map_tile_change();                                                      
-                                                        document.getElementById("tile").disabled = true;
+                                                        map_tile_change();
                                                     },
                                                 title: "Waves",
                                                 icon: '<img src="/Icons/waves.png">'
@@ -289,18 +116,15 @@
                                             states: [{
                                                 stateName: "currents-button",
                                                 onClick: function(){
-                                                        W.setOverlay("currents");												
+                                                        W.setOverlay("currents");			
                                                         setButtonState();
                                                         document.getElementById("timeline").style.display="none";
-                                                        document.getElementById("calendar").style.display="none";
-                                                        document.getElementById("calendarpointer").style.display="none";
                                                         tile_switch_empty = false;
                                                         tile_switch = false;
                                                         tile_group.clearLayers();
                                                         change_tile();
                                                         map_tile_switch = true;
                                                         map_tile_change();
-                                                        document.getElementById("tile").disabled = true;
                                                     },
                                                 title: "Currents",
                                                 icon: '<img src="/Icons/currents.png">'
@@ -309,10 +133,14 @@
                 
                 L.easyBar([wind_button, temp_button, rain_button, pressure_button, waves_button, currents_button]).addTo(map);
                 
+    
                 var measuring_button = L.easyButton({
                                         states: [{
                                             stateName: "measure-button",
-                                            onClick: distance_button,
+                                            onClick: function(){
+                                                distance_button();
+                                                show_marker_position();
+                                            },
                                             title: "Measure Distance",
                                             icon: '<img src="/Icons/measuring.png">'
                                         }]
@@ -328,22 +156,7 @@
                                         }).addTo(map),
                     map_tile_switch = true,
                     map_tile_count = 1;
-                
-                function map_tile_change(){
-                    if(map_tile_switch){
-                        if(map_tile_count == 1){
-                            maptile_button.removeFrom(map);
-                            map_tile_count --;
-                        }
-                    }
-                    else if(!map_tile_switch){
-                            if(map_tile_count == 0){
-                                maptile_button.addTo(map);
-                                map_tile_count ++;
-                            }
-                    }
-                };
-                
+                    
                 //LayerGroups
                 ECAlayerGroup.addTo(map);       //ECA layerGroup
 				geolayerGroup.addTo(map);       //Route layerGroup
@@ -355,21 +168,13 @@
                 
                 //Route button control
 				var route = document.getElementById("route");
-				route.onchange = function(){
-					createroute();
-					};
+				route.onchange = function(){ createroute(); };
 				
 				var resetButton = document.getElementById('reset');
-				resetButton.onclick = function(){
-					clearroute();
-					};							
+				resetButton.onclick = function(){ clearroute(); };							
 				
-                /*
-				var now = new Date();
-				document.getElementById("calender").value = now.toISOString() + ' (UTC)';
-				*/
                 //
-                ////
+                ////timeline
                 
                 var weekdays = ['Sun.', 'Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.'],
                     months = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'];
@@ -383,27 +188,33 @@
                     presentTime = months[presentMonth] + ' ' +  presentDate + '  ' + weekdays[presentWeekday] + ' ' + presentHour + ':00';
                 
                 var range = document.getElementById('slider');
-				range.min = W.timeline.start;
-                range.step = 3600000;
+				range.min = W.timeline.start;   
+                range.step = 3600000;   //3600000 seconds = 1 hour
                 range.max = W.timeline.start + timelineEnd;
                 range.value = W.timeline.start + presentHourSec;
+                //W.timeline.start gives 0:00 of that day as input time, and adding 'presentHourSec' to give present time as input
                 
-                var presentIntTime = parseInt(range.value),
+                var presentIntTime = parseInt(range.value),     //range.value returns string
                     calendar_pointer = (((parseInt(range.value) - W.timeline.start) / 3600000) / 168) * 100;
-                
+                    //the percentage for the timeline indicator
+                    
                 range.addEventListener('input', time_change);
                 
-                document.getElementById("timepointer").value = presentTime;
+                document.getElementById("timePopup").innerHTML = presentTime;
+                document.getElementById("timePopup").style.left = calendar_pointer + '%';
                 document.getElementById('calendarpointer-pointer').style.left = calendar_pointer + '%';
-                
+
                 function time_change(){
-                    var slider_time = new Date(parseInt(event.target.value))
-                    document.getElementById("timepointer").value = months[slider_time.getMonth()] + ' ' +  slider_time.getDate() + '  ' + weekdays[slider_time.getDay()] + ' ' + slider_time.getHours() + ':00';
-                    W.setTimestamp(event.target.value);
+                    var slider_time = new Date(parseInt(event.target.value))                    
+                    document.getElementById("timePopup").innerHTML = months[slider_time.getMonth()] + ' ' +  slider_time.getDate() + '  ' + weekdays[slider_time.getDay()] + ' ' + slider_time.getHours() + ':00';
+                    W.setTimestamp(event.target.value);     //event.target represent the slider
                     
                     var calendar_pointer_left = (((parseInt(event.target.value) - W.timeline.start) / 3600000) / 168) * 100;
                     
+                    var popup_width = $('#popup').width();
+                    
                     document.getElementById('calendarpointer-pointer').style.left = calendar_pointer_left + '%';
+                    document.getElementById('timePopup').style.left = calendar_pointer_left + '%';
                 };
                 
                 for(i = 0; i <= 6; i++){
@@ -413,33 +224,17 @@
                     presentDate = new Date(W.timeline.start + date_counter).getDate();
                     table_name += i;
                     document.getElementById(table_name).innerHTML = weekdays[j] + ' ' + presentDate;
-                }
-                
-                
+                }   //loop for displaying the present date
+    
                 ////
 				//
                 
-                /*
-                var range = document.getElementById('slider');
-				range.max = W.timeline.end;
-                
-                //range.min sets getTime() to get the present time
-				range.min = now.getTime();
-                range.addEventListener('change', time_change);
-				
-                function time_change(){					  
-				    document.getElementById("calender").value = new Date(parseInt(this.value)).toISOString() + ' (UTC)';
-                    W.setTimestamp(event.target.value);
-                };			
-                */
                 function setButtonState(){
 						range.max = W.timeline.start + timelineEnd;
-        		        //range.min use getTime() to set the present time
 						range.min = W.timeline.start;						
 						document.getElementById("timeline").style.display = "block";
-                        document.getElementById("calendar").style.display = "block";
-                        document.getElementById("calendarpointer").style.display = "block";
 				    };
+                
                 //M
                 //Marker Distance
                 
@@ -450,18 +245,31 @@
                 marker2.on('move', distance);
 
                 map.on('move', center_marker_position);
-
+                
+                var show_marker_position_switch = false;           
+    
+                function show_marker_position(){
+                    if(show_marker_position_switch){
+                        document.getElementById('markerposition').style.display = 'none';
+                        show_marker_position_switch = false;
+                    }
+                    else{
+                        document.getElementById('markerposition').style.display = 'block';
+                        show_marker_position_switch = true;
+                    }
+                }
+                
                 function center_marker_position(){
                     
                     if(!distance_button_switch){
                         
-                        center_position = map.getCenter();
+                        center_position1 = map.getCenter();
+                        
+                        cent_pos();
+                        
+                        marker1.setLatLng(center_position1);
 
-                        marker1.setLatLng(center_position);
-
-                        marker2.setLatLng(center_position);
-
-                        distanceline.setLatLngs([center_position, center_position]);
+                        marker2.setLatLng(center_position2);                            
                     };   
                 };
                 
@@ -477,13 +285,14 @@
                         marker1.addTo(markerlayer);
                         marker2.addTo(markerlayer);
                         distanceline.addTo(linelayer);
+                        greatcircleline.addTo(linelayer);
                         dkilometer.innerHTML = kilometer + ' km';
                         dnauticalmile.innerHTML = nauticalmile + " nm";
                         distance_button_switch = true;
                     };
                 };
 
-                function distance(){
+                function distance(){ 
 
                     var m1 = marker1.getLatLng(),
                         m2 = marker2.getLatLng();
@@ -498,10 +307,18 @@
 
                     distanceline = L.polyline([[m1.lat, m1.lng], [m2.lat, m2.lng]]);
                     
+                    greatcircleline = L.Polyline.Arc([m1.lat, m1.lng], [m2.lat, m2.lng], {
+                                    color: 'red',
+                                    vertices: 200
+                                });
+                    
                     distanceline.setStyle({color: 'white'});
                     
+                    //greatcircleline.setStyle({color: 'white'});
+                    
                     if(tile_switch_empty){
-                        distanceline.setStyle({color: 'black'}); 
+                        distanceline.setStyle({color: 'black'});
+                        
                     }
                     else{
                         distanceline.setStyle({color: 'white'});
@@ -510,15 +327,15 @@
                     if(distance_button_switch){
 
                         distanceline.addTo(linelayer);
-
+                        
+                        greatcircleline.addTo(linelayer);
                     };
                 };
                 //Marker Distance
                 //M
                 
-                
                 //@@
-                //Mouse position code starts
+                //Mouse position
                 var mousemove = document.getElementById('mousemove');
 
                 map.on('mousemove', cursor);
@@ -551,9 +368,8 @@
                     window[a.type].innerHTML = latdeg.toString() + '° ' + latmin.toString() + "' " + ns + ', ' + lngdeg.toString() + '° ' + lngmin.toString() + "' " + we;
 
                 };
-                //Mouse position code ends
+                //Mouse position
                 //@@
-                
                 
                 //
                 ////animation marker
@@ -655,19 +471,15 @@
                     marker3 = null;
                     //
                     //
-                    range.value = range.value = W.timeline.start + presentHourSec;
-                    W.setTimestamp(now.getTime());
-                    document.getElementById("timepointer").value = presentTime;
+                    range.value = W.timeline.start + presentHourSec;
+                    W.setTimestamp(range.value);
+                    document.getElementById("timePopup").innerHTML = presentTime;
+                    document.getElementById("timePopup").style.left = calendar_pointer + '%';
                     document.getElementById('calendarpointer-pointer').style.left = calendar_pointer + '%';
                     initial_line();
                 };
                 
-			};//End of windytyMain()
-			
+			};
+//End of windytyMain()
 
-            
-            
-		</script>
-		<script async defer src="http://api.windyty.com/v2.1/boot.js"></script>
-	</body>
-</html>
+			

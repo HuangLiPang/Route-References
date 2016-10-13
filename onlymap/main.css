@@ -19,16 +19,14 @@ body{
     position:absolute;
     list-style-type: none ;
     font-family: sans-serif;
-		background-color: white;
     margin: 0px;
     padding: 0px;
+    background-color: white;
     top: 0%;
     height: 3.5%;
     width: 100%;
     min-height: 30px;
-    border-radius: 0;
-    -webkit-border-radius: 0px;
-    z-index: 5;
+    z-index: 1;
 }
 
 .menu_line{
@@ -36,7 +34,7 @@ body{
     font-size: 16px;
     left: 0%;
     height: 100%;
-    width: 20%;		
+    width: 20%;
 }
 
 .menu_route{
@@ -44,7 +42,7 @@ body{
     font-size: 16px;
     left: 20%;
     height: 100%; 
-    width: 30%;		
+    width: 30%;
 }
 
 .menu_GPX{
@@ -53,9 +51,10 @@ body{
     height: 100%;
     width: 20%;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
     border-radius: 0;
-    -webkit-border-radius: 0px;
 }
 
 .menu_CSV{
@@ -64,7 +63,9 @@ body{
     height: 100%;
     width: 20%;
     text-align: center;
-    font-size: 15px;   
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
     border-radius: 0;
     -webkit-border-radius: 0px;
 }
@@ -75,30 +76,51 @@ body{
     height: 100%;
     width: 10%;
     text-align: center;
-    font-size: 15px;    
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
     border-radius: 0;
-    -webkit-border-radius: 0px;
 }
 
-
-#windyty{
+#showmap{
     position: absolute;
     width: 100%;
     top: 3.5%;
     height: 96.5%;
-    z-index: 1;
+    z-index: 0;
+}
+
+#maptile{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0;
+    opacity: 0.75;
+    z-index: 2;
+}
+
+#tile{
+    font-size: 16px;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
 }
 
 .mouseposition{
   font-family: sans-serif;
-  font-size: 16px;
   background:rgba(0,0,0,0.5);
   color:#fff;
   position: absolute;
-  bottom: 20px;
-  right: 40px;
+  top: 50px;
+  right: 10px;
   padding: 10px;
-  z-index: 5;
+  z-index: 2;
   border-radius: 3px;
   }
 
@@ -108,10 +130,8 @@ body{
 }
 
 #mousemove{
-    background:rgba(0,0,0,0);
     font-size: 16px;
     font-family: sans-serif;
-    color: #fff;
 }
 
 #markerposition{
@@ -119,47 +139,44 @@ body{
   background:rgba(0,0,0,0.5);
   color:#fff;
   position: absolute;
-  bottom: 70px;
-  right: 40px;
+  bottom: 190px;
+  left: 10px;
   padding: 10px;
-  z-index: 5;
+  z-index: 2;
   border-radius: 3px;
 }
 
-#distance_kilometer{
-    background:rgba(0,0,0,0);
-    color: #fff;
-    font-size: 16px;
-    font-family: sans-serif;
-    padding: 0px;
-    margin: 0px;
-    border:0px;
-}
-
-#distance_nauticalmile{
-    background:rgba(0,0,0,0);
-    font-size: 16px;
-    font-family: sans-serif;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    color: #fff;
-}
-
-#flaticon{
+#distance_button_div{
     position: absolute;
-    font-family: sans-serif;
-    font-size: 11px;
-    color: #fff;
-    opacity: 0.7;
-    bottom: 2px;
-    right: 125px;   
-    z-index: 5;
+    bottom: 100px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0;
+    opacity: 0.75;
+    z-index: 2;
 }
 
-.leaflet-control-container{
-    
-} 
-.leaflet-control-zoom-in{
-    width: 40px;
+#distance_button{
+    font-size: 16px;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+}
+
+#distance_kilometer{
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+#distance_nauticalmile{
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
 }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Route References</title>
+
+		<!-- Include meta tag to ensure proper rendering and touch zooming -->
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+        
+        <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.7/leaflet.js?2"></script>  
+        
+        <script type="text/javascript" src="https://unpkg.com/leaflet-arc@1.0.2/bin/leaflet-arc.min.js"></script>
+        <script type="text/javascript" src="mobile_detect.js"></script>
+		<script type="text/javascript" src="route.js"></script>
+        <script type="text/javascript" src="easybutton/easybutton.js"></script>
+        <script type="text/javascript" src="ShowWindyty.js"></script>
+        <script type="text/javascript" src="ECA/ECAs.js"></script>
+        
+		<link type="text/css" rel="stylesheet" href="ShowWindyty.css" />
+        <link type="text/css" rel="stylesheet" href="timeline.css" />
+        <link type="text/css" rel="stylesheet" href="easybutton/easybutton.css" />
+		
+        <link rel='stylesheet' href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' />
+	</head>
+	<body>
+		<div data-role='page' id="container">
+            
+			<div data-role='header' id="menu">
+				<select id="line" onchange="changeline()" class="menu_line"></select>
+				<select id="route" class="menu_route" disabled>
+				    <option value="#">Route</option>
+				</select>
+				<button id="GPX" onclick="downloadGPX()" class="menu_GPX" disabled> Download GPX</button>
+				<button id="CSV" onclick="downloadCSV()" class="menu_CSV" disabled>Download CSV</button>
+				<!--<button id="chage_windyty" class="menu_Windyty">Windyty</button>-->
+                <button id="reset" class="menu_RESET">Reset</button>
+			</div>
+
+			<div data-role='main' id="windyty"></div>
+            
+			<div id="timeline">
+                <div id='calendarpointer'>
+                    <div id='calendarpointer-pointer'></div>
+                </div>
+                <div id='calendar'>
+                    <table id='calendar-table'>
+                        <tr id='calendar-table-tr'>
+                            <td id='calendar-table-0'></td>
+                            <td id='calendar-table-1'></td>
+                            <td id='calendar-table-2'></td>
+                            <td id='calendar-table-3'></td>
+                            <td id='calendar-table-4'></td>
+                            <td id='calendar-table-5'></td>
+                            <td id='calendar-table-6'></td>
+                        </tr>
+                    </table>
+                </div>
+                <div data-role='rangeslider' id='track'>
+				    <input type="range" id="slider" value="0" >
+                </div>
+                <div id="popup">
+                    <pre id="timePopup"></pre>
+                </div>
+			</div>
+			
+            <div id='mouseposition' class='mouseposition'>
+                <p class='mousemove'>Cursor: <code id='mousemove'></code><br/></p>
+            </div>
+            
+            <div id='markerposition'>
+                
+                <pre id=distance_kilometer>0.000 km</pre>
+                <pre id=distance_nauticalmile>0.000 nm</pre>
+                
+            </div>
+            <div id='flaticon'>
+                Icons from 
+                <a href="http://www.flaticon.com" title="Flaticon" target="_blank">
+                   Flaticon
+                </a> 
+            </div>
+		</div>
+        <div id='test' ></div>
+        <script type="text/javascript" src="map_function.js"></script>
+		<!--<script async defer src="http://api.windyty.com/v2.1/boot.js"></script>-->
+        <script type="text/javascript" src="boot.js"></script>
+	</body>
+</html>
