@@ -7,10 +7,9 @@
 		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
         
         <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="http://cdn.leafletjs.com/leaflet-0.7.7/leaflet.js?2"></script>  
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         
-        <script type="text/javascript" src="https://unpkg.com/leaflet-arc@1.0.2/bin/leaflet-arc.min.js"></script>
+        <script type="text/javascript" src="leaflet-arc.min.js"></script>
         <script type="text/javascript" src="mobile_detect.js"></script>
 		<script type="text/javascript" src="route.js"></script>
         <script type="text/javascript" src="easybutton/easybutton.js"></script>
@@ -33,12 +32,11 @@
 				</select>
 				<button id="GPX" onclick="downloadGPX()" class="menu_GPX" disabled> Download GPX</button>
 				<button id="CSV" onclick="downloadCSV()" class="menu_CSV" disabled>Download CSV</button>
-				<!--<button id="chage_windyty" class="menu_Windyty">Windyty</button>-->
+				<!--<button id="change_windyty" onclick='WMchange()' class="menu_Windyty">Windyty</button>-->
                 <button id="reset" class="menu_RESET">Reset</button>
 			</div>
 
-			<div data-role='main' id="windyty"></div>
-            
+			<div data-role='main' id="windyty"></div>            
 			<div id="timeline">
                 <div id='calendarpointer'>
                     <div id='calendarpointer-pointer'></div>
@@ -77,13 +75,13 @@
             <div id='flaticon'>
                 Icons from 
                 <a href="http://www.flaticon.com" title="Flaticon" target="_blank">
-                   Flaticon
+                    Flaticon
                 </a> 
             </div>
 		</div>
         <div id='test' ></div>
         <script type="text/javascript" src="map_function.js"></script>
 		<!--<script async defer src="http://api.windyty.com/v2.1/boot.js"></script>-->
-        <script type="text/javascript" src="boot.js"></script>
+        <script async defer type="text/javascript" src="boot.js"></script>
 	</body>
 </html>

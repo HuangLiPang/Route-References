@@ -16,7 +16,7 @@ function windytyMain(map) {
                 
                 //Leaflet scale
                 L.control.scale({position: 'topleft', maxWidth: 200}).addTo(map);
-				                
+          
                 //Leaflet zoom control fix
                 $(".leaflet-control-zoom-in").text("");
                 $(".leaflet-control-zoom-out").text("");
@@ -36,7 +36,7 @@ function windytyMain(map) {
                                 map_tile_count ++;
                             }
                     }
-                };
+                }
                 
                 var wind_button = L.easyButton({
                                         states: [{
@@ -128,7 +128,8 @@ function windytyMain(map) {
                                                     },
                                                 title: "Currents",
                                                 icon: '<img src="/Icons/currents.png">'
-                                            }]
+                                            }], 
+                                            id: 'current'
                                         });
                 
                 L.easyBar([wind_button, temp_button, rain_button, pressure_button, waves_button, currents_button]).addTo(map);
@@ -215,7 +216,7 @@ function windytyMain(map) {
                     
                     document.getElementById('calendarpointer-pointer').style.left = calendar_pointer_left + '%';
                     document.getElementById('timePopup').style.left = calendar_pointer_left + '%';
-                };
+                }
                 
                 for(i = 0; i <= 6; i++){
                     var j = (i + presentWeekday) % 7,
@@ -233,7 +234,7 @@ function windytyMain(map) {
 						range.max = W.timeline.start + timelineEnd;
 						range.min = W.timeline.start;						
 						document.getElementById("timeline").style.display = "block";
-				    };
+				    }
                 
                 //M
                 //Marker Distance
@@ -271,7 +272,7 @@ function windytyMain(map) {
 
                         marker2.setLatLng(center_position2);                            
                     };   
-                };
+                }
                 
                 function distance_button(){
                     if(distance_button_switch){
@@ -284,13 +285,13 @@ function windytyMain(map) {
                     else{
                         marker1.addTo(markerlayer);
                         marker2.addTo(markerlayer);
-                        distanceline.addTo(linelayer);
-                        greatcircleline.addTo(linelayer);
+                        distanceline.bindPopup('<p style="margin: 0px; padding: 0px; font-size: 16px;">Rhumb Line</p>').addTo(linelayer);
+                        greatcircleline.bindPopup('<p style="margin: 0px; padding: 0px; font-size: 16px;">Great Circle</p>').addTo(linelayer);
                         dkilometer.innerHTML = kilometer + ' km';
                         dnauticalmile.innerHTML = nauticalmile + " nm";
                         distance_button_switch = true;
                     };
-                };
+                }
 
                 function distance(){ 
 
@@ -305,12 +306,12 @@ function windytyMain(map) {
 
                     linelayer.clearLayers();
 
-                    distanceline = L.polyline([[m1.lat, m1.lng], [m2.lat, m2.lng]]);
+                    distanceline = L.polyline([[m1.lat, m1.lng], [m2.lat, m2.lng]]).bindPopup('<p style="margin: 0px; padding: 0px; font-size: 16px;">Rhumb Line</p>');
                     
                     greatcircleline = L.Polyline.Arc([m1.lat, m1.lng], [m2.lat, m2.lng], {
                                     color: 'red',
                                     vertices: 200
-                                });
+                                }).bindPopup('<p style="margin: 0px; padding: 0px; font-size: 16px;">Great Circle</p>');
                     
                     distanceline.setStyle({color: 'white'});
                     
@@ -330,7 +331,7 @@ function windytyMain(map) {
                         
                         greatcircleline.addTo(linelayer);
                     };
-                };
+                }
                 //Marker Distance
                 //M
                 
@@ -367,7 +368,7 @@ function windytyMain(map) {
 
                     window[a.type].innerHTML = latdeg.toString() + '° ' + latmin.toString() + "' " + ns + ', ' + lngdeg.toString() + '° ' + lngmin.toString() + "' " + we;
 
-                };
+                }
                 //Mouse position
                 //@@
                 
@@ -388,7 +389,7 @@ function windytyMain(map) {
                         url: url1,
                         success: animation_marker
                         });
-                };
+                }
 
                 function animation_marker(geojson){
                     marker3 = L.marker(
@@ -403,7 +404,7 @@ function windytyMain(map) {
                     animatelayer.addTo(geolayerGroup);
                     animate_marker = geojson;
                     tick();
-                };
+                }
                 
                 function tick(){
 
@@ -423,7 +424,7 @@ function windytyMain(map) {
                     };
 
 
-                };
+                }
 
                 ////animation marker
                 //
@@ -449,7 +450,7 @@ function windytyMain(map) {
                     load(geo);
                     //
                     //
-                };
+                }
                 
                 
                 function clearroute(){
@@ -477,9 +478,6 @@ function windytyMain(map) {
                     document.getElementById("timePopup").style.left = calendar_pointer + '%';
                     document.getElementById('calendarpointer-pointer').style.left = calendar_pointer + '%';
                     initial_line();
-                };
+                }
                 
-			};
-//End of windytyMain()
-
-			
+			}			

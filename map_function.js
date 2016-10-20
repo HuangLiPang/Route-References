@@ -6,23 +6,23 @@ var tile_group = L.layerGroup(),
 
     tile_satellite = L.mapbox.tileLayer("mapbox.streets-satellite", {format: 'jpg70', zIndex: 0}),
 
-    tile_dark = L.mapbox.tileLayer("mapbox.dark", {format: 'jpg70', zIndex: 1000}),
+    tile_streets = L.mapbox.tileLayer("mapbox.streets", {format: 'jpg70', zIndex: 1000}),
 
     tile_switch = tile_group.hasLayer(tile_satellite),
 
-    tile_switch_empty = true;
+    tile_switch_empty = true,
 
 //marker distance layers
-var markerlayerGroup = new L.layerGroup();
-var markerlayer = new L.mapbox.featureLayer();
-var linelayer = new L.mapbox.featureLayer();
+    markerlayerGroup = new L.layerGroup(),
+    markerlayer = new L.mapbox.featureLayer(),
+    linelayer = new L.mapbox.featureLayer(),
 
-var distance_button_switch = false;
+    distance_button_switch = false,
 
-var dkilometer = document.getElementById('distance_kilometer'),
-    dnauticalmile = document.getElementById('distance_nauticalmile'); 
+    dkilometer = document.getElementById('distance_kilometer'),
+    dnauticalmile = document.getElementById('distance_nauticalmile'),
 
-var center_position1 = [25.154, 121.377],
+    center_position1 = [25.154, 121.377],
     coor_constant = 2.0,
     center_position2 = [27.154, 123.377];
 
@@ -66,10 +66,10 @@ var j = 0,
     count = 0,
     t = 500,
     timer,
-    marker3;
+    marker3,
 
-var animate_marker = {};
-var animatelayer = L.mapbox.featureLayer();
+    animate_marker = {},
+    animatelayer = L.mapbox.featureLayer();
 
 function change_tile(){
                 
@@ -77,7 +77,7 @@ function change_tile(){
                    
                     tile_group.removeLayer(tile_satellite);
                     
-                    tile_dark.addTo(tile_group);
+                    tile_streets.addTo(tile_group);
                     
                     distanceline.setStyle({color: 'white'});
                     
@@ -85,7 +85,7 @@ function change_tile(){
                 }
                 else if(!tile_switch && !tile_switch_empty){
                     
-                    tile_group.removeLayer(tile_dark);
+                    tile_group.removeLayer(tile_streets);
                     
                     distanceline.setStyle({color: 'black'});
                     
@@ -101,4 +101,4 @@ function change_tile(){
                     
                     tile_switch_empty = false;
                 };
-            };
+            }

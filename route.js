@@ -1,21 +1,19 @@
 // 初始相關變數值
-var p = "";     //String variable for for the data path of the route
-var geo = "";   //Variable for geojson data path
-var gpx = "";   //Variable for gpx data path
-var csv = "";   //Variable for csv data path
+var p = "",     //String variable for for the data path of the route
+    geo = "",   //Variable for geojson data path
+    gpx = "",   //Variable for gpx data path
+    csv = "",   //Variable for csv data path
 
 //Route geojson layergroup
-var geolayerGroup = L.layerGroup();
-
-function initial_line() {
-    $(document).ready(function () {
-        $("#line").empty().load("initial_line.txt");
-        $("#route").empty().load("Catalogue/ADL.txt").prop("disabled", true);
-    });
-};
-
+    geolayerGroup = L.layerGroup(),
 //Load lines
-initial_line(); 
+    initial_line = function () {
+                            $(document).ready(function () {
+                                $("#line").empty().load("initial_line.txt");
+                                $("#route").empty().load("Catalogue/ADL.txt").prop("disabled", true);
+                            });
+                    }; 
+initial_line();
 
 //Download GPX file
 function downloadGPX() {
@@ -31,7 +29,7 @@ function downloadCSV() {
 function changeline() {
     var lineIndex = document.getElementById("line").selectedIndex,
         lineOption = document.getElementById("line").options;
-    p = lineOption[lineIndex].innerHTML;
+    p = lineOption[lineIndex].text;
     var lineTXT = "Catalogue/" + p + ".txt"
     $(document).ready(function(){
         $("#route").empty().load(lineTXT).prop("disabled", false);
