@@ -247,15 +247,15 @@ function windytyMain(map) {
 
                 map.on('move', center_marker_position);
                 
-                var show_marker_position_switch = false;           
-    
+                var show_marker_position_switch = false;
+                
                 function show_marker_position(){
                     if(show_marker_position_switch){
-                        document.getElementById('markerposition').style.display = 'none';
+                        document.getElementById('markerposition').style.opacity = 0;
                         show_marker_position_switch = false;
                     }
                     else{
-                        document.getElementById('markerposition').style.display = 'block';
+                        document.getElementById('markerposition').style.opacity = 0.6;
                         show_marker_position_switch = true;
                     }
                 }
@@ -337,7 +337,7 @@ function windytyMain(map) {
                 
                 //@@
                 //Mouse position
-                var mousemove = document.getElementById('mousemove');
+                //var mousemove1 = document.getElementById('mousemove');
 
                 map.on('mousemove', cursor);
                        
@@ -350,7 +350,7 @@ function windytyMain(map) {
                         lngf = Math.abs(lng - parseFloat(lngdeg)),
                         latmin = (latf * 60).toPrecision(5),
                         lngmin = (lngf * 60).toPrecision(5);
-                    var we = '', ns = '';
+                    var we = '', ns = '', timer;
 
                     if(a.latlng.lat>=0){
                         ns = 'N';
@@ -365,9 +365,24 @@ function windytyMain(map) {
                     else{
                         we = 'W';
                     }
-
-                    window[a.type].innerHTML = latdeg.toString() + '° ' + latmin.toString() + "' " + ns + ', ' + lngdeg.toString() + '° ' + lngmin.toString() + "' " + we;
-
+                    
+                    var cursor_pos = latdeg.toString() + '° ' + latmin.toString() + "' " + ns + ', ' + lngdeg.toString() + '° ' + lngmin.toString() + "' " + we;
+                    
+                    window['cursor'].innerHTML = cursor_pos;    
+                    //window['cursor'] equals to ducument.getElementById('cursor')
+                    
+                    window['mouseposition'].style.opacity = 0.6;    
+                    window['mouseposition'].style.transition = 'opacity 0.5s';
+                    window['mouseposition'].style.WebkitTransition = 'opacity 0.5s';
+                    
+                    timer = setTimeout(fadeout, 3000);
+                    
+                    function fadeout(){
+                        if(cursor_pos == window['cursor'].innerHTML){
+                            window['mouseposition'].style.opacity = 0.2;
+                            clearTimeout(timer);
+                        }
+                    }
                 }
                 //Mouse position
                 //@@
@@ -376,7 +391,7 @@ function windytyMain(map) {
                 ////animation marker
                 
                 //load geojson to fetch coordinates
-                function load(url1){
+                function load(a){
                     animatelayer.clearLayers();
                     $.ajax({
                         headers: {
@@ -386,7 +401,7 @@ function windytyMain(map) {
                           withCredentials: false
                         },
                         dataType: 'json',
-                        url: url1,
+                        url: a,
                         success: animation_marker
                         });
                 }

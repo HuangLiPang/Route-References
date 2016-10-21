@@ -5,6 +5,11 @@
     height: 73px;
     width: 35%;
     z-index: 20;   
+    opacity: 0.2;
+    transition: opacity 0.5s;
+}
+
+#timeline:hover{
     opacity: 0.6;
 }
 
@@ -119,12 +124,13 @@ input[type='range']::-webkit-slider-thumb {
     font-size: 14px;
     position: absolute;
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.45;
     color: white;
     border-radius: 6px;
     z-index: 50;
-    top: -40%;
-    height: inherit;
+    top: 40%;
+    padding: 0px;
+    margin: 0px;
 }
 
 /* Popup arrow */
