@@ -1,0 +1,143 @@
+.side_menu {
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    z-index: 50;
+    background-color: #111;
+    overflow-x: hidden;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.open{
+    position: absolute;
+    z-index: 50; 
+    font-size: 30px; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+.closebtn_pro{
+    font-size: 36px;
+}
+
+.menu_nav{
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    font-size: 18px;
+    color: #818181;
+    z-index: 51;
+}
+
+a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.menu_line,
+.menu_route{
+    width: 100%;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #111;
+    background-color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.W_animate{
+    display: none;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.menu_wind,
+.menu_temp,
+.menu_rain,
+.menu_press,
+.menu_waves,
+.menu_currents{
+    
+}
+
+.menu_about{
+}
+
+.disable {
+    pointer-events: none;
+}
+
+.side_menu,
+a:hover,
+.offcanvas,
+a:focus{
+    color: #f1f1f1;
+}
+
+@media (max-height: 647px) {
+    .menu_nav {
+        top: 30px;
+        font-size: 14px;
+    }
+    .menu_line,
+    .menu_route{
+        font-size: 14px;
+    }
+    .closebtn{
+        height: 30px;
+    }
+    .closebtn_pro {
+        font-size: 25px;
+    }
+}
+
+@media (max-height: 647px){
+    .W_animate{
+        display: block;
+    }
+}
+
+@media (max-width: 788px){
+    .W_animate{
+        display: block;
+    }
+}
+
+.logo_image{
+    position: absolute;
+    width: 230px;
+    bottom: 10px;
+    left: -230px;
+    transition: 0.7s;
+}
+.logos {
+    padding: 4px 4px 4px 100px;
+    margin: 0px;
+}
+.ww {
+    width: 22px;
+    height: 22px;
+}
+
+.wtext{
+    width: 80px;
+    height: 22px;
+    position: relative;
+    top: 2px;
+}
+.image{
+    position: relative;
+    width: 102px;
+    height: 22px;
+}
+

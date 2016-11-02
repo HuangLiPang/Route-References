@@ -35,3 +35,27 @@ function changeline() {
         $("#route").empty().load(lineTXT).prop("disabled", false);
     });
 }
+
+//Side bar
+////////////
+function openNav() {
+    document.getElementById("menu").style.width = "230px";
+    document.getElementById('open').style.opacity = 0;
+}
+
+function closeNav() {
+    document.getElementById("menu").style.width = "0";
+    document.getElementById('open').style.opacity = 1;
+}
+var about_key = true;
+function showabout(){
+
+    if(about_key){
+        document.getElementsByClassName("logo_image")[0].style.left = '0px';
+        about_key = false;
+    }
+    else{
+        document.getElementsByClassName("logo_image")[0].style.left = '-230px';
+        about_key = true;
+    }
+}

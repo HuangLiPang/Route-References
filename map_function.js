@@ -79,7 +79,7 @@ function change_tile(){
                     
                     tile_streets.addTo(tile_group);
                     
-                    distanceline.setStyle({color: 'white'});
+                    distanceline.setStyle({color: 'black'});
                     
                     tile_switch = tile_group.hasLayer(tile_satellite);
                 }

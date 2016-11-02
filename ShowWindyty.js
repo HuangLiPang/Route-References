@@ -10,29 +10,24 @@ var windytyInit = {
 
 // windyty主函式
 function windytyMain(map) {
-                
                 //Default mapbox tile
                 map.setView([25.154, 121.377], 6);
                 
                 //Leaflet scale
-                L.control.scale({position: 'topleft', maxWidth: 200}).addTo(map);
-          
-                //Leaflet zoom control fix
-                $(".leaflet-control-zoom-in").text("");
-                $(".leaflet-control-zoom-out").text("");
+                L.control.scale({position: 'topright', maxWidth: 100}).addTo(map);
                 
                 //
                 //Right side buttons
                 function map_tile_change(){
                     if(map_tile_switch){
                         if(map_tile_count == 1){
-                            maptile_button.removeFrom(map);
+                            maptile_button.disable();
                             map_tile_count --;
                         }
                     }
                     else if(!map_tile_switch){
                             if(map_tile_count == 0){
-                                maptile_button.addTo(map);
+                                maptile_button.enable();
                                 map_tile_count ++;
                             }
                     }
@@ -41,12 +36,7 @@ function windytyMain(map) {
                 var wind_button = L.easyButton({
                                         states: [{
                                             stateName: "wind-button",
-                                            onClick: function(){
-                                                    W.setOverlay("wind");												
-                                                    setButtonState();
-                                                    map_tile_switch = false;
-                                                    map_tile_change();
-                                                },
+                                            onClick: W_wind,
                                             title: "Wind",
                                             icon: '<img src="/Icons/wind.png">'
                                         }]
@@ -55,12 +45,7 @@ function windytyMain(map) {
                     temp_button = L.easyButton({
                                             states: [{
                                                 stateName: "temp-button",
-                                                onClick: function(){
-                                                        W.setOverlay("temp");												
-                                                        setButtonState();
-                                                        map_tile_switch = false;
-                                                        map_tile_change();
-                                                    },
+                                                onClick: W_temp,
                                                 title: "Temperature",
                                                 icon: '<img src="/Icons/temp.png">'
                                             }]
@@ -69,12 +54,7 @@ function windytyMain(map) {
                     rain_button = L.easyButton({
                                             states: [{
                                                 stateName: "rain-button",
-                                                onClick: function(){
-                                                        W.setOverlay("clouds");												
-                                                        setButtonState();
-                                                        map_tile_switch = false;
-                                                        map_tile_change();
-                                                    },
+                                                onClick: W_rain,
                                                 title: "Rain",
                                                 icon: '<img src="/Icons/rain.png">'
                                             }]
@@ -83,12 +63,7 @@ function windytyMain(map) {
                     pressure_button = L.easyButton({
                                             states: [{
                                                 stateName: "pressure-button",
-                                                onClick: function(){
-                                                        W.setOverlay("pressure");	
-                                                        setButtonState(); 
-                                                        map_tile_switch = false;
-                                                        map_tile_change();
-                                                    },
+                                                onClick: W_press,
                                                 title: "Pressure",
                                                 icon: '<img src="/Icons/pressure.png">'
                                             }]
@@ -97,16 +72,7 @@ function windytyMain(map) {
                     waves_button = L.easyButton({
                                             states: [{
                                                 stateName: "waves-button",
-                                                onClick: function(){
-                                                        W.setOverlay("waves");												
-                                                        setButtonState();
-                                                        tile_switch_empty = false;
-                                                        tile_switch = false;
-                                                        tile_group.clearLayers();
-                                                        change_tile();
-                                                        map_tile_switch = true;
-                                                        map_tile_change();
-                                                    },
+                                                onClick: W_waves,
                                                 title: "Waves",
                                                 icon: '<img src="/Icons/waves.png">'
                                             }]
@@ -115,37 +81,25 @@ function windytyMain(map) {
                     currents_button = L.easyButton({
                                             states: [{
                                                 stateName: "currents-button",
-                                                onClick: function(){
-                                                        W.setOverlay("currents");			
-                                                        setButtonState();
-                                                        document.getElementById("timeline").style.display="none";
-                                                        tile_switch_empty = false;
-                                                        tile_switch = false;
-                                                        tile_group.clearLayers();
-                                                        change_tile();
-                                                        map_tile_switch = true;
-                                                        map_tile_change();
-                                                    },
+                                                onClick: W_currents,
                                                 title: "Currents",
                                                 icon: '<img src="/Icons/currents.png">'
                                             }], 
                                             id: 'current'
                                         });
                 
-                L.easyBar([wind_button, temp_button, rain_button, pressure_button, waves_button, currents_button]).addTo(map);
+                var W_statebar = L.easyBar([wind_button, temp_button, rain_button, pressure_button, waves_button, currents_button]),
+                    W_statebar_c = true;
+                W_statebar.addTo(map);
                 
-    
                 var measuring_button = L.easyButton({
                                         states: [{
                                             stateName: "measure-button",
-                                            onClick: function(){
-                                                distance_button();
-                                                show_marker_position();
-                                            },
+                                            onClick: measuring,
                                             title: "Measure Distance",
                                             icon: '<img src="/Icons/measuring.png">'
                                         }]
-                                    }).addTo(map),
+                                    }),
                     
                     maptile_button = L.easyButton({
                                             states: [{
@@ -154,10 +108,116 @@ function windytyMain(map) {
                                                 title: "Maps",
                                                 icon: '<img src="/Icons/maptile.png">'
                                             }]
-                                        }).addTo(map),
+                                        }),
                     map_tile_switch = true,
                     map_tile_count = 1;
-                    
+                measuring_button.addTo(map);
+                maptile_button.addTo(map);
+                
+    
+                if(W_statebar_c){
+                            if($(window).width() < 768 || $(window).height() < 647){
+                                W_statebar.removeFrom(map);
+                                measuring_button.removeFrom(map);
+                                maptile_button.removeFrom(map);
+                                W_statebar_c = false;
+                            }
+                        }
+                        else{
+                            if($(window).width() > 768 && $(window).height() > 647){
+                                W_statebar.addTo(map);
+                                measuring_button.addTo(map);
+                                maptile_button.addTo(map);
+                                W_statebar_c = true;
+                            }
+                        }
+    
+                $(document).ready(function(){
+                    $(window).resize(function(){
+                        var h = $(window).height(),
+                            w = $(window).width();
+                        if(W_statebar_c){
+                            if(w < 768 || h < 647){
+                                W_statebar.removeFrom(map);
+                                measuring_button.removeFrom(map);
+                                maptile_button.removeFrom(map);
+                                W_statebar_c = false;
+                            }
+                        }
+                        else{
+                            if(w > 768 && h > 647){
+                                W_statebar.addTo(map);
+                                measuring_button.addTo(map);
+                                maptile_button.addTo(map);
+                                W_statebar_c = true;
+                            }
+                        }
+                    });
+                });
+                
+                function W_wind(){
+                    W.setOverlay("wind");	
+                    setButtonState(); 
+                    map_tile_switch = false;
+                    map_tile_change();
+                }
+    
+                function W_temp(){
+                    W.setOverlay("temp");												
+                    setButtonState();
+                    map_tile_switch = false;
+                    map_tile_change();
+                }
+    
+                function W_rain(){
+                    W.setOverlay("clouds");												
+                    setButtonState();
+                    map_tile_switch = false;
+                    map_tile_change();
+                }
+    
+                function W_press(){
+                    W.setOverlay("pressure");	
+                    setButtonState(); 
+                    map_tile_switch = false;
+                    map_tile_change();
+                }
+    
+                function W_waves(){
+                    W.setOverlay("waves");												
+                    setButtonState();
+                    tile_switch_empty = false;
+                    tile_switch = false;
+                    tile_group.clearLayers();
+                    change_tile();
+                    map_tile_switch = true;
+                    map_tile_change();
+                }
+                   
+                function W_currents(){
+                    W.setOverlay("currents");			
+                    setButtonState();
+                    document.getElementById("timeline").style.display="none";
+                    tile_switch_empty = false;
+                    tile_switch = false;
+                    tile_group.clearLayers();
+                    change_tile();
+                    map_tile_switch = true;
+                    map_tile_change();
+                }
+    
+                function measuring(){
+                    distance_button();
+                    show_marker_position();
+                }
+                
+                document.getElementById('W_wind').onclick = W_wind;
+                document.getElementById('W_temp').onclick = W_temp;
+                document.getElementById('W_rain').onclick = W_rain;
+                document.getElementById('W_press').onclick = W_press;
+                document.getElementById('W_waves').onclick = W_waves;
+                document.getElementById('W_currents').onclick = W_currents;
+                
                 //LayerGroups
                 ECAlayerGroup.addTo(map);       //ECA layerGroup
 				geolayerGroup.addTo(map);       //Route layerGroup
@@ -202,7 +262,7 @@ function windytyMain(map) {
                 range.addEventListener('input', time_change);
                 
                 document.getElementById("timePopup").innerHTML = presentTime;
-                document.getElementById("timePopup").style.left = calendar_pointer + '%';
+                document.getElementById("timePopup").style.left = (calendar_pointer - 10) + '%';
                 document.getElementById('calendarpointer-pointer').style.left = calendar_pointer + '%';
 
                 function time_change(){
@@ -215,7 +275,7 @@ function windytyMain(map) {
                     var popup_width = $('#popup').width();
                     
                     document.getElementById('calendarpointer-pointer').style.left = calendar_pointer_left + '%';
-                    document.getElementById('timePopup').style.left = calendar_pointer_left + '%';
+                    document.getElementById('timePopup').style.left = (calendar_pointer_left - 10)+ '%';
                 }
                 
                 for(i = 0; i <= 6; i++){
@@ -278,8 +338,11 @@ function windytyMain(map) {
                     if(distance_button_switch){
                         markerlayer.clearLayers();
                         linelayer.clearLayers();
-                        dkilometer.innerHTML = '0.000 km';
-                        dnauticalmile.innerHTML = "0.000 nm";
+                        var timer = setTimeout(function(){
+                            dkilometer.innerHTML = '0.000 km';
+                            dnauticalmile.innerHTML = "0.000 nm";
+                            }, 1000);
+                        clearTimeout(timer);
                         distance_button_switch = false;
                     }
                     else{
@@ -315,14 +378,12 @@ function windytyMain(map) {
                     
                     distanceline.setStyle({color: 'white'});
                     
-                    //greatcircleline.setStyle({color: 'white'});
-                    
                     if(tile_switch_empty){
                         distanceline.setStyle({color: 'black'});
                         
                     }
                     else{
-                        distanceline.setStyle({color: 'white'});
+                        distanceline.setStyle({color: 'black'});
                     };
 
                     if(distance_button_switch){
@@ -456,8 +517,8 @@ function windytyMain(map) {
                                         map.fitBounds(geoLayer.getBounds());
                                     });
                     
-                    document.getElementById("GPX").disabled = false;
-                    document.getElementById("CSV").disabled = false;
+                    $("#GPX").removeClass("disable");
+                    $("#CSV").removeClass("disable");
                     //   
                     //animarion marker
                     j = 0;
@@ -475,8 +536,8 @@ function windytyMain(map) {
                     geo = "";
                     gpx = "";
                     csv = "";
-                    document.getElementById("GPX").disabled = true;
-                    document.getElementById("CSV").disabled = true;
+                    $("#GPX").addClass("disable");
+                    $("#CSV").addClass("disable");
                     //   
                     //animation marker
                     j = 0;
@@ -490,7 +551,7 @@ function windytyMain(map) {
                     range.value = W.timeline.start + presentHourSec;
                     W.setTimestamp(range.value);
                     document.getElementById("timePopup").innerHTML = presentTime;
-                    document.getElementById("timePopup").style.left = calendar_pointer + '%';
+                    document.getElementById("timePopup").style.left = (calendar_pointer - 10) + '%';
                     document.getElementById('calendarpointer-pointer').style.left = calendar_pointer + '%';
                     initial_line();
                 }

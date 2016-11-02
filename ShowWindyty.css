@@ -8,6 +8,7 @@ body{
     padding:0;
     height: 100%;
     width: 100%;
+    font-family: "Lato", sans-serif;
 }
 
 #container{
@@ -15,7 +16,7 @@ body{
     width: 100%;
 }
 
-#menu{
+/*#menu{
     position:absolute;
     list-style-type: none ;
     font-family: sans-serif;
@@ -89,13 +90,13 @@ body{
     font-size: 16px;    
     border-radius: 0;
     -webkit-border-radius: 0px;
-}
+}*/
 
 #windyty{
     position: absolute;
     width: 100%;
-    top: 3.5%;
-    height: 96.5%;
+    top: 0%;
+    height: 100%;
     z-index: 1;
 }
 
@@ -174,4 +175,13 @@ body{
 
 #test{
     
+}
+
+@media screen and (max-width: 783px){
+    .mouseposition{
+        display: none;
+    }
+    #markerposition{
+        bottom: 80px;
+    }
 }
