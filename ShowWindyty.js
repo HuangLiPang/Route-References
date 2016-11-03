@@ -22,12 +22,14 @@ function windytyMain(map) {
                     if(map_tile_switch){
                         if(map_tile_count == 1){
                             maptile_button.disable();
+                            window['W_change_tile'].classList.toggle('disable');
                             map_tile_count --;
                         }
                     }
                     else if(!map_tile_switch){
                             if(map_tile_count == 0){
                                 maptile_button.enable();
+                                window['W_change_tile'].classList.toggle('disable');
                                 map_tile_count ++;
                             }
                     }
@@ -114,7 +116,8 @@ function windytyMain(map) {
                 measuring_button.addTo(map);
                 maptile_button.addTo(map);
                 
-    
+                ////
+                //////// detect window size for leaflet easybutton
                 if(W_statebar_c){
                             if($(window).width() < 768 || $(window).height() < 647){
                                 W_statebar.removeFrom(map);
@@ -217,6 +220,9 @@ function windytyMain(map) {
                 document.getElementById('W_press').onclick = W_press;
                 document.getElementById('W_waves').onclick = W_waves;
                 document.getElementById('W_currents').onclick = W_currents;
+                
+                document.getElementById('W_measuring').onclick = measuring;
+                document.getElementById('W_change_tile').onclick = change_tile;
                 
                 //LayerGroups
                 ECAlayerGroup.addTo(map);       //ECA layerGroup

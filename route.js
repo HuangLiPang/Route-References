@@ -59,3 +59,7 @@ function showabout(){
         about_key = true;
     }
 }
+
+function bar_move(bar) {
+    bar.classList.toggle("barchange");
+}
