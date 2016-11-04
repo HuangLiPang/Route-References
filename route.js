@@ -8,11 +8,12 @@ var p = "",     //String variable for for the data path of the route
     geolayerGroup = L.layerGroup(),
 //Load lines
     initial_line = function () {
-                            $(document).ready(function () {
-                                $("#line").empty().load("initial_line.txt");
-                                $("#route").empty().load("Catalogue/ADL.txt").prop("disabled", true);
-                            });
-                    }; 
+            $(document).ready(function () {
+                $("#line").empty().load("initial_line.txt");
+                $("#route").empty().load("Catalogue/ADL.txt").prop("disabled", true);
+                document.getElementsByClassName('menu_route')[0].style.cursor = 'not-allowed';
+            });
+    };
 initial_line();
 
 //Download GPX file
@@ -34,6 +35,7 @@ function changeline() {
     $(document).ready(function(){
         $("#route").empty().load(lineTXT).prop("disabled", false);
     });
+    document.getElementsByClassName('menu_route')[0].style.cursor = 'pointer';
 }
 
 //Side bar
@@ -41,11 +43,17 @@ function changeline() {
 function openNav() {
     document.getElementById("menu").style.width = "230px";
     document.getElementById('open').style.opacity = 0;
+    document.getElementById('open').style.cursor = 'default';
+    document.getElementById('open').style.transition = '0.5s 0s';
+    window['windyty'].setAttribute('onclick', 'closeNav()');
 }
 
 function closeNav() {
     document.getElementById("menu").style.width = "0";
     document.getElementById('open').style.opacity = 1;
+    document.getElementById('open').style.cursor = 'pointer';
+    document.getElementById('open').style.transition = '0.5s 0.4s';
+    window['windyty'].removeAttribute('onclick');
 }
 var about_key = true;
 function showabout(){

@@ -17,7 +17,7 @@
 
 #track{
     position: absolute;
-    height: 8px;
+    height: 10px;
     width: 100%;
     bottom: 10px;
 }
@@ -30,17 +30,18 @@ input[type='range']{
     overflow: hidden;
     outline: none;
     background: none;
-    height: 8px;
+    height: 10px;
 	position: absolute;
 	opacity: 0.6;
 	z-index: 20;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 input[type='range']::-webkit-slider-runnable-track{
     -webkit-appearance:none;
-    height: 8px;
+    height: 10px;
     background: white;
 }
 
@@ -140,10 +141,30 @@ input[type='range']::-webkit-slider-thumb {
         min-width: 0px;
         left: 0px;
         opacity: 0.6;
-        overflow: clip;
+        overflow: hidden;
+        transition: 0s 0s;
     }
-    #timeline{
-       overflow: hidden;
+    #calendar{
+        font-size: 12px;
+    }
+    #calendar,
+    #calendarpointer,
+    calendarpointer-pointer{
+        height: 24px;
+    }
+    #popup{
+        top: 13px;
+    }
+    #timePopup{
+        font-size: 12px;
+    }
+    input[type='range']::-webkit-slider-runnable-track,
+    input[type='range'],
+    #track{
+        height: 12px;
+    }
+    #track{
+        bottom: 8px;
     }
 }
 /* Popup arrow */

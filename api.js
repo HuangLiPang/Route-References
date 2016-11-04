@@ -1238,15 +1238,15 @@
                 pois: "cities",
                 metric: null,
                 separator: "",
-                defaults: ["Ã‚Â°C", "Ã‚Â°F"],
+                defaults: ["°C", "°F"],
                 conv: {
-                    "Ã‚Â°C": {
+                    "°C": {
                         conversion: function(a) {
                             return a - 273.15
                         },
                         precision: 0
                     },
-                    "Ã‚Â°F": {
+                    "°F": {
                         conversion: function(a) {
                             return 9 * a / 5 - 459.67
                         },
@@ -1269,7 +1269,7 @@
                     [311, [230, 71, 39, 120]],
                     [328, [88, 27, 67, 120]]
                 ],
-                description: ["Ã‚Â°C", "Ã‚Â°F"],
+                description: ["°C", "°F"],
                 lines: [
                     [237, -35, -31],
                     [242, -30, -22],
@@ -1725,15 +1725,15 @@
                 pois: "empty",
                 metric: null,
                 separator: "",
-                defaults: ["Ã‚Â°C", "Ã‚Â°F"],
+                defaults: ["°C", "°F"],
                 conv: {
-                    "Ã‚Â°C": {
+                    "°C": {
                         conversion: function(a) {
                             return a
                         },
                         precision: 1
                     },
-                    "Ã‚Â°F": {
+                    "°F": {
                         conversion: function(a) {
                             return 1.8 * a + 32
                         },
@@ -1761,7 +1761,7 @@
                     [31, [41, 10, 130, 120]],
                     [40, [255, 255, 255, 120]]
                 ],
-                description: ["Ã‚Â°C", "Ã‚Â°F"],
+                description: ["°C", "°F"],
                 lines: [
                     [28, 28, 82],
                     [26, 26, 78],
@@ -1784,9 +1784,9 @@
                 pois: "empty",
                 metric: null,
                 separator: "",
-                defaults: ["Ã‚Â°C"],
+                defaults: ["°C"],
                 conv: {
-                    "Ã‚Â°C": {
+                    "°C": {
                         conversion: function(a) {
                             return a
                         },
@@ -1810,7 +1810,7 @@
                         [10, [255, 255, 255, 120]]
                     ]
                 ],
-                description: ["Ã‚Â°C"],
+                description: ["°C"],
                 lines: [
                     [3, 3],
                     [2, 2],
@@ -2883,9 +2883,7 @@
                 keyboard: !1,
                 worldCopyJump: !0
             });
-            return L.control.zoom({
-                position: "topright"
-            }).addTo(e), c.include(e, {
+            return c.include(e, {
                 ident: "maps",
                 isInit: !1,
                 minZoom: 4,

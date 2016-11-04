@@ -23,6 +23,7 @@ function windytyMain(map) {
                         if(map_tile_count == 1){
                             maptile_button.disable();
                             window['W_change_tile'].classList.toggle('disable');
+                            window['W_change_tile'].removeAttribute('onclick');
                             map_tile_count --;
                         }
                     }
@@ -30,6 +31,7 @@ function windytyMain(map) {
                             if(map_tile_count == 0){
                                 maptile_button.enable();
                                 window['W_change_tile'].classList.toggle('disable');
+                                window['W_change_tile'].setAttribute('onclick', 'change_tile()');
                                 map_tile_count ++;
                             }
                     }
@@ -222,7 +224,7 @@ function windytyMain(map) {
                 document.getElementById('W_currents').onclick = W_currents;
                 
                 document.getElementById('W_measuring').onclick = measuring;
-                document.getElementById('W_change_tile').onclick = change_tile;
+                document.getElementById('W_change_tile').setAttribute('onclick', 'change_tile()');
                 
                 //LayerGroups
                 ECAlayerGroup.addTo(map);       //ECA layerGroup
@@ -525,6 +527,8 @@ function windytyMain(map) {
                     
                     $("#GPX").removeClass("disable");
                     $("#CSV").removeClass("disable");
+                    window['GPX'].setAttribute('onclick', "downloadGPX()");
+                    window['CSV'].setAttribute('onclick', 'downloadCSV()');
                     //   
                     //animarion marker
                     j = 0;
@@ -544,6 +548,8 @@ function windytyMain(map) {
                     csv = "";
                     $("#GPX").addClass("disable");
                     $("#CSV").addClass("disable");
+                    window['GPX'].removeAttribute('onclick');
+                    window['CSV'].removeAttribute('onclick');
                     //   
                     //animation marker
                     j = 0;

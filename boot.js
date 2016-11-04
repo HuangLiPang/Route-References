@@ -61,7 +61,7 @@
 	var g = "https://api.windytv.com/v2.1/", h = document.getElementById("windyty");
     
     h || c("Missing DIV with windyty id"),
-    h.innerHTML = '<div id="map_container" style="width: 100%; height: 100%;"></div><div id="contrib">OSM & contributors</div><div id="legend"></div><canvas id="jpg_decoder" style="display: none;"></canvas><div id="globe_container"></div><a class="logo" href="https://www.windytv.com" target="wndt"><img class="w" src="https://www.windytv.com/img/logo.svg"><img class="text" src="https://www.windytv.com/img/logo_windyty_11.svg"></a>',
+    h.innerHTML = '<div id="map_container" style="width: 100%; height: 100%;"></div><div id="contrib">OSM & contributors</div><div id="legend"></div><canvas id="jpg_decoder" style="display: none;"></canvas><div id="globe_container"></div>',
     b(g + "api.css"), 
     a("https://www.windytv.com/gfs/minifest.js", function() {
                                 a("api.js?key=" + windytyInit.key, d)
