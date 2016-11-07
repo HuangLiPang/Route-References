@@ -280,8 +280,6 @@ function windytyMain(map) {
                     
                     var calendar_pointer_left = (((parseInt(event.target.value) - W.timeline.start) / 3600000) / 168) * 100;
                     
-                    var popup_width = $('#popup').width();
-                    
                     document.getElementById('calendarpointer-pointer').style.left = calendar_pointer_left + '%';
                     document.getElementById('timePopup').style.left = (calendar_pointer_left - 10)+ '%';
                 }
@@ -293,8 +291,20 @@ function windytyMain(map) {
                     presentDate = new Date(W.timeline.start + date_counter).getDate();
                     table_name += i;
                     document.getElementById(table_name).innerHTML = weekdays[j] + ' ' + presentDate;
+                    document.getElementById(table_name).onclick = select_date;
                 }   //loop for displaying the present date
-    
+                
+                ////Calendar quick click
+                function select_date(date){
+                    var n = parseInt(date.target.id[15]),
+                        slider_time = new Date(n * 24 * 3600000 + presentHourSec + W.timeline.start),
+                        calendar_pointer_left = (((n * 24 * 3600000 + presentHourSec) / 3600000) / 168) * 100;
+                    window["timePopup"].innerHTML = months[slider_time.getMonth()] + ' ' +  slider_time.getDate() + '  ' + weekdays[slider_time.getDay()] + ' ' + slider_time.getHours() + ':00';
+                    document.getElementById('calendarpointer-pointer').style.left = calendar_pointer_left + '%';
+                    document.getElementById('timePopup').style.left = (calendar_pointer_left - 10)+ '%';
+                    range.value = n * 24 * 3600000 + presentHourSec + W.timeline.start;
+                    W.setTimestamp(n * 24 * 3600000 + presentHourSec + W.timeline.start);
+                }
                 ////
 				//
                 
