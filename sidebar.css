@@ -58,11 +58,12 @@
 
 }
 
-a {
+a{
     padding: 8px 8px 8px 16px;
     text-decoration: none;
-    color: #818181;
+    color: #f1f1f1;
     display: block;
+    opacity: 0.6;
     transition: 0.3s;
 }
 .menu_line,
@@ -85,33 +86,22 @@ a {
     padding-bottom: 10px;
 }
 
-.menu_wind,
-.menu_temp,
-.menu_rain,
-.menu_press,
-.menu_waves,
-.menu_currents{
-    
-}
-
 .mobileicon{
     position: relative;
     top: 4px;
-}
-.menu_about{
+    transition: 0.5s;
 }
 
 .disable:hover,
 .disable:focus{
-    color: #818181;
+    opacity: 0.6;
     cursor: not-allowed;
 }
 
-.side_menu,
+
 a:hover,
-.offcanvas,
 a:focus{
-    color: #f1f1f1;
+    opacity: 1;
 }
 
 @media (max-height: 647px) {
