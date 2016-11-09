@@ -1,45 +1,119 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Route References</title>
-        
-        <!-- Include meta tag to ensure proper rendering and touch zooming -->
-        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+<html lang="en-us">
+	<head>
+		<title>Route References</title>
+
+		<!-- Include meta tag to ensure proper rendering and touch zooming -->
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
         
         <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         
-        <script type="text/javascript" src="route.js"></script>
-        <script type="text/javascript" src="map_function.js"></script>
-        <script type="text/javascript" src="mobile_detect.js"></script>        
+        <script type="text/javascript" src="leaflet-arc.min.js"></script>
+		<script type="text/javascript" src="route.js"></script>
+        <script type="text/javascript" src="easybutton/easybutton.js"></script>
+        <script type="text/javascript" src="ShowWindyty.js"></script>
+        <script type="text/javascript" src="ECA/ECAs.js"></script>
         
-        <link id="css" href="main.css" rel="stylesheet" type="text/css" />
-        <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/14.5/jquery.mobile-1.4.5.min.css" />
-        
-    </head>
-    <body>
-        <div id="container">
-            <div id="menu">
-                <select id="line" onchange="changeline()" class="menu_line"></select>
-          
-                <select id="route" onchange="createroute()" class="menu_route" disabled>
-                        <option value="#">Route</option>
-                </select>
-                
-                <button id="GPX" onclick="downloadGPX()" class="menu_GPX" disabled>Download GPX</button>
-                <button id="CSV" onclick="downloadCSV()" class="menu_CSV" disabled>Download CSV</button>
-                        
-                <button id="reset" onclick="clearroute()" class="menu_RESET">Reset</button>
+		<!--<link type="text/css" rel="stylesheet" href="ShowWindyty.css" />-->
+        <link type="text/css" rel="stylesheet" href="ShowWindyty.css" />
+        <link type="text/css" rel="stylesheet" href="timeline.css" />
+        <link type="text/css" rel="stylesheet" href="easybutton/easybutton.css" />
+        <link type="text/css" rel="stylesheet" href="sidebar.css" />
+		
+        <link rel='stylesheet' href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' />
+        <!--<link href='//mapbox.com/base/latest/base.css' rel='stylesheet' />-->
+	</head>
+	<body>
+		<div data-role='page' id="container">
+
+            <div id="menu" class="side_menu">
+                <a class="closebtn" onclick="closeNav()" href="javascript:void(0)"><span class="closebtn_pro">&times;</span></a>
+                <div class='menu_nav'>
+                    <select id="line" onchange="changeline()" class="menu_line"></select>
+                    <select id="route" class="menu_route" disabled>
+                    </select>
+                    <a id="GPX" class="menu_GPX disable" href="javascript:void(0)">Download GPX</a>
+                    <a id="CSV" class="menu_CSV disable" href="javascript:void(0)">Download CSV</a>
+                    <a id="reset" class="menu_RESET" href="javascript:void(0)">Reset</a>
+                    <div class='W_animate'>
+                        <a id='W_wind' class="menu_wind" href="javascript:void(0)">
+                            <img class='mobileicon' src="/Icons/wind-sign.png"> Wind</a>
+                        <a id='W_temp' class="menu_temp" href="javascript:void(0)">
+                            <img class='mobileicon' src="/Icons/temp-sign.png"> Temperature</a>
+                        <a id='W_rain' class="menu_rain" href="javascript:void(0)">
+                            <img class='mobileicon' src="/Icons/rain-sign.png"> Rain</a>
+                        <a id='W_press' class="menu_press" href="javascript:void(0)">
+                            <img class='mobileicon' src="/Icons/pressure-sign.png"> Pressure</a>
+                        <a id='W_waves' class="menu_waves" href="javascript:void(0)">
+                            <img class='mobileicon' src="/Icons/waves-sign.png"> Waves</a>
+                        <a id='W_currents' class="menu_currents" href="javascript:void(0)">
+                            <img class='mobileicon' src="/Icons/currents-sign.png"> Currents</a>
+                    </div>
+                    <div class='W_functions'>
+                        <a id='W_measuring' class="menu_measuring" href="javascript:void(0)">
+                            <img class='mobileicon' src="/Icons/measuring-sign.png"> Measuring</a>
+                        <a id='W_change_tile' class="menu_change_tile" href="javascript:void(0)">
+                            <img class='mobileicon' src="/Icons/maptile-sign.png"> Maps</a>
+                    </div>
+                    <a class='menu_about' onclick="showabout()" href="javascript:void(0)">About</a>
+                    <div class='logo_image'> 
+                        <div class="logos">
+                            <a href="https://www.windytv.com" title="Windytv" target="wndt">
+                                <img class="ww" src="https://www.windytv.com/img/logo.svg">
+                                <img class="wtext" src="https://www.windytv.com/img/logo-windytv.svg"> 
+                            </a>
+                        </div>
+                        <div class="logos">
+                            <a class='mapbox-maplogo' href="http://mapbox.com/about/maps" target="_blank"></a>
+                        </div>
+                        <div class="logos">
+                            <a href="http://www.leafletjs.com" title="Leaflet" target="leaflet">
+                                <img class="image" src="http://leafletjs.com/docs/images/logo.png">
+                            </a>
+                        </div>
+                        <div class="logos">
+                            <a href="http://www.flaticon.com" title="Flaticon" target="flaticon">
+                                <img class="image" src="https://media.freepik.com/flaticon/img/flaticon-logo.svg"> 
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
             </div>
             
-            <div id='mouseposition' class='mouseposition'>
-                <p class='mouseclick'>Click: <code id='mouseclick'></code><br/></p>
-                <p class='mousemove'>Cursor: <code id='mousemove'></code><br/></p>
-            </div>            
+            <div id='open' onclick="openNav()" onmouseenter="bar_move(this)" onmouseleave="bar_move(this)" class='open'>
+                <div class='bar1'></div>
+                <div class='bar2'></div>
+                <div class='bar3'></div>
+            </div>
             
-            <div id='distance_button_div'>
-                <button id='distance_button' onclick='distance_button()'>Measure Distance</button>
+			<div data-role='main' id="windyty"></div>            
+			<div id="timeline">
+                <div id='calendar'>
+                    <table id='calendar-table'>
+                        <tr id='calendar-table-tr'>
+                            <td id='calendar-table-0'></td>
+                            <td id='calendar-table-1'></td>
+                            <td id='calendar-table-2'></td>
+                            <td id='calendar-table-3'></td>
+                            <td id='calendar-table-4'></td>
+                            <td id='calendar-table-5'></td>
+                            <td id='calendar-table-6'></td>
+                        </tr>
+                    </table>
+                    <div id='calendarpointer-pointer'></div>
+                </div>
+                <div data-role='rangeslider' id='track'>
+				    <input type="range" id="slider" value="0" >
+                </div>
+                <div id="popup">
+                    <pre id="timePopup"></pre>
+                </div>
+			</div>
+			
+            <div id='mouseposition' class='mouseposition'>
+                <p class='mousemove'>Cursor: <code id='cursor'></code></p>
             </div>
             
             <div id='markerposition'>
@@ -48,366 +122,10 @@
                 <pre id=distance_nauticalmile>0.000 nm</pre>
                 
             </div>
-                        
-            <div id='showmap'></div>
-            <div id='maptile'>
-                <button id='tile' onclick="change_tile_normal()">Satellite<br/>Map</button>
-            </div>
-        </div>
-        
-        
-        <script>
-            //Auto size the screen
-            autosize();
-            window.addEventListener("onresize", autosize);
-            
-            //Load lines
-            initial_line();
-            
-            //Mapbox token
-            L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5bHpmN3ZnNm11dSJ9.1kSYNfN3L-uzTzqmBsIekw';
-            
-            var map = L.mapbox.map('showmap','' , {
-                            minZoom: 2,
-                            maxZoom: 18,
-                            zoomControl: false
-                        });
-            map.setView([25.154, 121.377], 4);
-            
-            L.control.scale({position: 'topleft', maxWidth: 200}).addTo(map);            
-            
-            //M
-            //Marker Distance
-            
-            var distance_button_switch = false;
-            
-            var dkilometer = document.getElementById('distance_kilometer'),
-                dnauticalmile = document.getElementById('distance_nauticalmile'); 
-            
-            var center_position = [25.154, 121.377];
-            
-            var markerlayer = L.mapbox.featureLayer().addTo(map),
-                linelayer = L.mapbox.featureLayer().addTo(map);
-            
-            var marker1 = L.marker(center_position, {
-                draggable: true,
-                icon: L.mapbox.marker.icon({
-                    'marker-size': 'large',
-                    'marker-symbol': 'ferry',
-                    'marker-color': '#FF8040',
-                    }),
-                zIndexOffset: 1000
-            }),
-                
-                marker2 = L.marker(center_position, {
-                draggable: true,
-                icon: L.mapbox.marker.icon({
-                    'marker-size': 'large',
-                    'marker-symbol': 'harbor',
-                    'marker-color': '#FF8040',
-                    }),
-                zIndexOffset: 990
-            });
-            
-            var distanceline = L.polyline([center_position, center_position]);
-            
-            var kilometer = (marker1.getLatLng().distanceTo(marker2.getLatLng())/1000).toFixed(3), 
-                nauticalmile = (kilometer / 1.852).toFixed(3);
-            
-            marker1.on('move', distance);
-            marker2.on('move', distance);
-            
-            map.on('move', center_marker_position);
-            
-            function center_marker_position(){
-                
-                if(!distance_button_switch){
-                    
-                    center_position = map.getCenter();
-                    
-                    marker1.setLatLng(center_position);
-
-                    marker2.setLatLng(center_position);
-                    
-                    distanceline.setLatLngs([center_position, center_position]);
-                };   
-            };
-            
-            function distance_button(){
-                if(distance_button_switch){
-                    markerlayer.clearLayers();
-                    linelayer.clearLayers();
-                    dkilometer.innerHTML = '0.000 km';
-                    dnauticalmile.innerHTML = "0.000 nm";
-                    distance_button_switch = false;
-                }
-                else{
-                    marker1.addTo(markerlayer);
-                    marker2.addTo(markerlayer);
-                    distanceline.addTo(linelayer);
-                    dkilometer.innerHTML = kilometer + ' km';
-                    dnauticalmile.innerHTML = nauticalmile + " nm";
-                    distance_button_switch = true;
-                };
-            };
-            
-            function distance(){
-                
-                var m1 = marker1.getLatLng(),
-                    m2 = marker2.getLatLng();
-                
-                kilometer = (m1.distanceTo(m2)/1000).toFixed(3), 
-                nauticalmile = (kilometer / 1.852).toFixed(3);
-                
-                dkilometer.innerHTML = kilometer + ' km';
-                dnauticalmile.innerHTML = nauticalmile + " nm";
-                
-                linelayer.clearLayers();
-                
-                distanceline = L.polyline([[m1.lat, m1.lng], [m2.lat, m2.lng]]);
-                
-                if(tile_switch){
-                    distanceline.setStyle({color: 'white'});
-                }
-                else{
-                    distanceline.setStyle({color: 'black'});
-                };
-                
-                if(distance_button_switch){
-                    
-                    distanceline.addTo(linelayer);
-                
-                };
-            };
-            //Marker Distance
-            //M
-            
-            //@@
-            //Mouse position code starts
-            var click = document.getElementById('mouseclick'),
-                mousemove = document.getElementById('mousemove');
-            
-            map.on('mousemove click', function(a){
-                
-                var lat = Math.abs(a.latlng.lat.toPrecision(9)),
-                    lng = Math.abs(a.latlng.wrap(-180, 180).lng.toPrecision(9)),
-                    latdeg = parseInt(lat),
-                    lngdeg = parseInt(lng),
-                    latf = Math.abs(lat - parseFloat(latdeg)),
-                    lngf = Math.abs(lng - parseFloat(lngdeg)),
-                    latmin = (latf * 60).toPrecision(5),
-                    lngmin = (lngf * 60).toPrecision(5);
-                var we = '', ns = '';
-                
-                if(a.latlng.lat>=0){
-                    ns = 'N';
-                }
-                else{
-                    ns = 'S';
-                }
-                
-                if(a.latlng.wrap(-180, 180).lng>=0){
-                    we = 'E';
-                }
-                else{
-                    we = 'W';
-                }
-                
-                window[a.type].innerHTML = latdeg.toString() + '° ' + latmin.toString() + "' " + ns + ', ' + lngdeg.toString() + '° ' + lngmin.toString() + "' " + we;
-                
-            });
-            //Mouse position code ends
-            //@@
-            
-            //tilelayer style variable
-            var tile_group = L.layerGroup().addTo(map),
-                
-                tile_satellite = L.mapbox.tileLayer("mapbox.streets-satellite",{format: 'jpg70'}),
-            
-                tile_street = L.mapbox.tileLayer("mapbox.streets", {format: 'jpg70'}),
-            
-                tile_switch = tile_group.hasLayer(tile_satellite);
-            
-            tile_street.addTo(tile_group);
-            
-            var p = "";     //String variable for for the data path of the route
-            
-            var geo = "";   //Variable for geojson data path
-            var gpx = "";   //Variable for gpx data path
-            var csv = "";   //Variable for csv data path
-            
-            
-            //Route geojson layergroup
-            var geolayerGroup = L.layerGroup().addTo(map);
-            
-            //ECA geojson layergroup
-            var ECAlayerGroup = L.layerGroup().addTo(map);
-            
-            //ECA geojson layer
-            var ECAsNOxLayer = L.mapbox.featureLayer().loadURL("eca.geojson")
-                                .on('ready', function(){
-                                    this.setStyle({
-                                        "color": "#ff5555",
-                                        "weight": "2"
-                                    })
-                                }).addTo(ECAlayerGroup);
-            
-            ECAsNOxLayer.on('mouseover', function(){
-                this.setStyle({
-                    "color": "#ff0000",
-                    "weight": "5"
-                })
-            });
-            ECAsNOxLayer.on('mouseout', function(){
-                this.setStyle({
-                    "color": "#ff5555",
-                    "weight": "2"
-                })
-            });
-            
-            //
-            ////animation marker
-            
-            var j = 0,
-                count = 0,
-                t = 500,
-                timer,
-                marker3;
-            
-            var animate_marker = {};
-            var animatelayer = L.mapbox.featureLayer();
-            
-            //load geojson to fetch coordinates
-            function load(url){
-                animatelayer.clearLayers();
-                $.ajax({
-                    headers: {
-                        'Accept': 'application/vnd.github.v3.raw'
-                    },
-                    xhrFields: {
-                      withCredentials: false
-                    },
-                    dataType: 'json',
-                    url: url,
-                    success: animation_marker
-                    });
-            };
-            
-            function animation_marker(geojson){
-                marker3 = L.marker(
-                          [geojson.features[0].geometry.coordinates[1], geojson.features[0].geometry.coordinates[0]], {
-                                icon: L.mapbox.marker.icon({
-                                  'marker-size': 'large',
-                                  'marker-color': '#f86767',
-                                  'marker-symbol': 'ferry'
-                                  }),
-                                zIndexOffset: 1000 
-                            }).addTo(animatelayer);
-                animatelayer.addTo(geolayerGroup);
-                animate_marker = geojson;
-                tick();
-            };
-            
-            function tick(){
-                
-                count = animate_marker.features[j].geometry.type.length;
-                if(count == 5){
-                    
-                    marker3.setLatLng(L.latLng(
-                        animate_marker.features[j].geometry.coordinates[1], animate_marker.features[j].geometry.coordinates[0]
-                    ));
-                    ++j;
-                    timer = setTimeout(tick, t);
-                }
-                else{
-                    j = 0;
-                    clearTimeout(timer);
-                    timer = setTimeout(tick, t);
-                };
-                
-                
-            };
-            
-            ////animation marker
-            //
-            
-            function change_tile_normal(){
-                
-                if(tile_switch){
-                    tile_group.removeLayer(tile_satellite);
-                    
-                    tile_street.addTo(tile_group);
-                    
-                    document.getElementById("tile").innerHTML = "Satellite</br>Map";
-                    
-                    distanceline.setStyle({color: 'black'});
-                    
-                    tile_switch = tile_group.hasLayer(tile_satellite);
-                }
-                else{
-                    tile_group.removeLayer(tile_street);
-                    
-                    tile_satellite.addTo(tile_group);
-                    
-                    document.getElementById("tile").innerHTML = "Streets</br>Map";
-                    
-                    distanceline.setStyle({color: 'white'});
-                    
-                    tile_switch = tile_group.hasLayer(tile_satellite);
-                };
-            };
-            
-            //Clear all route
-            function clearroute(){
-                geolayerGroup.clearLayers();
-                map.setView([25.154, 121.377], 4);
-                P = "";
-                geo = "";
-                gpx = "";
-                csv = "";
-                
-                j = 0;
-                count = 0;
-                animate_marker = {};
-                clearTimeout(timer);
-                timer = null;
-                marker3 = null;
-                
-                document.getElementById("GPX").disabled = true;
-                document.getElementById("CSV").disabled = true;
-                
-                initial_line();
-            };
-            
-            //Function allows the selection showing on the map
-            function createroute(){
-                var route = document.getElementById("route");   
-
-                geo = "GeoJSON/" + p + route.value;
-                
-                gpx = "GPX/" + p + route.value.replace('.geojson', '.gpx');
-                csv = "CSV/" + p + route.value.replace('.geojson', '.csv');
-                
-                var geoLayer = L.mapbox.featureLayer()
-                                .loadURL(geo);
-                
-                geoLayer.addTo(geolayerGroup);
-                
-                document.getElementById("GPX").disabled = false;
-                document.getElementById("CSV").disabled = false;
-    
-                geoLayer.on('ready', function() {
-                    map.fitBounds(geoLayer.getBounds());                    
-                });
-                //   
-                //animarion marker
-                j = 0;
-                clearTimeout(timer);
-                load(geo);
-                //
-                //
-            };
-            
-        </script>
-    </body>
+		</div>
+        <div id='test'></div>
+        <script type="text/javascript" src="map_function.js"></script>
+		<!--<script async defer src="http://api.windyty.com/v2.1/boot.js"></script>-->
+        <script async defer type="text/javascript" src="boot.js"></script>
+	</body>
 </html>

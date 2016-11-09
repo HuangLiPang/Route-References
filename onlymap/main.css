@@ -124,12 +124,12 @@ body{
   border-radius: 3px;
   }
 
-.mouseclick, .mousemove{
+.mousemove{
     padding: 0px;
     margin: 0px;
 }
 
-#mouseclick, #mousemove{
+#mousemove{
     font-size: 16px;
     font-family: sans-serif;
 }
