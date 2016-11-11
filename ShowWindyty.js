@@ -120,29 +120,30 @@ function windytyMain(map) {
                 
                 ////
                 //////// detect window size for leaflet easybutton
-                if(W_statebar_c){
-                            if($(window).width() < 768 || $(window).height() < 647){
-                                W_statebar.removeFrom(map);
-                                measuring_button.removeFrom(map);
-                                maptile_button.removeFrom(map);
-                                W_statebar_c = false;
+                
+
+                    if(W_statebar_c){
+                                if($(window).width() < 788 || $(window).height() < 647){
+                                    W_statebar.removeFrom(map);
+                                    measuring_button.removeFrom(map);
+                                    maptile_button.removeFrom(map);
+                                    W_statebar_c = false;
+                                }
                             }
-                        }
                         else{
-                            if($(window).width() > 768 && $(window).height() > 647){
-                                W_statebar.addTo(map);
-                                measuring_button.addTo(map);
-                                maptile_button.addTo(map);
-                                W_statebar_c = true;
+                                if($(window).width() > 788 && $(window).height() > 647){
+                                    W_statebar.addTo(map);
+                                    measuring_button.addTo(map);
+                                    maptile_button.addTo(map);
+                                    W_statebar_c = true;
+                                }
                             }
-                        }
-    
                 $(document).ready(function(){
                     $(window).resize(function(){
                         var h = $(window).height(),
-                            w = $(window).width();
+                            w = Math.max($(window).width(), window.innerWidth);
                         if(W_statebar_c){
-                            if(w < 768 || h < 647){
+                            if(w < 788 || h < 646){
                                 W_statebar.removeFrom(map);
                                 measuring_button.removeFrom(map);
                                 maptile_button.removeFrom(map);
@@ -150,7 +151,7 @@ function windytyMain(map) {
                             }
                         }
                         else{
-                            if(w > 768 && h > 647){
+                            if(w >= 788 && h >= 646){
                                 W_statebar.addTo(map);
                                 measuring_button.addTo(map);
                                 maptile_button.addTo(map);
