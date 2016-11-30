@@ -15,18 +15,21 @@
         <script type="text/javascript" src="ShowWindyty.js"></script>
         <script type="text/javascript" src="ECA/ECAs.js"></script>
         
-		<!--<link type="text/css" rel="stylesheet" href="ShowWindyty.css" />-->
         <link type="text/css" rel="stylesheet" href="ShowWindyty.css" />
         <link type="text/css" rel="stylesheet" href="timeline.css" />
         <link type="text/css" rel="stylesheet" href="easybutton/easybutton.css" />
         <link type="text/css" rel="stylesheet" href="sidebar.css" />
 		
         <link rel='stylesheet' href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' />
-        <!--<link href='//mapbox.com/base/latest/base.css' rel='stylesheet' />-->
 	</head>
 	<body>
 		<div data-role='page' id="container">
-
+            <div class="windytylogo">
+                <a href="https://www.windytv.com" title="Windytv" target="wndt">
+                    <img class="ww" src="https://www.windytv.com/img/logo.svg">
+                    <img class="wtext" src="https://www.windytv.com/img/logo-windytv.svg"> 
+                </a>
+            </div>
             <div id="menu" class="side_menu">
                 <a class="closebtn" onclick="closeNav()" href="javascript:void(0)"><span class="closebtn_pro">&times;</span></a>
                 <div class='menu_nav'>
@@ -65,7 +68,7 @@
                             </a>
                         </div>
                         <div class="logos">
-                            <a class='mapbox-maplogo' href="http://mapbox.com/about/maps" target="_blank"></a>
+                            <a class='mapbox-maplogo' href="https://www.mapbox.com/" target="_blank"></a>
                         </div>
                         <div class="logos">
                             <a href="http://www.leafletjs.com" title="Leaflet" target="leaflet">
@@ -125,7 +128,6 @@
 		</div>
         <div id='test'></div>
         <script type="text/javascript" src="map_function.js"></script>
-		<!--<script async defer src="http://api.windyty.com/v2.1/boot.js"></script>-->
         <script async defer type="text/javascript" src="boot.js"></script>
 	</body>
 </html>

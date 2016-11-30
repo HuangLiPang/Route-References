@@ -119,25 +119,47 @@ function windytyMain(map) {
                 maptile_button.addTo(map);
                 
                 ////
+    /*
+                var tracklayerGroup = new L.layerGroup();
+                var trackLayer = L.mapbox.featureLayer()
+                    .loadURL("track/fleet.geojson").addTo(tracklayerGroup),
+                    tracklineLayer = L.mapbox.featureLayer()
+                    .loadURL("track/fleet_line.geojson").addTo(tracklayerGroup);
+    
+    
+    
+                L.control.layers({
+                }, {
+                    'Fleet lines': tracklineLayer,
+                    'Fleets': tracklayerGroup,
+                    'ECA zones': ECAlayerGroup.addTo(map)
+                }).addTo(map);
+    */
+                ////
+    
+    
+    
+    
+                ////
                 //////// detect window size for leaflet easybutton
                 
-
-                    if(W_statebar_c){
-                                if($(window).width() < 788 || $(window).height() < 647){
-                                    W_statebar.removeFrom(map);
-                                    measuring_button.removeFrom(map);
-                                    maptile_button.removeFrom(map);
-                                    W_statebar_c = false;
-                                }
-                            }
-                        else{
-                                if($(window).width() > 788 && $(window).height() > 647){
+                if(W_statebar_c){
+                        if(Math.max($(window).width(), window.innerWidth) < 788 || $(window).height() < 647){
+                            W_statebar.removeFrom(map);
+                            measuring_button.removeFrom(map);
+                            maptile_button.removeFrom(map);
+                            W_statebar_c = false;
+                        }
+                    }
+                else{
+                        if(Math.max($(window).width(), window.innerWidth) >= 788 && $(window).height() >= 647){
                                     W_statebar.addTo(map);
                                     measuring_button.addTo(map);
                                     maptile_button.addTo(map);
                                     W_statebar_c = true;
                                 }
-                            }
+                    }
+    
                 $(document).ready(function(){
                     $(window).resize(function(){
                         var h = $(window).height(),
@@ -401,7 +423,7 @@ function windytyMain(map) {
                         distanceline.setStyle({color: 'black'});
                         
                     }
-                    else{
+                    else if(!tile_switch && !tile_switch_empty){
                         distanceline.setStyle({color: 'black'});
                     };
 
@@ -417,7 +439,6 @@ function windytyMain(map) {
                 
                 //@@
                 //Mouse position
-                //var mousemove1 = document.getElementById('mousemove');
 
                 map.on('mousemove', cursor);
                        

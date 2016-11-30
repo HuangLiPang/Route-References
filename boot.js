@@ -58,7 +58,7 @@
     windytyInit.key || c("Missing API key"),
     window.windytyMain || c("Missing function named windytyMain");
     
-	var g = "https://api.windytv.com/v2.1/", h = document.getElementById("windyty");
+	var g = "https://api.windytv.com/v2.3/", h = document.getElementById("windyty");
     
     h || c("Missing DIV with windyty id"),
     h.innerHTML = '<div id="map_container" style="width: 100%; height: 100%;"></div><div id="contrib">OSM & contributors</div><div id="legend"></div><canvas id="jpg_decoder" style="display: none;"></canvas><div id="globe_container"></div>',
