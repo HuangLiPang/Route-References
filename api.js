@@ -1,23 +1,23 @@
     L.TileLayer.Multi = L.TileLayer.extend({
             _tileDefs: [],
-            initialize: function(a, b) {
+            initialize: function (a, b) {
                 L.TileLayer.prototype.initialize.call(this, void 0, b);
                 var c = this.options.minZoom;
                 for (var d in a)
                     for (var e = this._fixTileDef(a[d]); d >= c; c++) this._tileDefs[c] = e
             },
-            _fixTileDef: function(a) {
+            _fixTileDef: function (a) {
                 var b = L.extend({}, {
                     subdomains: L.TileLayer.prototype.options.subdomains
                 }, a);
                 return "string" == typeof b.subdomains && (b.subdomains = b.subdomains.split("")), b
             },
-            _getSubdomain: function(a, b) {
+            _getSubdomain: function (a, b) {
                 var c = (a.x + a.y) % b.length;
                 return b[c]
             },
-            setUrl: function() {},
-            getTileUrl: function(a) {
+            setUrl: function () {},
+            getTileUrl: function (a) {
                 var b = this._getZoomForUrl(),
                     c = this._tileDefs[b];
                 return this._adjustTilePoint(a), L.Util.template(c.url, L.extend({
@@ -27,12 +27,12 @@
                     y: a.y
                 }, this.options))
             }
-        }), L.TileLayer.multi = function(a, b) {
+        }), L.TileLayer.multi = function (a, b) {
             return new L.TileLayer.Multi(a, b)
         },
-        function(a) {
+        function (a) {
             function b(a, b) {
-                return function() {
+                return function () {
                     a.apply(b, arguments)
                 }
             }
@@ -45,7 +45,7 @@
 
             function d(a) {
                 var b = this;
-                return null === this._state ? void this._deferreds.push(a) : void j(function() {
+                return null === this._state ? void this._deferreds.push(a) : void j(function () {
                     var c = b._state ? a.onFulfilled : a.onRejected;
                     if (null === c) return void(b._state ? a.resolve : a.reject)(b._value);
                     var d;
@@ -87,9 +87,9 @@
             function i(a, b, c) {
                 var d = !1;
                 try {
-                    a(function(a) {
+                    a(function (a) {
                         d || (d = !0, b(a))
-                    }, function(a) {
+                    }, function (a) {
                         d || (d = !0, c(a))
                     })
                 } catch (e) {
@@ -97,27 +97,27 @@
                     d = !0, c(e)
                 }
             }
-            var j = c.immediateFn || "function" == typeof setImmediate && setImmediate || function(a) {
+            var j = c.immediateFn || "function" == typeof setImmediate && setImmediate || function (a) {
                     setTimeout(a, 1)
                 },
-                k = Array.isArray || function(a) {
+                k = Array.isArray || function (a) {
                     return "[object Array]" === Object.prototype.toString.call(a)
                 };
-            c.prototype["catch"] = function(a) {
+            c.prototype["catch"] = function (a) {
                 return this.then(null, a)
-            }, c.prototype.then = function(a, b) {
+            }, c.prototype.then = function (a, b) {
                 var e = this;
-                return new c(function(c, f) {
+                return new c(function (c, f) {
                     d.call(e, new h(a, b, c, f))
                 })
-            }, c.all = function() {
+            }, c.all = function () {
                 var a = Array.prototype.slice.call(1 === arguments.length && k(arguments[0]) ? arguments[0] : arguments);
-                return new c(function(b, c) {
+                return new c(function (b, c) {
                     function d(f, g) {
                         try {
                             if (g && ("object" == typeof g || "function" == typeof g)) {
                                 var h = g.then;
-                                if ("function" == typeof h) return void h.call(g, function(a) {
+                                if ("function" == typeof h) return void h.call(g, function (a) {
                                     d(f, a)
                                 }, c)
                             }
@@ -129,23 +129,23 @@
                     if (0 === a.length) return b([]);
                     for (var e = a.length, f = 0; f < a.length; f++) d(f, a[f])
                 })
-            }, c.resolve = function(a) {
-                return a && "object" == typeof a && a.constructor === c ? a : new c(function(b) {
+            }, c.resolve = function (a) {
+                return a && "object" == typeof a && a.constructor === c ? a : new c(function (b) {
                     b(a)
                 })
-            }, c.reject = function(a) {
-                return new c(function(b, c) {
+            }, c.reject = function (a) {
+                return new c(function (b, c) {
                     c(a)
                 })
-            }, c.race = function(a) {
-                return new c(function(b, c) {
+            }, c.race = function (a) {
+                return new c(function (b, c) {
                     for (var d = 0, e = a.length; e > d; d++) a[d].then(b, c)
                 })
             }, "undefined" != typeof module && module.exports ? module.exports = c : a.Promise || (a.Promise = c)
         }(this),
         /*! 
             Adrian Cooney <cooney.adrian@gmail.com> License: MIT */
-        function(a) {
+        function (a) {
             function b(a, b, d, f) {
                 var g, h;
                 if ("function" == typeof b ? (h = b, g = []) : (g = b, h = d), e[a]) throw "DI conflict: Module " + a + " already defined.";
@@ -160,7 +160,7 @@
 
             function c(a) {
                 var b = [];
-                return a.dependencies.forEach(function(a) {
+                return a.dependencies.forEach(function (a) {
                     var d = e[a];
                     if (!d) throw "DI error: Module " + a + " not defined";
                     d.wasLoaded ? b.push(d.loaded) : b.push(c(d))
@@ -178,49 +178,49 @@
             var e = {};
             a.W || (a.W = {}), d.modules = e, a.W.require = d, a.W.define = b
         }(window), /*! */
-        W.define("prototypes", [], function() {
-            Date.prototype.add = function(a, b) {
+        W.define("prototypes", [], function () {
+            Date.prototype.add = function (a, b) {
                 var c = new Date(this.getTime());
                 return c.setTime(this.getTime() + ("days" === b ? 24 : 1) * a * 60 * 60 * 1e3), c
-            }, Date.prototype.toUTCPath = function() {
+            }, Date.prototype.toUTCPath = function () {
                 return this.toISOString().replace(/^(\d+)-(\d+)-(\d+)T(\d+):.*$/, "$1/$2/$3/$4")
-            }, String.prototype.trunc = function(a) {
+            }, String.prototype.trunc = function (a) {
                 return this.length > a ? this.substr(0, a - 1) + "&hellip;" : this
-            }, Date.prototype.midnight = function() {
+            }, Date.prototype.midnight = function () {
                 return this.setHours(0), this.setMinutes(0), this.setSeconds(0), this.setMilliseconds(0), this
-            }, Number.prototype.pad = function(a) {
+            }, Number.prototype.pad = function (a) {
                 for (var b = String(this); b.length < (a || 2);) b = "0" + b;
                 return b
-            }, Number.prototype.format = function(a) {
+            }, Number.prototype.format = function (a) {
                 return this.toFixed(a || 0).replace(/(\d)(?=(\d{3})+\.?)/g, "$1 ")
-            }, String.prototype.firstCapital = function() {
+            }, String.prototype.firstCapital = function () {
                 return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase()
-            }, Number.prototype.bound = function(a, b) {
+            }, Number.prototype.bound = function (a, b) {
                 return Math.max(Math.min(this, b), a)
-            }, Math.deg2rad = function(a) {
+            }, Math.deg2rad = function (a) {
                 return a / 180 * Math.PI
-            }, String.prototype.template = function(a) {
-                return this.replace(/\{\s*(.+?)\s*\}/g, function(b, c) {
+            }, String.prototype.template = function (a) {
+                return this.replace(/\{\s*(.+?)\s*\}/g, function (b, c) {
                     return "undefined" == typeof a[c] ? "" : a[c]
                 })
-            }, String.prototype.template2 = function(a) {
-                return this.replace(/\{\{(.+?)\}\}/g, function(b, c) {
+            }, String.prototype.template2 = function (a) {
+                return this.replace(/\{\{(.+?)\}\}/g, function (b, c) {
                     return a[c] || ""
                 })
             }
         }), /*! */
-        W.define("http", ["lruCache"], function(lruCache) {
+        W.define("http", ["lruCache"], function (lruCache) {
             var httpCache = new lruCache(50),
                 http = {};
-            return http.get = function(url, options) {
+            return http.get = function (url, options) {
                 var wasCancelled = !1,
                     data, headers = {},
                     options = options || {},
                     match, rqst, returnObject, cacheHit, cache, promise;
-                return cache = "undefined" == typeof options.cache || "boolean" == typeof options.cache && options.cache ? httpCache : "object" == typeof options.cache ? options.cache : null, url = encodeURI(url), cache && (cacheHit = cache.get(url)) ? Promise.resolve(cacheHit) : (rqst = new XMLHttpRequest, rqst.open("get", url, !0), options.responseType && (rqst.responseType = options.responseType), promise = new Promise(function(resolve, reject) {
-                    rqst.onreadystatechange = function() {
+                return cache = "undefined" == typeof options.cache || "boolean" == typeof options.cache && options.cache ? httpCache : "object" == typeof options.cache ? options.cache : null, url = encodeURI(url), cache && (cacheHit = cache.get(url)) ? Promise.resolve(cacheHit) : (rqst = new XMLHttpRequest, rqst.open("get", url, !0), options.responseType && (rqst.responseType = options.responseType), promise = new Promise(function (resolve, reject) {
+                    rqst.onreadystatechange = function () {
                         if (4 === rqst.readyState)
-                            if (options.parseHeaders && rqst.getAllResponseHeaders().split(/\n/).forEach(function(a) {
+                            if (options.parseHeaders && rqst.getAllResponseHeaders().split(/\n/).forEach(function (a) {
                                     (match = a.match(/(.*:?)\: (.*)/)) && (headers[match[1].toLowerCase()] = match[2])
                                 }), rqst.status >= 200 && rqst.status < 300 || 304 === rqst.status) {
                                 if (data = rqst.responseText, data && /json/.test(rqst.getResponseHeader("Content-Type"))) try {
@@ -241,34 +241,34 @@
                                 status: rqst.status
                             }) : reject(rqst.status)
                     }
-                }), promise.cancel = function() {
+                }), promise.cancel = function () {
                     wasCancelled = !0, rqst.abort()
                 }, rqst.send(null), promise)
             }, http
         }), /*! */
-        W.define("storage", ["rootScope", "http", "log"], function(a, b, c) {
+        W.define("storage", ["rootScope", "http", "log"], function (a, b, c) {
             var d = {},
                 e = {
                     isAvbl: !0,
-                    put: function(a, b) {
+                    put: function (a, b) {
                         try {
                             this.isAvbl ? window.localStorage.setItem(a, JSON.stringify(b)) : d[a] = b
                         } catch (e) {
                             c.event("Error writing to localStorage:" + e)
                         }
                     },
-                    get: function(a) {
+                    get: function (a) {
                         try {
                             return this.isAvbl ? JSON.parse(window.localStorage.getItem(a)) : d[a]
                         } catch (b) {}
                     },
-                    getFile: function(c, d) {
+                    getFile: function (c, d) {
                         var e = this,
                             f = this.get(c);
-                        return f && (d.aboluteURL || f.version === a.version) && (!d.test || f.data && f.data[d.test]) ? Promise.resolve(f.data) : new Promise(function(f, g) {
-                            b.get(d.aboluteURL ? c : "/v" + a.version + "/" + c).then(function(b) {
+                        return f && (d.aboluteURL || f.version === a.version) && (!d.test || f.data && f.data[d.test]) ? Promise.resolve(f.data) : new Promise(function (f, g) {
+                            b.get(d.aboluteURL ? c : "/v" + a.version + "/" + c).then(function (b) {
                                 b.version = d.aboluteURL ? "notAplicable" : a.version, e.put(c, b), f(b.data)
-                            }, function(a) {
+                            }, function (a) {
                                 g(a)
                             })
                         })
@@ -281,7 +281,7 @@
             }
             return e
         }), /*! */
-        W.define("broadcast", ["Evented"], function(a) {
+        W.define("broadcast", ["Evented"], function (a) {
             return a.extend({
                 ident: "bcast"
             })
@@ -289,27 +289,27 @@
         /*!
             Licensed under MIT. 
             Copyright (c) 2010 Rasmus Andersson <http://hunch.se/> */
-        W.define("lruCache", [], function() {
+        W.define("lruCache", [], function () {
             function a(a) {
                 this.size = 0, this.limit = a, this._keymap = {}
             }
-            return a.prototype.put = function(a, b) {
+            return a.prototype.put = function (a, b) {
                 var c = {
                     key: a,
                     value: b
                 };
                 return this._keymap[a] = c, this.tail ? (this.tail.newer = c, c.older = this.tail) : this.head = c, this.tail = c, this.size === this.limit ? this.shift() : void this.size++
-            }, a.prototype.shift = function() {
+            }, a.prototype.shift = function () {
                 var a = this.head;
                 return a && (this.head.newer ? (this.head = this.head.newer, this.head.older = void 0) : this.head = void 0, a.newer = a.older = void 0, delete this._keymap[a.key]), a
-            }, a.prototype.get = function(a, b) {
+            }, a.prototype.get = function (a, b) {
                 var c = this._keymap[a];
                 if (void 0 !== c) return c === this.tail ? b ? c : c.value : (c.newer && (c === this.head && (this.head = c.newer), c.newer.older = c.older), c.older && (c.older.newer = c.newer), c.newer = void 0, c.older = this.tail, this.tail && (this.tail.newer = c), this.tail = c, b ? c : c.value)
             }, a
         }), /*! */
-        W.define("object", [], function() {
+        W.define("object", [], function () {
             var a = {};
-            return a.clone = function(b, c) {
+            return a.clone = function (b, c) {
                 var d;
                 if (null === b || "object" != typeof b) d = b;
                 else if (b instanceof Date) d = new Date, d.setTime(b.getTime());
@@ -321,32 +321,32 @@
                     for (var g in b) b.hasOwnProperty(g) && (!c || c.indexOf(g) > -1) && (d[g] = a.clone(b[g]))
                 } else console.warn("Unable to copy obj! Its type isn't supported.");
                 return d
-            }, a.signature = function(a) {
+            }, a.signature = function (a) {
                 var b = "";
                 if (a instanceof Array)
                     for (var c = 0, d = a.length; d > c; c++) b += a[c] && a[c].toString();
                 else if (a instanceof Object)
                     for (var e in a) a.hasOwnProperty(e) && (b += a[e] && a[e].toString());
                 return b
-            }, a.extend = function(a) {
+            }, a.extend = function (a) {
                 var b, c, d, e, f = Object.create(a);
                 for (c = 1, d = arguments.length; d > c; c++) {
                     e = arguments[c];
                     for (b in e) f[b] = e[b]
                 }
                 return "function" == typeof f._init && f._init(), f
-            }, a.include = function(a, b) {
+            }, a.include = function (a, b) {
                 for (var c in b) a[c] = b[c];
                 return a
-            }, a.compare = function(a, b, c) {
-                return c.filter(function(c) {
+            }, a.compare = function (a, b, c) {
+                return c.filter(function (c) {
                     return a[c] !== b[c]
                 })
             }, a
         }), /*! */
-        W.define("Class", [], function() {
+        W.define("Class", [], function () {
             var a = {};
-            return a.extend = function() {
+            return a.extend = function () {
                 var a, b, c, d, e = Object.create(this);
                 for (b = 0, c = arguments.length; c > b; b++) {
                     d = arguments[b];
@@ -357,27 +357,27 @@
         }),
         /*!
             Copyright(c) 2011 Daniel Lamb <daniellmb.com> MIT Licensed */
-        W.define("Evented", ["Class"], function(a) {
+        W.define("Evented", ["Class"], function (a) {
             return a.extend({
-                _init: function() {
+                _init: function () {
                     this.id = 0, this.cache = {}
                 },
-                emit: function(a, b, c, d, e) {
+                emit: function (a, b, c, d, e) {
                     var f, g, h;
                     if (f = this.cache[a])
                         for (g = f.length; g--;) h = f[g], h.callback.call(this, b, c, d, e), h.once && this.off(h.id)
                 },
-                on: function(a, b, c) {
+                on: function (a, b, c) {
                     return this.cache[a] || (this.cache[a] = []), this.cache[a].push({
                         callback: b,
                         id: ++this.id,
                         once: c || !1
                     }), this.id
                 },
-                once: function(a, b) {
+                once: function (a, b) {
                     return this.on(a, b, !0)
                 },
-                off: function(a, b) {
+                off: function (a, b) {
                     var c, d;
                     if ("number" == typeof a) {
                         for (var e in this.cache)
@@ -393,7 +393,7 @@
                 }
             })
         }), /*! */
-        W.define("blurWorker", ["log"], function(a) {
+        W.define("blurWorker", ["log"], function (a) {
             function b() {
                 function a(a) {
                     i = new Uint16Array(a), d = new Uint16Array(a), e = new Uint16Array(a)
@@ -439,7 +439,7 @@
                     h = [0, 9, 10, 10, 14, 12, 14, 14, 16, 15, 16, 15, 16, 15, 15, 17, 18, 17, 12, 18, 16, 17, 17, 19, 19, 18, 19, 18, 18, 19, 19, 19, 20, 19, 20, 20, 20, 20, 20, 20],
                     i = [],
                     j = [];
-                self.onmessage = function(a) {
+                self.onmessage = function (a) {
                     postMessage(c(a.data.imageData, a.data.x0, a.data.y0, a.data.xMax, a.data.yMax, a.data.width, a.data.height, a.data.radius))
                 }
             }
@@ -465,7 +465,7 @@
             }
             return e
         }), /*! */
-        W.define("particles", ["rootScope", "Class"], function(a, b) {
+        W.define("particles", ["rootScope", "Class"], function (a, b) {
             function c(a) {
                 return 12 > a ? 0 : 25 > a ? 1 : 37 > a ? 2 : 62 > a ? 3 : 75 > a ? 2 : 85 > a ? 1 : 0
             }
@@ -497,26 +497,26 @@
                     stylesBlue: ["rgba(200,0,150,1)", "rgba(200,0,150,1)", "rgba(200,0,150,1)", "rgba(200,0,150,1)"],
                     lineWidth: [.6, .6, .6, 1, 1.2, 1.6, 1.8, 2, 2.2, 2.4, 2.4, 2.4, 2.4, 2.6, 2.8, 3, 3, 3, 3, 3, 3, 3, 3, 3],
                     level2reduce: e,
-                    getIntensityFun: function(a) {
+                    getIntensityFun: function (a) {
                         return d
                     },
-                    getVelocity: function(a) {
+                    getVelocity: function (a) {
                         return this.level2reduce[a.grid.level] / (this.velocity.constant * Math.pow(this.velocity.pow, a.map.zoom - this.velocity.zoom))
                     },
-                    getAmount: function(a) {
+                    getAmount: function (a) {
                         var b = 1 / (this.multiplier.constant * Math.pow(this.multiplier.pow, a.map.zoom - this.multiplier.zoom));
                         return Math.min(15e3, Math.round(a.map.width * a.map.height * b))
                     },
-                    getLineWidth: function(a) {
+                    getLineWidth: function (a) {
                         return this.lineWidth[a.map.zoom]
                     },
-                    getStyles: function(a) {
+                    getStyles: function (a) {
                         return a.map.zoom >= 12 ? this.stylesBlue : this.styles
                     },
-                    getMaxAge: function(a) {
+                    getMaxAge: function (a) {
                         return 100
                     },
-                    getBlendingAlpha: function(a) {
+                    getBlendingAlpha: function (a) {
                         return .9
                     }
                 }),
@@ -524,34 +524,34 @@
                     animation: "dot",
                     level2reduce: e,
                     styles: ["rgba(255,255,255,0.2)", "rgba(255,255,255,0.4)", "rgba(255,255,255,0.6)", "rgba(255,255,255,0.8)"],
-                    getIntensityFun: function(a) {
+                    getIntensityFun: function (a) {
                         var b = a.map.scale,
                             c = a.map.width / 2,
                             d = a.map.height / 2;
-                        return function(a, e, f) {
+                        return function (a, e, f) {
                             var g = (Math.pow(c - e, 2) + Math.pow(d - f, 2)) / Math.pow(b, 2),
                                 h = Math.min(3, Math.floor(a / 3));
                             return g > .75 ? h - 1 : g > .85 ? h - 2 : h
                         }
                     },
-                    getVelocity: function(a) {
+                    getVelocity: function (a) {
                         return 1 / (this.velocity.a * a.map.scale + this.velocity.b) * this.level2reduce[a.grid.level]
                     },
-                    getAmount: function(a) {
+                    getAmount: function (a) {
                         return this.multiplier.a * Math.pow(a.map.scale, 2) + this.multiplier.b
                     },
-                    getLineWidth: function(b) {
+                    getLineWidth: function (b) {
                         var c = a.isMobile ? .4 : 0,
                             d = b.map.scale;
                         return d > 300 ? 1 + c : d > 200 ? .8 + c : .6 + c
                     },
-                    getStyles: function(a) {
+                    getStyles: function (a) {
                         return this.styles
                     },
-                    getMaxAge: function(a) {
+                    getMaxAge: function (a) {
                         return 100
                     },
-                    getBlendingAlpha: function(a) {
+                    getBlendingAlpha: function (a) {
                         var b = a.map.scale;
                         return 500 > b ? .96 : 600 > b ? .94 : .92
                     }
@@ -593,7 +593,7 @@
                         pow: 1.4,
                         zoom: 3
                     },
-                    getBlendingAlpha: function(a) {
+                    getBlendingAlpha: function (a) {
                         return .96
                     }
                 }),
@@ -606,8 +606,8 @@
                         a: .01,
                         b: 1.2
                     },
-                    getIntensityFun: function(a) {
-                        return function(a, b, c) {
+                    getIntensityFun: function (a) {
+                        return function (a, b, c) {
                             return Math.min(3, Math.floor(4 * a))
                         }
                     }
@@ -627,19 +627,19 @@
                         pow: 1.6,
                         zoom: 2
                     },
-                    getIntensityFun: function() {
+                    getIntensityFun: function () {
                         return c
                     }
                 }),
                 globe: W.Particles.globe.extend({
                     animation: "wavecle",
-                    getIntensityFun: function() {
+                    getIntensityFun: function () {
                         return c
                     },
-                    getStyles: function(a) {
+                    getStyles: function (a) {
                         return ["rgba(100,100,100,0.1)", "rgba(150,150,150,0.15)", "rgba(200,200,200,0.2)", "rgba(255,255,255,0.3)"]
                     },
-                    getBlendingAlpha: function(a) {
+                    getBlendingAlpha: function (a) {
                         return .9
                     },
                     multiplier: {
@@ -671,7 +671,7 @@
         /*!	
             Copyright (c) 2014 Cameron Beccario - The MIT License (MIT) 
             Copyright (c) 2014 - 2015 Citationtech, S.E. all rights reserved */
-        W.define("interpolation", ["rootScope", "interFunctions", "animation", "mapsCtrl", "blurWorker", "object", "broadcast", "globe", "maps"], function(a, b, c, d, e, f, g, h, i) {
+        W.define("interpolation", ["rootScope", "interFunctions", "animation", "mapsCtrl", "blurWorker", "object", "broadcast", "globe", "maps"], function (a, b, c, d, e, f, g, h, i) {
             "use strict";
 
             function j() {
@@ -771,7 +771,7 @@
                 (l || !a.mapDirty) && (B = B ? 0 : 1), a.disableOverlay ? (p[0].clearRect(0, 0, N, M), p[1].clearRect(0, 0, N, M)) : l && p[B].clearRect(0, 0, N, M);
                 var ha = p[B].getImageData(0, 0, N, M),
                     ia = ha.data,
-                    ja = a.disableOverlay ? function() {} : b.colorizeFunction(ia, N, M),
+                    ja = a.disableOverlay ? function () {} : b.colorizeFunction(ia, N, M),
                     ka = ga ? 300 : 50,
                     la = 0 | D;
                 ! function ma() {
@@ -782,7 +782,7 @@
                         width: N,
                         height: M,
                         radius: a.blur
-                    }), e.onmessage = function(a) {
+                    }), e.onmessage = function (a) {
                         A || p[B].putImageData(a.data, 0, 0)
                     }), !l && a.mapDirty && i.resetCanvas(), a.disableOverlay || p[B].putImageData(ha, 0, 0), (l || !a.mapDirty) && (n[B].style.opacity = 1, n[B ? 0 : 1].style.opacity = 0), l && a.mapDirty && (m.particleCanvas.style.opacity = 1), (ga || a.particles && a.particles.name !== o) && (c.stop(), a.particles ? (m.particleCanvas.style.opacity = 1, c.run(q, a, m.particleCanvas), o = a.particles.name) : (m.particleCanvas.style.opacity = 0, o = null)), g()
                 }()
@@ -813,7 +813,7 @@
         /*!	
             Copyright (c) 2014 Cameron Beccario - The MIT License (MIT) 
             Copyright (c) 2014 - 2015 Citationtech, S.E. all rights reserved */
-        W.define("interFunctions", [], function() {
+        W.define("interFunctions", [], function () {
             function a(a, b) {
                 var c = a - b * Math.floor(a / b);
                 return c === b ? 0 : c
@@ -841,7 +841,7 @@
             }
 
             function f(b, c, d, e, f, g) {
-                return function(h, i, j) {
+                return function (h, i, j) {
                     var k = a(i - c, 360) / d,
                         l = (b - h) / e,
                         m = Math.floor(k),
@@ -879,14 +879,14 @@
                     k = h(d),
                     l = b / (f - g),
                     m = c / (k - j),
-                    n = a ? function(b, c) {
+                    n = a ? function (b, c) {
                         return a([c, b])
-                    } : function(a, b) {
+                    } : function (a, b) {
                         var c = (Math.deg2rad(b) - g) * l,
                             d = (k - h(Math.deg2rad(a))) * m;
                         return [c, d]
                     };
-                return function(a, b, c, d, e, f) {
+                return function (a, b, c, d, e, f) {
                     var g = 0 > b ? 36e-6 : -36e-6,
                         h = 0 > a ? 36e-6 : -36e-6,
                         i = n(a, b + g),
@@ -905,12 +905,12 @@
             function j(a, b, c) {
                 var d = c - 4 | 0,
                     e = b - 4 | 0;
-                return a.set ? function(f, g, h) {
+                return a.set ? function (f, g, h) {
                     var i = f - e;
                     if (i > 0 && (h = h.slice(0, 4 * (4 - i))), g >= d)
                         for (; c > g; g++) a.set(h, 4 * (g * b + f));
                     else a.set(h, 4 * (g * b + f)), a.set(h, 4 * ((g + 1) * b + f)), a.set(h, 4 * ((g + 2) * b + f)), a.set(h, 4 * ((g + 3) * b + f))
-                } : function(c, d, e) {
+                } : function (c, d, e) {
                     var f, g, h, i, j = e[0],
                         k = e[1],
                         l = e[2],
@@ -936,7 +936,7 @@
                 colorizeFunction: j
             }
         }), /*! */
-        W.define("animation", ["broadcast", "object", "globe"], function(a, b, c) {
+        W.define("animation", ["broadcast", "object", "globe"], function (a, b, c) {
             function d() {
                 window.clearTimeout(p)
             }
@@ -1009,7 +1009,7 @@
                     u = t / 6, v && (B = 0 | u, A = B > u ? g : h), l.lineWidth = q.getLineWidth.call(q, j), l.fillStyle = "rgba(0, 0, 0," + q.getBlendingAlpha.call(q, j) + ")";
                     var F = q.getIntensityFun(j);
                     ! function G() {
-                        p = setTimeout(function() {
+                        p = setTimeout(function () {
                             e(), G()
                         }, 40)
                     }()
@@ -1021,14 +1021,14 @@
                 p = null,
                 q = null,
                 r = !1;
-            return a.on("particlesAnimation", function(a) {
+            return a.on("particlesAnimation", function (a) {
                 "off" === a ? (k.style.opacity = 0, r = !0, q = setTimeout(d, 1500)) : (r = !1, clearTimeout(q), j(), k.style.opacity = 1)
             }), c.on("movestart", d), {
                 run: j,
                 stop: d
             }
         }), /*! */
-        W.define("rootScope", [], function() {
+        W.define("rootScope", [], function () {
             "undefined" == typeof API_MODE && (API_MODE = !1), "undefined" == typeof EMBED_MODE && (EMBED_MODE = !1);
             var a = window.navigator,
                 b = {
@@ -1059,7 +1059,7 @@
                 };
             return b
         }), /*! */
-        W.define("settings", ["storage", "broadcast", "rootScope", "geolocation"], function(a, b, c) {
+        W.define("settings", ["storage", "broadcast", "rootScope", "geolocation"], function (a, b, c) {
             var d = {
                     map: {
                         def: "esritopo",
@@ -1089,25 +1089,25 @@
                 e = c.geoIP && c.geoIP.country ? c.geoIP.country : "other";
             return {
                 defaults: /US|MY|LR/.test(e) ? "imperial" : "metric",
-                set: function(c, e) {
+                set: function (c, e) {
                     var f = d[c];
                     f && f.allowed.indexOf(e) > -1 && (a.put("settings_" + c, e), b.emit("settingsChanged", c, e))
                 },
-                get: function(b) {
+                get: function (b) {
                     var c = d[b],
                         e = a.get("settings_" + b);
                     return c && c.allowed.indexOf(e) > -1 ? e : c ? c.def : null
                 },
-                getHoursFunction: function() {
-                    return /US|UK|PH|CA|AU|NZ|IN|EG|SA|CO|PK|MY/.test(e) ? function(a) {
+                getHoursFunction: function () {
+                    return /US|UK|PH|CA|AU|NZ|IN|EG|SA|CO|PK|MY/.test(e) ? function (a) {
                         return (a + 11) % 12 + 1 + (a >= 12 ? " PM" : " AM")
-                    } : function(a) {
+                    } : function (a) {
                         return a + ":00"
                     }
                 }
             }
         }), /*! */
-        W.define("calendar", ["prototypes", "settings", "object", "log", "trans"], function(a, b, c, d, e) {
+        W.define("calendar", ["prototypes", "settings", "object", "log", "trans"], function (a, b, c, d, e) {
             function f(a) {
                 this.calendarDays = a.calendarDays || 12, this.numOfDays = a.numOfDays || 12, this.midnight = (new Date).midnight(), this.startOfTimeline = a.startOfTimeline || this.midnight, this.start = this.startOfTimeline.getTime(), this.days = [], this.endOfcalendar = this.startOfTimeline.add(this.calendarDays, "days"), this.endOfCal = this.endOfcalendar.getTime(), this.maxTimestamp = this.endOfcalendar.getTime(), this.longWeekdays = this.calendarDays < 8, this.type = this.endOfcalendar < this.midnight ? "historical" : this.startOfTimeline < this.midnight ? "mixed" : "forecast", this.timestamps = [], this.paths = [], this.interTimestamps = [];
                 for (var b, c, d, e, f, h = this.startOfTimeline.add(12), i = 0; i < this.calendarDays; i++) e = this.startOfTimeline.add(i, "days").getTime(), f = this.startOfTimeline.add(24).add(i, "days").getTime(), b = h.add(i, "days"), c = b.getTime(), d = g[b.getDay()], this.days[i] = {
@@ -1127,18 +1127,18 @@
             }
             var g = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
                 h = b.getHoursFunction();
-            return ("object" != typeof minifest || Object.keys(minifest).length < 10) && (minifest = function() {
+            return ("object" != typeof minifest || Object.keys(minifest).length < 10) && (minifest = function () {
                     for (var a, b = {}, c = (new Date).add(-18, "hours"), d = c.getDate().pad() + "XX", e = 0; 15 > e; e++) {
                         a = c.add(e, "days").getDate().pad();
                         for (var f = 0; 24 > f; f += 3)(10 > e || 6 === f || 18 === f) && (b[a + f.pad()] = d)
                     }
                     return b
                 }(), d.event("Minifest missing!!!")), f.prototype = {
-                    createTimestamps: function() {
+                    createTimestamps: function () {
                         var a, b, c = this.startOfTimeline.getUTCHours() % 3;
                         for (c && (this.startOfTimeline = this.startOfTimeline.add(3 - c, "hours")), b = 0; b < 24 * this.numOfDays; b += 3) a = this.startOfTimeline.add(b, "hours"), this.paths.push(this.date2path(a)), this.timestamps.push(a.getTime())
                     },
-                    createTimestampsFromMinifest: function(a) {
+                    createTimestampsFromMinifest: function (a) {
                         var b, c, d, e, f = this.startOfTimeline.add(12, "days").getTime();
                         for (c = 0; c <= 24 * (1 + this.numOfDays); c++)
                             if (d = this.startOfTimeline.add(c), b = d.getUTCDate().pad(2) + d.getUTCHours().pad(2), a[b]) {
@@ -1146,20 +1146,20 @@
                                 this.timestamps.push(e), this.paths.push(this.date2path(d))
                             }
                     },
-                    date2path: function(a) {
+                    date2path: function (a) {
                         return [a.getUTCFullYear(), (a.getUTCMonth() + 1).pad(2), a.getUTCDate().pad(2), a.getUTCHours().pad(2)].join("/")
                     },
-                    ts2path: function(a) {
+                    ts2path: function (a) {
                         var b, c = this.interTimestamps;
                         for (b = 0; b < c.length; b++)
                             if (a < c[b]) return this.paths[b];
                         return this.paths[c.length - 1]
                     },
-                    path2date: function(a) {
+                    path2date: function (a) {
                         var b = a.split("/");
                         return new Date(Date.UTC(b[0], b[1] - 1, b[2], b[3], 0, 0))
                     },
-                    path2string: function(a) {
+                    path2string: function (a) {
                         var b = this.path2date(a),
                             c = b.getDay(),
                             d = b.getDate(),
@@ -1167,11 +1167,11 @@
                         return e[g[c]] + " " + d + " - " + f
                     }
                 },
-                function(a) {
+                function (a) {
                     return new f(a)
                 }
         }), /*! */
-        W.define("overlays", ["Class", "storage", "broadcast", "settings", "colors", "interFunctions"], function(a, b, c, d, e, f) {
+        W.define("overlays", ["Class", "storage", "broadcast", "settings", "colors", "interFunctions"], function (a, b, c, d, e, f) {
             var g = {},
                 h = [3, 3, 3, 3, 5, 5, 7, 8, 9, 10, 11, 12, 12, 12, 12, 12, 12, 12],
                 i = [4, 4, 4, 4, 4, 4, 5, 6, 7, 8, 10, 10, 10, 10, 10, 10, 10, 10],
@@ -1203,30 +1203,30 @@
                 filename: null,
                 sea: null,
                 interpolate: f.interpolateAll,
-                _init: function() {
+                _init: function () {
                     var a = b.get("settings_" + this.ident);
                     a && this.conv[a] ? this.metric = a : this.metric = this.defaults[j], this.gradient && this.prepareColors()
                 },
-                prepareColors: function() {
+                prepareColors: function () {
                     var a, b, c = e.segmentedColorScale(this.gradient);
                     for (this.preparedColors = [], this.colorsArray = [], this.startingValue = this.bounds[0], this.step = (this.bounds[1] - this.startingValue) / this.steps, a = 0; a < this.steps; a++) b = c(this.startingValue + this.step * a), this.preparedColors[a] = b, this.colorsArray[a] = b.concat(b).concat(b).concat(b)
                 },
-                convertValue: function(a) {
+                convertValue: function (a) {
                     var b = this.conv[this.metric];
                     return "undefined" == typeof a ? "" : b.conversion(a).toFixed(b.precision) + this.separator + (b.label || this.metric)
                 },
-                convertNumber: function(a) {
+                convertNumber: function (a) {
                     var b = this.conv[this.metric];
                     return parseFloat(b.conversion(a).toFixed(b.precision))
                 },
-                setMetric: function(a) {
+                setMetric: function (a) {
                     this.conv[a] && this.metric !== a && (this.metric = a, b.put("settings_" + this.ident, a), c.emit("metricChanged", this.ident, a), c.emit("log", "settings/" + this.ident + "/" + a))
                 },
-                color: function(a, b) {
+                color: function (a, b) {
                     var c = this.colorsArray[Math.floor((a - this.startingValue) / this.step)];
                     return "rgba(" + c[0] + "," + c[1] + "," + c[2] + "," + (b || c[3]) + ")"
                 },
-                paintLegend: function() {
+                paintLegend: function () {
                     if (!this.description) return "";
                     var a, b, c, d, e = "",
                         f = this.description.indexOf(this.metric);
@@ -1241,13 +1241,13 @@
                 defaults: ["°C", "°F"],
                 conv: {
                     "°C": {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return a - 273.15
                         },
                         precision: 0
                     },
                     "°F": {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return 9 * a / 5 - 459.67
                         },
                         precision: 0
@@ -1293,31 +1293,31 @@
                 defaults: ["kt", "kt"],
                 conv: {
                     kt: {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return 1.943844 * a
                         },
                         precision: 0
                     },
                     bft: {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return .3 > a ? 0 : 1.5 > a ? 1 : 3.3 > a ? 2 : 5.5 > a ? 3 : 8 > a ? 4 : 10.8 > a ? 5 : 13.9 > a ? 6 : 17.2 > a ? 7 : 20.7 > a ? 8 : 24.5 > a ? 9 : 28.4 > a ? 10 : 32.6 > a ? 11 : 12
                         },
                         precision: 0
                     },
                     "m/s": {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return a
                         },
                         precision: 1
                     },
                     "km/h": {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return 3.6 * a
                         },
                         precision: 0
                     },
                     mph: {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return 2.236936 * a
                         },
                         precision: 0
@@ -1361,7 +1361,7 @@
                     [27, 52, 10, 27, 60, 96],
                     [29, 56, 11, 29, 64, 103]
                 ],
-                bgcolor: function(a) {
+                bgcolor: function (a) {
                     return a /= .514, 2 > a ? "rgba(37, 74, 255, 0.01)" : 6 > a ? "rgba(0, 150, 254, 0.1)" : 10 > a ? "rgba(18, 196, 200, 0.25)" : 14 > a ? "rgba(18, 211, 73, 0.4)" : 18 > a ? "rgba(0, 240, 0, 0.5)" : 22 > a ? "rgba(127, 237, 0, 0.5)" : 26 > a ? "rgba(254, 199, 0, 0.5)" : 30 > a ? "rgba(237, 124, 14, 0.5)" : 34 > a ? "rgba(200, 37, 39, 0.5)" : 38 > a ? "rgba(217, 0, 100, 0.5)" : 46 > a ? "rgba(202, 25, 186, 0.5)" : 50 > a ? "rgba(86, 54, 222, 0.5)" : "rgba(42, 132, 222, 0.5)"
                 }
             }), g.gust = g.wind, g.rh = W.Overlay.extend({
@@ -1370,7 +1370,7 @@
                 defaults: ["%", "%"],
                 conv: {
                     "%": {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return a
                         },
                         precision: 0
@@ -1410,19 +1410,19 @@
                 defaults: ["hPa", "inHg"],
                 conv: {
                     hPa: {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return a / 100
                         },
                         precision: 0
                     },
                     mmHg: {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return a / 133.322387415
                         },
                         precision: 0
                     },
                     inHg: {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return a / 3386.389
                         },
                         precision: 2
@@ -1465,14 +1465,14 @@
                 defaults: ["mm/h", "in/h"],
                 conv: {
                     "in/h": {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return (a - 200) / 60 * .039
                         },
                         label: "in/h",
                         precision: 2
                     },
                     "mm/h": {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return (a - 200) / 60
                         },
                         label: "mm/h",
@@ -1516,13 +1516,13 @@
                 defaults: ["cm", "in"],
                 conv: {
                     "in": {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return .039 * a
                         },
                         precision: 1
                     },
                     cm: {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return a / 10
                         },
                         precision: 1
@@ -1562,13 +1562,13 @@
                 defaults: ["mm", "in"],
                 conv: {
                     "in": {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return .039 * a
                         },
                         precision: 1
                     },
                     mm: {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return a
                         },
                         precision: 1
@@ -1632,13 +1632,13 @@
                 defaults: ["m", "ft"],
                 conv: {
                     m: {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return a
                         },
                         precision: 1
                     },
                     ft: {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return 3.28 * a
                         },
                         precision: 0
@@ -1683,7 +1683,7 @@
                 defaults: ["sec.", "sec."],
                 conv: {
                     "sec.": {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return a
                         },
                         precision: 1
@@ -1728,13 +1728,13 @@
                 defaults: ["°C", "°F"],
                 conv: {
                     "°C": {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return a
                         },
                         precision: 1
                     },
                     "°F": {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return 1.8 * a + 32
                         },
                         precision: 1
@@ -1787,7 +1787,7 @@
                 defaults: ["°C"],
                 conv: {
                     "°C": {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return a
                         },
                         precision: 2
@@ -1835,25 +1835,25 @@
                 defaults: ["kt", "kt"],
                 conv: {
                     kt: {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return 1.943844 * a
                         },
                         precision: 1
                     },
                     "m/s": {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return a
                         },
                         precision: 2
                     },
                     "km/h": {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return 3.6 * a
                         },
                         precision: 1
                     },
                     mph: {
-                        conversion: function(a) {
+                        conversion: function (a) {
                             return 2.236936 * a
                         },
                         precision: 1
@@ -1898,7 +1898,7 @@
         }),
         /*! 
             Copyright (c) 2014 Cameron Beccario - The MIT License (MIT) */
-        W.define("colors", [], function() {
+        W.define("colors", [], function () {
             function a(a) {
                 function b(a, b) {
                     var c = a[0],
@@ -1909,7 +1909,7 @@
                         h = b[1] - d,
                         i = b[2] - e,
                         j = b[3] - f;
-                    return function(a) {
+                    return function (a) {
                         return [Math.floor(c + a * g), Math.floor(d + a * h), Math.floor(e + a * i), Math.floor(f + a * j)]
                     }
                 }
@@ -1918,7 +1918,7 @@
                     return (Math.max(b, Math.min(a, c)) - b) / (c - b)
                 }
                 for (var d = [], e = [], f = [], g = 0; g < a.length - 1; g++) d.push(a[g + 1][0]), e.push(b(a[g][1], a[g + 1][1])), f.push([a[g][0], a[g + 1][0]]);
-                return function(a) {
+                return function (a) {
                     var b;
                     for (b = 0; b < d.length - 1 && !(a <= d[b]); b++);
                     var g = f[b];
@@ -1929,18 +1929,18 @@
                 segmentedColorScale: a
             }
         }), /*! */
-        W.define("loader", ["http", "dataStore", "object", "jsonLoader", "imgLoader"], function(a, b, c, d, e) {
+        W.define("loader", ["http", "dataStore", "object", "jsonLoader", "imgLoader"], function (a, b, c, d, e) {
             function f(a) {
                 var c, f, g = [],
                     h = /\.jpg|\.png/.test(a.fullPath) ? e : d,
                     i = b.get(),
                     j = h.getRequiredTiles(a.map, a.tileZoom);
                 for (c = 0; c < j.tiles.length; c++) g.push(h.loadTile(i, j, a, c));
-                return f = new Promise(function(b, c) {
-                    Promise.all(g).then(function(c) {
+                return f = new Promise(function (b, c) {
+                    Promise.all(g).then(function (c) {
                         b(h.composeObject(i, c, a, j))
                     })["catch"](c)
-                }), f.cancel = function() {
+                }), f.cancel = function () {
                     for (c = 0; c < g.length; c++) "function" == typeof g[c].cancel && g[c].cancel()
                 }, f
             }
@@ -1953,7 +1953,7 @@
                 checkTiles: g
             }
         }), /*! */
-        W.define("jsonLoader", ["http", "lruCache", "object"], function(a, b, c) {
+        W.define("jsonLoader", ["http", "lruCache", "object"], function (a, b, c) {
             var d = c.extend({}, {
                 tilesCache: new b(30),
                 emptyGrid: null,
@@ -1994,7 +1994,7 @@
                     tileSize: 120,
                     resolution: .5
                 }],
-                _init: function() {
+                _init: function () {
                     for (var a = [], b = 0; 14400 > b; b++) a[b] = null;
                     this.emptyGrid = [{
                         data: a
@@ -2002,7 +2002,7 @@
                         data: a
                     }]
                 },
-                getRequiredTiles: function(a, b) {
+                getRequiredTiles: function (a, b) {
                     if (0 == b) return {
                         left: 0,
                         right: 0,
@@ -2052,14 +2052,14 @@
                         self: this
                     }
                 },
-                checkTiles: function(a, b, c) {
+                checkTiles: function (a, b, c) {
                     var d, e = a.paths,
                         f = this.getRequiredTiles(b, c).paths;
                     for (d = 0; d < f.length; d++)
                         if (-1 === e.indexOf(f[d])) return !1;
                     return !0
                 },
-                composeObject: function(a, b, d, e) {
+                composeObject: function (a, b, d, e) {
                     var f = {
                         tiles: e,
                         tileZoom: d.tileZoom,
@@ -2084,7 +2084,7 @@
                     }
                     return f
                 },
-                loadTile: function(b, c, d, e) {
+                loadTile: function (b, c, d, e) {
                     var f, g, h, i, j = this,
                         k = c.tiles[e],
                         l = d.fullPath.replace(/<tiles>/, c.paths[e]),
@@ -2092,18 +2092,18 @@
                             cache: this.tilesCache,
                             parseHeaders: 0 === e
                         };
-                    return c.tileZoom && (m.substituteData = this.emptyTable), g = new Promise(function(g, n) {
-                        f = a.get(l, m).then(function(a) {
+                    return c.tileZoom && (m.substituteData = this.emptyTable), g = new Promise(function (g, n) {
+                        f = a.get(l, m).then(function (a) {
                             if (h = j.injectData(a.data, b, d, k.x, k.y, c), 0 === e) try {
                                 i = new Date(a.headers["last-modified"]), h.lastModified = i.getTime()
                             } catch (f) {}
                             g(h)
                         })
-                    }), g.cancel = function() {
+                    }), g.cancel = function () {
                         "function" == typeof f.cancel && f.cancel()
                     }, g
                 },
-                injectData: function(a, b, c, d, e, f) {
+                injectData: function (a, b, c, d, e, f) {
                     var g, h, i, j, k, l, m, n, o = a[0].data || a[0],
                         p = a[1] && (a[1].data || a[1]),
                         q = a[2] && (a[2].data || a[2]),
@@ -2113,21 +2113,21 @@
                     for (0 === f.tileZoom ? (i = a[0].header, j = i.nx, k = i.ny, l = j + 1) : (j = k = f.tileSize, l = j * f.width + 1), g = 0; k > g; g++) {
                         for (r = 3 * ((k * e + g) * l + j * d), m = r, h = 0; j > h; h++) {
                             switch (t) {
-                                case "gust":
-                                    b[r] = o[s] / 10;
-                                    break;
-                                case "wind":
-                                    b[r] = o[s] / 10, b[r + 1] = p[s] / 10;
-                                    break;
-                                case "waves":
-                                case "swell":
-                                case "wwaves":
-                                case "swellperiod":
-                                case "wwavesperiod":
-                                    n = .0174 * q[s], b[r] = -p[s] * Math.sin(n), b[r + 1] = -p[s] * Math.cos(n), b[r + 2] = o[s];
-                                    break;
-                                default:
-                                    b[r] = o[s]
+                            case "gust":
+                                b[r] = o[s] / 10;
+                                break;
+                            case "wind":
+                                b[r] = o[s] / 10, b[r + 1] = p[s] / 10;
+                                break;
+                            case "waves":
+                            case "swell":
+                            case "wwaves":
+                            case "swellperiod":
+                            case "wwavesperiod":
+                                n = .0174 * q[s], b[r] = -p[s] * Math.sin(n), b[r + 1] = -p[s] * Math.cos(n), b[r + 2] = o[s];
+                                break;
+                            default:
+                                b[r] = o[s]
                             }
                             s++, r += 3
                         }
@@ -2138,7 +2138,7 @@
             });
             return d
         }), /*! */
-        W.define("imgLoader", ["object", "jsonLoader"], function(a, b) {
+        W.define("imgLoader", ["object", "jsonLoader"], function (a, b) {
             var c = a.extend(b, {
                 canvas: document.getElementById("jpg_decoder"),
                 context: document.getElementById("jpg_decoder").getContext("2d"),
@@ -2179,28 +2179,28 @@
                     tileSize: 180,
                     resolution: .5
                 }],
-                _init: function() {},
-                loadTile: function(a, b, c, d) {
+                _init: function () {},
+                loadTile: function (a, b, c, d) {
                     var e, f = this,
                         g = !1,
                         h = b.tiles[d],
                         i = c.fullPath.replace(/<tiles>/, b.paths[d]);
-                    return e = new Promise(function(d, e) {
+                    return e = new Promise(function (d, e) {
                         var j, k, l, m;
-                        j = new Image, j.crossOrigin = "Anonymous", j.onload = function() {
+                        j = new Image, j.crossOrigin = "Anonymous", j.onload = function () {
                             g || (f.canvas.width = j.width, f.canvas.height = j.height, f.context.drawImage(j, 0, 0, j.width, j.height), m = f.context.getImageData(0, 0, j.width, j.height), k = f.decodeHeader(m.data, j.width), l = f.injectData(m.data, a, c, h.x, h.y, b, k, j.width, j.height - 8), l.lastModified = parseInt(k[6]), d(l))
-                        }, j.onerror = function() {
+                        }, j.onerror = function () {
                             d({})
                         }, j.src = i, (j.complete || void 0 === j.complete) && (j.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==", j.src = i)
-                    }), e.cancel = function() {
+                    }), e.cancel = function () {
                         g = !0
                     }, e
                 },
-                decodeHeader: function(a, b) {
+                decodeHeader: function (a, b) {
                     for (var c, d, e, f, g, h = new ArrayBuffer(28), i = new Uint8Array(h), j = new Float32Array(h), g = 4 * (4 * b) + 8, f = 0; 28 > f; f++) c = a[g], d = a[g + 1], e = a[g + 2], c = Math.round(c / 64), d = Math.round(d / 16), e = Math.round(e / 64), i[f] = (c << 6) + (d << 2) + e, g += 16;
                     return j
                 },
-                injectData: function(a, b, c, d, e, f, g, h, i) {
+                injectData: function (a, b, c, d, e, f, g, h, i) {
                     var j, e, k, l, m, n, o, p, q, r, s, t, u, v, w, x = 0,
                         y = 0,
                         z = 0;
@@ -2208,36 +2208,36 @@
                     for (0 === f.tileZoom ? (n = h, o = i, k = n + 1) : (n = o = f.tileSize, k = n * f.width + 1), j = 0; 3 > j; j++)
                         if (l = g[2 * j], m = g[2 * j + 1], l || m) {
                             switch (j) {
-                                case 0:
-                                    r = l, s = (m - l) / 255;
-                                    break;
-                                case 1:
-                                    t = l, u = (m - l) / 255;
-                                    break;
-                                case 2:
-                                    v = l, w = (m - l) / 255
+                            case 0:
+                                r = l, s = (m - l) / 255;
+                                break;
+                            case 1:
+                                t = l, u = (m - l) / 255;
+                                break;
+                            case 2:
+                                v = l, w = (m - l) / 255
                             }
                             x = j
                         }
                     for (c.dataLoading > -1 ? x = c.dataLoading : 1 >= x && /\.png/.test(c.fullPath) && (x += 10), z = 8 * (4 * h), j = 0; o > j; j++) {
                         switch (y = 3 * ((o * e + j) * k + n * d), p = y, x) {
-                            case 4:
-                                for (q = 0; n > q; q++) 0 === a[z + 3] ? b[y] = NaN : b[y] = a[z] * s + r, z += 4, y += 3;
-                                break;
-                            case 5:
-                                for (q = 0; n > q; q++) 0 === a[z + 3] ? (b[y] = NaN, b[y + 1] = 0, b[y + 2] = 0) : (b[y] = a[z] * s + r, b[y + 1] = a[z + 1] * u + t, b[y + 2] = a[z + 2] * w + v), z += 4, y += 3;
-                                break;
-                            case 1:
-                                for (q = 0; n > q; q++) b[y] = a[z] * s + r, b[y + 1] = a[z + 1] * u + t, z += 4, y += 3;
-                                break;
-                            case 0:
-                                for (q = 0; n > q; q++) b[y] = a[z] * s + r, z += 4, y += 3;
-                                break;
-                            case 11:
-                                for (q = 0; n > q; q++) 0 === a[z + 3] ? (b[y] = NaN, b[y + 1] = NaN) : (b[y] = a[z] * s + r, b[y + 1] = a[z + 1] * u + t), z += 4, y += 3;
-                                break;
-                            case 10:
-                                for (q = 0; n > q; q++) 0 === a[z + 3] ? b[y] = NaN : b[y] = a[z] * s + r, z += 4, y += 3
+                        case 4:
+                            for (q = 0; n > q; q++) 0 === a[z + 3] ? b[y] = NaN : b[y] = a[z] * s + r, z += 4, y += 3;
+                            break;
+                        case 5:
+                            for (q = 0; n > q; q++) 0 === a[z + 3] ? (b[y] = NaN, b[y + 1] = 0, b[y + 2] = 0) : (b[y] = a[z] * s + r, b[y + 1] = a[z + 1] * u + t, b[y + 2] = a[z + 2] * w + v), z += 4, y += 3;
+                            break;
+                        case 1:
+                            for (q = 0; n > q; q++) b[y] = a[z] * s + r, b[y + 1] = a[z + 1] * u + t, z += 4, y += 3;
+                            break;
+                        case 0:
+                            for (q = 0; n > q; q++) b[y] = a[z] * s + r, z += 4, y += 3;
+                            break;
+                        case 11:
+                            for (q = 0; n > q; q++) 0 === a[z + 3] ? (b[y] = NaN, b[y + 1] = NaN) : (b[y] = a[z] * s + r, b[y + 1] = a[z + 1] * u + t), z += 4, y += 3;
+                            break;
+                        case 10:
+                            for (q = 0; n > q; q++) 0 === a[z + 3] ? b[y] = NaN : b[y] = a[z] * s + r, z += 4, y += 3
                         }
                         f.wrapped ? (b[y] = b[p], b[y + 1] = b[p + 1], b[y + 2] = b[p + 2]) : (b[y] = b[y - 3], b[y + 1] = b[y - 2], b[y + 2] = b[y - 1])
                     }
@@ -2255,10 +2255,10 @@
             });
             return c
         }), /*! */
-        W.define("products", ["productClasses", "rootScope", "loader", "interpolation", "interFunctions", "http", "broadcast", "object", "calendar", "particles", "log"], function(a, b, c, d, e, f, g, h, i, j, k) {
+        W.define("products", ["productClasses", "rootScope", "loader", "interpolation", "interFunctions", "http", "broadcast", "object", "calendar", "particles", "log"], function (a, b, c, d, e, f, g, h, i, j, k) {
             var l = {},
                 m = (new Date).toISOString().replace(/^\d+-(\d+)-(\d+)T.*$/, "$1$2");
-            return l.getProductString = function(a, b) {
+            return l.getProductString = function (a, b) {
                 var c, d, e = [];
                 for (c in l)(d = l[c].overlays) && d.indexOf(a) > -1 && e.push(c);
                 return 1 === e.length ? e[0] : e.indexOf(b) > -1 ? b : e[0]
@@ -2288,7 +2288,7 @@
                 forecastSize: 3,
                 pathGenerators: {
                     wind: "{server}mbeurope/{path}/<tiles>wind-{level}.png",
-                    overlay: function(a) {
+                    overlay: function (a) {
                         return "wind" === a.overlay ? null : "{server}mbeurope/{path}/<tiles>{overlay}-surface.png"
                     }
                 },
@@ -2344,7 +2344,7 @@
                 productReady: !0,
                 calendar: null,
                 particles: {},
-                refTime: function() {
+                refTime: function () {
                     return "?" + m
                 },
                 levels: ["surface"],
@@ -2360,7 +2360,7 @@
                 pathGenerators: {
                     overlay: "{server}snowcover/latest/<tiles>snowcover.png"
                 },
-                checkCoverage: function(a, b) {
+                checkCoverage: function (a, b) {
                     return this.zoom2zoom[b.map.zoom] > 0 && b.map.south < -29 ? "out-of-bounds" : this.checkData(a[0], b)
                 }
             }), l.waves = W.Product.extend({
@@ -2405,7 +2405,7 @@
                 }
             }), l
         }), /*! */
-        W.define("dataStore", [], function() {
+        W.define("dataStore", [], function () {
             function a() {
                 return d++, d >= b && (d = 0), e[d]
             }
@@ -2414,7 +2414,7 @@
                 get: a
             }
         }), /*! */
-        W.define("task", ["interpolation", "broadcast", "products", "rootScope", "object", "Class"], function(a, b, c, d, e, f) {
+        W.define("task", ["interpolation", "broadcast", "products", "rootScope", "object", "Class"], function (a, b, c, d, e, f) {
             function g(a) {
                 "cancelled" !== a && console.warn("task cancelled was called")
             }
@@ -2422,54 +2422,54 @@
                     params: null,
                     product: null,
                     mapDirty: !1,
-                    _init: function() {
+                    _init: function () {
                         this.status = "init", this.data = null, this.loadingTasks = [], this.antiCycleCounter = 0
                     },
-                    setStatus: function(a) {
+                    setStatus: function (a) {
                         this.status = a
                     },
-                    load: function(a) {
+                    load: function (a) {
                         var b = this;
-                        return this.loadingTasks = this.product.load(this.params), this.setStatus("loading"), Promise.all(this.loadingTasks).then(function(c) {
+                        return this.loadingTasks = this.product.load(this.params), this.setStatus("loading"), Promise.all(this.loadingTasks).then(function (c) {
                             b.setStatus("loaded"), b.loadingTasks = [], b.data = c, b.display(a)
                         }, g), this
                     },
-                    cancel: function() {
-                        "loading" === this.status ? this.loadingTasks.map(function(a) {
+                    cancel: function () {
+                        "loading" === this.status ? this.loadingTasks.map(function (a) {
                             "function" == typeof a.cancel && a.cancel()
                         }) : "interpolation" === this.status && a.cancel()
                     },
-                    display: function(a) {
+                    display: function (a) {
                         var f = "ok",
                             g = this;
                         switch (this.mapDirty && (this.params.map = e.clone(d.map), this.params.mapDirty = !0, f = this.product.checkData(this.data[0], this.params)), f) {
-                            case "ok":
-                                this.setStatus("interpolation"), this.product.display(this.data, this.params, function() {
-                                    g.params.lastModified = g.data[0].lastModified, g.setStatus("finished"), g.antiCycleCounter = 0, b.emit("redrawFinished", g.params, g.mapDirty), g.mapDirty = !1, g.params.mapDirty = !1, "function" == typeof a && a()
-                                });
-                                break;
-                            case "no-data":
-                                this.antiCycleCounter++ > 10 ? console.error("displayAnimation was cycled") : this.load();
-                                break;
-                            case "out-of-timeline":
-                            case "not-supported-data":
-                                this.params.model = this.params.product = "gfs", this.product = c.gfs, b.emit("modelChanged", "gfs"), this.load()
+                        case "ok":
+                            this.setStatus("interpolation"), this.product.display(this.data, this.params, function () {
+                                g.params.lastModified = g.data[0].lastModified, g.setStatus("finished"), g.antiCycleCounter = 0, b.emit("redrawFinished", g.params, g.mapDirty), g.mapDirty = !1, g.params.mapDirty = !1, "function" == typeof a && a()
+                            });
+                            break;
+                        case "no-data":
+                            this.antiCycleCounter++ > 10 ? console.error("displayAnimation was cycled") : this.load();
+                            break;
+                        case "out-of-timeline":
+                        case "not-supported-data":
+                            this.params.model = this.params.product = "gfs", this.product = c.gfs, b.emit("modelChanged", "gfs"), this.load()
                         }
                     }
                 }),
-                function(a) {
+                function (a) {
                     return W.Task.extend(a)
                 }
         }), /*! */
-        W.define("geolocation", ["rootScope", "http", "broadcast", "storage"], function(a, b, c, d) {
+        W.define("geolocation", ["rootScope", "http", "broadcast", "storage"], function (a, b, c, d) {
             function e() {
-                return navigator.geolocation ? new Promise(function(b, c) {
-                    navigator.geolocation.getCurrentPosition(function(a) {
+                return navigator.geolocation ? new Promise(function (b, c) {
+                    navigator.geolocation.getCurrentPosition(function (a) {
                         b({
                             lat: a.coords.latitude,
                             lon: a.coords.longitude
                         })
-                    }, function(c) {
+                    }, function (c) {
                         b(a.geoIP)
                     })
                 }) : getIPlocation()
@@ -2479,7 +2479,7 @@
                 var g, h = parseFloat(c.lat).toFixed(2) + ", " + parseFloat(c.lon).toFixed(2);
                 if (e.fromStartup && (g = d.get("initReverseName")) && c.lat == g.lat && g.lon == g.lon) return f(g), Promise.resolve();
                 var i = b.get(a.server2 + "node/reverse/" + c.lat + "/" + c.lon + "?version=2.0&lang=" + a.prefLang);
-                return i.then(function(a) {
+                return i.then(function (a) {
                     var b;
                     (b = a.data && a.data.address) ? ("village" === e.detailLevel ? c.name = b.hamlet || b.suburb || b.quarter || b.village || b.town || b.city : c.name = b.town || b.village || b.city || b.hamlet || b.suburb || b.quarter, c.region = b.county || b.district || b.state || "", c.country = b.country || "", !c.name && e.mustBeDefined && (c.name = c.region + " " + h), e.fromStartup && d.put("initReverseName", c), f(c)) : f({
                         name: h
@@ -2488,13 +2488,13 @@
                     name: h
                 })), i
             }
-            c.on("locationRqstd", function() {
-                e().then(function(a) {
+            c.on("locationRqstd", function () {
+                e().then(function (a) {
                     a.zoom = 9, c.emit("mapsCenter", a), c.emit("mapsPopupRequested", a)
                 })
             });
             var g, h = document.querySelector('meta[name="geoip"]');
-            if (sameCountry = function() {
+            if (sameCountry = function () {
                     return !1
                 }, h && h.content) {
                 var i = h.content.split(",");
@@ -2503,7 +2503,7 @@
                     lon: parseFloat(i[2]),
                     country: i[3],
                     zoom: 1
-                }, a.geoIP.name = i[4] || a.geoIP.lat.toFixed(3) + ", " + a.geoIP.lon.toFixed(3), g = i[3].toLowerCase(), sameCountry = function(a) {
+                }, a.geoIP.name = i[4] || a.geoIP.lat.toFixed(3) + ", " + a.geoIP.lon.toFixed(3), g = i[3].toLowerCase(), sameCountry = function (a) {
                     return g === a
                 })
             }
@@ -2512,21 +2512,21 @@
                 getGPSlocation: e,
                 getReverseName: f
             }
-        }), W.define("productClasses", ["rootScope", "loader", "interpolation", "http", "overlays", "broadcast", "object", "calendar", "log"], function(a, b, c, d, e, f, g, h, i) {
+        }), W.define("productClasses", ["rootScope", "loader", "interpolation", "http", "overlays", "broadcast", "object", "calendar", "log"], function (a, b, c, d, e, f, g, h, i) {
             W.Product = W.Class.extend({
                 animationSpeed: 4200,
-                refTime: function(a) {
+                refTime: function (a) {
                     var b = a.path.replace(/^\d+\/\d+\/(\d+)\/(\d+)$/, "$1$2");
                     return "?" + this.minifest[b]
                 },
-                load: function(c) {
+                load: function (c) {
                     var d, f, h = e[c.overlay],
                         i = [];
                     c.server = this.server || a.server, c.tileZoom = this.getTileZoom(c), c.dataLoading = h.dataLoading, c.filename = h.filename || c.overlay;
                     for (var j in this.pathGenerators) f = this.pathGenerators[j], d = "function" == typeof f ? f.call(this, c) : f, d && (c.fullPath = d.template(c) + this.refTime(c), c.gridName = "overlay" === j ? c.overlay : j, i.push(b.load(g.clone(c))));
                     return i
                 },
-                display: function(a, b, d) {
+                display: function (a, b, d) {
                     var f = e[b.overlay];
                     c.interpolate({
                         map: b.map,
@@ -2539,31 +2539,31 @@
                         particles: this.particles[b.map.source],
                         blurAmount: f.blur[b.map.zoom],
                         product: b.product
-                    }, function() {
+                    }, function () {
                         f.sea ? document.body.classList.add("sea") : document.body.classList.remove("sea"), d()
                     })
                 },
-                getTileZoom: function(a) {
+                getTileZoom: function (a) {
                     return a.historical ? 0 : this.zoom2zoom[a.map.zoom]
                 },
-                checkData: function(a, c) {
+                checkData: function (a, c) {
                     return a ? -1 === this.levels.indexOf(c.level) || -1 === this.overlays.indexOf(c.overlay) ? "not-supported-data" : a.tileZoom === this.getTileZoom(c) && b.checkTiles(a.tiles, c.map, a.tileZoom) ? "ok" : "no-data" : "no-data"
                 },
                 pathGenerators: {
-                    wind: function(a) {
+                    wind: function (a) {
                         return "{server}" + this.directory + "/{path}/<tiles>wind-{level}." + this.fileSuffix
                     },
-                    overlay: function(a) {
+                    overlay: function (a) {
                         switch (a.overlay) {
-                            case "wind":
-                                return null;
-                            case "temp":
-                            case "rh":
-                                return "{server}" + this.directory + "/{path}/<tiles>{overlay}-{level}." + this.fileSuffix;
-                            case "pressure":
-                                return "{server}" + this.directory + "/{path}/<tiles>{overlay}-surface.png";
-                            default:
-                                return "{server}" + this.directory + "/{path}/<tiles>{overlay}-surface." + this.fileSuffix
+                        case "wind":
+                            return null;
+                        case "temp":
+                        case "rh":
+                            return "{server}" + this.directory + "/{path}/<tiles>{overlay}-{level}." + this.fileSuffix;
+                        case "pressure":
+                            return "{server}" + this.directory + "/{path}/<tiles>{overlay}-surface.png";
+                        default:
+                            return "{server}" + this.directory + "/{path}/<tiles>{overlay}-surface." + this.fileSuffix
                         }
                     }
                 }
@@ -2572,33 +2572,33 @@
                 animation: !0,
                 disableOverlayZoom: 12,
                 fileSuffix: "png",
-                _init: function() {
+                _init: function () {
                     this.minifest = null, this.calendar = null, this.productReady = !1
                 },
-                init: function(b) {
+                init: function (b) {
                     var c = this;
-                    d.get(a.server + this.directory + "/minifest.json?timestamp=" + Date.now()).then(function(a) {
+                    d.get(a.server + this.directory + "/minifest.json?timestamp=" + Date.now()).then(function (a) {
                         c.minifest = a.data, c.calendar = h({
                             numOfDays: c.forecastSize,
                             minifest: c.minifest
                         })
-                    })["catch"](function() {
+                    })["catch"](function () {
                         c.minifest = minifest, c.calendar = h({
                             numOfDays: c.forecastSize
                         }), i.event("Error: failed to load minifest")
-                    }).then(function() {
+                    }).then(function () {
                         c.productReady = !0, b()
                     })
                 },
-                isInBounds: function(a) {
+                isInBounds: function (a) {
                     return a.west > this.bounds.west && a.east < this.bounds.east && a.north < this.bounds.north && a.south > this.bounds.south
                 },
-                pointIsInBounds: function(a) {
+                pointIsInBounds: function (a) {
                     return a.lon > this.bounds.west && a.lon < this.bounds.east && a.lat < this.bounds.north && a.lat > this.bounds.south
                 }
             })
         }), /*! */
-        W.define("legend", ["overlays", "broadcast"], function(a, b) {
+        W.define("legend", ["overlays", "broadcast"], function (a, b) {
             function c(a, b, c) {
                 var d = a.indexOf(b) + (c ? 1 : -1);
                 return d === a.length ? d = 0 : 0 > d && (d = a.length - 1), a[d]
@@ -2618,21 +2618,21 @@
             }
 
             function e(b) {
-                i.classList.add("animate"), setTimeout(function() {
+                i.classList.add("animate"), setTimeout(function () {
                     g = b, f = a[b], d(f), i.classList.remove("animate")
                 }, 400)
             }
             var f, g, h, i = document.getElementById("legend");
-            i.onclick = function(a) {
+            i.onclick = function (a) {
                 var b, d;
                 (b = f.description) && (d = c(b, b[h], !0), f.setMetric(d))
-            }, b.on("metricChanged", function(a) {
+            }, b.on("metricChanged", function (a) {
                 a === f.ident && e(a)
-            }), b.on("redrawFinished", function(a) {
+            }), b.on("redrawFinished", function (a) {
                 a.overlay !== g && e(a.overlay)
             })
         }), /*! */
-        W.define("windytyUI", ["calendar", "rootScope", "broadcast", "products", "Class"], function(a, b, c, d, e) {
+        W.define("windytyUI", ["calendar", "rootScope", "broadcast", "products", "Class"], function (a, b, c, d, e) {
             var f = {
                 ident: "UIparams",
                 overlay: b.params.overlay,
@@ -2650,56 +2650,56 @@
                 histCalendar: null,
                 emitTimer: null,
                 timestampTimer: null,
-                setTimestamp: function(a) {
+                setTimestamp: function (a) {
                     this.timestamp = a, this.set("path", this.calendar.ts2path(a))
                 },
-                setOverlay: function(a) {
+                setOverlay: function (a) {
                     this.set("overlay", a)
                 },
-                setLevel: function(a) {
+                setLevel: function (a) {
                     this.set("level", a)
                 },
-                createHistCalendar: function(b) {
+                createHistCalendar: function (b) {
                     var c = a({
                         numOfDays: 10,
                         calendarDays: 10,
                         startOfTimeline: new Date(b - 432e6).midnight()
                     });
-                    (this.timestamp > c.end || this.timestamp < c.start) && (this.timestamp = (c.end - c.start) / 2 + c.start), this.histCalendar = c, this.historical = !0, this.model = "gfs", this.switchProduct("gfs", function() {}), document.body.classList.add("historical")
+                    (this.timestamp > c.end || this.timestamp < c.start) && (this.timestamp = (c.end - c.start) / 2 + c.start), this.histCalendar = c, this.historical = !0, this.model = "gfs", this.switchProduct("gfs", function () {}), document.body.classList.add("historical")
                 },
-                set: function(a, b) {
+                set: function (a, b) {
                     if (this[a] !== b) {
                         if (this[a] = b, "overlay" !== a && "model" !== a) return void this.emitOut(a);
                         var c = d.getProductString(this.overlay, this.model);
                         c !== this.product ? this.switchProduct(c, this.emitOut.bind(this, "overlay")) : this.emitOut("overlay")
                     }
                 },
-                switchProduct: function(a, b) {
+                switchProduct: function (a, b) {
                     var c = this;
-                    document.body.classList.remove("product-" + this.product), document.body.classList.add("product-" + a), this.product = a, this.productObj = d[a], this._initProduct(a, function() {
+                    document.body.classList.remove("product-" + this.product), document.body.classList.add("product-" + a), this.product = a, this.productObj = d[a], this._initProduct(a, function () {
                         var a = c.histCalendar || c.productObj.calendar;
                         a && (c.calendar = a, c.path = a.ts2path(c.timestamp)), b()
                     })
                 },
-                hasCalendar: function() {
+                hasCalendar: function () {
                     return !!this.productObj.calendar
                 },
-                emitOut: function(a) {
+                emitOut: function (a) {
                     var b = this;
-                    this.emitTimer && clearTimeout(this.emitTimer), this.emitTimer = setTimeout(function() {
+                    this.emitTimer && clearTimeout(this.emitTimer), this.emitTimer = setTimeout(function () {
                         c.emit("paramsChanged", b, a)
                     }, 100)
                 },
-                _initProduct: function(a, b) {
+                _initProduct: function (a, b) {
                     var c = d[a];
                     c.productReady ? b() : c.init(b)
                 }
             };
-            return c.once("mapChanged", function() {
+            return c.once("mapChanged", function () {
                 c.emit("paramsChanged", f)
             }), f
         }), /*! */
-        W.define("windytyCtrl", ["task", "windytyUI", "broadcast", "rootScope", "object", "products", "progressBar", "log", "calendarUI"], function(a, b, c, d, e, f, g, h, i) {
+        W.define("windytyCtrl", ["task", "windytyUI", "broadcast", "rootScope", "object", "products", "progressBar", "log", "calendarUI"], function (a, b, c, d, e, f, g, h, i) {
             function j(a) {
                 l ? (l.mapDirty = !0, "interpolation" === l.status && (l.cancel(), l.display())) : m ? (m.cancel(), m.mapDirty = !0, m.display()) : k(b)
             }
@@ -2710,7 +2710,7 @@
                     mapDirty: c,
                     params: e.clone(b, ["path", "timestamp", "acTime", "level", "overlay", "product", "model", "historical", "sstTime"]),
                     product: f[b.product]
-                }), l.params.map = e.clone(d.map), n.isRunning && (l.params.fromAnimation = !0), l.load(function() {
+                }), l.params.map = e.clone(d.map), n.isRunning && (l.params.fromAnimation = !0), l.load(function () {
                     m = l, l = null, n.isRunning && (n.semaphore = !1)
                 })
             }
@@ -2724,83 +2724,106 @@
                     button: document.getElementById("playpause"),
                     buttonMobile: document.getElementById("playpause-mobile"),
                     pbWrapper: document.getElementById("progress-bar-wrapper"),
-                    start: function() {
-                        return m && m.product ? (this.isRunning = !0, this.button.className = "pause", this.buttonMobile.className = "pause", this.pbWrapper.className = "onanimation", this.run(), void c.emit("animationStarted")) : void h.event("tried to run animation on void finisheTask")
+                    start: function () {
+                        return m && m.product ? (this.isRunning = !0, 
+												 this.button.className = "pause", this.buttonMobile.className = "pause", this.pbWrapper.className = "onanimation", 
+												 this.run(), 
+												 void c.emit("animationStarted")) : void h.event("tried to run animation on void finisheTask")
                     },
-                    stop: function() {
-                        this.semaphore = !1, this.isRunning = !1, this.button.className = "play", this.buttonMobile.className = "play", this.pbWrapper.className = "", clearTimeout(this.timer), c.emit("animationStopped")
+                    stop: function () {
+                        this.semaphore = !1, 
+						this.isRunning = !1, 
+						this.button.className = "play", 
+						this.buttonMobile.className = "play", 
+						this.pbWrapper.className = "", 
+						clearTimeout(this.timer), 
+						c.emit("animationStopped")
                     },
-                    toggle: function() {
+                    toggle: function () {
                         this.isRunning ? this.stop() : this.start()
                     },
-                    run: function() {
+                    run: function () {
                         var a = m.product,
                             c = +b.timestamp + this.tick * a.animationSpeed;
                         a.animation && c < a.calendar.end ? (i.setMobileUI(c), g.set(c), this.timer = setTimeout(this.run.bind(this), this.tick)) : this.stop()
                     }
                 };
-            Promise.all([new Promise(function(a, b) {
+            Promise.all([new Promise(function (a, b) {
                 c.once("paramsChanged", a)
-            }), new Promise(function(a, b) {
+            }), new Promise(function (a, b) {
                 c.once("mapChanged", a)
-            })]).then(function() {
+            })]).then(function () {
                 c.emit("windytyInitalized"), c.on("paramsChanged", k), c.on("mapChanged", j), c.on("playPauseClicked", n.toggle.bind(n)), k(b)
             })
         }),
         /*!
             (c)  Stanislav Sumbera, April , 2014, Licenced under MIT */
         L.CanvasOverlay = L.Class.extend({
-            canvas: function() {
+            canvas: function () {
                 return [this._canvas1, this._canvas2, this._canvas3]
             },
-            redraw: function() {
+            redraw: function () {
                 return this._frame || (this._frame = L.Util.requestAnimFrame(this._redraw, this)), this
             },
-            reset: function() {
+            reset: function () {
                 this._reset()
             },
-            onAdd: function(a) {
-                this._map = a, this._canvas1 = L.DomUtil.create("canvas", "leaflet-canvas1"), this._canvas2 = L.DomUtil.create("canvas", "leaflet-canvas2"), this._canvas3 = L.DomUtil.create("canvas", "leaflet-canvas3");
+            onAdd: function (a) {
+                this._map = a,
+				this._canvas1 = L.DomUtil.create("canvas", "leaflet-canvas1"), 
+				this._canvas2 = L.DomUtil.create("canvas", "leaflet-canvas2"), 
+				this._canvas3 = L.DomUtil.create("canvas", "leaflet-canvas3");
+				
                 var b = this._map.getSize();
-                this._canvas1.width = this._canvas2.width = this._canvas3.width = b.x, this._canvas1.height = this._canvas2.height = this._canvas3.height = b.y;
+				
+                this._canvas1.width = this._canvas2.width = this._canvas3.width = b.x, 
+				this._canvas1.height = this._canvas2.height = this._canvas3.height = b.y;
+				
                 var c = this._map.options.zoomAnimation && L.Browser.any3d;
-                L.DomUtil.addClass(this._canvas1, "leaflet-zoom-" + (c ? "animated" : "hide")), L.DomUtil.addClass(this._canvas2, "leaflet-zoom-" + (c ? "animated" : "hide")), L.DomUtil.addClass(this._canvas3, "leaflet-zoom-" + (c ? "animated" : "hide")), a._panes.overlayPane.appendChild(this._canvas1), a._panes.overlayPane.appendChild(this._canvas2), a._panes.overlayPane.appendChild(this._canvas3), a.on("moveend", this._redraw, this), a.on("resize", this._resize, this), a.options.zoomAnimation && L.Browser.any3d && a.on("zoomanim", this._animateZoom, this), this._reset(), this._redraw()
+				
+                L.DomUtil.addClass(this._canvas1, "leaflet-zoom-" + (c ? "animated" : "hide")), 
+				L.DomUtil.addClass(this._canvas2, "leaflet-zoom-" + (c ? "animated" : "hide")), 
+				L.DomUtil.addClass(this._canvas3, "leaflet-zoom-" + (c ? "animated" : "hide")), a._panes.overlayPane.appendChild(this._canvas1), a._panes.overlayPane.appendChild(this._canvas2), a._panes.overlayPane.appendChild(this._canvas3), 
+				a.on("moveend", this._redraw, this), 
+				a.on("resize", this._resize, this), 
+				a.options.zoomAnimation && L.Browser.any3d && a.on("zoomanim", this._animateZoom, this), 
+				this._reset(), this._redraw()
             },
-            addTo: function(a) {
+            addTo: function (a) {
                 return a.addLayer(this), this
             },
-            _resize: function(a) {
+            _resize: function (a) {
                 this._canvas1.width = this._canvas2.width = this._canvas3.width = a.newSize.x, this._canvas1.height = this._canvas2.height = this._canvas3.height = a.newSize.y
             },
-            _reset: function() {
+            _reset: function () {
                 var a = this._map.containerPointToLayerPoint([0, 0]);
                 L.DomUtil.setPosition(this._canvas1, a), L.DomUtil.setPosition(this._canvas2, a), L.DomUtil.setPosition(this._canvas3, a)
             },
-            _redraw: function() {
+            _redraw: function () {
                 var a = this._map.getSize(),
                     b = this._map.getBounds();
                 180 * a.x / (20037508.34 * (b.getEast() - b.getWest())), this._map.getZoom();
                 this._frame = null
             },
-            _animateZoom: function(a) {
+            _animateZoom: function (a) {
                 var b = this._map.getZoomScale(a.zoom),
                     c = this._map._getCenterOffset(a.center)._multiplyBy(-b).subtract(this._map._getMapPanePos());
                 this._canvas1.style[L.DomUtil.TRANSFORM] = L.DomUtil.getTranslateString(c) + " scale(" + b + ")", this._canvas2.style[L.DomUtil.TRANSFORM] = L.DomUtil.getTranslateString(c) + " scale(" + b + ")", this._canvas3.style[L.DomUtil.TRANSFORM] = L.DomUtil.getTranslateString(c) + " scale(" + b + ")"
             }
-        }), L.canvasOverlay = function() {
+        }), L.canvasOverlay = function () {
             return new L.CanvasOverlay
         }, /*! */
-        W.define("mapsCtrl", ["rootScope", "storage", "settings", "storage", "broadcast", "http", "globe", "maps", "object", "log", "location", "geolocation"], function(a, b, c, b, d, e, f, g, h, i, j, k) {
+        W.define("mapsCtrl", ["rootScope", "storage", "settings", "storage", "broadcast", "http", "globe", "maps", "object", "log", "location", "geolocation"], function (a, b, c, b, d, e, f, g, h, i, j, k) {
             function l(a) {
                 s = c.get("3d"), q = g, m(q, a)
             }
 
             function m(a, b) {
-                b.lat = parseFloat(b.lat).bound(-80, 80), b.lon = parseFloat(b.lon), a.init(b).then(function(b) {
-                    q = a, a === g ? (r.style.opacity = 0, r.style["pointer-events"] = "none", setTimeout(function() {
+                b.lat = parseFloat(b.lat).bound(-80, 80), b.lon = parseFloat(b.lon), a.init(b).then(function (b) {
+                    q = a, a === g ? (r.style.opacity = 0, r.style["pointer-events"] = "none", setTimeout(function () {
                         r.style.display = "none"
                     }, 1e3)) : (r.style.display = "block", r.style["pointer-events"] = "auto", r.style.opacity = 1), d.emit("projectionChanged", q.ident), o(b)
-                })["catch"](function() {
+                })["catch"](function () {
                     a === f && (i.event("Failed to install globe"), s = !1, m(g, b))
                 })
             }
@@ -2839,28 +2862,28 @@
                 }), i.event("GeoIP missing !!!")
             }
             var v = d.emit.bind(d, "movestart");
-            return f.on("movestart", v), g.on("click dragstart", v), f.on("globeMoveend", n), g.on("mapsMoveend", n), d.on("settingsChanged", function(b) {
+            return f.on("movestart", v), g.on("click dragstart", v), f.on("globeMoveend", n), g.on("mapsMoveend", n), d.on("settingsChanged", function (b) {
                 "3d" === b && l(a.map)
-            }), d.on("popupRequested", function(a, b) {
+            }), d.on("popupRequested", function (a, b) {
                 d.emit((q === f ? "globe" : "maps") + "PopupRequested", a, b)
             }), d.on("mapsCenter", p), {
-                getCanvas: function() {
+                getCanvas: function () {
                     return q.canvases
                 },
                 center: p,
-                ensureLeaflet: function() {
+                ensureLeaflet: function () {
                     if (s = !1, q === f) {
                         var a = f.info();
                         a.zoom = 5, m(g, a)
                     }
                 },
-                stopEnsureLeaflet: function() {
+                stopEnsureLeaflet: function () {
                     l(q.info())
                 }
             }
         }), /*! */
-        W.define("maps", ["rootScope", "settings", "object", "broadcast"], function(a, b, c, d) {
-            L.Map.addInitHook(function() {
+        W.define("maps", ["rootScope", "settings", "object", "broadcast"], function (a, b, c, d) {
+            L.Map.addInitHook(function () {
                 function a(a) {
                     function e() {
                         d.fire("singleclick", L.Util.extend(a, {
@@ -2874,7 +2897,7 @@
                     c && (clearTimeout(c), c = null)
                 }
                 var c, d = this;
-                d.on && (d.on("click", a), d.on("dblclick", function() {
+                d.on && (d.on("click", a), d.on("dblclick", function () {
                     setTimeout(b, 0)
                 }))
             });
@@ -2904,23 +2927,23 @@
                         iconAnchor: [5, 5]
                     })
                 },
-                init: function(c) {
-                    return this.isInit ? this.center(c) : (this.center(c, !1), this.initTiles(), this.initCanvas(), this.drawGraticule(), this.on("moveend", this.moveEnd.bind(this)), this.on("resize", this.resizeEnd.bind(this)), this.on("contextmenu", function() {
+                init: function (c) {
+                    return this.isInit ? this.center(c) : (this.center(c, !1), this.initTiles(), this.initCanvas(), this.drawGraticule(), this.on("moveend", this.moveEnd.bind(this)), this.on("resize", this.resizeEnd.bind(this)), this.on("contextmenu", function () {
                         e.zoomOut()
-                    }), d.on("settingsChanged", function(c) {
+                    }), d.on("settingsChanged", function (c) {
                         switch (c) {
-                            case "map":
-                                e.initTiles();
-                                break;
-                            case "retina":
-                                a.useRetina = a.isRetina && b.get("retina"), e.initTiles(), e.rescaleCanvas();
-                                break;
-                            case "graticule":
-                                e.drawGraticule()
+                        case "map":
+                            e.initTiles();
+                            break;
+                        case "retina":
+                            a.useRetina = a.isRetina && b.get("retina"), e.initTiles(), e.rescaleCanvas();
+                            break;
+                        case "graticule":
+                            e.drawGraticule()
                         }
                     }), this.isInit = !0), Promise.resolve(this.info())
                 },
-                drawGraticule: function() {
+                drawGraticule: function () {
                     if (b.get("graticule")) {
                         for (var a = {
                                 stroke: !0,
@@ -2939,7 +2962,7 @@
                     } else
                         for (var f = 0; f < e.graticule.length; f++) e.removeLayer(e.graticule[f])
                 },
-                initCanvas: function() {
+                initCanvas: function () {
                     var a = L.canvasOverlay().addTo(e),
                         b = a.canvas();
                     this.canvases = {
@@ -2948,7 +2971,7 @@
                         actualCanvas: 0
                     }, this.resetCanvas = a.reset.bind(a), b[2].style.opacity = 0, this.rescaleCanvas()
                 },
-                initTiles: function() {
+                initTiles: function () {
                     var c = {
                             hereterrain: "https://{s}.aerial.maps.cit.api.here.com/maptile/2.1/maptile/newest/terrain.day/{z}/{x}/{y}/256/png8?" + a.hereMapsID,
                             heresat: "https://{s}.aerial.maps.cit.api.here.com/maptile/2.1/maptile/newest/satellite.day/{z}/{x}/{y}/256/png8?" + a.hereMapsID,
@@ -2970,7 +2993,7 @@
                         maxZoom: a.maxZoom
                     }).addTo(e)
                 },
-                center: function(a, b) {
+                center: function (a, b) {
                     var c = a.zoom ? a.zoom.bound(e.minZoom, 20) : e.getZoom();
                     if (a.paddingLeft) {
                         var d = e.project([a.lat, a.lon], c).subtract([a.paddingLeft / 2, 0]),
@@ -2982,13 +3005,13 @@
                         animate: b
                     })
                 },
-                moveEnd: function() {
+                moveEnd: function () {
                     this.fire("mapsMoveend", this.info())
                 },
-                resizeEnd: function() {
+                resizeEnd: function () {
                     e.rescaleCanvas(), this.fire("mapsMoveend", this.info())
                 },
-                rescaleCanvas: function() {
+                rescaleCanvas: function () {
                     var b = e.canvases.particleCanvas,
                         c = a.useRetina ? window.devicePixelRatio || 1 : 1,
                         d = e.getSize(),
@@ -2996,7 +3019,7 @@
                         g = d.y;
                     b.width = f * c, b.height = g * c, b.style.width = f + "px", b.style.height = g + "px", b.getContext("2d").scale(c, c)
                 },
-                info: function() {
+                info: function () {
                     var a = e.getCenter(),
                         b = e.getBounds(),
                         c = e.getSize();
@@ -3018,15 +3041,15 @@
                     }
                 }
             }), e
-        }), W.emptyFun = function() {}, /*! Copyright (c) Windyty SE, 2016 all rights reserved */
-        W.define("globe", [], function() {
+        }), W.emptyFun = function () {}, /*! Copyright (c) Windyty SE, 2016 all rights reserved */
+        W.define("globe", [], function () {
             return {
                 on: W.emptyFun,
-                isVisible: function() {
+                isVisible: function () {
                     return W.emptyFun
                 }
             }
-        }), W.define("progressBar", [], W.emptyFun), W.define("calendarUI", [], W.emptyFun), W.define("location", ["rootScope"], function(a) {
+        }), W.define("progressBar", [], W.emptyFun), W.define("calendarUI", [], W.emptyFun), W.define("location", ["rootScope"], function (a) {
             if (a.disableGeoIp = !0, a.drawGraticule = !1, "undefined" != typeof windytyInit) {
                 var b = windytyInit;
                 isNaN(b.lat) || isNaN(b.lon) || (a.sharedCoords = {
@@ -3035,9 +3058,9 @@
                     zoom: b.zoom
                 })
             }
-        }), W.define("trans", [], function() {
+        }), W.define("trans", [], function () {
             return {}
-        }), W.define("log", [], function() {
+        }), W.define("log", [], function () {
             return {
                 page: W.emptyFun,
                 event: W.emptyFun

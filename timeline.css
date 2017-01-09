@@ -1,52 +1,52 @@
-#timeline{
+#timeline {
     position: absolute;
     bottom: 0px;
     left: 10px;
     height: 80px;
     width: 35%;
     min-width: 450px;
-    z-index: 20;   
+    z-index: 20;
     opacity: 0.3;
     transition: opacity 0.7s 5s;
 }
 
-#timeline:hover{
+#timeline:hover {
     opacity: 0.6;
     transition: 0.2s 0s;
 }
 
-#track{
+#track {
     position: absolute;
     height: 10px;
     width: 100%;
     bottom: 10px;
 }
 
-input[type='range']{
-    -webkit-appearance:none; 
-    width: 100%; 
+input[type='range'] {
+    -webkit-appearance: none;
+    width: 100%;
     border-radius: 3px;
-    background-color: white;    
+    background-color: white;
     overflow: hidden;
     outline: none;
     background: none;
     height: 10px;
-	position: absolute;
-	opacity: 0.6;
-	z-index: 20;
+    position: absolute;
+    opacity: 0.6;
+    z-index: 20;
     margin: 0;
     padding: 0;
     cursor: pointer;
 }
 
-input[type='range']::-webkit-slider-runnable-track{
-    -webkit-appearance:none;
+input[type='range']::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
     height: 10px;
     background: white;
 }
 
 input[type='range']::-webkit-slider-thumb {
-    -webkit-appearance:none;
+    -webkit-appearance: none;
     border: none;
     height: 32px;
     width: 8px;
@@ -57,23 +57,24 @@ input[type='range']::-webkit-slider-thumb {
     margin-top: 0px;
 }
 
-#calendar{
+#calendar {
     position: absolute;
-	background-color: black;
-	color: white;
-	font-family: sans-serif;
-	font-size: 16px;
-	text-align: center;
-	opacity: 0.8;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.8;
     border-color: white;
-	bottom: 25px;
-	width: 100%;
+    bottom: 25px;
+    width: 100%;
     height: 30px;
-	z-index: 20;
+    z-index: 20;
     border-radius: 3px;
     overflow: hidden;
 }
-#calendarpointer-pointer{
+
+#calendarpointer-pointer {
     position: absolute;
     width: 0.5%;
     height: inherit;
@@ -81,25 +82,26 @@ input[type='range']::-webkit-slider-thumb {
     background-color: red;
     border-radius: 3px;
 }
-#calendar-table{
+
+#calendar-table {
     height: 100%;
     width: 100%;
     border: 0;
 }
 
-#calendar-table-tr{
+#calendar-table-tr {
     padding: 0px;
     border: 0px;
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
-#calendar-table-0, 
+#calendar-table-0,
 #calendar-table-1,
 #calendar-table-2,
 #calendar-table-3,
 #calendar-table-4,
 #calendar-table-5,
-#calendar-table-6{
+#calendar-table-6 {
     height: 100%;
     width: 14.2857%;
     cursor: pointer;
@@ -117,7 +119,7 @@ input[type='range']::-webkit-slider-thumb {
     top: 5px;
 }
 
-#timePopup{
+#timePopup {
     font-family: sans-serif;
     font-size: 14px;
     position: absolute;
@@ -129,8 +131,9 @@ input[type='range']::-webkit-slider-thumb {
     padding: 0px;
     margin: 0px;
 }
-@media (max-width: 500px){
-    #timeline{
+
+@media (max-width: 500px) {
+    #timeline {
         width: 100%;
         min-width: 0px;
         left: 0px;
@@ -138,26 +141,26 @@ input[type='range']::-webkit-slider-thumb {
         overflow: hidden;
         transition: 0s 0s;
     }
-    #calendar{
+    #calendar {
         font-size: 12px;
     }
     #calendar,
     #calendarpointer,
-    calendarpointer-pointer{
+    calendarpointer-pointer {
         height: 24px;
     }
-    #popup{
+    #popup {
         top: 13px;
     }
-    #timePopup{
+    #timePopup {
         font-size: 12px;
     }
     input[type='range']::-webkit-slider-runnable-track,
     input[type='range'],
-    #track{
+    #track {
         height: 12px;
     }
-    #track{
+    #track {
         bottom: 8px;
     }
 }

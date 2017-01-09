@@ -4,15 +4,21 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5b
 //tilelayer style variable
 var tile_group = L.layerGroup(),
 
-    tile_satellite = L.mapbox.tileLayer("mapbox.streets-satellite", {format: 'jpg70', zIndex: 0}),
+    tile_satellite = L.mapbox.tileLayer("mapbox.streets-satellite", {
+        format: 'jpg70',
+        zIndex: 0
+    }),
 
-    tile_streets = L.mapbox.tileLayer("mapbox.streets", {format: 'jpg70', zIndex: 1000}),
+    tile_streets = L.mapbox.tileLayer("mapbox.streets", {
+        format: 'jpg70',
+        zIndex: 1000
+    }),
 
     tile_switch = tile_group.hasLayer(tile_satellite),
 
     tile_switch_empty = true,
 
-//marker distance layers
+    //marker distance layers
     markerlayerGroup = new L.layerGroup(),
     markerlayer = new L.mapbox.featureLayer(),
     linelayer = new L.mapbox.featureLayer(),
@@ -26,38 +32,40 @@ var tile_group = L.layerGroup(),
     coor_constant = 2.0,
     center_position2 = [27.154, 123.377];
 
-function cent_pos(){
+function cent_pos() {
     center_position2 = [center_position1.lat + coor_constant, center_position1.lng + coor_constant];
 }
 
 var marker1 = L.marker(center_position1, {
-                    draggable: true,
-                    icon: L.mapbox.marker.icon({
-                        'marker-size': 'large',
-                        'marker-symbol': 'ferry',
-                        'marker-color': '#FF8040',
-                        }),
-                    zIndexOffset: 50
-                }),
+        draggable: true,
+        icon: L.mapbox.marker.icon({
+            'marker-size': 'large',
+            'marker-symbol': 'ferry',
+            'marker-color': '#FF8040',
+        }),
+        zIndexOffset: 50
+    }),
 
     marker2 = L.marker(center_position2, {
-                    draggable: true,
-                    icon: L.mapbox.marker.icon({
-                        'marker-size': 'large',
-                        'marker-symbol': 'harbor',
-                        'marker-color': '#FF8040',
-                        }),
-                    zIndexOffset: 49
-                });
+        draggable: true,
+        icon: L.mapbox.marker.icon({
+            'marker-size': 'large',
+            'marker-symbol': 'harbor',
+            'marker-color': '#FF8040',
+        }),
+        zIndexOffset: 49
+    });
 
-var distanceline = L.polyline([center_position1, center_position2], {zIndex: 200}),
+var distanceline = L.polyline([center_position1, center_position2], {
+        zIndex: 200
+    }),
     greatcircleline = L.Polyline.Arc(center_position1, center_position2, {
-                                    color: 'red',
-                                    vertices: 200
-                                });
-    //'Polyline' with great circle and 'polyline' with leaflet polyline
-    //cf. polyline([[coordinate1],[coordinate2]])
-    //    Polyline([coordinate1],[coordinate2])
+        color: 'red',
+        vertices: 200
+    });
+//'Polyline' with great circle and 'polyline' with leaflet polyline
+//cf. polyline([[coordinate1],[coordinate2]])
+//    Polyline([coordinate1],[coordinate2])
 
 //
 ////animation marker
@@ -71,34 +79,50 @@ var j = 0,
     animate_marker = {},
     animatelayer = L.mapbox.featureLayer();
 
-function change_tile(){
-                
-                if(tile_switch && !tile_switch_empty){
-                   
-                    tile_group.removeLayer(tile_satellite);
-                    
-                    tile_streets.addTo(tile_group);
-                    
-                    distanceline.setStyle({color: 'black'});
-                    
-                    tile_switch = tile_group.hasLayer(tile_satellite);
-                }
-                else if(!tile_switch && !tile_switch_empty){
-                    
-                    tile_group.removeLayer(tile_streets);
-                    
-                    distanceline.setStyle({color: 'black'});
-                    
-                    tile_switch_empty = true;
-                }
-                else{
-                    
-                    tile_satellite.addTo(tile_group);
-                    
-                    distanceline.setStyle({color: 'white'});
-                    
-                    tile_switch = tile_group.hasLayer(tile_satellite);
-                    
-                    tile_switch_empty = false;
-                };
-            }
+function change_tile() {
+	var canvas3 = document.getElementsByClassName('leaflet-canvas3 leaflet-zoom-animated')[0];
+    if (tile_switch && !tile_switch_empty) {
+
+        tile_group.removeLayer(tile_satellite);
+
+        tile_streets.addTo(tile_group);
+
+        distanceline.setStyle({
+            color: 'black'
+        });
+
+        tile_switch = tile_group.hasLayer(tile_satellite);
+		
+		//canvas3.style.opacity = 0;
+		
+    } else if (!tile_switch && !tile_switch_empty) {
+
+        tile_group.removeLayer(tile_streets);
+
+        distanceline.setStyle({
+            color: 'black'
+        });
+
+        tile_switch_empty = true;
+		
+		//canvas3.style.opacity = 1;
+    } else {
+
+        tile_satellite.addTo(tile_group);
+
+        distanceline.setStyle({
+            color: 'white'
+        });
+
+        tile_switch = tile_group.hasLayer(tile_satellite);
+
+        tile_switch_empty = false;
+		
+		//canvas3.style.opacity = 0;
+    };
+}
+var tracklayerGroup = new L.layerGroup();
+var trackLayer = new L.mapbox.featureLayer()
+    .loadURL("track/fleet.geojson").addTo(tracklayerGroup),
+    tracklineLayer = new L.mapbox.featureLayer()
+    .loadURL("track/fleet_line.geojson").addTo(tracklayerGroup);

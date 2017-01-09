@@ -1,18 +1,18 @@
 // 初始相關變數值
-var p = "",     //String variable for for the data path of the route
-    geo = "",   //Variable for geojson data path
-    gpx = "",   //Variable for gpx data path
-    csv = "",   //Variable for csv data path
+var p = "", //String variable for for the data path of the route
+    geo = "", //Variable for geojson data path
+    gpx = "", //Variable for gpx data path
+    csv = "", //Variable for csv data path
 
-//Route geojson layergroup
+    //Route geojson layergroup
     geolayerGroup = L.layerGroup(),
-//Load lines
+    //Load lines
     initial_line = function () {
-            $(document).ready(function () {
-                $("#line").empty().load("initial_line.txt");
-                $("#route").empty().load("Catalogue/ADL.txt").prop("disabled", true);
-                document.getElementsByClassName('menu_route')[0].style.cursor = 'not-allowed';
-            });
+        $(document).ready(function () {
+            $("#line").empty().load("initial_line.txt");
+            $("#route").empty().load("Catalogue/ADL.txt").prop("disabled", true);
+            document.getElementsByClassName('menu_route')[0].style.cursor = 'not-allowed';
+        });
     };
 initial_line();
 
@@ -32,7 +32,7 @@ function changeline() {
         lineOption = document.getElementById("line").options;
     p = lineOption[lineIndex].text;
     var lineTXT = "Catalogue/" + p + ".txt"
-    $(document).ready(function(){
+    $(document).ready(function () {
         $("#route").empty().load(lineTXT).prop("disabled", false);
     });
     document.getElementsByClassName('menu_route')[0].style.cursor = 'pointer';
@@ -56,13 +56,13 @@ function closeNav() {
     window['windyty'].removeAttribute('onclick');
 }
 var about_key = true;
-function showabout(){
 
-    if(about_key){
+function showabout() {
+
+    if (about_key) {
         document.getElementsByClassName("logo_image")[0].style.left = '0px';
         about_key = false;
-    }
-    else{
+    } else {
         document.getElementsByClassName("logo_image")[0].style.left = '-230px';
         about_key = true;
     }
