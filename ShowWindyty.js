@@ -673,7 +673,7 @@ function windytyMain(map) {
 			for(i = 0; i < max; i++){
 				r = $("<p></p>").text(b[i].slice(8, 11)).prepend("Route: ");
 				s = $("<p></p>").text(b[i].slice(12, 16)).prepend("Ship: ");
-				h = $("<p></p>").text(a[i]).prepend("Harbor: ");
+				h = $("<p></p>").html('<div id="mark" style="display: inline">' + a[i] + '</div>').prepend("Harbor: ");
 				rsh = $("<li></li>").append(r, s, h).attr({id: 'search'+i});
 				$('#search_result').append(rsh);
 				$("li p").css({'margin': '0px'});
@@ -688,8 +688,8 @@ function windytyMain(map) {
 				$('#search'+i).one('click', x());
 			}
 		}
-		keymark($('#from_harbor').val().toUpperCase(), $("p:nth-child(3)").text());
-		keymark($('#to_harbor').val().toUpperCase(), $("p:nth-child(3)").text());
+		keymark($('#from_harbor').val().toUpperCase(), $("[id$=mark]").text());
+		keymark($('#to_harbor').val().toUpperCase(), $("[id$=mark]").text());
 	}
 	function checkto(a, b){
 		if(b === '' && a ===''){
@@ -714,7 +714,7 @@ function windytyMain(map) {
 		}
 	}
 	function keymark(key, str){
-		$("p:nth-child(3)").html(function(n, c){
+		$("[id$=mark]").html(function(n, c){
 			return c.replace(key, '<mark>' + key + '</mark>');
 		});
 	}

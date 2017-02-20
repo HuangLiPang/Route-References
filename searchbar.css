@@ -9,7 +9,8 @@
 	transition-delay: 3s;
 }
 
-#search_bar:hover{
+#search_bar:hover,
+#search_bar:active{
 	width: 230px;
 	transition: 0.5s;
 }
