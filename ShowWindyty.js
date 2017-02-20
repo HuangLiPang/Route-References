@@ -627,4 +627,102 @@ function windytyMain(map) {
 		document.getElementById('calendarpointer-pointer').style.left = calendar_pointer + '%';
 		initial_line();
 	}
+	
+	//
+	////Search Bar
+	
+	//string splice
+	String.prototype.splice = function(idx, rem, str) {
+		return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
+	};
+	
+	var r_search = {
+		key: '',
+		harbor: '//*[contains(harbor, "")]/harbor',
+		path: '//*[contains(harbor, "")]/path',
+		s_harbor: function(key, str){
+			return JSON.search(key, str);
+		},
+		s_path: function(key, str){
+			return JSON.search(key, str);
+		}
+	};
+	var search_event = function(){
+			$.getJSON("Route_Catalogue.json", function(result){
+				var from_harbor = $('#from_harbor').val().toUpperCase(),
+					to_harbor = $('#to_harbor').val().toUpperCase(),
+					h = r_search.harbor.splice(22, 0, checkto(from_harbor, to_harbor)),
+					p = r_search.path.splice(22, 0, checkto(from_harbor, to_harbor)),
+					rh = r_search.s_harbor(result, h),
+					rp = r_search.s_harbor(result, p);
+				iterateItems(rh.length, rh, rp);
+			});
+		};
+	$(document).ready(function(){
+		$("[id$=harbor]").on({keyup: search_event, mouseup: search_event});
+	});
+
+	function iterateItems(max, a, b){
+		var r, s, h, rsh;
+		$('#search_result').empty();
+		if(max === 0){
+			$('#search_bar').css({'height': '0%'});
+			$('#search_result').css({'height': '0%'});
+		}
+		else{
+			for(i = 0; i < max; i++){
+				r = $("<p></p>").text(b[i].slice(8, 11)).prepend("Route: ");
+				s = $("<p></p>").text(b[i].slice(12, 16)).prepend("Ship: ");
+				h = $("<p></p>").text(a[i]).prepend("Harbor: ");
+				rsh = $("<li></li>").append(r, s, h).attr({id: 'search'+i});
+				$('#search_result').append(rsh);
+				$("li p").css({'margin': '0px'});
+				$("li").css({'margin': '20px 0px 20px 0px '});
+				var x = function(){
+					var a = b[i];
+					return function(){
+						searchclick(a);
+					};
+				};
+				//要先建立一個scope來存放位址才不會被覆蓋掉
+				$('#search'+i).one('click', x());
+			}
+		}
+		keymark($('#from_harbor').val().toUpperCase(), $("p:nth-child(3)").text());
+		keymark($('#to_harbor').val().toUpperCase(), $("p:nth-child(3)").text());
+	}
+	function checkto(a, b){
+		if(b === '' && a ===''){
+			$('#search_bar').css({'height': '0%'});
+			$('#search_result').css({'height': '0%'});
+			return 'xxx';
+		}
+		else if(b === '' && a !== ''){
+			$('#search_bar').css({'height': '50%'});
+			$('#search_result').css({'height': '100%'});
+			return a;
+		}
+		else if(b !== '' && a === ''){
+			$('#search_bar').css({'height': '50%'});
+			$('#search_result').css({'height': '100%'});
+			return b;
+		}
+		else{
+			$('#search_bar').css({'height': '50%'});
+			$('#search_result').css({'height': '100%'});
+			return a + '-' + b;
+		}
+	}
+	function keymark(key, str){
+		$("p:nth-child(3)").html(function(n, c){
+			return c.replace(key, '<mark>' + key + '</mark>');
+		});
+	}
+	function searchclick(a){
+		var geoLayer = new L.mapbox.featureLayer();
+		geoLayer.loadURL(a).addTo(geolayerGroup);
+		geoLayer.on('ready', function () {
+			map.fitBounds(geoLayer.getBounds());
+		});
+	}
 }

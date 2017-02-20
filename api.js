@@ -182,28 +182,38 @@
             Date.prototype.add = function (a, b) {
                 var c = new Date(this.getTime());
                 return c.setTime(this.getTime() + ("days" === b ? 24 : 1) * a * 60 * 60 * 1e3), c
-            }, Date.prototype.toUTCPath = function () {
+            }, 
+			Date.prototype.toUTCPath = function () {
                 return this.toISOString().replace(/^(\d+)-(\d+)-(\d+)T(\d+):.*$/, "$1/$2/$3/$4")
-            }, String.prototype.trunc = function (a) {
+            }, 
+			String.prototype.trunc = function (a) {
                 return this.length > a ? this.substr(0, a - 1) + "&hellip;" : this
-            }, Date.prototype.midnight = function () {
+            },
+			Date.prototype.midnight = function () {
                 return this.setHours(0), this.setMinutes(0), this.setSeconds(0), this.setMilliseconds(0), this
-            }, Number.prototype.pad = function (a) {
+            }, 
+			Number.prototype.pad = function (a) {
                 for (var b = String(this); b.length < (a || 2);) b = "0" + b;
                 return b
-            }, Number.prototype.format = function (a) {
+            }, 
+			Number.prototype.format = function (a) {
                 return this.toFixed(a || 0).replace(/(\d)(?=(\d{3})+\.?)/g, "$1 ")
-            }, String.prototype.firstCapital = function () {
+            }, 
+			String.prototype.firstCapital = function () {
                 return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase()
-            }, Number.prototype.bound = function (a, b) {
+            }, 
+			Number.prototype.bound = function (a, b) {
                 return Math.max(Math.min(this, b), a)
-            }, Math.deg2rad = function (a) {
+            },
+			Math.deg2rad = function (a) {
                 return a / 180 * Math.PI
-            }, String.prototype.template = function (a) {
+            }, 
+			String.prototype.template = function (a) {
                 return this.replace(/\{\s*(.+?)\s*\}/g, function (b, c) {
                     return "undefined" == typeof a[c] ? "" : a[c]
                 })
-            }, String.prototype.template2 = function (a) {
+            }, 
+			String.prototype.template2 = function (a) {
                 return this.replace(/\{\{(.+?)\}\}/g, function (b, c) {
                     return a[c] || ""
                 })
