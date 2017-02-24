@@ -677,3 +677,8 @@
 .sea .leaflet-overlay-pane {
     z-index: -20
 }
+.leaflet-popup-close-button+
+.leaflet-popup-content-wrapper 
+.leaflet-popup-content{
+	    padding-top: 0px;
+}

@@ -6,11 +6,12 @@
 	max-height: 50%;
 	z-index: 2;
 	transition: 0.5s;
-	transition-delay: 3s;
+	transition-delay: 5s;
 }
 
 #search_bar:hover,
-#search_bar:active{
+#search_bar:active,
+#search_bar:focus{
 	width: 230px;
 	transition: 0.5s;
 }

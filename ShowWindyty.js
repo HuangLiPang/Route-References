@@ -16,217 +16,273 @@ function windytyMain(map) {
 		position: 'topright',
 		maxWidth: 100
 	}).addTo(map);
+	
+	//
+	////animation control
+	var W_animation = {
+		gradient2: document.getElementsByClassName("leaflet-canvas2 leaflet-zoom-animated")[0],
+		gradient3: document.getElementsByClassName("leaflet-canvas3 leaflet-zoom-animated")[0],
+		gradcheck: {},
+		key: 1,
+		canvas1: document.getElementsByClassName("leaflet-canvas1 leaflet-zoom-animated")[0],
+		keep: function() {
+			if (!this.key) {
+				W.animation.stop();
+				this.canvas1.style.opacity = 0;
+				setTimeout(function () {
+					this.canvas1.style.transition = 'opacity 0.001s';
+					this.canvas1.style.WebkitTransition = 'opacity 0.001s';
+				}, 500);
+				this.key = 0;
+			}
+		}
+	}
+	W_animation.canvas1.addEventListener('transitionend', W_animation.keep);
+	//Because 'transitionstart' event didn't exist in W3C rules, it is a little tricky to change the transition time into 0.001s to fool your eyes.
+	////
+	//
+	
+	var W_easybar_sem = {
+			statebar: true,
+			Switch: true,
+			count: 1
+		},//W_statebar_c boolean for detecting leaflet easybar.
+		W_weather = {
+			wind: function() {
+				W.setOverlay("wind");
+				setButtonState();
+				W_easybar_sem.switch = false;
+				map_tile_change();
+			},
+			temp: function() {
+				W.setOverlay("temp");
+				setButtonState();
+				W_easybar_sem.switch = false;
+				map_tile_change();
+			},
+			rain: function() {
+				W.setOverlay("clouds");
+				setButtonState();
+				W_easybar_sem.switch = false;
+				map_tile_change();
+			},
+			press: function() {
+				W.setOverlay("pressure");
+				setButtonState();
+				W_easybar_sem.switch = false;
+				map_tile_change();
+			},
+			waves: function() {
+				W.setOverlay("waves");
+				setButtonState();
+				tile_switch_empty = false;
+				tile_switch = false;
+				tile_group.clearLayers();
+				change_tile();
+				W_easybar_sem.switch = true;
+				map_tile_change();
+			},
+			currents: function() {
+				W.setOverlay("currents");
+				setButtonState();
+				document.getElementById("timeline").style.display = "none";
+				tile_switch_empty = false;
+				tile_switch = false;
+				tile_group.clearLayers();
+				change_tile();
+				W_easybar_sem.switch = true;
+				map_tile_change();
+			}
+		},	
+		W_gadget = {
+			measuring: function() {
+				distance_button();
+				show_marker_position();
+			},
+			animation: function() {
+				if (W_animation.key) {
+					W.animation.stop();
+					W_animation.canvas1.style.opacity = 0;
+					setTimeout(function () {
+						W_animation.canvas1.style.transition = 'opacity 0.001s';
+						W_animation.canvas1.style.WebkitTransition = 'opacity 0.001s';
+					}, 500);
+					W_animation.key = 0;
+				} else {
+					W.animation.run();
+					W_animation.canvas1.style.opacity = 1;
+					W_animation.canvas1.style.transition = 'opacity 1.5s';
+					W_animation.canvas1.style.WebkitTransition = 'opacity 1.5s';
+					W_animation.key = 1;
+				}
+			},
+			gradient: function() {
+				if(W_animation.gradient3.style.opacity == 1){
+					W_animation.gradient3.style.opacity = 0;
+					W_animation.gradcheck = W_animation.gradient3;
+				}
+				else if(W_animation.gradient2.style.opacity == 1){
+					W_animation.gradient2.style.opacity = 0;
+					W_animation.gradcheck = W_animation.gradient2;
+				}
+				else if(W_animation.gradient3.style.opacity == 0 && W_animation.gradient2.style.opacity == 0){
+					W_animation.gradcheck.style.opacity = 1;
+				}
+			}
+		},
+		W_easybutton = {
+			wind: L.easyButton({
+				states: [{
+						stateName: "wind-button",
+						onClick: W_weather.wind,
+						title: "Wind",
+						icon: '<img src="Icons/wind.png">'
+					}]
+				}),
+				temp: L.easyButton({
+					states: [{
+						stateName: "temp-button",
+						onClick: W_weather.temp,
+						title: "Temperature",
+						icon: '<img src="Icons/temp.png">'
+					}]
+				}),
+				rain: L.easyButton({
+					states: [{
+						stateName: "rain-button",
+						onClick: W_weather.rain,
+						title: "Rain",
+						icon: '<img src="Icons/rain.png">'
+													}]
+				}),
+				pressure: L.easyButton({
+					states: [{
+						stateName: "pressure-button",
+						onClick: W_weather.press,
+						title: "Pressure",
+						icon: '<img src="Icons/pressure.png">'
+													}]
+				}),
+				waves: L.easyButton({
+					states: [{
+						stateName: "waves-button",
+						onClick: W_weather.waves,
+						title: "Waves",
+						icon: '<img src="Icons/waves.png">'
+													}]
+				}),
+				currents: L.easyButton({
+					states: [{
+						stateName: "currents-button",
+						onClick: W_weather.currents,
+						title: "Currents",
+						icon: '<img src="Icons/currents.png">'
+													}],
+					id: 'current'
+				}),
+				gradient: L.easyButton({
+					states: [{
+						stateName: "Gradient-button",
+						onClick: W_gadget.gradient,
+						title: "Gradient",
+						icon: '<img src="Icons/gradient.png">'
+													}],
+					id: 'gradient'
+				}),
+				animation: L.easyButton({
+					states: [{
+						stateName: "animation-button",
+						onClick: W_gadget.animation,
+						title: "Animation",
+						icon: '<img src="Icons/animation_toggle.png">'
+													}],
+					id: 'animation'
+				}),
+				measuring: L.easyButton({
+					states: [{
+						stateName: "measure-button",
+						onClick: W_gadget.measuring,
+						title: "Measure Distance",
+						icon: '<img src="Icons/measuring.png">'
+												}]
+				}),
+				maptile: L.easyButton({
+					states: [{
+						stateName: "maptile-button",
+						onClick: change_tile,
+						title: "Maps",
+						icon: '<img src="Icons/maptile.png">'
+													}]
+				})
+		},
+		W_easybar = {
+			state: L.easyBar([W_easybutton.wind, W_easybutton.temp, W_easybutton.rain,	W_easybutton.pressure, W_easybutton.waves, W_easybutton.currents]).addTo(map),
+			control: L.easyBar([W_easybutton.measuring, W_easybutton.maptile, W_easybutton.animation, W_easybutton.gradient]).addTo(map)
+		};
+	
 	//
 	//Right side buttons
 	function map_tile_change() {
-		if (map_tile_switch) {
-			if (map_tile_count === 1) {
-				maptile_button.disable();
+		if (W_easybar_sem.switch) {
+			if (W_easybar_sem.count === 1) {
+				W_easybutton.maptile.disable();
 				window['W_change_tile'].classList.toggle('disable');
 				window['W_change_tile'].removeAttribute('onclick');
-				map_tile_count -= 1;
+				W_easybar_sem.count -= 1;
 			}
-		} else if (!map_tile_switch) {
-			if (map_tile_count === 0) {
-				maptile_button.enable();
+		} else if (!W_easybar_sem.switch) {
+			if (W_easybar_sem.count === 0) {
+				W_easybutton.maptile.enable();
 				window['W_change_tile'].classList.toggle('disable');
 				window['W_change_tile'].setAttribute('onclick', 'change_tile()');
-				map_tile_count += 1;
+				W_easybar_sem.count += 1;
 			}
 		}
 	}
-	var wind_button = L.easyButton({
-			states: [{
-				stateName: "wind-button",
-				onClick: W_wind,
-				title: "Wind",
-				icon: '<img src="Icons/wind.png">'
-            }]
-		}),
-		temp_button = L.easyButton({
-			states: [{
-				stateName: "temp-button",
-				onClick: W_temp,
-				title: "Temperature",
-				icon: '<img src="Icons/temp.png">'
-            }]
-		}),
-		rain_button = L.easyButton({
-			states: [{
-				stateName: "rain-button",
-				onClick: W_rain,
-				title: "Rain",
-				icon: '<img src="Icons/rain.png">'
-                                            }]
-		}),
-		pressure_button = L.easyButton({
-			states: [{
-				stateName: "pressure-button",
-				onClick: W_press,
-				title: "Pressure",
-				icon: '<img src="Icons/pressure.png">'
-                                            }]
-		}),
-		waves_button = L.easyButton({
-			states: [{
-				stateName: "waves-button",
-				onClick: W_waves,
-				title: "Waves",
-				icon: '<img src="Icons/waves.png">'
-                                            }]
-		}),
-		currents_button = L.easyButton({
-			states: [{
-				stateName: "currents-button",
-				onClick: W_currents,
-				title: "Currents",
-				icon: '<img src="Icons/currents.png">'
-                                            }],
-			id: 'current'
-		}),
-		gradient_button = L.easyButton({
-			states: [{
-				stateName: "Gradient-button",
-				onClick: W_gradient,
-				title: "Gradient",
-				icon: '<img src="Icons/gradient.png">'
-                                            }],
-			id: 'gradient'
-		}),
-		//
-		////Animation control
-		animation_button = L.easyButton({
-			states: [{
-				stateName: "animation-button",
-				onClick: W_animation,
-				title: "Animation",
-				icon: '<img src="Icons/animation_toggle.png">'
-                                            }],
-			id: 'animation'
+
+	//
+	////Layers control
+	////toGeoJSON works when geojsons must be loaded(featureLayer.loadURL) outsite the windytyMain function.
+	/*var myIcon = L.icon({
+			iconUrl: 'Icons/emc/EMC10.gif',
+			iconSize: [60, 60],
+			iconAnchor: [40, 40],
+			labelAnchor: [10, 0] // as I want the label to appear 2px past the icon (10 + 2 - 6)
 		});
-	
-	var gradient2 = document.getElementsByClassName("leaflet-canvas2 leaflet-zoom-animated")[0],
-		gradient3 = document.getElementsByClassName("leaflet-canvas3 leaflet-zoom-animated")[0],
-		gradcheck;
-	
-	function W_gradient() {
-		if(gradient3.style.opacity == 1){
-			gradient3.style.opacity = 0;
-			gradcheck = gradient3;
-		}
-		else if(gradient2.style.opacity == 1){
-			gradient2.style.opacity = 0;
-			gradcheck = gradient2;
-		}
-		else if(gradient3.style.opacity == 0 && gradient2.style.opacity == 0){
-			gradcheck.style.opacity = 1;
-		}
-	}
-	
-	var animation_key = 1,
-		animation_canvas1 = document.getElementsByClassName("leaflet-canvas1 leaflet-zoom-animated")[0];
+	L.marker([25, 121.2606], {
+		icon: myIcon
+	}).bindLabel('Look revealing label!').addTo(map);*/
 
-	function W_animation() {
-		if (animation_key) {
-			W.animation.stop();
-			animation_canvas1.style.opacity = 0;
-			setTimeout(function () {
-				animation_canvas1.style.transition = 'opacity 0.001s';
-				animation_canvas1.style.WebkitTransition = 'opacity 0.001s';
-			}, 500);
-			animation_key = 0;
-		} else {
-			W.animation.run();
-			animation_canvas1.style.opacity = 1;
-			animation_canvas1.style.transition = 'opacity 1.5s';
-			animation_canvas1.style.WebkitTransition = 'opacity 1.5s';
-			animation_key = 1;
-		}
-	}
-
-	function W_animation_keep() {
-		if (!animation_key) {
-			W.animation.stop();
-			animation_canvas1.style.opacity = 0;
-			setTimeout(function () {
-				animation_canvas1.style.transition = 'opacity 0.001s';
-				animation_canvas1.style.WebkitTransition = 'opacity 0.001s';
-			}, 500);
-			animation_key = 0;
-		}
-	}
-	animation_canvas1.addEventListener('transitionend', W_animation_keep);
-	//Because 'transitionstart' event didn't exist in W3C rules, it is a little tricky to change the transition time into 0.001s to fool your eyes.
-	////
-	//Animation control
-	var W_statebar = L.easyBar([wind_button, temp_button, rain_button, pressure_button, waves_button, currents_button]),
-		W_statebar_c = true;
-	
-	//W_statebar_c boolean for detecting leaflet easybar.
-	W_statebar.addTo(map);
-	var measuring_button = L.easyButton({
-			states: [{
-				stateName: "measure-button",
-				onClick: measuring,
-				title: "Measure Distance",
-				icon: '<img src="Icons/measuring.png">'
-                                        }]
-		}),
-		maptile_button = L.easyButton({
-			states: [{
-				stateName: "maptile-button",
-				onClick: change_tile,
-				title: "Maps",
-				icon: '<img src="Icons/maptile.png">'
-                                            }]
-		}),
-		map_tile_switch = true,
-		map_tile_count = 1;
-	var W_controlbar = L.easyBar([measuring_button, maptile_button, animation_button, gradient_button]);
-	W_controlbar.addTo(map);
-	//Layers control
-	//toGeoJSON works when geojsons must be loaded(featureLayer.loadURL) outsite the windytyMain function.
-/*
-	var fleetsGroup = L.layerGroup().addTo(map);
-	var popup = L.popup({
-			closeButton: true,
-			closeOnClick: false,
-			className: 'Taiwan'
-		}).setLatLng([25.154, 121.377])
-		.setContent("<p style='margin: 2px;'>Hello world!<br/>Taiwan's here.</p>")
-		.addTo(map);
-	//window['test'].innerHTML = trackLayer.toGeoJSON().features[0].geometry.coordinates;
-	/*for (i = 0; i < trackLayer.toGeoJSON().features.length; i++) {
-		L.popup({
-				closeButton: true,
-				closeOnClick: false,
-				className: 'fleets'
-			}).setLatLng(
-			[trackLayer.toGeoJSON().features[i].geometry.coordinates[1], trackLayer.toGeoJSON().features[i].geometry.coordinates[0]])
-			.setContent(trackLayer.toGeoJSON().features[i].properties.title)
-			.addTo(fleetsGroup);
-	};
 	for (i = 0; i < trackLayer.toGeoJSON().features.length; i++) {
-		var tLayer = L.mapbox.featureLayer().addTo(fleetsGroup);
-		tLayer.on('layeradd', function (e) {
-			e.layer.openPopup();
-		});
-		tLayer.setGeoJSON(trackLayer.toGeoJSON().features[i]);
-	}
-
-	var layer_controls = L.control.layers({}, {
-		'Fleets': trackLayer,
-		'Fleets lines': tracklineLayer,
+		var fleet_lat = trackLayer.toGeoJSON().features[i].geometry.coordinates[1],
+			fleet_lon = trackLayer.toGeoJSON().features[i].geometry.coordinates[0],
+			fleet_name = trackLayer.toGeoJSON().features[i].properties.title,
+			shipnum = 'Icons/emc/EMC' + parseInt(1 + Math.random() * 15) + '.gif'
+			shipIcon = L.icon({
+				iconUrl: shipnum,
+				iconSize: [60, 60],
+				iconAnchor: [40, 40],
+				labelAnchor: [10, 0] // as I want the label to appear 2px past the icon (10 + 2 - 6)
+			}),
+			fleet_marker = L.marker([fleet_lat, fleet_lon], {
+				icon: shipIcon
+			})
+		.bindLabel(trackLayer.toGeoJSON().features[i].properties.title, { noHide: true, direction: 'auto'})
+		.bindPopup('<b>' + trackLayer.toGeoJSON().features[i].properties.title + '</b>' + '<br>' + trackLayer.toGeoJSON().features[i].properties.description)
+		.addTo(fleets_layer);
+	};
+	
+	var overlays = {
+//		'L-types': fleets_layer.addTo(map),
+//		'L': tracklineLayer,
 		'ECA zones': ECAlayerGroup.addTo(map)
-	}, {
+	};
+	
+	var layer_controls = L.control.layers({}, overlays, {
 		"position": 'topright',
 		"collapsed": true
 	}).addTo(map);
-	/*
-		trackLayer.on('overlayadd', function (e) {
-			e.layer.openPopup();
-		});
-	*/
+	
 	////
 	////
 	//////// detect window size for leaflet easybutton
@@ -234,19 +290,19 @@ function windytyMain(map) {
 	function leaflet_easybutton_control() {
 		var h = $(window).height(),
 			w = Math.max($(window).width(), window.innerWidth);
-		if (W_statebar_c) {
+		if (W_easybar_sem.statebar) {
 			if (w < 788 || h < 646) {
-				W_statebar.removeFrom(map);
-				W_controlbar.removeFrom(map);
-				//layer_controls.removeFrom(map);
-				W_statebar_c = false;
+				W_easybar.state.removeFrom(map);
+				W_easybar.control.removeFrom(map);
+				layer_controls.removeFrom(map);
+				W_easybar_sem.statebar = false;
 			}
 		} else {
 			if (!(w < 788 || h < 646)) {
-				W_statebar.addTo(map);
-				W_controlbar.addTo(map);
-				//layer_controls.addTo(map);
-				W_statebar_c = true;
+				W_easybar.state.addTo(map);
+				W_easybar.control.addTo(map);
+				layer_controls.addTo(map);
+				W_easybar_sem.statebar = true;
 			}
 		};
 	};
@@ -256,73 +312,17 @@ function windytyMain(map) {
 		$(window).resize(leaflet_easybutton_control);
 	});
 	
-	function W_wind() {
-		W.setOverlay("wind");
-		setButtonState();
-		map_tile_switch = false;
-		map_tile_change();
-	}
-
-	function W_temp() {
-		W.setOverlay("temp");
-		setButtonState();
-		map_tile_switch = false;
-		map_tile_change();
-	}
-
-	function W_rain() {
-		W.setOverlay("clouds");
-		setButtonState();
-		map_tile_switch = false;
-		map_tile_change();
-	}
-
-	function W_press() {
-		W.setOverlay("pressure");
-		setButtonState();
-		map_tile_switch = false;
-		map_tile_change();
-	}
-
-	function W_waves() {
-		W.setOverlay("waves");
-		setButtonState();
-		tile_switch_empty = false;
-		tile_switch = false;
-		tile_group.clearLayers();
-		change_tile();
-		map_tile_switch = true;
-		map_tile_change();
-	}
-
-	function W_currents() {
-		W.setOverlay("currents");
-		setButtonState();
-		document.getElementById("timeline").style.display = "none";
-		tile_switch_empty = false;
-		tile_switch = false;
-		tile_group.clearLayers();
-		change_tile();
-		map_tile_switch = true;
-		map_tile_change();
-	}
-
-	function measuring() {
-		distance_button();
-		show_marker_position();
-	}
-	
-	document.getElementById('W_wind').onclick = W_wind;
-	document.getElementById('W_temp').onclick = W_temp;
-	document.getElementById('W_rain').onclick = W_rain;
-	document.getElementById('W_press').onclick = W_press;
-	document.getElementById('W_waves').onclick = W_waves;
-	document.getElementById('W_currents').onclick = W_currents;
-	document.getElementById('W_measuring').onclick = measuring;
+	document.getElementById('W_wind').onclick = W_weather.wind;
+	document.getElementById('W_temp').onclick = W_weather.temp;
+	document.getElementById('W_rain').onclick = W_weather.rain;
+	document.getElementById('W_press').onclick = W_weather.press;
+	document.getElementById('W_waves').onclick = W_weather.waves;
+	document.getElementById('W_currents').onclick = W_weather.currents;
+	document.getElementById('W_measuring').onclick = W_gadget.measuring;
 	document.getElementById('W_change_tile').setAttribute('onclick', 'change_tile()');
 	//change_tile function is not in windytyMain()
-	document.getElementById('W_animation').onclick = W_animation;
-	document.getElementById('W_gradient').onclick = W_gradient;
+	document.getElementById('W_animation').onclick = W_gadget.animation;
+	document.getElementById('W_gradient').onclick = W_gadget.gradient;
 	
 	//LayerGroups
 	ECAlayerGroup.addTo(map); //ECA layerGroup
@@ -344,63 +344,66 @@ function windytyMain(map) {
 	
 	//
 	////timeline
-	var weekdays = ['Sun.', 'Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.'],
-		months = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'];
-	var now = new Date(),
-		presentHour = now.getHours(),
-		presentHourSec = presentHour * 3600000,
-		timelineEnd = 7 * 24 * 3600000,
-		presentWeekday = now.getDay(),
-		presentDate = now.getDate(),
-		presentMonth = now.getMonth(),
-		presentTime = months[presentMonth] + ' ' + presentDate + '  ' + weekdays[presentWeekday] + ' ' + presentHour + ':00';
+	var W_timeline = {
+			weekdays: ['Sun.', 'Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.'],
+			months: ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'],
+			present: {
+				Hour: new Date().getHours(),
+				HourSec: function(){return this.Hour * 3600000},
+				Weekday: new Date().getDay(),
+				Date: new Date().getDate(),
+				Month: new Date().getMonth(),
+				Time: function(){return W_timeline.months[this.Month] + ' ' + this.Date + '  ' + W_timeline.weekdays[this.Weekday] + ' ' + this.Hour + ':00'}
+			},
+			End: 7 * 24 * 3600000
+		};
 	var range = document.getElementById('slider');
 	range.min = W.timeline.start;
 	range.step = 3600000; //3600000 seconds = 1 hour
-	range.max = W.timeline.start + timelineEnd;
-	range.value = W.timeline.start + presentHourSec;
+	range.max = W.timeline.start + W_timeline.End;
+	range.value = W.timeline.start + W_timeline.present.HourSec();
 	//W.timeline.start gives 0:00 of the day as input time, and adding 'presentHourSec' to give present time as input
 	var presentIntTime = parseInt(range.value), //range.value returns string
 		calendar_pointer = (((parseInt(range.value) - W.timeline.start) / 3600000) / 168) * 100,
 		//the percentage for the timeline indicator
 		timePopup = document.getElementById('timePopup');
 	range.addEventListener('input', time_change);
-	timePopup.innerHTML = presentTime;
+	timePopup.innerHTML = W_timeline.present.Time();
 	timePopup.style.left = (calendar_pointer - 10) + '%';
 	document.getElementById('calendarpointer-pointer').style.left = calendar_pointer + '%';
 
 	function time_change() {
 		var slider_time = new Date(parseInt(event.target.value))
-		timePopup.innerHTML = months[slider_time.getMonth()] + ' ' + slider_time.getDate() + '  ' + weekdays[slider_time.getDay()] + ' ' + slider_time.getHours() + ':00';
+		timePopup.innerHTML = W_timeline.months[slider_time.getMonth()] + ' ' + slider_time.getDate() + '  ' + W_timeline.weekdays[slider_time.getDay()] + ' ' + slider_time.getHours() + ':00';
 		W.setTimestamp(event.target.value); //event.target represent the slider
 		var calendar_pointer_left = (((parseInt(event.target.value) - W.timeline.start) / 3600000) / 168) * 100;
 		document.getElementById('calendarpointer-pointer').style.left = calendar_pointer_left + '%';
 		timePopup.style.left = (calendar_pointer_left - 10) + '%';
 	}
 	for (i = 0; i <= 6; i++) {
-		var j = (i + presentWeekday) % 7,
+		var j = (i + W_timeline.present.Weekday) % 7,
 			table_name = 'calendar-table-',
 			date_counter = i * 86400000;
-		presentDate = new Date(W.timeline.start + date_counter).getDate();
+		W_timeline.present.Date = new Date(W.timeline.start + date_counter).getDate();
 		table_name += i;
-		document.getElementById(table_name).innerHTML = weekdays[j] + ' ' + presentDate;
+		document.getElementById(table_name).innerHTML = W_timeline.weekdays[j] + ' ' + W_timeline.present.Date;
 		document.getElementById(table_name).onclick = select_date;
 	} //loop for displaying the present date
 	////Calendar quick click
 	function select_date(date) {
 		var n = parseInt(date.target.id[15]),
-			slider_time = new Date(n * 24 * 3600000 + presentHourSec + W.timeline.start),
-			calendar_pointer_left = (((n * 24 * 3600000 + presentHourSec) / 3600000) / 168) * 100;
-		timePopup.innerHTML = months[slider_time.getMonth()] + ' ' + slider_time.getDate() + '  ' + weekdays[slider_time.getDay()] + ' ' + slider_time.getHours() + ':00';
+			slider_time = new Date(n * 24 * 3600000 + W_timeline.present.HourSec() + W.timeline.start),
+			calendar_pointer_left = (((n * 24 * 3600000 + W_timeline.present.HourSec()) / 3600000) / 168) * 100;
+		timePopup.innerHTML = W_timeline.months[slider_time.getMonth()] + ' ' + slider_time.getDate() + '  ' + W_timeline.weekdays[slider_time.getDay()] + ' ' + slider_time.getHours() + ':00';
 		document.getElementById('calendarpointer-pointer').style.left = calendar_pointer_left + '%';
 		timePopup.style.left = (calendar_pointer_left - 10) + '%';
-		range.value = n * 24 * 3600000 + presentHourSec + W.timeline.start;
-		W.setTimestamp(n * 24 * 3600000 + presentHourSec + W.timeline.start);
+		range.value = n * 24 * 3600000 + W_timeline.present.HourSec() + W.timeline.start;
+		W.setTimestamp(n * 24 * 3600000 + W_timeline.present.HourSec() + W.timeline.start);
 	}
 	////
 	//
 	function setButtonState() {
-		range.max = W.timeline.start + timelineEnd;
+		range.max = W.timeline.start + W_timeline.End;
 		range.min = W.timeline.start;
 		document.getElementById("timeline").style.display = "block";
 	}
