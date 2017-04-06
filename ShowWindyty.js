@@ -9,7 +9,7 @@ var windytyInit = {
 };
 // windyty主函式
 function windytyMain(map) {
-	//Default mapbox tile
+	//Default map center
 	map.setView([25.154, 121.377], 6);
 	//Leaflet scale
 	L.control.scale({
@@ -26,14 +26,14 @@ function windytyMain(map) {
 		key: 1,
 		canvas1: document.getElementsByClassName("leaflet-canvas1 leaflet-zoom-animated")[0],
 		keep: function() {
-			if (!this.key) {
+			if (!W_animation.key) {
 				W.animation.stop();
-				this.canvas1.style.opacity = 0;
+				document.getElementsByClassName("leaflet-canvas1 leaflet-zoom-animated")[0].style.opacity = 0;
 				setTimeout(function () {
-					this.canvas1.style.transition = 'opacity 0.001s';
-					this.canvas1.style.WebkitTransition = 'opacity 0.001s';
+					document.getElementsByClassName("leaflet-canvas1 leaflet-zoom-animated")[0].style.transition = 'opacity 0.001s';
+					document.getElementsByClassName("leaflet-canvas1 leaflet-zoom-animated")[0].style.WebkitTransition = 'opacity 0.001s';
 				}, 500);
-				this.key = 0;
+				W_animation.key = 0;
 			}
 		}
 	}
@@ -245,36 +245,48 @@ function windytyMain(map) {
 	////toGeoJSON works when geojsons must be loaded(featureLayer.loadURL) outsite the windytyMain function.
 	/*var myIcon = L.icon({
 			iconUrl: 'Icons/emc/EMC10.gif',
-			iconSize: [60, 60],
+			iconSize: [0, 0],
 			iconAnchor: [40, 40],
 			labelAnchor: [10, 0] // as I want the label to appear 2px past the icon (10 + 2 - 6)
 		});
 	L.marker([25, 121.2606], {
 		icon: myIcon
-	}).bindLabel('Look revealing label!').addTo(map);*/
+	}).bindLabel('Look revealing label!',{noHide: true}).addTo(map);*/
+	
 
-	for (i = 0; i < trackLayer.toGeoJSON().features.length; i++) {
+	/*for (i = 0; i < trackLayer.toGeoJSON().features.length; i++) {
 		var fleet_lat = trackLayer.toGeoJSON().features[i].geometry.coordinates[1],
 			fleet_lon = trackLayer.toGeoJSON().features[i].geometry.coordinates[0],
 			fleet_name = trackLayer.toGeoJSON().features[i].properties.title,
-			shipnum = 'Icons/emc/EMC' + parseInt(1 + Math.random() * 15) + '.gif'
-			shipIcon = L.icon({
-				iconUrl: shipnum,
-				iconSize: [60, 60],
-				iconAnchor: [40, 40],
-				labelAnchor: [10, 0] // as I want the label to appear 2px past the icon (10 + 2 - 6)
-			}),
-			fleet_marker = L.marker([fleet_lat, fleet_lon], {
-				icon: shipIcon
+			fleet_marker = L.trackSymbol([fleet_lat, fleet_lon], {
+				size: 27,
+				fill: 1,
+				fillColor: '#28FF28',
+				fillOpacity: 1.0,
+				stroke: true,
+				color: '#000000',
+				opacity: 1.0,
+				weight: 1.5,
+				speed: (trackLayer.toGeoJSON().features[i].properties.speed) / 0.5144,
+				leaderTime: 600,
+				course: trackLayer.toGeoJSON().features[i].properties.course * Math.PI / 180.0,
+				heading: trackLayer.toGeoJSON().features[i].properties.course * Math.PI / 180.0
 			})
-		.bindLabel(trackLayer.toGeoJSON().features[i].properties.title, { noHide: true, direction: 'auto'})
-		.bindPopup('<b>' + trackLayer.toGeoJSON().features[i].properties.title + '</b>' + '<br>' + trackLayer.toGeoJSON().features[i].properties.description)
-		.addTo(fleets_layer);
-	};
+			.bindPopup('<b>' + trackLayer.toGeoJSON().features[i].properties.title + '</b>' + '<br>' + trackLayer.toGeoJSON().features[i].properties.description + '<br>' + 'Speed: ' + trackLayer.toGeoJSON().features[i].properties.speed + '<br>' + 'Heading: ' + trackLayer.toGeoJSON().features[i].properties.course)
+			.addTo(fleets_layer),
+				labelIcon = L.icon({
+				iconUrl: 'Icons/wind.png',
+				iconSize: [0, 0],
+				iconAnchor: [40, 40],
+				labelAnchor: [15, 0]
+			}),
+			fleet_label = L.marker([fleet_lat, fleet_lon], {
+				icon: labelIcon
+			}).bindLabel(trackLayer.toGeoJSON().features[i].properties.title,{noHide: true, direction: 'auto'}).addTo(fleets_layer);
+	};*/
 	
 	var overlays = {
-//		'L-types': fleets_layer.addTo(map),
-//		'L': tracklineLayer,
+		/*'L-TYPEs': fleets_layer.addTo(map),*/
 		'ECA zones': ECAlayerGroup.addTo(map)
 	};
 	
@@ -623,9 +635,9 @@ function windytyMain(map) {
 		marker3 = null;
 		//
 		//
-		range.value = W.timeline.start + presentHourSec;
+		range.value = W.timeline.start + W_timeline.present.HourSec();
 		W.setTimestamp(range.value);
-		timePopup.innerHTML = presentTime;
+		timePopup.innerHTML = W_timeline.present.Time();
 		timePopup.style.left = (calendar_pointer - 10) + '%';
 		document.getElementById('calendarpointer-pointer').style.left = calendar_pointer + '%';
 		initial_line();

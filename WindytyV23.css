@@ -306,14 +306,18 @@
 }
 
 .leaflet-control-layers-toggle {
-    background-image: url(images/layers.png);
+    background-image: url(Icons/layers.png);
     width: 27px;
-    height: 27px
+    height: 27px;
+}
+
+a[class=leaflet-control-layers-toggle] {
+	background-size: 26px 26px;
 }
 
 .leaflet-retina .leaflet-control-layers-toggle {
     background-image: url(Icons/layers.png);
-    background-size: 26px 26px
+    background-size: 26px 26px;
 }
 
 .leaflet-touch .leaflet-control-layers-toggle {
