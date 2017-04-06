@@ -471,17 +471,17 @@ function windytyMain(map) {
 						});
 			},
 			showLine: function (ship) {
-				console.log(map);
+//				console.log(ship);
 				var shipName = ship.target._popup._contentNode.firstChild.innerHTML;
-				if (W_layerGroup.fleetsLine[shipName] === undefined || W_layerGroup.fleetsLine[shipName] === 1) {
-					alert(ship.title + " key = " + W_layerGroup.fleetsLine[shipName]);
-					L.mapbox.featureLayer().loadURL("position2/" + ship.target._popup._contentNode.firstChild.innerHTML + "_line.geojson").addTo(W_layerGroup.fleetsLine.layer);
-					W_layerGroup.fleetsLine[shipName] = 0;
-					console.log(W_layerGroup.fleetsLine.layer.getLayers());
+				if (!W_layerGroup.fleetsLine[shipName]) {
+					W_layerGroup.fleetsLine[shipName] = new L.layerGroup(); 
+					L.mapbox.featureLayer().loadURL("position2/" + shipName + "_line.geojson").addTo(W_layerGroup.fleetsLine[shipName]);
+					W_layerGroup.fleetsLine[shipName].addTo(W_layerGroup.fleetsLine.layer);
+					console.log(W_layerGroup.fleetsLine);
 				} else {
-					alert(ship.title + " key = " + W_layerGroup.fleetsLine[shipName]);
-					W_layerGroup.fleetsLine.layer.clearLayers();
-					W_layerGroup.fleetsLine[shipName] = 1;
+					W_layerGroup.fleetsLine[shipName].clearLayers();
+					delete W_layerGroup.fleetsLine[shipName];
+					console.log(W_layerGroup.fleetsLine);
 				}
 			},
 			plotMarker: function (a, b) {
