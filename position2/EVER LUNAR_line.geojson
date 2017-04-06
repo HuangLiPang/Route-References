@@ -3,24 +3,248 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [122.485, 34.24666667] },
+          "type": "LineString",
+          "coordinates": [ [131.32333333, 35.29333333],[131.32333333, 35.29333333] ] },
       "properties": {
           "title": "EVER LUNAR",
-          "description": "2017-03-30 19:28:00, 34°14′48″N, 122°29′6″E",
-          "course": 158,
-          "speed": 13.4,
-          "nextport": "CNSHG",
-          "eta": "20170401",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [122.485, 34.24666667],[122.485, 34.24666667] ] },
+          "coordinates": [ [131.32333333, 35.29333333],[130.115, 34.45166667] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [130.115, 34.45166667],[128.89, 33.62666667] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [128.89, 33.62666667],[127.61, 32.84] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [127.61, 32.84],[125.13, 31.28833333] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [125.13, 31.28833333],[123.9, 30.53] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [123.9, 30.53],[122.71, 29.745] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.71, 29.745],[122.05, 29.88833333] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.05, 29.88833333],[122.05, 29.88833333] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.05, 29.88833333],[122.74666667, 29.81] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.74666667, 29.81],[122.4, 31.10166667] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.4, 31.10166667],[121.58, 31.37333333] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [121.58, 31.37333333],[121.58, 31.37333333] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [121.58, 31.37333333],[121.58, 31.37333333] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [121.58, 31.37333333],[121.58, 31.37333333] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [121.58, 31.37333333],[121.58, 31.37333333] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [121.58, 31.37333333],[122.49333333, 31.3] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.49333333, 31.3],[122.49666667, 31.3] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.49666667, 31.3],[122.495, 31.3] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.495, 31.3],[122.49166667, 31.3] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.49166667, 31.3],[122.49333333, 31.3] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.49333333, 31.3],[122.515, 31.38666667] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.515, 31.38666667],[122.81666667, 32.275] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.81666667, 32.275],[122.83166667, 33.33166667] ] },
+      "properties": {
+          "title": "EVER LUNAR",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.83166667, 33.33166667],[122.485, 34.24666667] ] },
       "properties": {
           "title": "EVER LUNAR",
           "stroke": "#ff0000",
@@ -40,247 +264,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [121.72333333, 34.96],[119.59666667, 24.52] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [119.59666667, 24.52],[118.66, 23.84166667] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [118.66, 23.84166667],[117.75, 23.17833333] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [117.75, 23.17833333],[116.72, 22.55333333] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [116.72, 22.55333333],[115.68333333, 22.22166667] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [115.68333333, 22.22166667],[114.56166667, 22.13833333] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [114.56166667, 22.13833333],[114.12666667, 22.32666667] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [114.12666667, 22.32666667],[114.12666667, 22.32666667] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [114.12666667, 22.32666667],[114.37333333, 22.15333333] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [114.37333333, 22.15333333],[114.27, 22.56833333] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [114.27, 22.56833333],[115.11666667, 22.215] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [115.11666667, 22.215],[116.49, 22.31166667] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [116.49, 22.31166667],[117.91333333, 22.40333333] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [117.91333333, 22.40333333],[119.19333333, 22.48166667] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [119.19333333, 22.48166667],[120.33, 22.55] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [120.33, 22.55],[120.33, 22.55] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [120.33, 22.55],[120.33, 22.55] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [120.33, 22.55],[120.33, 22.55] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [120.33, 22.55],[119.90166667, 23.33] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [119.90166667, 23.33],[120.15166667, 24.215] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [120.15166667, 24.215],[120.79333333, 25.02] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [120.79333333, 25.02],[121.38666667, 25.16166667] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [121.38666667, 25.16166667],[121.38666667, 25.16166667] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [121.38666667, 25.16166667],[122.92333333, 27.155] ] },
-      "properties": {
-          "title": "EVER LUNAR",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [122.92333333, 27.155],[123.67666667, 27.96833333] ] },
+          "coordinates": [ [121.72333333, 34.96],[123.67666667, 27.96833333] ] },
       "properties": {
           "title": "EVER LUNAR",
           "stroke": "#ff0000",

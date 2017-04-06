@@ -3,24 +3,298 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [213.58833333, 53.34333333] },
+          "type": "LineString",
+          "coordinates": [ [158.11, 50.035],[158.11, 50.035] ] },
       "properties": {
           "title": "EVER LOVELY",
-          "description": "2017-03-30 19:28:00, 53°20′36″N, 146°24′42″W",
-          "course": 307,
-          "speed": 19,
-          "nextport": "KRPUS",
-          "eta": "20170410",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [213.58833333, 53.34333333],[213.58833333, 53.34333333] ] },
+          "coordinates": [ [158.11, 50.035],[160.38, 50.8] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [160.38, 50.8],[161.66, 51.20666667] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [161.66, 51.20666667],[163.01833333, 51.60666667] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [163.01833333, 51.60666667],[164.42833333, 51.99833333] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [164.42833333, 51.99833333],[165.89666667, 52.38666667] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [165.89666667, 52.38666667],[167.40166667, 52.75666667] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [167.40166667, 52.75666667],[168.91666667, 53.09666667] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [168.91666667, 53.09666667],[172.01166667, 53.73333333] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [172.01166667, 53.73333333],[175.49166667, 54.15] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [175.49166667, 54.15],[177.19, 54.29333333] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [177.19, 54.29333333],[178.9, 54.41333333] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [178.9, 54.41333333],[180.53333333, 54.50166667] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [180.53333333, 54.50166667],[182.3, 54.57833333] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [182.3, 54.57833333],[184.01333333, 54.62333333] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [184.01333333, 54.62333333],[185.74666667, 54.64833333] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [185.74666667, 54.64833333],[187.43666667, 54.64333333] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [187.43666667, 54.64333333],[189.13166667, 54.61666667] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [189.13166667, 54.61666667],[190.84333333, 54.56833333] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [190.84333333, 54.56833333],[194.18, 54.4] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [194.18, 54.4],[195.87, 54.26] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [195.87, 54.26],[198.92666667, 54.13] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [198.92666667, 54.13],[200.50166667, 54.165] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [200.50166667, 54.165],[203.41, 54.41333333] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [203.41, 54.41333333],[204.96333333, 54.54333333] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [204.96333333, 54.54333333],[206.56333333, 54.675] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [206.56333333, 54.675],[209.66333333, 54.94666667] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [209.66333333, 54.94666667],[211.02666667, 54.46166667] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [211.02666667, 54.46166667],[212.31166667, 53.92] ] },
+      "properties": {
+          "title": "EVER LOVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [212.31166667, 53.92],[213.58833333, 53.34333333] ] },
       "properties": {
           "title": "EVER LOVELY",
           "stroke": "#ff0000",

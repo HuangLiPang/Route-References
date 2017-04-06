@@ -3,24 +3,8 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [121.9, 27.8] },
-      "properties": {
-          "title": "EVER LOADING",
-          "description": "2017-03-28 00:00:00, 27°48′0″N, 121°54′0″E",
-          "course": 28,
-          "speed": 15.3,
-          "nextport": "CNNBO",
-          "eta": "20170328",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
-          "coordinates": [ [121.9, 27.8],[121.9, 27.8] ] },
+          "coordinates": [ [119.8, 23.3],[119.8, 23.3] ] },
       "properties": {
           "title": "EVER LOADING",
           "stroke": "#ff0000",
@@ -30,7 +14,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [121.9, 27.8],[95.0, 6.3] ] },
+          "coordinates": [ [119.8, 23.3],[122.4, 28.2] ] },
       "properties": {
           "title": "EVER LOADING",
           "stroke": "#ff0000",
@@ -40,7 +24,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [95.0, 6.3],[86.9, 6.0] ] },
+          "coordinates": [ [122.4, 28.2],[121.9, 27.8] ] },
       "properties": {
           "title": "EVER LOADING",
           "stroke": "#ff0000",
@@ -50,7 +34,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [86.9, 6.0],[77.1, 7.3] ] },
+          "coordinates": [ [121.9, 27.8],[77.1, 7.3] ] },
       "properties": {
           "title": "EVER LOADING",
           "stroke": "#ff0000",

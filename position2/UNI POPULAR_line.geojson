@@ -3,24 +3,318 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [100.36, 5.42] },
+          "type": "LineString",
+          "coordinates": [ [100.75, 12.29166667],[100.75, 12.29166667] ] },
       "properties": {
           "title": "UNI POPULAR",
-          "description": "2017-03-30 19:28:00, 5°25′12″N, 100°21′36″E",
-          "course": 120,
-          "speed": 0,
-          "nextport": "MYPKL",
-          "eta": "20170401",
-          "url": "url",
-          "marker-symbol": "p",
-          "marker-color": "#008000",
-          "marker-size": "medium"} },
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [100.36, 5.42],[100.36, 5.42] ] },
+          "coordinates": [ [100.75, 12.29166667],[100.95166667, 11.86166667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.95166667, 11.86166667],[101.405, 11.00333333] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.405, 11.00333333],[101.87666667, 10.14166667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.87666667, 10.14166667],[102.39, 9.27833333] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [102.39, 9.27833333],[102.91333333, 8.43666667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [102.91333333, 8.43666667],[103.475, 7.53833333] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.475, 7.53833333],[103.61666667, 6.53] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.61666667, 6.53],[103.84, 5.58666667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.84, 5.58666667],[104.08, 4.68166667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [104.08, 4.68166667],[104.32333333, 3.77666667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [104.32333333, 3.77666667],[104.56333333, 2.88333333] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [104.56333333, 2.88333333],[104.68, 2.01333333] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [104.68, 2.01333333],[104.29, 1.28166667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [104.29, 1.28166667],[103.545, 1.36] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.545, 1.36],[103.545, 1.36] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.545, 1.36],[103.545, 1.36] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.545, 1.36],[103.56333333, 1.26666667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.56333333, 1.26666667],[103.56666667, 1.26666667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.56666667, 1.26666667],[103.56666667, 1.26666667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.56666667, 1.26666667],[103.565, 1.26666667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.565, 1.26666667],[103.56666667, 1.26666667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.56666667, 1.26666667],[102.98833333, 1.52] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [102.98833333, 1.52],[101.375, 2.60166667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.375, 2.60166667],[101.295, 2.93666667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.295, 2.93666667],[101.295, 2.93666667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.295, 2.93666667],[101.295, 2.93666667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.295, 2.93666667],[101.11833333, 3.315] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.11833333, 3.315],[101.13166667, 3.3] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.13166667, 3.3],[100.38666667, 3.96833333] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.38666667, 3.96833333],[100.14666667, 4.88666667] ] },
+      "properties": {
+          "title": "UNI POPULAR",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.14666667, 4.88666667],[100.36, 5.42] ] },
       "properties": {
           "title": "UNI POPULAR",
           "stroke": "#008000",
@@ -400,317 +694,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [100.98666667, 11.75833333],[99.18666667, 4.44666667] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [99.18666667, 4.44666667],[98.71666667, 3.795] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.71666667, 3.795],[98.71666667, 3.795] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.71666667, 3.795],[98.71666667, 3.795] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.71666667, 3.795],[98.71666667, 3.795] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.71666667, 3.795],[98.71666667, 3.795] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.71666667, 3.795],[98.71666667, 3.795] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.71666667, 3.795],[98.75833333, 3.935] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.75833333, 3.935],[98.76, 3.93666667] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.76, 3.93666667],[98.75833333, 3.93833333] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.75833333, 3.93833333],[98.76, 3.93833333] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.76, 3.93833333],[99.08833333, 3.83833333] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [99.08833333, 3.83833333],[100.83666667, 2.97166667] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.83666667, 2.97166667],[101.3, 2.945] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.3, 2.945],[101.3, 2.945] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.3, 2.945],[101.3, 2.945] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.3, 2.945],[101.3, 2.945] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.3, 2.945],[101.3, 2.945] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.3, 2.945],[101.275, 2.79833333] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.275, 2.79833333],[101.275, 2.79833333] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.275, 2.79833333],[101.55666667, 2.53666667] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.55666667, 2.53666667],[102.33666667, 1.93333333] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [102.33666667, 1.93333333],[104.13333333, 1.26666667] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [104.13333333, 1.26666667],[104.62166667, 2.00666667] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [104.62166667, 2.00666667],[104.52166667, 3.03833333] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [104.52166667, 3.03833333],[103.955, 5.145] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.955, 5.145],[103.7, 6.11833333] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.7, 6.11833333],[103.17, 8.025] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.17, 8.025],[102.62666667, 8.91166667] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [102.62666667, 8.91166667],[102.095, 9.76833333] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [102.095, 9.76833333],[101.67, 10.63] ] },
-      "properties": {
-          "title": "UNI POPULAR",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.67, 10.63],[101.09833333, 11.445] ] },
+          "coordinates": [ [100.98666667, 11.75833333],[101.09833333, 11.445] ] },
       "properties": {
           "title": "UNI POPULAR",
           "stroke": "#008000",

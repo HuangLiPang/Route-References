@@ -3,24 +3,8 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [145.74, 20.31833333] },
-      "properties": {
-          "title": "ITAL LIBERA",
-          "description": "2017-03-30 19:28:00, 20°19′6″N, 145°44′24″E",
-          "course": 240,
-          "speed": 1.6,
-          "nextport": "JPYKH",
-          "eta": "20170402",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
-          "coordinates": [ [145.74, 20.31833333],[145.74, 20.31833333] ] },
+          "coordinates": [ [129.08666667, 34.81166667],[129.08666667, 34.81166667] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -30,7 +14,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [145.74, 20.31833333],[145.84, 20.38166667] ] },
+          "coordinates": [ [129.08666667, 34.81166667],[129.095, 34.82833333] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -40,7 +24,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [145.84, 20.38166667],[145.94666667, 20.45] ] },
+          "coordinates": [ [129.095, 34.82833333],[129.21333333, 34.885] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -50,7 +34,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [145.94666667, 20.45],[146.10333333, 20.335] ] },
+          "coordinates": [ [129.21333333, 34.885],[130.16, 34.39666667] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -60,7 +44,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [146.10333333, 20.335],[146.53666667, 19.30333333] ] },
+          "coordinates": [ [130.16, 34.39666667],[131.03666667, 33.96] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -70,7 +54,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [146.53666667, 19.30333333],[146.94666667, 18.28] ] },
+          "coordinates": [ [131.03666667, 33.96],[132.03666667, 33.24833333] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -80,7 +64,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [146.94666667, 18.28],[148.11, 14.78333333] ] },
+          "coordinates": [ [132.03666667, 33.24833333],[133.08, 32.66666667] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -90,7 +74,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [148.11, 14.78333333],[148.33, 14.89333333] ] },
+          "coordinates": [ [133.08, 32.66666667],[134.46333333, 33.13833333] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -100,7 +84,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [148.33, 14.89333333],[148.69666667, 13.96] ] },
+          "coordinates": [ [134.46333333, 33.13833333],[134.98333333, 34.31333333] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -110,7 +94,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [148.69666667, 13.96],[149.08, 12.88333333] ] },
+          "coordinates": [ [134.98333333, 34.31333333],[135.4, 34.64833333] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -120,7 +104,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [149.08, 12.88333333],[149.375, 11.79166667] ] },
+          "coordinates": [ [135.4, 34.64833333],[135.12333333, 33.62166667] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -130,7 +114,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [149.375, 11.79166667],[149.54333333, 11.41333333] ] },
+          "coordinates": [ [135.12333333, 33.62166667],[136.27333333, 33.43166667] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -140,7 +124,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [149.54333333, 11.41333333],[149.64666667, 11.41666667] ] },
+          "coordinates": [ [136.27333333, 33.43166667],[137.55833333, 33.905] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -150,7 +134,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [149.64666667, 11.41666667],[149.72666667, 11.43666667] ] },
+          "coordinates": [ [137.55833333, 33.905],[138.865, 34.43166667] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -160,7 +144,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [149.72666667, 11.43666667],[150.72666667, 8.51666667] ] },
+          "coordinates": [ [138.865, 34.43166667],[139.76166667, 35.19166667] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -170,7 +154,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [150.72666667, 8.51666667],[150.87166667, 7.37833333] ] },
+          "coordinates": [ [139.76166667, 35.19166667],[139.68, 35.44166667] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -180,7 +164,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [150.87166667, 7.37833333],[151.02666667, 6.245] ] },
+          "coordinates": [ [139.68, 35.44166667],[139.68, 35.44166667] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -190,7 +174,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [151.02666667, 6.245],[151.31333333, 4.02166667] ] },
+          "coordinates": [ [139.68, 35.44166667],[140.12666667, 33.94833333] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -200,7 +184,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [151.31333333, 4.02166667],[151.58333333, 1.76] ] },
+          "coordinates": [ [140.12666667, 33.94833333],[140.44, 33.33333333] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -210,7 +194,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [151.58333333, 1.76],[152.35333333, -1.44333333] ] },
+          "coordinates": [ [140.44, 33.33333333],[141.265, 31.48666667] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",
@@ -220,147 +204,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [152.35333333, -1.44333333],[153.17, -3.70666667] ] },
-      "properties": {
-          "title": "ITAL LIBERA",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [153.17, -3.70666667],[153.44333333, -4.77666667] ] },
-      "properties": {
-          "title": "ITAL LIBERA",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [153.44333333, -4.77666667],[153.64333333, -5.88333333] ] },
-      "properties": {
-          "title": "ITAL LIBERA",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [153.64333333, -5.88333333],[153.81166667, -6.84666667] ] },
-      "properties": {
-          "title": "ITAL LIBERA",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [153.81166667, -6.84666667],[153.83666667, -6.97666667] ] },
-      "properties": {
-          "title": "ITAL LIBERA",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [153.83666667, -6.97666667],[154.04333333, -8.08] ] },
-      "properties": {
-          "title": "ITAL LIBERA",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [154.04333333, -8.08],[154.25333333, -9.22333333] ] },
-      "properties": {
-          "title": "ITAL LIBERA",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [154.25333333, -9.22333333],[154.45833333, -10.35333333] ] },
-      "properties": {
-          "title": "ITAL LIBERA",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [154.45833333, -10.35333333],[154.67, -11.51333333] ] },
-      "properties": {
-          "title": "ITAL LIBERA",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [154.67, -11.51333333],[154.59666667, -12.66666667] ] },
-      "properties": {
-          "title": "ITAL LIBERA",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [154.59666667, -12.66666667],[154.54166667, -13.78333333] ] },
-      "properties": {
-          "title": "ITAL LIBERA",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [154.54166667, -13.78333333],[154.48, -14.84333333] ] },
-      "properties": {
-          "title": "ITAL LIBERA",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [154.48, -14.84333333],[154.42833333, -15.91666667] ] },
-      "properties": {
-          "title": "ITAL LIBERA",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [154.42833333, -15.91666667],[154.365, -17.02333333] ] },
-      "properties": {
-          "title": "ITAL LIBERA",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [154.365, -17.02333333],[154.23166667, -19.3] ] },
+          "coordinates": [ [141.265, 31.48666667],[154.23166667, -19.3] ] },
       "properties": {
           "title": "ITAL LIBERA",
           "stroke": "#ff0000",

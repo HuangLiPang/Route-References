@@ -3,24 +3,278 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [46.80333333, -26.25] },
+          "type": "LineString",
+          "coordinates": [ [31.025, -29.88166667],[31.025, -29.88166667] ] },
       "properties": {
           "title": "EVER DELUXE",
-          "description": "2017-03-30 15:31:00, 26°15′0″S, 46°48′12″E",
-          "course": 255,
-          "speed": 15,
-          "nextport": "ZADRB",
-          "eta": "20170402",
-          "url": "url",
-          "marker-symbol": "d",
-          "marker-color": "#a52a2a",
-          "marker-size": "medium"} },
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [46.80333333, -26.25],[46.80333333, -26.25] ] },
+          "coordinates": [ [31.025, -29.88166667],[31.02333333, -29.88166667] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [31.02333333, -29.88166667],[31.02333333, -29.88166667] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [31.02333333, -29.88166667],[31.025, -29.88166667] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [31.025, -29.88166667],[31.02333333, -29.88166667] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [31.02333333, -29.88166667],[31.025, -29.88166667] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [31.025, -29.88166667],[31.02333333, -29.88166667] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [31.02333333, -29.88166667],[31.025, -29.88166667] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [31.025, -29.88166667],[31.02333333, -29.88166667] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [31.02333333, -29.88166667],[31.02333333, -29.88166667] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [31.02333333, -29.88166667],[31.025, -29.88166667] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [31.025, -29.88166667],[31.025, -29.88166667] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [31.025, -29.88166667],[31.25333333, -29.81833333] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [31.25333333, -29.81833333],[31.595, -29.735] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [31.595, -29.735],[32.64333333, -29.71] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [32.64333333, -29.71],[32.94833333, -29.64833333] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [32.94833333, -29.64833333],[32.86666667, -29.555] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [32.86666667, -29.555],[34.49333333, -29.03333333] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [34.49333333, -29.03333333],[35.52333333, -28.79833333] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [35.52333333, -28.79833333],[37.96166667, -28.25333333] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [37.96166667, -28.25333333],[38.66, -28.105] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [38.66, -28.105],[39.735, -27.85666667] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [39.735, -27.85666667],[41.88333333, -27.35166667] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [41.88333333, -27.35166667],[42.93166667, -27.09333333] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [42.93166667, -27.09333333],[43.105, -27.10166667] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [43.105, -27.10166667],[43.61833333, -26.97666667] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [43.61833333, -26.97666667],[44.64833333, -26.745] ] },
+      "properties": {
+          "title": "EVER DELUXE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [44.64833333, -26.745],[46.80333333, -26.25] ] },
       "properties": {
           "title": "EVER DELUXE",
           "stroke": "#a52a2a",

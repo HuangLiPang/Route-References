@@ -3,24 +3,298 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [210.41166667, 52.77] },
+          "type": "LineString",
+          "coordinates": [ [144.93166667, 39.16],[144.93166667, 39.16] ] },
       "properties": {
           "title": "EVER ULTRA",
-          "description": "2017-03-30 11:28:00, 52°46′12″N, 149°35′18″W",
-          "course": 283,
-          "speed": 19.4,
-          "nextport": "JPTYO",
-          "eta": "20170407",
-          "url": "url",
-          "marker-symbol": "u",
-          "marker-color": "#9acd32",
-          "marker-size": "medium"} },
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [210.41166667, 52.77],[210.41166667, 52.77] ] },
+          "coordinates": [ [144.93166667, 39.16],[147.795, 41.61833333] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [147.795, 41.61833333],[148.79, 42.44333333] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [148.79, 42.44333333],[150.66, 44.37666667] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [150.66, 44.37666667],[152.74166667, 46.42666667] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [152.74166667, 46.42666667],[154.00833333, 47.35833333] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [154.00833333, 47.35833333],[151.60333333, 45.42666667] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [151.60333333, 45.42666667],[155.375, 48.30666667] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [155.375, 48.30666667],[156.765, 49.22666667] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [156.765, 49.22666667],[158.225, 50.08333333] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [158.225, 50.08333333],[159.925, 50.69666667] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [159.925, 50.69666667],[161.635, 51.27333333] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [161.635, 51.27333333],[163.32166667, 51.79666667] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [163.32166667, 51.79666667],[165.18, 52.34333333] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [165.18, 52.34333333],[167.04666667, 52.84833333] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [167.04666667, 52.84833333],[168.96, 53.32666667] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [168.96, 53.32666667],[175.00333333, 54.30333333] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [175.00333333, 54.30333333],[177.135, 54.46] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [177.135, 54.46],[172.92666667, 54.1] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [172.92666667, 54.1],[179.33666667, 54.59333333] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [179.33666667, 54.59333333],[181.56333333, 54.685] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [181.56333333, 54.685],[185.94833333, 54.74333333] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [185.94833333, 54.74333333],[188.095, 54.71666667] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [188.095, 54.71666667],[190.20833333, 54.64666667] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [190.20833333, 54.64666667],[194.165, 54.41833333] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [194.165, 54.41833333],[196.07833333, 54.24833333] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [196.07833333, 54.24833333],[198.07666667, 54.09166667] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [198.07666667, 54.09166667],[202.34333333, 53.78666667] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [202.34333333, 53.78666667],[204.43666667, 53.575] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [204.43666667, 53.575],[210.41166667, 52.77] ] },
       "properties": {
           "title": "EVER ULTRA",
           "stroke": "#9acd32",
@@ -510,7 +784,17 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [191.99666667, 51.35166667],[189.88333333, 51.17833333] ] },
+          "coordinates": [ [191.99666667, 51.35166667],[200.21666667, 53.955] ] },
+      "properties": {
+          "title": "EVER ULTRA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [200.21666667, 53.955],[189.88333333, 51.17833333] ] },
       "properties": {
           "title": "EVER ULTRA",
           "stroke": "#9acd32",

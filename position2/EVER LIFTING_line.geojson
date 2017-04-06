@@ -3,24 +3,38 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [273.5, 9.2] },
+          "type": "LineString",
+          "coordinates": [ [285.6, 21.5],[285.6, 21.5] ] },
       "properties": {
           "title": "EVER LIFTING",
-          "description": "2017-03-30 00:00:00, 9°11′60″N, 86°30′0″W",
-          "course": 117,
-          "speed": 20.8,
-          "nextport": "PAPAN",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [273.5, 9.2],[273.5, 9.2] ] },
+          "coordinates": [ [285.6, 21.5],[283.5, 15.5] ] },
+      "properties": {
+          "title": "EVER LIFTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [283.5, 15.5],[280.1, 7.2] ] },
+      "properties": {
+          "title": "EVER LIFTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.1, 7.2],[273.5, 9.2] ] },
       "properties": {
           "title": "EVER LIFTING",
           "stroke": "#ff0000",

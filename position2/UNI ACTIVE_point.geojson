@@ -4,14 +4,14 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [122.05833333, 29.88833333] },
+          "coordinates": [120.38833333, 24.31] },
       "properties": {
           "title": "UNI ACTIVE",
-          "description": "2017-03-30 19:29:00, 29°53′18″N, 122°3′30″E",
-          "course": 41,
-          "speed": 0,
+          "description": "2017-03-24 03:31:00, 24°18′36″N, 120°23′18″E",
+          "course": 208,
+          "speed": 16,
           "nextport": "TWKSG",
-          "eta": "20170401",
+          "eta": "20170325",
           "url": "url",
           "marker-symbol": "a",
           "marker-color": "#ffa500",
@@ -20,36 +20,24 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [122.05833333, 29.88833333] },
+          "coordinates": [120.38833333, 24.31] },
       "properties": {
-          "title": "2017-03-30 19:29:00",
-          "description": "29°53′18″N, 122°3′30″E",
-          "course": 41,
-          "speed": 0,
+          "title": "2017-03-24 03:31:00",
+          "description": "24°18′36″N, 120°23′18″E",
+          "course": 208,
+          "speed": 16,
           "marker-size": "small",
           "marker-color": "#ffa500" } },
 
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [122.12833333, 29.92166667] },
+          "coordinates": [120.3, 24.2] },
       "properties": {
-          "title": "2017-03-30 11:29:00",
-          "description": "29°55′18″N, 122°7′42″E",
-          "course": 273,
-          "speed": 9.4,
-          "marker-size": "small",
-          "marker-color": "#ffa500" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [122.59333333, 29.78] },
-      "properties": {
-          "title": "2017-03-30 07:30:00",
-          "description": "29°46′48″N, 122°35′36″E",
-          "course": 313,
-          "speed": 0.2,
+          "title": "2017-03-24 00:00:00",
+          "description": "24°11′60″N, 120°17′60″E",
+          "course": 215,
+          "speed": 16.1,
           "marker-size": "small",
           "marker-color": "#ffa500" } },
 

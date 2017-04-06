@@ -3,24 +3,288 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [222.10833333, 35.77666667] },
+          "type": "LineString",
+          "coordinates": [ [237.59, 36.59333333],[237.59, 36.59333333] ] },
       "properties": {
           "title": "EVER ENVOY",
-          "description": "2017-03-30 19:28:00, 35°46′36″N, 137°53′30″W",
-          "course": 96,
-          "speed": 20.2,
-          "nextport": "USLAX",
-          "eta": "20170402",
-          "url": "url",
-          "marker-symbol": "e",
-          "marker-color": "#0000ff",
-          "marker-size": "medium"} },
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [222.10833333, 35.77666667],[222.10833333, 35.77666667] ] },
+          "coordinates": [ [237.59, 36.59333333],[237.825, 36.19] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.825, 36.19],[238.31666667000002, 35.49666667] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [238.31666667000002, 35.49666667],[238.745, 34.83833333] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [238.745, 34.83833333],[239.69666667, 33.605] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [239.69666667, 33.605],[240.12666667000002, 33.65333333] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [240.12666667000002, 33.65333333],[241.01, 33.64333333] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [241.01, 33.64333333],[241.72333333, 33.73833333] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [241.72333333, 33.73833333],[241.73000000000002, 33.74666667] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [241.73000000000002, 33.74666667],[241.73000000000002, 33.74666667] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [241.73000000000002, 33.74666667],[241.73000000000002, 33.74666667] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [241.73000000000002, 33.74666667],[241.73000000000002, 33.74666667] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [241.73000000000002, 33.74666667],[241.73000000000002, 33.74666667] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [241.73000000000002, 33.74666667],[241.72666667, 33.74333333] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [241.72666667, 33.74333333],[241.175, 33.615] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [241.175, 33.615],[240.24, 33.60833333] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [240.24, 33.60833333],[239.285, 33.61666667] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [239.285, 33.61666667],[238.25666667000002, 33.61666667] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [238.25666667000002, 33.61666667],[237.235, 33.62] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.235, 33.62],[236.26666667, 33.61666667] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.26666667, 33.61666667],[233.82, 33.95833333] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [233.82, 33.95833333],[232.32666667, 34.27] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [232.32666667, 34.27],[231.13333333, 34.48833333] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [231.13333333, 34.48833333],[230.03166667, 34.68] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [230.03166667, 34.68],[228.59166667, 34.90833333] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [228.59166667, 34.90833333],[227.0, 35.16333333] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [227.0, 35.16333333],[225.38, 35.38166667] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [225.38, 35.38166667],[223.73833333, 35.58166667] ] },
+      "properties": {
+          "title": "EVER ENVOY",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [223.73833333, 35.58166667],[222.10833333, 35.77666667] ] },
       "properties": {
           "title": "EVER ENVOY",
           "stroke": "#0000ff",

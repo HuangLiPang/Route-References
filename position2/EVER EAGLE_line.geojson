@@ -3,24 +3,28 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [281.07333332999997, -10.07666667] },
+          "type": "LineString",
+          "coordinates": [ [285.1, -22.0],[285.1, -22.0] ] },
       "properties": {
           "title": "EVER EAGLE",
-          "description": "2017-03-29 05:29:00, 10°4′36″S, 78°55′36″W",
-          "course": 147,
-          "speed": 16.2,
-          "nextport": "CLSAI",
-          "eta": "20170404",
-          "url": "url",
-          "marker-symbol": "e",
-          "marker-color": "#0000ff",
-          "marker-size": "medium"} },
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [281.07333332999997, -10.07666667],[281.07333332999997, -10.07666667] ] },
+          "coordinates": [ [285.1, -22.0],[283.9, 17.2] ] },
+      "properties": {
+          "title": "EVER EAGLE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [283.9, 17.2],[281.07333332999997, -10.07666667] ] },
       "properties": {
           "title": "EVER EAGLE",
           "stroke": "#0000ff",

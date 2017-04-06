@@ -3,24 +3,318 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [284.835, 17.85166667] },
+          "type": "LineString",
+          "coordinates": [ [263.45, 14.76166667],[263.45, 14.76166667] ] },
       "properties": {
           "title": "EVER LASTING",
-          "description": "2017-03-30 11:28:00, 17°51′6″N, 75°9′54″W",
-          "course": 210,
-          "speed": 18,
-          "nextport": "PACCT",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [284.835, 17.85166667],[284.835, 17.85166667] ] },
+          "coordinates": [ [263.45, 14.76166667],[264.54166667, 14.23333333] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [264.54166667, 14.23333333],[266.75833333, 13.12333333] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [266.75833333, 13.12333333],[268.99333333, 11.96333333] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [268.99333333, 11.96333333],[270.11833333, 11.37333333] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [270.11833333, 11.37333333],[272.45833333, 10.11833333] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [272.45833333, 10.11833333],[273.55, 9.53333333] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [273.55, 9.53333333],[274.595, 8.95] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [274.595, 8.95],[275.68333333, 8.35] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [275.68333333, 8.35],[276.79333333, 7.73666667] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [276.79333333, 7.73666667],[277.85666667, 7.14] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [277.85666667, 7.14],[279.045, 6.97833333] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [279.045, 6.97833333],[280.16166667, 7.34833333] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.16166667, 7.34833333],[280.54833333, 8.54] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.54833333, 8.54],[280.41166667, 8.98] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.41166667, 8.98],[280.24833333, 9.12] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.24833333, 9.12],[280.08833333, 9.27] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.08833333, 9.27],[280.08333333, 9.45166667] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.08333333, 9.45166667],[280.115, 9.44166667] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.115, 9.44166667],[280.115, 9.44166667] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.115, 9.44166667],[280.11333333, 9.44333333] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.11333333, 9.44333333],[280.11, 9.37333333] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.11, 9.37333333],[280.11, 9.37333333] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.11, 9.37333333],[280.11, 9.37333333] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.11, 9.37333333],[280.11, 9.37333333] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.11, 9.37333333],[280.13666667, 9.63166667] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.13666667, 9.63166667],[280.60666667, 10.52166667] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.60666667, 10.52166667],[281.10333333, 11.39666667] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [281.10333333, 11.39666667],[281.72, 12.48] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [281.72, 12.48],[282.34833333, 13.56666667] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [282.34833333, 13.56666667],[282.94666667, 14.61] ] },
+      "properties": {
+          "title": "EVER LASTING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [282.94666667, 14.61],[284.835, 17.85166667] ] },
       "properties": {
           "title": "EVER LASTING",
           "stroke": "#ff0000",

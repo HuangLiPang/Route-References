@@ -3,22 +3,6 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [121.80333333, 30.32333333] },
-      "properties": {
-          "title": "EVER LAMBENT",
-          "description": "2017-03-25 23:28:00, 30°19′24″N, 121°48′12″E",
-          "course": 188,
-          "speed": 10.2,
-          "nextport": "CNZOS",
-          "eta": "20170410",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
           "coordinates": [ [121.80333333, 30.32333333],[121.80333333, 30.32333333] ] },
       "properties": {

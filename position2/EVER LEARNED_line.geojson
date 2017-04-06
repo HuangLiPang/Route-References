@@ -3,24 +3,248 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [58.45666667, 12.71] },
+          "type": "LineString",
+          "coordinates": [ [31.35166667, 31.99166667],[31.35166667, 31.99166667] ] },
       "properties": {
           "title": "EVER LEARNED",
-          "description": "2017-03-30 19:28:00, 12°42′36″N, 58°27′24″E",
-          "course": 288,
-          "speed": 19.2,
-          "nextport": "EGSUZ",
-          "eta": "20170404",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [58.45666667, 12.71],[58.45666667, 12.71] ] },
+          "coordinates": [ [31.35166667, 31.99166667],[32.31833333, 30.80666667] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [32.31833333, 30.80666667],[32.40833333, 30.32333333] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [32.40833333, 30.32333333],[32.57833333, 29.835] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [32.57833333, 29.835],[33.49, 28.06] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [33.49, 28.06],[36.37, 24.39666667] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [36.37, 24.39666667],[37.47833333, 22.56833333] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [37.47833333, 22.56833333],[38.0, 21.69] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [38.0, 21.69],[38.535, 20.78833333] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [38.535, 20.78833333],[39.03333333, 19.95] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [39.03333333, 19.95],[40.08, 18.17666667] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [40.08, 18.17666667],[40.61333333, 17.26] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [40.61333333, 17.26],[41.255, 16.16] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [41.255, 16.16],[41.91333333, 15.02166667] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [41.91333333, 15.02166667],[42.50333333, 13.85833333] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [42.50333333, 13.85833333],[43.315, 12.72] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [43.315, 12.72],[44.52666667, 12.14166667] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [44.52666667, 12.14166667],[47.08666667, 12.62] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [47.08666667, 12.62],[48.35333333, 13.02] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [48.35333333, 13.02],[49.64833333, 13.42] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [49.64833333, 13.42],[52.17833333, 14.20666667] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [52.17833333, 14.20666667],[54.67833333, 13.93333333] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [54.67833333, 13.93333333],[55.97, 13.51666667] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [55.97, 13.51666667],[57.22666667, 13.10833333] ] },
+      "properties": {
+          "title": "EVER LEARNED",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [57.22666667, 13.10833333],[58.45666667, 12.71] ] },
       "properties": {
           "title": "EVER LEARNED",
           "stroke": "#ff0000",

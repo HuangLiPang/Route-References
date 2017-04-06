@@ -3,24 +3,8 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [100.36, 5.41833333] },
-      "properties": {
-          "title": "EVER ALLY",
-          "description": "2017-03-30 19:28:00, 5°25′6″N, 100°21′36″E",
-          "course": 274,
-          "speed": 0,
-          "nextport": "SGSGP",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "a",
-          "marker-color": "#ffa500",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
-          "coordinates": [ [100.36, 5.41833333],[100.36, 5.41833333] ] },
+          "coordinates": [ [112.66833333, -7.155],[112.66833333, -7.155] ] },
       "properties": {
           "title": "EVER ALLY",
           "stroke": "#ffa500",
@@ -30,7 +14,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [100.36, 5.41833333],[100.36, 5.41833333] ] },
+          "coordinates": [ [112.66833333, -7.155],[112.70666667, -7.19666667] ] },
       "properties": {
           "title": "EVER ALLY",
           "stroke": "#ffa500",
@@ -40,7 +24,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [100.36, 5.41833333],[100.36, 5.41833333] ] },
+          "coordinates": [ [112.70666667, -7.19666667],[112.70666667, -7.19666667] ] },
       "properties": {
           "title": "EVER ALLY",
           "stroke": "#ffa500",
@@ -50,7 +34,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [100.36, 5.41833333],[100.36, 5.41833333] ] },
+          "coordinates": [ [112.70666667, -7.19666667],[112.70666667, -7.19666667] ] },
       "properties": {
           "title": "EVER ALLY",
           "stroke": "#ffa500",
@@ -60,167 +44,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [100.36, 5.41833333],[100.36, 5.41833333] ] },
-      "properties": {
-          "title": "EVER ALLY",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.36, 5.41833333],[100.21, 5.55166667] ] },
-      "properties": {
-          "title": "EVER ALLY",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.21, 5.55166667],[100.21, 5.55] ] },
-      "properties": {
-          "title": "EVER ALLY",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.21, 5.55],[100.21166667, 5.55166667] ] },
-      "properties": {
-          "title": "EVER ALLY",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.21166667, 5.55166667],[100.21, 5.55166667] ] },
-      "properties": {
-          "title": "EVER ALLY",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.21, 5.55166667],[100.21166667, 5.55] ] },
-      "properties": {
-          "title": "EVER ALLY",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.21166667, 5.55],[100.21166667, 5.55166667] ] },
-      "properties": {
-          "title": "EVER ALLY",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.21166667, 5.55166667],[100.21166667, 5.55166667] ] },
-      "properties": {
-          "title": "EVER ALLY",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.21166667, 5.55166667],[100.21, 5.55166667] ] },
-      "properties": {
-          "title": "EVER ALLY",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.21, 5.55166667],[100.21, 5.55666667] ] },
-      "properties": {
-          "title": "EVER ALLY",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.21, 5.55666667],[99.44666667, 6.125] ] },
-      "properties": {
-          "title": "EVER ALLY",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [99.44666667, 6.125],[98.745, 6.81666667] ] },
-      "properties": {
-          "title": "EVER ALLY",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.745, 6.81666667],[98.21333333, 7.65833333] ] },
-      "properties": {
-          "title": "EVER ALLY",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.21333333, 7.65833333],[97.95666667, 8.67666667] ] },
-      "properties": {
-          "title": "EVER ALLY",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [97.95666667, 8.67666667],[97.70333333, 9.70833333] ] },
-      "properties": {
-          "title": "EVER ALLY",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [97.70333333, 9.70833333],[97.48666667, 10.70833333] ] },
-      "properties": {
-          "title": "EVER ALLY",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [97.48666667, 10.70833333],[97.26166667, 11.72333333] ] },
+          "coordinates": [ [112.70666667, -7.19666667],[97.26166667, 11.72333333] ] },
       "properties": {
           "title": "EVER ALLY",
           "stroke": "#ffa500",

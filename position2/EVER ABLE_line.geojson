@@ -3,19 +3,293 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [110.42166667, -6.94] },
+          "type": "LineString",
+          "coordinates": [ [97.51166667, 10.57666667],[97.51166667, 10.57666667] ] },
       "properties": {
           "title": "EVER ABLE",
-          "description": "2017-03-30 19:28:00, 6°56′24″S, 110°25′18″E",
-          "course": 274,
-          "speed": 0,
-          "nextport": "IDSRG",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "a",
-          "marker-color": "#ffa500",
-          "marker-size": "medium"} },
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [97.51166667, 10.57666667],[97.75, 9.52] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [97.75, 9.52],[98.00833333, 8.48] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [98.00833333, 8.48],[98.27333333, 7.45833333] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [98.27333333, 7.45833333],[98.81166667, 6.51333333] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [98.81166667, 6.51333333],[99.35666667, 5.55833333] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [99.35666667, 5.55833333],[100.445, 3.66833333] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.445, 3.66833333],[101.035, 2.84333333] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.035, 2.84333333],[101.895, 2.25166667] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.895, 2.25166667],[103.775, 1.27666667] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.775, 1.27666667],[103.775, 1.27666667] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.775, 1.27666667],[103.795, 1.25166667] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.795, 1.25166667],[103.79666667, 1.25166667] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.79666667, 1.25166667],[103.54166667, 1.36833333] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.54166667, 1.36833333],[103.54166667, 1.36833333] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.54166667, 1.36833333],[103.54166667, 1.36833333] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.54166667, 1.36833333],[103.54166667, 1.36833333] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.54166667, 1.36833333],[103.54166667, 1.36833333] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.54166667, 1.36833333],[104.23666667, 1.29166667] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [104.23666667, 1.29166667],[105.075, 0.83333333] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [105.075, 0.83333333],[105.66, -0.06666667] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [105.66, -0.06666667],[107.26333333, -2.84166667] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [107.26333333, -2.84166667],[107.74666667, -3.79] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [107.74666667, -3.79],[108.45666667, -4.61] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [108.45666667, -4.61],[109.16333333, -5.43666667] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [109.16333333, -5.43666667],[109.88, -6.26666667] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [109.88, -6.26666667],[110.42166667, -6.94] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [110.42166667, -6.94],[110.42166667, -6.94] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [110.42166667, -6.94],[110.42166667, -6.94] ] },
+      "properties": {
+          "title": "EVER ABLE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
@@ -120,297 +394,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [112.76333333, -6.845],[103.54166667, 1.37166667] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.54166667, 1.37166667],[103.54166667, 1.37166667] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.54166667, 1.37166667],[103.54166667, 1.37166667] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.54166667, 1.37166667],[103.54166667, 1.37166667] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.54166667, 1.37166667],[103.54166667, 1.37166667] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.54166667, 1.37166667],[103.56666667, 1.26] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.56666667, 1.26],[103.56666667, 1.26] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.56666667, 1.26],[103.86, 1.205] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.86, 1.205],[103.83333333, 1.26666667] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.83333333, 1.26666667],[103.83333333, 1.26666667] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.83333333, 1.26666667],[103.52333333, 1.11833333] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.52333333, 1.11833333],[102.66666667, 1.69166667] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [102.66666667, 1.69166667],[101.80333333, 2.25166667] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.80333333, 2.25166667],[100.95, 2.84166667] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.95, 2.84166667],[100.24166667, 4.77833333] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.24166667, 4.77833333],[100.33666667, 5.48333333] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.33666667, 5.48333333],[100.36, 5.41666667] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.36, 5.41666667],[100.36, 5.41666667] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.36, 5.41666667],[100.36, 5.41666667] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.36, 5.41666667],[100.36, 5.41666667] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.36, 5.41666667],[100.36, 5.41666667] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.36, 5.41666667],[100.21333333, 5.54833333] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.21333333, 5.54833333],[100.215, 5.54833333] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.215, 5.54833333],[100.215, 5.54833333] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.215, 5.54833333],[100.215, 5.54833333] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.215, 5.54833333],[100.13, 5.61666667] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.13, 5.61666667],[99.25, 6.34] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [99.25, 6.34],[98.06666667, 8.23833333] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.06666667, 8.23833333],[97.79333333, 9.35] ] },
-      "properties": {
-          "title": "EVER ABLE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [97.79333333, 9.35],[97.53666667, 10.46] ] },
+          "coordinates": [ [112.76333333, -6.845],[97.53666667, 10.46] ] },
       "properties": {
           "title": "EVER ABLE",
           "stroke": "#ffa500",

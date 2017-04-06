@@ -3,24 +3,8 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [123.9, 28.2] },
-      "properties": {
-          "title": "UNI PREMIER",
-          "description": "2017-03-24 00:00:00, 28°11′60″N, 123°54′0″E",
-          "course": 219,
-          "speed": 16.5,
-          "nextport": "TWTPE",
-          "eta": "20170325",
-          "url": "url",
-          "marker-symbol": "p",
-          "marker-color": "#008000",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
-          "coordinates": [ [123.9, 28.2],[123.9, 28.2] ] },
+          "coordinates": [ [133.0, 31.2],[133.0, 31.2] ] },
       "properties": {
           "title": "UNI PREMIER",
           "stroke": "#008000",
@@ -30,7 +14,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [123.9, 28.2],[133.7, 32.6] ] },
+          "coordinates": [ [133.0, 31.2],[127.6, 29.1] ] },
       "properties": {
           "title": "UNI PREMIER",
           "stroke": "#008000",
@@ -40,7 +24,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [133.7, 32.6],[126.8, 28.7] ] },
+          "coordinates": [ [127.6, 29.1],[126.8, 28.7] ] },
       "properties": {
           "title": "UNI PREMIER",
           "stroke": "#008000",

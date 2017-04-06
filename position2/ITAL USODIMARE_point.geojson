@@ -4,66 +4,18 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [-15.0, 43.0] },
+          "coordinates": [311.0, 38.2] },
       "properties": {
           "title": "ITAL USODIMARE",
-          "description": "2017-03-30 00:00:00, 43°0′0″N, 15°0′0″W",
-          "course": 47,
-          "speed": 18.8,
+          "description": "2017-03-26 00:00:00, 38°12′0″N, 49°0′0″W",
+          "course": 91,
+          "speed": 19.1,
           "nextport": "BEANW",
-          "eta": "20170401",
+          "eta": "20170331",
           "url": "url",
           "marker-symbol": "u",
           "marker-color": "#9acd32",
           "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [-15.0, 43.0] },
-      "properties": {
-          "title": "2017-03-30 00:00:00",
-          "description": "43°0′0″N, 15°0′0″W",
-          "course": 47,
-          "speed": 18.8,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [-22.5, 37.8] },
-      "properties": {
-          "title": "2017-03-29 00:00:00",
-          "description": "37°47′60″N, 22°30′0″W",
-          "course": 46,
-          "speed": 19.4,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [329.2, 36.0] },
-      "properties": {
-          "title": "2017-03-28 00:00:00",
-          "description": "36°0′0″N, 30°48′0″W",
-          "course": 90,
-          "speed": 18.3,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [320.3, 36.8] },
-      "properties": {
-          "title": "2017-03-27 00:00:00",
-          "description": "36°47′60″N, 39°42′0″W",
-          "course": 107,
-          "speed": 19.6,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
 
     { "type": "Feature",
       "geometry": {

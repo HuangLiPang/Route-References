@@ -3,24 +3,308 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [280.41333333, 9.97666667] },
+          "type": "LineString",
+          "coordinates": [ [278.85833333, 32.13666667],[278.85833333, 32.13666667] ] },
       "properties": {
           "title": "EVER LADEN",
-          "description": "2017-03-30 19:28:00, 9°58′36″N, 79°35′12″W",
-          "course": 28,
-          "speed": 14.4,
-          "nextport": "USSVN",
-          "eta": "20170403",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [280.41333333, 9.97666667],[280.41333333, 9.97666667] ] },
+          "coordinates": [ [278.85833333, 32.13666667],[278.85833333, 32.13666667] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [278.85833333, 32.13666667],[278.85833333, 32.13666667] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [278.85833333, 32.13666667],[278.85833333, 32.13666667] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [278.85833333, 32.13666667],[278.85833333, 32.13666667] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [278.85833333, 32.13666667],[278.85833333, 32.13666667] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [278.85833333, 32.13666667],[278.85833333, 32.13666667] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [278.85833333, 32.13666667],[279.3, 31.96333333] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [279.3, 31.96333333],[279.625, 31.89166667] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [279.625, 31.89166667],[281.76, 30.73] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [281.76, 30.73],[282.67166667, 30.255] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [282.67166667, 30.255],[283.18666667, 29.49333333] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [283.18666667, 29.49333333],[283.52333333, 28.62666667] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [283.52333333, 28.62666667],[283.86, 27.735] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [283.86, 27.735],[284.19333333, 26.87] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [284.19333333, 26.87],[284.53, 25.97166667] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [284.53, 25.97166667],[285.24833333, 24.03] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [285.24833333, 24.03],[285.34666667, 22.05333333] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [285.34666667, 22.05333333],[285.71333333, 21.14666667] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [285.71333333, 21.14666667],[286.05166667000003, 20.27833333] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [286.05166667000003, 20.27833333],[285.68666667, 19.42833333] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [285.68666667, 19.42833333],[285.13166667, 18.43833333] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [285.13166667, 18.43833333],[284.64166667, 17.57333333] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [284.64166667, 17.57333333],[284.17333333, 16.75] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [284.17333333, 16.75],[283.70333333, 15.91333333] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [283.70333333, 15.91333333],[283.21500000000003, 15.04] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [283.21500000000003, 15.04],[282.265, 13.335] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [282.265, 13.335],[281.81, 12.50666667] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [281.81, 12.50666667],[281.345, 11.66666667] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [281.345, 11.66666667],[280.88833333, 10.83666667] ] },
+      "properties": {
+          "title": "EVER LADEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.88833333, 10.83666667],[280.41333333, 9.97666667] ] },
       "properties": {
           "title": "EVER LADEN",
           "stroke": "#ff0000",

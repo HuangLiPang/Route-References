@@ -3,24 +3,368 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [114.435, 21.905] },
+          "type": "LineString",
+          "coordinates": [ [103.04833333, 9.56666667],[103.04833333, 9.56666667] ] },
       "properties": {
           "title": "UNI ADROIT",
-          "description": "2017-03-30 15:28:00, 21°54′18″N, 114°26′6″E",
-          "course": 2,
-          "speed": 13.8,
-          "nextport": "TWKSG",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "a",
-          "marker-color": "#ffa500",
-          "marker-size": "medium"} },
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.435, 21.905],[114.435, 21.905] ] },
+          "coordinates": [ [103.04833333, 9.56666667],[103.90666667, 8.73] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.90666667, 8.73],[105.00333333, 8.31] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [105.00333333, 8.31],[106.19166667, 8.43333333] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.19166667, 8.43333333],[107.32833333, 8.72666667] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [107.32833333, 8.72666667],[108.43833333, 9.255] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [108.43833333, 9.255],[109.415, 9.99] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [109.415, 9.99],[110.07833333, 11.02333333] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [110.07833333, 11.02333333],[110.66666667, 11.93166667] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [110.66666667, 11.93166667],[111.265, 12.84833333] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [111.265, 12.84833333],[111.88833333, 13.80166667] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [111.88833333, 13.80166667],[112.52666667, 14.77333333] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [112.52666667, 14.77333333],[113.16, 15.74166667] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [113.16, 15.74166667],[113.92166667, 16.57333333] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [113.92166667, 16.57333333],[114.74666667, 17.37333333] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.74666667, 17.37333333],[115.55666667, 18.14833333] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [115.55666667, 18.14833333],[116.47, 19.02] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [116.47, 19.02],[117.30166667, 19.81833333] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [117.30166667, 19.81833333],[118.14666667, 20.625] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [118.14666667, 20.625],[118.98666667, 21.42666667] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [118.98666667, 21.42666667],[119.83, 22.21] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [119.83, 22.21],[120.31666667, 22.555] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.31666667, 22.555],[120.31666667, 22.555] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.31666667, 22.555],[120.31666667, 22.555] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.31666667, 22.555],[120.31666667, 22.555] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.31666667, 22.555],[120.31666667, 22.555] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.31666667, 22.555],[119.47333333, 22.40833333] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [119.47333333, 22.40833333],[118.53166667, 22.255] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [118.53166667, 22.255],[117.65666667, 21.94166667] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [117.65666667, 21.94166667],[117.18833333, 22.02666667] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [117.18833333, 22.02666667],[116.535, 22.10333333] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [116.535, 22.10333333],[115.665, 22.11333333] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [115.665, 22.11333333],[114.56833333, 22.11] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.56833333, 22.11],[113.885, 22.43166667] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [113.885, 22.43166667],[113.89, 22.45] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [113.89, 22.45],[113.89, 22.45] ] },
+      "properties": {
+          "title": "UNI ADROIT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [113.89, 22.45],[114.435, 21.905] ] },
       "properties": {
           "title": "UNI ADROIT",
           "stroke": "#ffa500",
@@ -110,367 +454,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [111.24666667, 12.82],[100.58333333, 13.69666667] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.58333333, 13.69666667],[100.58333333, 13.69666667] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.58333333, 13.69666667],[100.58333333, 13.69666667] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.58333333, 13.69666667],[100.58333333, 13.69666667] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.58333333, 13.69666667],[100.58333333, 13.69666667] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.58333333, 13.69666667],[100.58333333, 13.69666667] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.58333333, 13.69666667],[100.58333333, 13.69666667] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.58333333, 13.69666667],[100.57833333, 13.7] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.57833333, 13.7],[100.57833333, 13.7] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.57833333, 13.7],[100.6, 13.535] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.6, 13.535],[100.63833333, 13.34666667] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.63833333, 13.34666667],[100.76166667, 13.29] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.76166667, 13.29],[100.875, 13.13666667] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.875, 13.13666667],[100.64, 13.01166667] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.64, 13.01166667],[101.07, 12.195] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.07, 12.195],[101.72333333, 11.33333333] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.72333333, 11.33333333],[102.39166667, 10.435] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [102.39166667, 10.435],[103.07, 9.51] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.07, 9.51],[103.90166667, 8.72333333] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.90166667, 8.72333333],[104.915, 8.31] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [104.915, 8.31],[106.04833333, 8.40833333] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [106.04833333, 8.40833333],[107.14666667, 8.63666667] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [107.14666667, 8.63666667],[110.44666667, 11.59] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [110.44666667, 11.59],[111.05166667, 12.52333333] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [111.05166667, 12.52333333],[111.675, 13.48] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [111.675, 13.48],[112.29666667, 14.44666667] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [112.29666667, 14.44666667],[112.94, 15.41] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [112.94, 15.41],[113.64333333, 16.31] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [113.64333333, 16.31],[114.45, 17.105] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [114.45, 17.105],[115.27666667, 17.92] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [115.27666667, 17.92],[116.13833333, 18.77666667] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [116.13833333, 18.77666667],[117.05666667, 19.66] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [117.05666667, 19.66],[117.93833333, 20.52] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [117.93833333, 20.52],[118.77666667, 21.33333333] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [118.77666667, 21.33333333],[119.63, 22.15166667] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [119.63, 22.15166667],[120.31333333, 22.55833333] ] },
-      "properties": {
-          "title": "UNI ADROIT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [120.31333333, 22.55833333],[120.31333333, 22.55833333] ] },
+          "coordinates": [ [111.24666667, 12.82],[120.31333333, 22.55833333] ] },
       "properties": {
           "title": "UNI ADROIT",
           "stroke": "#ffa500",

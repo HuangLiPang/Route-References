@@ -3,24 +3,298 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [57.19333333, 25.59] },
+          "type": "LineString",
+          "coordinates": [ [85.28666667, 5.79833333],[85.28666667, 5.79833333] ] },
       "properties": {
           "title": "EVER LOYAL",
-          "description": "2017-03-30 19:28:00, 25°35′24″N, 57°11′36″E",
-          "course": 128,
-          "speed": 13.6,
-          "nextport": "MYPKL",
-          "eta": "20170411",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [57.19333333, 25.59],[57.19333333, 25.59] ] },
+          "coordinates": [ [85.28666667, 5.79833333],[84.31333333, 5.78333333] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [84.31333333, 5.78333333],[83.35, 5.77166667] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [83.35, 5.77166667],[82.39833333, 5.75333333] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [82.39833333, 5.75333333],[81.37666667, 5.73833333] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [81.37666667, 5.73833333],[80.32333333, 5.78] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [80.32333333, 5.78],[79.40333333, 6.04666667] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [79.40333333, 6.04666667],[78.65166667, 6.67] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [78.65166667, 6.67],[77.89666667, 7.305] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [77.89666667, 7.305],[77.16333333, 7.89833333] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [77.16333333, 7.89833333],[75.95, 9.34] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [75.95, 9.34],[74.38666667, 11.82666667] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [74.38666667, 11.82666667],[73.87833333, 12.615] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [73.87833333, 12.615],[73.25833333, 13.58166667] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [73.25833333, 13.58166667],[72.60666667, 14.28666667] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [72.60666667, 14.28666667],[71.80666667, 14.88666667] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [71.80666667, 14.88666667],[71.02, 15.48166667] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [71.02, 15.48166667],[70.25833333, 16.05] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [70.25833333, 16.05],[69.49333333, 16.62333333] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [69.49333333, 16.62333333],[68.70666667, 17.21666667] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [68.70666667, 17.21666667],[67.905, 17.805] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [67.905, 17.805],[67.07666667, 18.42333333] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [67.07666667, 18.42333333],[66.30166667, 18.99833333] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [66.30166667, 18.99833333],[63.70833333, 20.89333333] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [63.70833333, 20.89333333],[62.88333333, 21.5] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [62.88333333, 21.5],[60.51666667, 23.20333333] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [60.51666667, 23.20333333],[59.72, 23.775] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [59.72, 23.775],[58.86666667, 24.38166667] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [58.86666667, 24.38166667],[58.01833333, 24.98333333] ] },
+      "properties": {
+          "title": "EVER LOYAL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [58.01833333, 24.98333333],[57.19333333, 25.59] ] },
       "properties": {
           "title": "EVER LOYAL",
           "stroke": "#ff0000",

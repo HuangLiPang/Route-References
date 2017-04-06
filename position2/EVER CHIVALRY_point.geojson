@@ -4,18 +4,42 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [33.8, 27.8] },
+          "coordinates": [24.2, 33.6] },
       "properties": {
           "title": "EVER CHIVALRY",
-          "description": "2017-03-26 00:00:00, 27°48′0″N, 33°47′60″E",
-          "course": 319,
-          "speed": 15.4,
-          "nextport": "EGSUZ",
-          "eta": "20170326",
+          "description": "2017-04-03 00:00:00, 33°36′0″N, 24°11′60″E",
+          "course": 305,
+          "speed": 9.9,
+          "nextport": "GRPIR",
+          "eta": "20170403",
           "url": "url",
           "marker-symbol": "c",
           "marker-color": "#008B8B",
           "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [24.2, 33.6] },
+      "properties": {
+          "title": "2017-04-03 00:00:00",
+          "description": "33°36′0″N, 24°11′60″E",
+          "course": 305,
+          "speed": 9.9,
+          "marker-size": "small",
+          "marker-color": "#008B8B" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [27.8, 33.7] },
+      "properties": {
+          "title": "2017-04-02 00:00:00",
+          "description": "33°42′0″N, 27°48′0″E",
+          "course": 326,
+          "speed": 10.9,
+          "marker-size": "small",
+          "marker-color": "#008B8B" } },
 
     { "type": "Feature",
       "geometry": {

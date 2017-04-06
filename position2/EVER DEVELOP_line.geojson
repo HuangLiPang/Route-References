@@ -3,24 +3,58 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [84.5, 5.9] },
+          "type": "LineString",
+          "coordinates": [ [60.1, 0.3],[60.1, 0.3] ] },
       "properties": {
           "title": "EVER DEVELOP",
-          "description": "2017-03-30 00:00:00, 5°54′0″N, 84°30′0″E",
-          "course": 269,
-          "speed": 13.9,
-          "nextport": "LKCMB",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "d",
-          "marker-color": "#a52a2a",
-          "marker-size": "medium"} },
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [84.5, 5.9],[84.5, 5.9] ] },
+          "coordinates": [ [60.1, 0.3],[66.1, 1.5] ] },
+      "properties": {
+          "title": "EVER DEVELOP",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [66.1, 1.5],[71.2, 3.9] ] },
+      "properties": {
+          "title": "EVER DEVELOP",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [71.2, 3.9],[76.7, 6.1] ] },
+      "properties": {
+          "title": "EVER DEVELOP",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [76.7, 6.1],[79.6, 6.3] ] },
+      "properties": {
+          "title": "EVER DEVELOP",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [79.6, 6.3],[84.5, 5.9] ] },
       "properties": {
           "title": "EVER DEVELOP",
           "stroke": "#a52a2a",
@@ -50,57 +84,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [96.4, 6.1],[85.1, 5.9] ] },
-      "properties": {
-          "title": "EVER DEVELOP",
-          "stroke": "#a52a2a",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [85.1, 5.9],[78.6, 6.1] ] },
-      "properties": {
-          "title": "EVER DEVELOP",
-          "stroke": "#a52a2a",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [78.6, 6.1],[74.2, 2.1] ] },
-      "properties": {
-          "title": "EVER DEVELOP",
-          "stroke": "#a52a2a",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [74.2, 2.1],[69.2, -0.1] ] },
-      "properties": {
-          "title": "EVER DEVELOP",
-          "stroke": "#a52a2a",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [69.2, -0.1],[63.9, -2.0] ] },
-      "properties": {
-          "title": "EVER DEVELOP",
-          "stroke": "#a52a2a",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [63.9, -2.0],[58.6, -2.9] ] },
+          "coordinates": [ [96.4, 6.1],[58.6, -2.9] ] },
       "properties": {
           "title": "EVER DEVELOP",
           "stroke": "#a52a2a",

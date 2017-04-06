@@ -4,18 +4,42 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [121.9, 27.8] },
+          "coordinates": [119.8, 23.3] },
       "properties": {
           "title": "EVER LOADING",
-          "description": "2017-03-28 00:00:00, 27°48′0″N, 121°54′0″E",
-          "course": 28,
-          "speed": 15.3,
-          "nextport": "CNNBO",
-          "eta": "20170328",
+          "description": "2017-04-02 00:00:00, 23°18′0″N, 119°47′60″E",
+          "course": 180,
+          "speed": 12,
+          "nextport": "TWKSG",
+          "eta": "20170403",
           "url": "url",
           "marker-symbol": "l",
           "marker-color": "#ff0000",
           "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [119.8, 23.3] },
+      "properties": {
+          "title": "2017-04-02 00:00:00",
+          "description": "23°18′0″N, 119°47′60″E",
+          "course": 180,
+          "speed": 12,
+          "marker-size": "small",
+          "marker-color": "#ff0000" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [122.4, 28.2] },
+      "properties": {
+          "title": "2017-04-01 00:00:00",
+          "description": "28°11′60″N, 122°24′0″E",
+          "course": 210,
+          "speed": 14.3,
+          "marker-size": "small",
+          "marker-color": "#ff0000" } },
 
     { "type": "Feature",
       "geometry": {
@@ -26,30 +50,6 @@
           "description": "27°48′0″N, 121°54′0″E",
           "course": 28,
           "speed": 15.3,
-          "marker-size": "small",
-          "marker-color": "#ff0000" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [95.0, 6.3] },
-      "properties": {
-          "title": "2017-03-20 00:00:00",
-          "description": "6°17′60″N, 95°0′0″E",
-          "course": 108,
-          "speed": 21.8,
-          "marker-size": "small",
-          "marker-color": "#ff0000" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [86.9, 6.0] },
-      "properties": {
-          "title": "2017-03-19 00:00:00",
-          "description": "6°0′0″N, 86°54′0″E",
-          "course": 87,
-          "speed": 20.7,
           "marker-size": "small",
           "marker-color": "#ff0000" } },
 

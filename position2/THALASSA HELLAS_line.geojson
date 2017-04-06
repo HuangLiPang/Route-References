@@ -3,24 +3,58 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [40.0, 18.5] },
+          "type": "LineString",
+          "coordinates": [ [72.9, 8.8],[72.9, 8.8] ] },
       "properties": {
           "title": "THALASSA HELLAS",
-          "description": "2017-03-30 00:00:00, 18°30′0″N, 40°0′0″E",
-          "course": 150,
-          "speed": 19,
-          "nextport": "LKCMB",
-          "eta": "20170405",
-          "url": "url",
-          "marker-symbol": "t",
-          "marker-color": "#00ff00",
-          "marker-size": "medium"} },
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [40.0, 18.5],[40.0, 18.5] ] },
+          "coordinates": [ [72.9, 8.8],[65.6, 11.1] ] },
+      "properties": {
+          "title": "THALASSA HELLAS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [65.6, 11.1],[58.5, 13.2] ] },
+      "properties": {
+          "title": "THALASSA HELLAS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [58.5, 13.2],[50.9, 13.7] ] },
+      "properties": {
+          "title": "THALASSA HELLAS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [50.9, 13.7],[43.9, 12.3] ] },
+      "properties": {
+          "title": "THALASSA HELLAS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [43.9, 12.3],[40.0, 18.5] ] },
       "properties": {
           "title": "THALASSA HELLAS",
           "stroke": "#00ff00",

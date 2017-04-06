@@ -3,24 +3,318 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [97.28333333, 5.60833333] },
+          "type": "LineString",
+          "coordinates": [ [116.09666667, 15.74333333],[116.09666667, 15.74333333] ] },
       "properties": {
           "title": "THALASSA PISTIS",
-          "description": "2017-03-30 19:28:00, 5°36′30″N, 97°16′60″E",
-          "course": 106,
-          "speed": 15.4,
-          "nextport": "MYPTP",
-          "eta": "20170402",
-          "url": "url",
-          "marker-symbol": "t",
-          "marker-color": "#00ff00",
-          "marker-size": "medium"} },
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [97.28333333, 5.60833333],[97.28333333, 5.60833333] ] },
+          "coordinates": [ [116.09666667, 15.74333333],[115.44, 15.08666667] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [115.44, 15.08666667],[114.71166667, 14.52666667] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.71166667, 14.52666667],[114.14833333, 14.09166667] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.14833333, 14.09166667],[113.33, 13.29333333] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [113.33, 13.29333333],[112.81, 12.53333333] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [112.81, 12.53333333],[112.285, 11.77166667] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [112.285, 11.77166667],[111.77166667, 11.03] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [111.77166667, 11.03],[111.29, 10.28666667] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [111.29, 10.28666667],[110.77, 9.48333333] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [110.77, 9.48333333],[110.16666667, 8.63] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [110.16666667, 8.63],[109.65333333, 7.87833333] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [109.65333333, 7.87833333],[108.71833333, 6.30833333] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [108.71833333, 6.30833333],[108.065, 5.58333333] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [108.065, 5.58333333],[107.435, 4.88333333] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [107.435, 4.88333333],[106.81833333, 4.19166667] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.81833333, 4.19166667],[106.11666667, 3.58333333] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.11666667, 3.58333333],[104.48666667, 1.42166667] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [104.48666667, 1.42166667],[103.67166667, 1.065] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.67166667, 1.065],[103.55, 1.345] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.55, 1.345],[103.55, 1.345] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.55, 1.345],[103.55, 1.345] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.55, 1.345],[103.55, 1.345] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.55, 1.345],[103.55, 1.345] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.55, 1.345],[103.55, 1.345] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.55, 1.345],[103.19666667, 1.38666667] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.19666667, 1.38666667],[102.40666667, 1.81666667] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [102.40666667, 1.81666667],[101.78166667, 2.28333333] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.78166667, 2.28333333],[101.08666667, 2.75333333] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.08666667, 2.75333333],[100.39666667, 3.31333333] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.39666667, 3.31333333],[99.65666667, 3.93833333] ] },
+      "properties": {
+          "title": "THALASSA PISTIS",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [99.65666667, 3.93833333],[97.28333333, 5.60833333] ] },
       "properties": {
           "title": "THALASSA PISTIS",
           "stroke": "#00ff00",

@@ -3,24 +3,338 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [103.17833333, 1.39166667] },
+          "type": "LineString",
+          "coordinates": [ [120.36, 24.62333333],[120.36, 24.62333333] ] },
       "properties": {
           "title": "EVER UBERTY",
-          "description": "2017-03-30 19:28:00, 1°23′30″N, 103°10′42″E",
-          "course": 127,
-          "speed": 8.2,
-          "nextport": "TWKSG",
-          "eta": "20170404",
-          "url": "url",
-          "marker-symbol": "u",
-          "marker-color": "#9acd32",
-          "marker-size": "medium"} },
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [103.17833333, 1.39166667],[103.17833333, 1.39166667] ] },
+          "coordinates": [ [120.36, 24.62333333],[119.90833333, 23.31833333] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [119.90833333, 23.31833333],[120.31666667, 22.555] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.31666667, 22.555],[120.31666667, 22.555] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.31666667, 22.555],[120.31666667, 22.555] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.31666667, 22.555],[120.31666667, 22.555] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.31666667, 22.555],[119.76833333, 21.96833333] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [119.76833333, 21.96833333],[118.28833333, 20.05] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [118.28833333, 20.05],[117.53666667, 19.07] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [117.53666667, 19.07],[116.78833333, 18.08] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [116.78833333, 18.08],[116.03833333, 17.09333333] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [116.03833333, 17.09333333],[115.29166667, 16.09166667] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [115.29166667, 16.09166667],[114.55333333, 15.10333333] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.55333333, 15.10333333],[113.78, 14.13166667] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [113.78, 14.13166667],[113.04166667, 13.20333333] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [113.04166667, 13.20333333],[112.23333333, 12.16666667] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [112.23333333, 12.16666667],[111.455, 11.18166667] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [111.455, 11.18166667],[110.705, 10.225] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [110.705, 10.225],[109.91833333, 9.21] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [109.91833333, 9.21],[109.13833333, 8.21166667] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [109.13833333, 8.21166667],[108.37666667, 7.24] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [108.37666667, 7.24],[107.625, 6.28] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [107.625, 6.28],[106.84333333, 5.29] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.84333333, 5.29],[106.035, 4.25333333] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.035, 4.25333333],[105.39166667, 3.09333333] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [105.39166667, 3.09333333],[104.835, 1.94333333] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [104.835, 1.94333333],[103.54166667, 1.36166667] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.54166667, 1.36166667],[103.54333333, 1.36166667] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.54333333, 1.36166667],[103.54333333, 1.36333333] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.54333333, 1.36333333],[103.54333333, 1.36166667] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.54333333, 1.36166667],[103.54333333, 1.36333333] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.54333333, 1.36333333],[103.54333333, 1.36333333] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.54333333, 1.36333333],[103.54333333, 1.36333333] ] },
+      "properties": {
+          "title": "EVER UBERTY",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.54333333, 1.36333333],[103.17833333, 1.39166667] ] },
       "properties": {
           "title": "EVER UBERTY",
           "stroke": "#9acd32",

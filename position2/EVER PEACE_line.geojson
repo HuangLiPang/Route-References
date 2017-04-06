@@ -3,24 +3,248 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [119.93833333, 22.53833333] },
+          "type": "LineString",
+          "coordinates": [ [108.53333333, 10.76333333],[108.53333333, 10.76333333] ] },
       "properties": {
           "title": "EVER PEACE",
-          "description": "2017-03-30 15:28:00, 22°32′18″N, 119°56′18″E",
-          "course": 265,
-          "speed": 14,
-          "nextport": "HKHKG",
-          "eta": "20170401",
-          "url": "url",
-          "marker-symbol": "p",
-          "marker-color": "#008000",
-          "marker-size": "medium"} },
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [119.93833333, 22.53833333],[119.93833333, 22.53833333] ] },
+          "coordinates": [ [108.53333333, 10.76333333],[106.8, 10.76333333] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.8, 10.76333333],[106.8, 10.76333333] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.8, 10.76333333],[106.93833333, 10.52333333] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.93833333, 10.52333333],[107.01166667, 10.25333333] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [107.01166667, 10.25333333],[107.01166667, 10.25333333] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [107.01166667, 10.25333333],[107.01166667, 10.25333333] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [107.01166667, 10.25333333],[107.01333333, 10.25166667] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [107.01333333, 10.25166667],[107.395, 10.23333333] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [107.395, 10.23333333],[108.315, 10.62] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [108.315, 10.62],[109.15166667, 11.30666667] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [109.15166667, 11.30666667],[109.45, 12.32833333] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [109.45, 12.32833333],[109.65166667, 13.49333333] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [109.65166667, 13.49333333],[110.03166667, 15.535] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [110.03166667, 15.535],[110.605, 16.32166667] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [110.605, 16.32166667],[111.17166667, 17.09] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [111.17166667, 17.09],[111.71833333, 17.86] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [111.71833333, 17.86],[113.155, 20.435] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [113.155, 20.435],[113.63166667, 21.30833333] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [113.63166667, 21.30833333],[114.19666667, 22.14833333] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.19666667, 22.14833333],[114.18333333, 22.19833333] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.18333333, 22.19833333],[114.845, 22.15] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.845, 22.15],[115.88166667, 22.195] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [115.88166667, 22.195],[116.87166667, 22.31666667] ] },
+      "properties": {
+          "title": "EVER PEACE",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [116.87166667, 22.31666667],[119.93833333, 22.53833333] ] },
       "properties": {
           "title": "EVER PEACE",
           "stroke": "#008000",
@@ -450,247 +674,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [139.37, 34.83666667],[107.03333333, 10.235] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [107.03333333, 10.235],[107.03, 10.23666667] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [107.03, 10.23666667],[107.03, 10.23666667] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [107.03, 10.23666667],[107.585, 10.25333333] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [107.585, 10.25333333],[109.17333333, 11.36] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [109.17333333, 11.36],[109.59833333, 12.33] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [109.59833333, 12.33],[109.95333333, 13.33] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [109.95333333, 13.33],[110.30666667, 14.31166667] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [110.30666667, 14.31166667],[110.63, 15.22333333] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [110.63, 15.22333333],[110.93166667, 16.09333333] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [110.93166667, 16.09333333],[111.25833333, 16.965] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [111.25833333, 16.965],[111.7, 17.82666667] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [111.7, 17.82666667],[112.18833333, 18.70666667] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [112.18833333, 18.70666667],[112.705, 19.63333333] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [112.705, 19.63333333],[113.18333333, 20.48666667] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [113.18333333, 20.48666667],[113.635, 21.32] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [113.635, 21.32],[114.195, 22.15666667] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [114.195, 22.15666667],[114.13166667, 22.33] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [114.13166667, 22.33],[114.23666667, 22.145] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [114.23666667, 22.145],[114.55166667, 22.08333333] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [114.55166667, 22.08333333],[115.47666667, 22.17666667] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [115.47666667, 22.17666667],[116.55, 22.29166667] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [116.55, 22.29166667],[117.59333333, 22.37333333] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [117.59333333, 22.37333333],[118.67833333, 22.44666667] ] },
-      "properties": {
-          "title": "EVER PEACE",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [118.67833333, 22.44666667],[119.725, 22.51333333] ] },
+          "coordinates": [ [139.37, 34.83666667],[119.725, 22.51333333] ] },
       "properties": {
           "title": "EVER PEACE",
           "stroke": "#008000",

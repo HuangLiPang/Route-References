@@ -3,24 +3,68 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [72.1, -11.1] },
+          "type": "LineString",
+          "coordinates": [ [101.3, 2.6],[101.3, 2.6] ] },
       "properties": {
           "title": "EVER DYNAMIC",
-          "description": "2017-03-30 00:00:00, 11°5′60″S, 72°5′60″E",
-          "course": 53,
-          "speed": 13,
-          "nextport": "SGSGP",
-          "eta": "20170406",
-          "url": "url",
-          "marker-symbol": "d",
-          "marker-color": "#a52a2a",
-          "marker-size": "medium"} },
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [72.1, -11.1],[72.1, -11.1] ] },
+          "coordinates": [ [101.3, 2.6],[96.3, 5.9] ] },
+      "properties": {
+          "title": "EVER DYNAMIC",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [96.3, 5.9],[91.3, 3.3] ] },
+      "properties": {
+          "title": "EVER DYNAMIC",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [91.3, 3.3],[86.3, -0.5] ] },
+      "properties": {
+          "title": "EVER DYNAMIC",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [86.3, -0.5],[81.5, -4.1] ] },
+      "properties": {
+          "title": "EVER DYNAMIC",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [81.5, -4.1],[76.7, -7.8] ] },
+      "properties": {
+          "title": "EVER DYNAMIC",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [76.7, -7.8],[72.1, -11.1] ] },
       "properties": {
           "title": "EVER DYNAMIC",
           "stroke": "#a52a2a",

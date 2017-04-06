@@ -3,24 +3,68 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [105.2, 3.1] },
+          "type": "LineString",
+          "coordinates": [ [61.1, 12.2],[61.1, 12.2] ] },
       "properties": {
           "title": "EVER CONQUEST",
-          "description": "2017-03-28 00:00:00, 3°6′0″N, 105°12′0″E",
-          "course": 206,
-          "speed": 14,
-          "nextport": "SGSGP",
-          "eta": "20170328",
-          "url": "url",
-          "marker-symbol": "c",
-          "marker-color": "#008B8B",
-          "marker-size": "medium"} },
+          "stroke": "#008B8B",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [105.2, 3.1],[105.2, 3.1] ] },
+          "coordinates": [ [61.1, 12.2],[69.7, 9.3] ] },
+      "properties": {
+          "title": "EVER CONQUEST",
+          "stroke": "#008B8B",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [69.7, 9.3],[78.5, 6.4] ] },
+      "properties": {
+          "title": "EVER CONQUEST",
+          "stroke": "#008B8B",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [78.5, 6.4],[87.2, 6.0] ] },
+      "properties": {
+          "title": "EVER CONQUEST",
+          "stroke": "#008B8B",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [87.2, 6.0],[96.4, 5.9] ] },
+      "properties": {
+          "title": "EVER CONQUEST",
+          "stroke": "#008B8B",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [96.4, 5.9],[101.3, 2.7] ] },
+      "properties": {
+          "title": "EVER CONQUEST",
+          "stroke": "#008B8B",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.3, 2.7],[105.2, 3.1] ] },
       "properties": {
           "title": "EVER CONQUEST",
           "stroke": "#008B8B",

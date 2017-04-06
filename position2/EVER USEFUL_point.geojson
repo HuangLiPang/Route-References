@@ -4,18 +4,402 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [114.47666667, 22.10333333] },
+          "coordinates": [139.90333333, 33.53166667] },
       "properties": {
           "title": "EVER USEFUL",
-          "description": "2017-03-30 19:28:00, 22°6′12″N, 114°28′36″E",
-          "course": 214,
-          "speed": 10.8,
-          "nextport": "CNXHK",
-          "eta": "20170331",
+          "description": "2017-04-05 19:28:00, 33°31′54″N, 139°54′12″E",
+          "course": 69,
+          "speed": 20,
+          "nextport": "USLAX",
+          "eta": "20170416",
           "url": "url",
           "marker-symbol": "u",
           "marker-color": "#9acd32",
           "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [139.90333333, 33.53166667] },
+      "properties": {
+          "title": "2017-04-05 19:28:00",
+          "description": "33°31′54″N, 139°54′12″E",
+          "course": 69,
+          "speed": 20,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [138.40833333, 33.09166667] },
+      "properties": {
+          "title": "2017-04-05 15:28:00",
+          "description": "33°5′30″N, 138°24′30″E",
+          "course": 71,
+          "speed": 20.6,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [136.74, 32.605] },
+      "properties": {
+          "title": "2017-04-05 11:28:00",
+          "description": "32°36′18″N, 136°44′24″E",
+          "course": 69,
+          "speed": 22,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [135.13333333, 32.13666667] },
+      "properties": {
+          "title": "2017-04-05 07:28:00",
+          "description": "32°8′12″N, 135°7′60″E",
+          "course": 71,
+          "speed": 21.4,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [133.61166667, 31.68666667] },
+      "properties": {
+          "title": "2017-04-05 03:28:00",
+          "description": "31°41′12″N, 133°36′42″E",
+          "course": 72,
+          "speed": 20.2,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [132.12166667, 31.25] },
+      "properties": {
+          "title": "2017-04-04 23:28:00",
+          "description": "31°15′0″N, 132°7′18″E",
+          "course": 71,
+          "speed": 19,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [130.66833333, 30.77833333] },
+      "properties": {
+          "title": "2017-04-04 19:28:00",
+          "description": "30°46′42″N, 130°40′6″E",
+          "course": 63,
+          "speed": 21.4,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [129.19666667, 30.13166667] },
+      "properties": {
+          "title": "2017-04-04 15:28:00",
+          "description": "30°7′54″N, 129°11′48″E",
+          "course": 62,
+          "speed": 20.4,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [127.73166667, 29.445] },
+      "properties": {
+          "title": "2017-04-04 11:28:00",
+          "description": "29°26′42″N, 127°43′54″E",
+          "course": 62,
+          "speed": 24,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [126.21, 28.73333333] },
+      "properties": {
+          "title": "2017-04-04 07:28:00",
+          "description": "28°43′60″N, 126°12′36″E",
+          "course": 60,
+          "speed": 21.4,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [124.82333333, 28.07333333] },
+      "properties": {
+          "title": "2017-04-04 03:28:00",
+          "description": "28°4′24″N, 124°49′24″E",
+          "course": 58,
+          "speed": 20.4,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [123.50666667, 27.38] },
+      "properties": {
+          "title": "2017-04-03 23:28:00",
+          "description": "27°22′48″N, 123°30′24″E",
+          "course": 60,
+          "speed": 20.8,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [122.155, 26.66333333] },
+      "properties": {
+          "title": "2017-04-03 19:28:00",
+          "description": "26°39′48″N, 122°9′18″E",
+          "course": 60,
+          "speed": 21,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [120.96666667, 25.84666667] },
+      "properties": {
+          "title": "2017-04-03 15:28:00",
+          "description": "25°50′48″N, 120°58′0″E",
+          "course": 42,
+          "speed": 20.2,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [119.855, 24.89666667] },
+      "properties": {
+          "title": "2017-04-03 11:28:00",
+          "description": "24°53′48″N, 119°51′18″E",
+          "course": 40,
+          "speed": 21,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [118.78333333, 24.05] },
+      "properties": {
+          "title": "2017-04-03 07:36:00",
+          "description": "24°3′0″N, 118°46′60″E",
+          "course": 45,
+          "speed": 19.8,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [117.57666667, 23.20333333] },
+      "properties": {
+          "title": "2017-04-03 03:28:00",
+          "description": "23°12′12″N, 117°34′36″E",
+          "course": 63,
+          "speed": 20.2,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [116.38333333, 22.58833333] },
+      "properties": {
+          "title": "2017-04-02 23:28:00",
+          "description": "22°35′18″N, 116°22′60″E",
+          "course": 63,
+          "speed": 18.4,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [114.26833333, 22.56833333] },
+      "properties": {
+          "title": "2017-04-02 15:28:00",
+          "description": "22°34′6″N, 114°16′6″E",
+          "course": 188,
+          "speed": 0,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [114.27, 22.57] },
+      "properties": {
+          "title": "2017-04-02 11:28:00",
+          "description": "22°34′12″N, 114°16′12″E",
+          "course": 205,
+          "speed": 0,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [114.27, 22.57] },
+      "properties": {
+          "title": "2017-04-02 07:28:00",
+          "description": "22°34′12″N, 114°16′12″E",
+          "course": 257,
+          "speed": 0,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [114.27, 22.57] },
+      "properties": {
+          "title": "2017-04-02 03:28:00",
+          "description": "22°34′12″N, 114°16′12″E",
+          "course": 133,
+          "speed": 0,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [114.27, 22.57] },
+      "properties": {
+          "title": "2017-04-01 23:28:00",
+          "description": "22°34′12″N, 114°16′12″E",
+          "course": 155,
+          "speed": 0,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [114.27, 22.57] },
+      "properties": {
+          "title": "2017-04-01 11:28:00",
+          "description": "22°34′12″N, 114°16′12″E",
+          "course": 163,
+          "speed": 0,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [114.34833333, 22.58] },
+      "properties": {
+          "title": "2017-04-01 07:28:00",
+          "description": "22°34′48″N, 114°20′54″E",
+          "course": 3,
+          "speed": 0.2,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [114.35, 22.57666667] },
+      "properties": {
+          "title": "2017-04-01 03:28:00",
+          "description": "22°34′36″N, 114°20′60″E",
+          "course": 39,
+          "speed": 0,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [114.38833333, 22.16333333] },
+      "properties": {
+          "title": "2017-03-31 23:28:00",
+          "description": "22°9′48″N, 114°23′18″E",
+          "course": 24,
+          "speed": 11.8,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [113.895, 22.45166667] },
+      "properties": {
+          "title": "2017-03-31 19:28:00",
+          "description": "22°27′6″N, 113°53′42″E",
+          "course": 118,
+          "speed": 0.8,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [113.89166667, 22.45166667] },
+      "properties": {
+          "title": "2017-03-31 15:28:00",
+          "description": "22°27′6″N, 113°53′30″E",
+          "course": 78,
+          "speed": 14,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [113.89166667, 22.45166667] },
+      "properties": {
+          "title": "2017-03-31 11:28:00",
+          "description": "22°27′6″N, 113°53′30″E",
+          "course": 297,
+          "speed": 0,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [113.96, 22.345] },
+      "properties": {
+          "title": "2017-03-31 07:28:00",
+          "description": "22°20′42″N, 113°57′36″E",
+          "course": 268,
+          "speed": 11.8,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [114.455, 22.09] },
+      "properties": {
+          "title": "2017-03-30 23:28:00",
+          "description": "22°5′24″N, 114°27′18″E",
+          "course": 57,
+          "speed": 0,
+          "marker-size": "small",
+          "marker-color": "#9acd32" } },
 
     { "type": "Feature",
       "geometry": {
@@ -266,390 +650,6 @@
           "description": "26°17′6″N, 122°7′54″E",
           "course": 221,
           "speed": 12.2,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [146.49833333, 41.88333333] },
-      "properties": {
-          "title": "2017-03-22 19:28:00",
-          "description": "41°52′60″N, 146°29′54″E",
-          "course": 239,
-          "speed": 13.4,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [147.535, 42.37] },
-      "properties": {
-          "title": "2017-03-22 15:28:00",
-          "description": "42°22′12″N, 147°32′6″E",
-          "course": 214,
-          "speed": 14.2,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [148.25333333, 43.16666667] },
-      "properties": {
-          "title": "2017-03-22 11:28:00",
-          "description": "43°10′0″N, 148°15′12″E",
-          "course": 214,
-          "speed": 14,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [148.99, 43.96] },
-      "properties": {
-          "title": "2017-03-22 07:28:00",
-          "description": "43°57′36″N, 148°59′24″E",
-          "course": 212,
-          "speed": 14.6,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [151.04333333, 45.55833333] },
-      "properties": {
-          "title": "2017-03-21 23:28:00",
-          "description": "45°33′30″N, 151°2′36″E",
-          "course": 228,
-          "speed": 14.4,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [152.105, 46.255] },
-      "properties": {
-          "title": "2017-03-21 19:28:00",
-          "description": "46°15′18″N, 152°6′18″E",
-          "course": 227,
-          "speed": 15.2,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [153.14666667, 46.94] },
-      "properties": {
-          "title": "2017-03-21 15:28:00",
-          "description": "46°56′24″N, 153°8′48″E",
-          "course": 226,
-          "speed": 14.8,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [154.20333333, 47.62] },
-      "properties": {
-          "title": "2017-03-21 11:28:00",
-          "description": "47°37′12″N, 154°12′12″E",
-          "course": 227,
-          "speed": 14.6,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [155.215, 48.27] },
-      "properties": {
-          "title": "2017-03-21 07:28:00",
-          "description": "48°16′12″N, 155°12′54″E",
-          "course": 224,
-          "speed": 13.2,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [156.27333333, 48.93] },
-      "properties": {
-          "title": "2017-03-21 03:28:00",
-          "description": "48°55′48″N, 156°16′24″E",
-          "course": 121,
-          "speed": 0,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [157.585, 49.74166667] },
-      "properties": {
-          "title": "2017-03-20 23:28:00",
-          "description": "49°44′30″N, 157°35′6″E",
-          "course": 225,
-          "speed": 15,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [158.815, 50.285] },
-      "properties": {
-          "title": "2017-03-20 19:28:00",
-          "description": "50°17′6″N, 158°48′54″E",
-          "course": 244,
-          "speed": 14.2,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [160.14333333, 50.72333333] },
-      "properties": {
-          "title": "2017-03-20 15:28:00",
-          "description": "50°43′24″N, 160°8′36″E",
-          "course": 242,
-          "speed": 14.4,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [161.47333333, 51.14333333] },
-      "properties": {
-          "title": "2017-03-20 11:28:00",
-          "description": "51°8′36″N, 161°28′24″E",
-          "course": 245,
-          "speed": 14,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [164.14833333, 51.92166667] },
-      "properties": {
-          "title": "2017-03-20 03:28:00",
-          "description": "51°55′18″N, 164°8′54″E",
-          "course": 242,
-          "speed": 13.8,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [166.03333333, 52.42] },
-      "properties": {
-          "title": "2017-03-19 23:28:00",
-          "description": "52°25′12″N, 166°1′60″E",
-          "course": 246,
-          "speed": 15.4,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [167.41666667, 52.75666667] },
-      "properties": {
-          "title": "2017-03-19 19:28:00",
-          "description": "52°45′24″N, 167°25′0″E",
-          "course": 252,
-          "speed": 12.6,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [170.02666667, 53.34666667] },
-      "properties": {
-          "title": "2017-03-19 11:28:00",
-          "description": "53°20′48″N, 170°1′36″E",
-          "course": 251,
-          "speed": 12.6,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [171.38666667, 53.61833333] },
-      "properties": {
-          "title": "2017-03-19 07:28:00",
-          "description": "53°37′6″N, 171°23′12″E",
-          "course": 250,
-          "speed": 12.6,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [172.80166667, 53.86666667] },
-      "properties": {
-          "title": "2017-03-19 03:28:00",
-          "description": "53°52′0″N, 172°48′6″E",
-          "course": 260,
-          "speed": 13.2,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [174.575, 54.05666667] },
-      "properties": {
-          "title": "2017-03-18 23:28:00",
-          "description": "54°3′24″N, 174°34′30″E",
-          "course": 260,
-          "speed": 12.6,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [175.955, 54.19] },
-      "properties": {
-          "title": "2017-03-18 19:28:00",
-          "description": "54°11′24″N, 175°57′18″E",
-          "course": 260,
-          "speed": 12,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [177.36666667, 54.30666667] },
-      "properties": {
-          "title": "2017-03-18 15:28:00",
-          "description": "54°18′24″N, 177°22′0″E",
-          "course": 261,
-          "speed": 13,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [178.835, 54.41] },
-      "properties": {
-          "title": "2017-03-18 11:28:00",
-          "description": "54°24′36″N, 178°50′6″E",
-          "course": 265,
-          "speed": 13.4,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [180.33833333, 54.5] },
-      "properties": {
-          "title": "2017-03-18 07:28:00",
-          "description": "54°30′0″N, 179°39′42″W",
-          "course": 126,
-          "speed": 18.2,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [183.71333333, 54.62666667] },
-      "properties": {
-          "title": "2017-03-17 23:28:00",
-          "description": "54°37′36″N, 176°17′12″W",
-          "course": 267,
-          "speed": 12.8,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [186.66666667, 54.67166667] },
-      "properties": {
-          "title": "2017-03-17 15:28:00",
-          "description": "54°40′18″N, 173°19′60″W",
-          "course": 271,
-          "speed": 12.6,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [189.685, 54.61833333] },
-      "properties": {
-          "title": "2017-03-17 07:28:00",
-          "description": "54°37′6″N, 170°18′54″W",
-          "course": 230,
-          "speed": 0,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [191.22333333, 54.57333333] },
-      "properties": {
-          "title": "2017-03-17 03:28:00",
-          "description": "54°34′24″N, 168°46′36″W",
-          "course": 272,
-          "speed": 14,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [194.90666667, 54.36166667] },
-      "properties": {
-          "title": "2017-03-16 19:28:00",
-          "description": "54°21′42″N, 165°5′36″W",
-          "course": 281,
-          "speed": 13,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [196.34833333, 54.24] },
-      "properties": {
-          "title": "2017-03-16 15:28:00",
-          "description": "54°14′24″N, 163°39′6″W",
-          "course": 275,
-          "speed": 13.2,
-          "marker-size": "small",
-          "marker-color": "#9acd32" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [197.67666667, 53.92666667] },
-      "properties": {
-          "title": "2017-03-16 11:28:00",
-          "description": "53°55′36″N, 162°19′24″W",
-          "course": 291,
-          "speed": 12,
           "marker-size": "small",
           "marker-color": "#9acd32" } },
 

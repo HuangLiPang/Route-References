@@ -4,18 +4,54 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [78.3, 7.3] },
+          "coordinates": [66.8, 23.2] },
       "properties": {
           "title": "ITAL MILIONE",
-          "description": "2017-03-30 00:00:00, 7°17′60″N, 78°17′60″E",
-          "course": 282,
-          "speed": 16.4,
+          "description": "2017-04-02 00:00:00, 23°11′60″N, 66°47′60″E",
+          "course": 334,
+          "speed": 16.2,
           "nextport": "PKKHI",
           "eta": "20170402",
           "url": "url",
           "marker-symbol": "m",
           "marker-color": "#808080",
           "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [66.8, 23.2] },
+      "properties": {
+          "title": "2017-04-02 00:00:00",
+          "description": "23°11′60″N, 66°47′60″E",
+          "course": 334,
+          "speed": 16.2,
+          "marker-size": "small",
+          "marker-color": "#808080" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [70.2, 17.6] },
+      "properties": {
+          "title": "2017-04-01 00:00:00",
+          "description": "17°36′0″N, 70°12′0″E",
+          "course": 328,
+          "speed": 16.3,
+          "marker-size": "small",
+          "marker-color": "#808080" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [73.8, 12.1] },
+      "properties": {
+          "title": "2017-03-31 00:00:00",
+          "description": "12°5′60″N, 73°47′60″E",
+          "course": 328,
+          "speed": 16.4,
+          "marker-size": "small",
+          "marker-color": "#808080" } },
 
     { "type": "Feature",
       "geometry": {

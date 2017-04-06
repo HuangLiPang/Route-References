@@ -3,24 +3,238 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [112.15, 20.875] },
+          "type": "LineString",
+          "coordinates": [ [103.42, 3.97333333],[103.42, 3.97333333] ] },
       "properties": {
           "title": "UNI ASPIRE",
-          "description": "2017-03-30 19:29:00, 20°52′30″N, 112°9′0″E",
-          "course": 234,
-          "speed": 14.8,
-          "nextport": "VNHPG",
-          "eta": "20170401",
-          "url": "url",
-          "marker-symbol": "a",
-          "marker-color": "#ffa500",
-          "marker-size": "medium"} },
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [112.15, 20.875],[112.15, 20.875] ] },
+          "coordinates": [ [103.42, 3.97333333],[103.68, 4.02333333] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.68, 4.02333333],[105.54666667, 5.08666667] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [105.54666667, 5.08666667],[107.13166667, 6.79666667] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [107.13166667, 6.79666667],[108.56833333, 8.77666667] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [108.56833333, 8.77666667],[109.335, 9.84] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [109.335, 9.84],[109.76833333, 12.475] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [109.76833333, 12.475],[108.33666667, 18.14333333] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [108.33666667, 18.14333333],[107.74833333, 19.17666667] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [107.74833333, 19.17666667],[107.14333333, 20.22666667] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [107.14333333, 20.22666667],[106.78833333, 20.82833333] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.78833333, 20.82833333],[106.78833333, 20.82833333] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.78833333, 20.82833333],[106.78833333, 20.82833333] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.78833333, 20.82833333],[106.76666667, 20.84333333] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.76666667, 20.84333333],[106.895, 20.63] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.895, 20.63],[106.895, 20.62833333] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.895, 20.62833333],[106.89666667, 20.63] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.89666667, 20.63],[106.895, 20.62666667] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.895, 20.62666667],[107.75666667, 20.48333333] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [107.75666667, 20.48333333],[108.81666667, 20.34333333] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [108.81666667, 20.34333333],[109.815, 20.19] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [109.815, 20.19],[110.54166667, 20.24] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [110.54166667, 20.24],[111.29, 20.325] ] },
+      "properties": {
+          "title": "UNI ASPIRE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [111.29, 20.325],[112.15, 20.875] ] },
       "properties": {
           "title": "UNI ASPIRE",
           "stroke": "#ffa500",
@@ -130,237 +344,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.125, 22.33],[113.10833333, 16.00666667] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [113.10833333, 16.00666667],[113.15333333, 14.93833333] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [113.15333333, 14.93833333],[113.22, 13.86666667] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [113.22, 13.86666667],[113.345, 11.68666667] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [113.345, 11.68666667],[113.40666667, 10.63] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [113.40666667, 10.63],[113.47666667, 9.55] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [113.47666667, 9.55],[113.53166667, 8.48833333] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [113.53166667, 8.48833333],[113.58833333, 7.42333333] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [113.58833333, 7.42333333],[114.115, 6.495] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [114.115, 6.495],[114.73166667, 5.60666667] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [114.73166667, 5.60666667],[115.07, 5.02333333] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [115.07, 5.02333333],[115.07, 5.02333333] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [115.07, 5.02333333],[115.09333333, 5.09166667] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [115.09333333, 5.09166667],[113.635, 4.47333333] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [113.635, 4.47333333],[113.075, 3.61] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [113.075, 3.61],[113.07166667, 3.26333333] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [113.07166667, 3.26333333],[113.07166667, 3.26333333] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [113.07166667, 3.26333333],[112.915, 3.305] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [112.915, 3.305],[112.915, 3.30666667] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [112.915, 3.30666667],[112.915, 3.30666667] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [112.915, 3.30666667],[112.04333333, 3.295] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [112.04333333, 3.295],[111.145, 2.815] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [111.145, 2.815],[111.27666667, 2.13] ] },
-      "properties": {
-          "title": "UNI ASPIRE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [111.27666667, 2.13],[111.34, 2.15333333] ] },
+          "coordinates": [ [114.125, 22.33],[111.34, 2.15333333] ] },
       "properties": {
           "title": "UNI ASPIRE",
           "stroke": "#ffa500",

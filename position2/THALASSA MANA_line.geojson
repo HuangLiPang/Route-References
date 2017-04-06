@@ -3,24 +3,8 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [116.1, 17.1] },
-      "properties": {
-          "title": "THALASSA MANA",
-          "description": "2017-03-30 00:00:00, 17°6′0″N, 116°5′60″E",
-          "course": 40,
-          "speed": 15.1,
-          "nextport": "TWKSG",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "t",
-          "marker-color": "#00ff00",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
-          "coordinates": [ [116.1, 17.1],[116.1, 17.1] ] },
+          "coordinates": [ [121.9, 26.5],[121.9, 26.5] ] },
       "properties": {
           "title": "THALASSA MANA",
           "stroke": "#00ff00",
@@ -30,37 +14,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [116.1, 17.1],[112.1, 12.2] ] },
-      "properties": {
-          "title": "THALASSA MANA",
-          "stroke": "#00ff00",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [112.1, 12.2],[108.3, 7.7] ] },
-      "properties": {
-          "title": "THALASSA MANA",
-          "stroke": "#00ff00",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [108.3, 7.7],[105.1, 2.5] ] },
-      "properties": {
-          "title": "THALASSA MANA",
-          "stroke": "#00ff00",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [105.1, 2.5],[100.8, 3.0] ] },
+          "coordinates": [ [121.9, 26.5],[100.8, 3.0] ] },
       "properties": {
           "title": "THALASSA MANA",
           "stroke": "#00ff00",

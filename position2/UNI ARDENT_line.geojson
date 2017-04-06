@@ -3,24 +3,8 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [120.51166667, 24.26666667] },
-      "properties": {
-          "title": "UNI ARDENT",
-          "description": "2017-03-30 19:29:00, 24°16′0″N, 120°30′42″E",
-          "course": 214,
-          "speed": 0,
-          "nextport": "CNXSM",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "a",
-          "marker-color": "#ffa500",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.51166667, 24.26666667],[120.51166667, 24.26666667] ] },
+          "coordinates": [ [120.31666667, 22.555],[120.31666667, 22.555] ] },
       "properties": {
           "title": "UNI ARDENT",
           "stroke": "#ffa500",
@@ -30,7 +14,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.51166667, 24.26666667],[120.51166667, 24.26666667] ] },
+          "coordinates": [ [120.31666667, 22.555],[120.31666667, 22.555] ] },
       "properties": {
           "title": "UNI ARDENT",
           "stroke": "#ffa500",
@@ -40,7 +24,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.51166667, 24.26666667],[120.35, 24.225] ] },
+          "coordinates": [ [120.31666667, 22.555],[120.33333333, 22.55] ] },
       "properties": {
           "title": "UNI ARDENT",
           "stroke": "#ffa500",
@@ -50,7 +34,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.35, 24.225],[119.93, 23.35333333] ] },
+          "coordinates": [ [120.33333333, 22.55],[120.33333333, 22.55] ] },
       "properties": {
           "title": "UNI ARDENT",
           "stroke": "#ffa500",
@@ -60,7 +44,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [119.93, 23.35333333],[120.31666667, 22.55333333] ] },
+          "coordinates": [ [120.33333333, 22.55],[120.33333333, 22.55] ] },
       "properties": {
           "title": "UNI ARDENT",
           "stroke": "#ffa500",
@@ -70,7 +54,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.31666667, 22.55333333],[120.31333333, 22.56] ] },
+          "coordinates": [ [120.33333333, 22.55],[120.33333333, 22.55] ] },
       "properties": {
           "title": "UNI ARDENT",
           "stroke": "#ffa500",
@@ -80,7 +64,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.31333333, 22.56],[120.31333333, 22.56] ] },
+          "coordinates": [ [120.33333333, 22.55],[120.33333333, 22.55] ] },
       "properties": {
           "title": "UNI ARDENT",
           "stroke": "#ffa500",
@@ -90,7 +74,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.31333333, 22.56],[120.31333333, 22.56] ] },
+          "coordinates": [ [120.33333333, 22.55],[119.76166667, 22.85166667] ] },
       "properties": {
           "title": "UNI ARDENT",
           "stroke": "#ffa500",
@@ -100,7 +84,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.31333333, 22.56],[120.32833333, 22.55] ] },
+          "coordinates": [ [119.76166667, 22.85166667],[118.945, 23.59] ] },
       "properties": {
           "title": "UNI ARDENT",
           "stroke": "#ffa500",
@@ -110,7 +94,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.32833333, 22.55],[120.32833333, 22.55] ] },
+          "coordinates": [ [118.945, 23.59],[118.19166667, 24.33] ] },
       "properties": {
           "title": "UNI ARDENT",
           "stroke": "#ffa500",
@@ -120,57 +104,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.32833333, 22.55],[120.32833333, 22.55] ] },
-      "properties": {
-          "title": "UNI ARDENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [120.32833333, 22.55],[120.26166667, 22.54] ] },
-      "properties": {
-          "title": "UNI ARDENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [120.26166667, 22.54],[119.70333333, 22.89833333] ] },
-      "properties": {
-          "title": "UNI ARDENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [119.70333333, 22.89833333],[118.855, 23.67166667] ] },
-      "properties": {
-          "title": "UNI ARDENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [118.855, 23.67166667],[118.115, 24.38666667] ] },
-      "properties": {
-          "title": "UNI ARDENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [118.115, 24.38666667],[118.075, 24.50666667] ] },
+          "coordinates": [ [118.19166667, 24.33],[118.075, 24.50666667] ] },
       "properties": {
           "title": "UNI ARDENT",
           "stroke": "#ffa500",
@@ -200,7 +134,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [118.075, 24.50666667],[118.07666667, 24.50666667] ] },
+          "coordinates": [ [118.075, 24.50666667],[118.04833333, 24.45833333] ] },
       "properties": {
           "title": "UNI ARDENT",
           "stroke": "#ffa500",
@@ -210,7 +144,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [118.07666667, 24.50666667],[118.05666667, 24.47333333] ] },
+          "coordinates": [ [118.04833333, 24.45833333],[118.64166667, 23.87666667] ] },
       "properties": {
           "title": "UNI ARDENT",
           "stroke": "#ffa500",
@@ -220,7 +154,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [118.05666667, 24.47333333],[118.21833333, 24.325] ] },
+          "coordinates": [ [118.64166667, 23.87666667],[119.52166667, 23.03833333] ] },
       "properties": {
           "title": "UNI ARDENT",
           "stroke": "#ffa500",
@@ -230,7 +164,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [118.21833333, 24.325],[118.31666667, 24.205] ] },
+          "coordinates": [ [119.52166667, 23.03833333],[119.77, 24.295] ] },
       "properties": {
           "title": "UNI ARDENT",
           "stroke": "#ffa500",
@@ -240,7 +174,57 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [118.31666667, 24.205],[120.055, 22.815] ] },
+          "coordinates": [ [119.77, 24.295],[120.51333333, 24.27] ] },
+      "properties": {
+          "title": "UNI ARDENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.51333333, 24.27],[120.51333333, 24.27] ] },
+      "properties": {
+          "title": "UNI ARDENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.51333333, 24.27],[120.51333333, 24.27] ] },
+      "properties": {
+          "title": "UNI ARDENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.51333333, 24.27],[120.51333333, 24.27] ] },
+      "properties": {
+          "title": "UNI ARDENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.51333333, 24.27],[120.04166667, 23.81333333] ] },
+      "properties": {
+          "title": "UNI ARDENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.04166667, 23.81333333],[120.055, 22.815] ] },
       "properties": {
           "title": "UNI ARDENT",
           "stroke": "#ffa500",

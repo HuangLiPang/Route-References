@@ -3,24 +3,8 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [114.92166667, 22.16] },
-      "properties": {
-          "title": "EVER LENIENT",
-          "description": "2017-03-30 19:28:00, 22°9′36″N, 114°55′18″E",
-          "course": 80,
-          "speed": 15,
-          "nextport": "CNSHG",
-          "eta": "20170403",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.92166667, 22.16],[114.92166667, 22.16] ] },
+          "coordinates": [ [122.05166667, 29.88833333],[122.05166667, 29.88833333] ] },
       "properties": {
           "title": "EVER LENIENT",
           "stroke": "#ff0000",
@@ -30,7 +14,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.92166667, 22.16],[114.11666667, 22.32666667] ] },
+          "coordinates": [ [122.05166667, 29.88833333],[122.05166667, 29.88833333] ] },
       "properties": {
           "title": "EVER LENIENT",
           "stroke": "#ff0000",
@@ -40,7 +24,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.11666667, 22.32666667],[114.125, 22.32833333] ] },
+          "coordinates": [ [122.05166667, 29.88833333],[122.64333333, 29.81166667] ] },
       "properties": {
           "title": "EVER LENIENT",
           "stroke": "#ff0000",
@@ -50,7 +34,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.125, 22.32833333],[114.125, 22.32833333] ] },
+          "coordinates": [ [122.64333333, 29.81166667],[122.93, 29.915] ] },
       "properties": {
           "title": "EVER LENIENT",
           "stroke": "#ff0000",
@@ -60,7 +44,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.125, 22.32833333],[114.23666667, 22.14333333] ] },
+          "coordinates": [ [122.93, 29.915],[122.815, 29.82666667] ] },
       "properties": {
           "title": "EVER LENIENT",
           "stroke": "#ff0000",
@@ -70,7 +54,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.23666667, 22.14333333],[114.35, 21.37166667] ] },
+          "coordinates": [ [122.815, 29.82666667],[122.84166667, 29.83833333] ] },
       "properties": {
           "title": "EVER LENIENT",
           "stroke": "#ff0000",
@@ -80,7 +64,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.35, 21.37166667],[114.19833333, 20.35666667] ] },
+          "coordinates": [ [122.84166667, 29.83833333],[122.845, 29.82166667] ] },
       "properties": {
           "title": "EVER LENIENT",
           "stroke": "#ff0000",
@@ -90,7 +74,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.19833333, 20.35666667],[113.25333333, 16.33] ] },
+          "coordinates": [ [122.845, 29.82166667],[122.895, 30.005] ] },
       "properties": {
           "title": "EVER LENIENT",
           "stroke": "#ff0000",
@@ -100,7 +84,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [113.25333333, 16.33],[112.71666667, 15.22] ] },
+          "coordinates": [ [122.895, 30.005],[123.195, 30.03833333] ] },
       "properties": {
           "title": "EVER LENIENT",
           "stroke": "#ff0000",
@@ -110,7 +94,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [112.71666667, 15.22],[112.245, 14.40833333] ] },
+          "coordinates": [ [123.195, 30.03833333],[121.58, 31.37333333] ] },
       "properties": {
           "title": "EVER LENIENT",
           "stroke": "#ff0000",
@@ -120,7 +104,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [112.245, 14.40833333],[111.78333333, 13.60666667] ] },
+          "coordinates": [ [121.58, 31.37333333],[121.58, 31.37333333] ] },
       "properties": {
           "title": "EVER LENIENT",
           "stroke": "#ff0000",
@@ -130,7 +114,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [111.78333333, 13.60666667],[111.32333333, 12.81166667] ] },
+          "coordinates": [ [121.58, 31.37333333],[121.58, 31.37333333] ] },
       "properties": {
           "title": "EVER LENIENT",
           "stroke": "#ff0000",
@@ -140,7 +124,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [111.32333333, 12.81166667],[110.82833333, 11.93833333] ] },
+          "coordinates": [ [121.58, 31.37333333],[121.58, 31.37333333] ] },
       "properties": {
           "title": "EVER LENIENT",
           "stroke": "#ff0000",
@@ -150,157 +134,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [110.82833333, 11.93833333],[110.33, 11.06666667] ] },
-      "properties": {
-          "title": "EVER LENIENT",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [110.33, 11.06666667],[109.86666667, 10.24833333] ] },
-      "properties": {
-          "title": "EVER LENIENT",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [109.86666667, 10.24833333],[109.33166667, 9.52666667] ] },
-      "properties": {
-          "title": "EVER LENIENT",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [109.33166667, 9.52666667],[108.50666667, 9.055] ] },
-      "properties": {
-          "title": "EVER LENIENT",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [108.50666667, 9.055],[107.69333333, 8.58666667] ] },
-      "properties": {
-          "title": "EVER LENIENT",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [107.69333333, 8.58666667],[104.09, 8.28666667] ] },
-      "properties": {
-          "title": "EVER LENIENT",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [104.09, 8.28666667],[103.44666667, 8.89333333] ] },
-      "properties": {
-          "title": "EVER LENIENT",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.44666667, 8.89333333],[102.85666667, 9.57166667] ] },
-      "properties": {
-          "title": "EVER LENIENT",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [102.85666667, 9.57166667],[102.30333333, 10.30333333] ] },
-      "properties": {
-          "title": "EVER LENIENT",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [102.30333333, 10.30333333],[101.74666667, 11.03666667] ] },
-      "properties": {
-          "title": "EVER LENIENT",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.74666667, 11.03666667],[100.73333333, 12.64] ] },
-      "properties": {
-          "title": "EVER LENIENT",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.73333333, 12.64],[100.9, 13.05333333] ] },
-      "properties": {
-          "title": "EVER LENIENT",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.9, 13.05333333],[100.9, 13.05333333] ] },
-      "properties": {
-          "title": "EVER LENIENT",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.9, 13.05333333],[100.9, 13.05333333] ] },
-      "properties": {
-          "title": "EVER LENIENT",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.9, 13.05333333],[100.9, 13.05333333] ] },
-      "properties": {
-          "title": "EVER LENIENT",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.9, 13.05333333],[100.9, 13.055] ] },
+          "coordinates": [ [121.58, 31.37333333],[100.9, 13.055] ] },
       "properties": {
           "title": "EVER LENIENT",
           "stroke": "#ff0000",

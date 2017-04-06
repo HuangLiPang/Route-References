@@ -4,18 +4,54 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [1.2, 50.5] },
+          "coordinates": [-10.1, 42.1] },
       "properties": {
           "title": "THALASSA PATRIS",
-          "description": "2017-03-23 00:00:00, 50°30′0″N, 1°11′60″E",
-          "course": 3,
-          "speed": 15.1,
-          "nextport": "NLRDM",
-          "eta": "20170323",
+          "description": "2017-04-05 00:00:00, 42°6′0″N, 10°5′60″W",
+          "course": 172,
+          "speed": 18.6,
+          "nextport": "EGSUZ",
+          "eta": "20170410",
           "url": "url",
           "marker-symbol": "t",
           "marker-color": "#00ff00",
           "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [-10.1, 42.1] },
+      "properties": {
+          "title": "2017-04-05 00:00:00",
+          "description": "42°6′0″N, 10°5′60″W",
+          "course": 172,
+          "speed": 18.6,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [-5.3, 49.0] },
+      "properties": {
+          "title": "2017-04-04 00:00:00",
+          "description": "49°0′0″N, 5°17′60″W",
+          "course": 236,
+          "speed": 17.5,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [5.3, 54.1] },
+      "properties": {
+          "title": "2017-03-31 00:00:00",
+          "description": "54°6′0″N, 5°17′60″E",
+          "course": 262,
+          "speed": 10.9,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
 
     { "type": "Feature",
       "geometry": {

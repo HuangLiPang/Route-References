@@ -3,24 +3,348 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [28.90666667, 40.655] },
+          "type": "LineString",
+          "coordinates": [ [28.91333333, 41.48166667],[28.91333333, 41.48166667] ] },
       "properties": {
           "title": "UNI ASSENT",
-          "description": "2017-03-30 19:30:00, 40°39′18″N, 28°54′24″E",
-          "course": 65,
-          "speed": 15,
-          "nextport": "TRBOP",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "a",
-          "marker-color": "#ffa500",
-          "marker-size": "medium"} },
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [28.90666667, 40.655],[28.90666667, 40.655] ] },
+          "coordinates": [ [28.91333333, 41.48166667],[28.17666667, 42.33666667] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [28.17666667, 42.33666667],[27.88166667, 43.19] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [27.88166667, 43.19],[27.64666667, 43.19] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [27.64666667, 43.19],[27.64666667, 43.19] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [27.64666667, 43.19],[27.64666667, 43.19] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [27.64666667, 43.19],[27.64666667, 43.19] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [27.64666667, 43.19],[28.01333333, 43.15333333] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [28.01333333, 43.15333333],[27.93666667, 43.07833333] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [27.93666667, 43.07833333],[27.93666667, 43.07833333] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [27.93666667, 43.07833333],[28.70333333, 44.09] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [28.70333333, 44.09],[28.65833333, 44.10333333] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [28.65833333, 44.10333333],[28.65833333, 44.10333333] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [28.65833333, 44.10333333],[28.65833333, 44.10333333] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [28.65833333, 44.10333333],[28.75833333, 44.055] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [28.75833333, 44.055],[29.87, 44.55] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [29.87, 44.55],[30.55166667, 45.48833333] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [30.55166667, 45.48833333],[30.825, 46.445] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [30.825, 46.445],[30.76333333, 46.48833333] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [30.76333333, 46.48833333],[30.76333333, 46.48833333] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [30.76333333, 46.48833333],[30.81666667, 46.49666667] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [30.81666667, 46.49666667],[30.85666667, 46.48166667] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [30.85666667, 46.48166667],[31.135, 46.13666667] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [31.135, 46.13666667],[30.685, 45.15333333] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [30.685, 45.15333333],[30.17666667, 44.18333333] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [30.17666667, 44.18333333],[29.82166667, 43.205] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [29.82166667, 43.205],[29.50166667, 42.225] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [29.50166667, 42.225],[29.19, 41.29166667] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [29.19, 41.29166667],[28.94166667, 40.80333333] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [28.94166667, 40.80333333],[29.00833333, 41.00333333] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [29.00833333, 41.00333333],[29.00833333, 41.00333333] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [29.00833333, 41.00333333],[29.19, 40.775] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [29.19, 40.775],[29.53333333, 40.76333333] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [29.53333333, 40.76333333],[29.53333333, 40.76333333] ] },
+      "properties": {
+          "title": "UNI ASSENT",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [29.53333333, 40.76333333],[28.90666667, 40.655] ] },
       "properties": {
           "title": "UNI ASSENT",
           "stroke": "#ffa500",
@@ -240,347 +564,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [25.52666667, 39.40333333],[28.90666667, 40.75666667] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [28.90666667, 40.75666667],[28.88, 40.76] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [28.88, 40.76],[29.11666667, 40.78166667] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [29.11666667, 40.78166667],[29.06166667, 40.78833333] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [29.06166667, 40.78833333],[29.01166667, 40.78666667] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [29.01166667, 40.78666667],[28.96333333, 40.77] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [28.96333333, 40.77],[28.93333333, 40.76333333] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [28.93333333, 40.76333333],[28.96333333, 40.785] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [28.96333333, 40.785],[29.00833333, 41.00333333] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [29.00833333, 41.00333333],[29.00833333, 41.00333333] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [29.00833333, 41.00333333],[29.00833333, 41.00333333] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [29.00833333, 41.00333333],[29.53666667, 40.765] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [29.53666667, 40.765],[29.53666667, 40.76333333] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [29.53666667, 40.76333333],[28.59166667, 40.72166667] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [28.59166667, 40.72166667],[27.28333333, 40.61] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [27.28333333, 40.61],[26.32833333, 40.07833333] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [26.32833333, 40.07833333],[25.60666667, 39.455] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [25.60666667, 39.455],[25.01666667, 38.54833333] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [25.01666667, 38.54833333],[24.29, 37.72166667] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [24.29, 37.72166667],[23.585, 37.955] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [23.585, 37.955],[23.585, 37.955] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [23.585, 37.955],[23.585, 37.955] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [23.585, 37.955],[23.585, 37.955] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [23.585, 37.955],[23.585, 37.955] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [23.585, 37.955],[23.585, 37.955] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [23.585, 37.955],[23.585, 37.955] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [23.585, 37.955],[23.585, 37.955] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [23.585, 37.955],[23.54833333, 37.875] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [23.54833333, 37.875],[23.54833333, 37.875] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [23.54833333, 37.875],[23.54833333, 37.875] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [23.54833333, 37.875],[23.54666667, 37.87666667] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [23.54666667, 37.87666667],[23.70333333, 37.76] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [23.70333333, 37.76],[24.66166667, 38.02] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [24.66166667, 38.02],[25.25666667, 38.93666667] ] },
-      "properties": {
-          "title": "UNI ASSENT",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [25.25666667, 38.93666667],[25.87666667, 39.89333333] ] },
+          "coordinates": [ [25.52666667, 39.40333333],[25.87666667, 39.89333333] ] },
       "properties": {
           "title": "UNI ASSENT",
           "stroke": "#ffa500",

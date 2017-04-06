@@ -3,24 +3,358 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [237.62333332999998, 47.25333333] },
+          "type": "LineString",
+          "coordinates": [ [175.44666667, 54.35666667],[175.44666667, 54.35666667] ] },
       "properties": {
           "title": "EVER STRONG",
-          "description": "2017-03-30 15:28:00, 47°15′12″N, 122°22′36″W",
-          "course": 158,
-          "speed": 0,
-          "nextport": "TWKSG",
-          "eta": "20170413",
-          "url": "url",
-          "marker-symbol": "s",
-          "marker-color": "#4b0082",
-          "marker-size": "medium"} },
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [237.62333332999998, 47.25333333],[237.62333332999998, 47.25333333] ] },
+          "coordinates": [ [175.44666667, 54.35666667],[177.45833333, 54.49333333] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [177.45833333, 54.49333333],[179.5, 54.60833333] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [179.5, 54.60833333],[181.57833333, 54.7] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [181.57833333, 54.7],[183.66666667, 54.735] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [183.66666667, 54.735],[185.76833333, 54.75166667] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [185.76833333, 54.75166667],[187.84333333, 54.71] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [187.84333333, 54.71],[189.90333333, 54.65333333] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [189.90333333, 54.65333333],[191.96333333, 54.54666667] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [191.96333333, 54.54666667],[193.95333333, 54.425] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [193.95333333, 54.425],[196.00833333, 54.25] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [196.00833333, 54.25],[198.035, 54.085] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [198.035, 54.085],[200.04333333, 53.95833333] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [200.04333333, 53.95833333],[202.05333333, 53.81] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [202.05333333, 53.81],[204.11833333, 53.615] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [204.11833333, 53.615],[206.105, 53.38833333] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [206.105, 53.38833333],[208.26333333, 53.10333333] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [208.26333333, 53.10333333],[210.27666667, 52.8] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [210.27666667, 52.8],[212.19833333, 52.475] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [212.19833333, 52.475],[214.00666667, 52.13666667] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [214.00666667, 52.13666667],[215.79166667, 51.76333333] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [215.79166667, 51.76333333],[217.44, 51.39333333] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [217.44, 51.39333333],[219.07, 51.005] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [219.07, 51.005],[220.595, 50.60833333] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [220.595, 50.60833333],[222.04833333, 50.20666667] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [222.04833333, 50.20666667],[223.52333333, 49.76] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [223.52333333, 49.76],[226.71333333, 48.725] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [226.71333333, 48.725],[228.465, 48.51] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [228.465, 48.51],[230.28666667, 48.51666667] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [230.28666667, 48.51666667],[232.12333332999998, 48.51666667] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [232.12333332999998, 48.51666667],[233.97166667, 48.52333333] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [233.97166667, 48.52333333],[235.73000000000002, 48.38833333] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [235.73000000000002, 48.38833333],[237.22333333, 48.17833333] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.22333333, 48.17833333],[237.56833333, 47.28666667] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.56833333, 47.28666667],[237.625, 47.25333333] ] },
+      "properties": {
+          "title": "EVER STRONG",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.625, 47.25333333],[237.62333332999998, 47.25333333] ] },
       "properties": {
           "title": "EVER STRONG",
           "stroke": "#4b0082",

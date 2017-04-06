@@ -3,24 +3,8 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [107.90666667, 8.24666667] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "description": "2017-03-30 19:28:00, 8°14′48″N, 107°54′24″E",
-          "course": 27,
-          "speed": 14.8,
-          "nextport": "VNHPG",
-          "eta": "20170402",
-          "url": "url",
-          "marker-symbol": "p",
-          "marker-color": "#008000",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
-          "coordinates": [ [107.90666667, 8.24666667],[107.90666667, 8.24666667] ] },
+          "coordinates": [ [109.27, 11.38666667],[109.27, 11.38666667] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -30,7 +14,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [107.90666667, 8.24666667],[107.45666667, 7.37166667] ] },
+          "coordinates": [ [109.27, 11.38666667],[109.53, 12.39666667] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -40,7 +24,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [107.45666667, 7.37166667],[107.01, 6.5] ] },
+          "coordinates": [ [109.53, 12.39666667],[109.32333333, 14.80166667] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -50,7 +34,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [107.01, 6.5],[106.55, 5.60666667] ] },
+          "coordinates": [ [109.32333333, 14.80166667],[109.11333333, 15.90666667] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -60,7 +44,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [106.55, 5.60666667],[106.08, 4.68] ] },
+          "coordinates": [ [109.11333333, 15.90666667],[108.87333333, 16.98333333] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -70,7 +54,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [106.08, 4.68],[105.64333333, 3.77833333] ] },
+          "coordinates": [ [108.87333333, 16.98333333],[108.48166667, 17.99] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -80,7 +64,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [105.64333333, 3.77833333],[105.15666667, 2.87666667] ] },
+          "coordinates": [ [108.48166667, 17.99],[108.24, 19.03333333] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -90,7 +74,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [105.15666667, 2.87666667],[104.75, 1.95833333] ] },
+          "coordinates": [ [108.24, 19.03333333],[109.06333333, 19.71] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -100,7 +84,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [104.75, 1.95833333],[103.51333333, 1.15833333] ] },
+          "coordinates": [ [109.06333333, 19.71],[109.06, 19.70833333] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -110,7 +94,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [103.51333333, 1.15833333],[103.54333333, 1.36833333] ] },
+          "coordinates": [ [109.06, 19.70833333],[109.06, 19.71] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -120,7 +104,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [103.54333333, 1.36833333],[103.54333333, 1.36833333] ] },
+          "coordinates": [ [109.06, 19.71],[109.06, 19.71] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -130,7 +114,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [103.54333333, 1.36833333],[103.54333333, 1.36833333] ] },
+          "coordinates": [ [109.06, 19.71],[108.31166667, 20.08] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -140,7 +124,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [103.54333333, 1.36833333],[103.63333333, 1.18] ] },
+          "coordinates": [ [108.31166667, 20.08],[107.28, 20.48] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -150,7 +134,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [103.63333333, 1.18],[103.78833333, 1.23333333] ] },
+          "coordinates": [ [107.28, 20.48],[106.79, 20.82666667] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -160,7 +144,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [103.78833333, 1.23333333],[103.76, 1.28333333] ] },
+          "coordinates": [ [106.79, 20.82666667],[106.79, 20.82666667] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -170,7 +154,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [103.76, 1.28333333],[103.76, 1.28333333] ] },
+          "coordinates": [ [106.79, 20.82666667],[106.79, 20.82666667] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -180,7 +164,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [103.76, 1.28333333],[103.555, 1.18166667] ] },
+          "coordinates": [ [106.79, 20.82666667],[106.79, 20.82666667] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -190,7 +174,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [103.555, 1.18166667],[102.68166667, 1.675] ] },
+          "coordinates": [ [106.79, 20.82666667],[106.79, 20.82666667] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -200,7 +184,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [102.68166667, 1.675],[101.74833333, 2.29833333] ] },
+          "coordinates": [ [106.79, 20.82666667],[106.79, 20.82666667] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -210,7 +194,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [101.74833333, 2.29833333],[101.3, 2.95] ] },
+          "coordinates": [ [106.79, 20.82666667],[106.85833333, 20.815] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -220,7 +204,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [101.3, 2.95],[101.3, 2.94666667] ] },
+          "coordinates": [ [106.85833333, 20.815],[106.87666667, 20.62] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",
@@ -230,167 +214,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [101.3, 2.94666667],[101.3, 2.94666667] ] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.3, 2.94666667],[101.3, 2.94666667] ] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.3, 2.94666667],[101.29, 2.795] ] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.29, 2.795],[101.29333333, 2.79333333] ] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.29333333, 2.79333333],[101.29333333, 2.79333333] ] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.29333333, 2.79333333],[101.885, 2.27] ] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.885, 2.27],[102.76, 1.73] ] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [102.76, 1.73],[103.62333333, 1.18166667] ] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.62333333, 1.18166667],[104.30166667, 1.31] ] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [104.30166667, 1.31],[104.83, 2.20166667] ] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [104.83, 2.20166667],[105.21666667, 3.21666667] ] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [105.21666667, 3.21666667],[105.57333333, 4.22666667] ] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [105.57333333, 4.22666667],[105.82833333, 5.255] ] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [105.82833333, 5.255],[106.135, 6.27666667] ] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [106.135, 6.27666667],[106.44666667, 7.29] ] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [106.44666667, 7.29],[106.74833333, 8.29] ] },
-      "properties": {
-          "title": "UNI PACIFIC",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [106.74833333, 8.29],[106.97333333, 9.32] ] },
+          "coordinates": [ [106.87666667, 20.62],[106.97333333, 9.32] ] },
       "properties": {
           "title": "UNI PACIFIC",
           "stroke": "#008000",

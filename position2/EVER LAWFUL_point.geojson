@@ -4,18 +4,54 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [294.3, 40.0] },
+          "coordinates": [286.0, 20.3] },
       "properties": {
           "title": "EVER LAWFUL",
-          "description": "2017-03-26 00:00:00, 40°0′0″N, 65°42′0″W",
-          "course": 270,
-          "speed": 15.1,
-          "nextport": "USNYC",
-          "eta": "20170327",
+          "description": "2017-04-05 00:00:00, 20°18′0″N, 74°0′0″W",
+          "course": 180,
+          "speed": 15.4,
+          "nextport": "PACCT",
+          "eta": "20170407",
           "url": "url",
           "marker-symbol": "l",
           "marker-color": "#ff0000",
           "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [286.0, 20.3] },
+      "properties": {
+          "title": "2017-04-05 00:00:00",
+          "description": "20°18′0″N, 74°0′0″W",
+          "course": 180,
+          "speed": 15.4,
+          "marker-size": "small",
+          "marker-color": "#ff0000" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [284.3, 25.7] },
+      "properties": {
+          "title": "2017-04-04 00:00:00",
+          "description": "25°41′60″N, 75°42′0″W",
+          "course": 144,
+          "speed": 14.8,
+          "marker-size": "small",
+          "marker-color": "#ff0000" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [282.7, 33.7] },
+      "properties": {
+          "title": "2017-04-01 00:00:00",
+          "description": "33°42′0″N, 77°17′60″W",
+          "course": 217,
+          "speed": 16.8,
+          "marker-size": "small",
+          "marker-color": "#ff0000" } },
 
     { "type": "Feature",
       "geometry": {

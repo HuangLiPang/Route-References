@@ -3,24 +3,18 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [124.6, 29.1] },
+          "type": "LineString",
+          "coordinates": [ [114.2, 21.9],[114.2, 21.9] ] },
       "properties": {
           "title": "EVER PRIMA",
-          "description": "2017-03-30 00:00:00, 29°6′0″N, 124°35′60″E",
-          "course": 221,
-          "speed": 16.8,
-          "nextport": "TWTPE",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "p",
-          "marker-color": "#008000",
-          "marker-size": "medium"} },
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [124.6, 29.1],[124.6, 29.1] ] },
+          "coordinates": [ [114.2, 21.9],[124.6, 29.1] ] },
       "properties": {
           "title": "EVER PRIMA",
           "stroke": "#008000",

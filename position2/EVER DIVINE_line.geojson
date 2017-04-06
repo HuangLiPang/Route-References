@@ -3,24 +3,48 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [66.7, 17.4] },
+          "type": "LineString",
+          "coordinates": [ [62.8, 24.7],[62.8, 24.7] ] },
       "properties": {
           "title": "EVER DIVINE",
-          "description": "2017-03-30 00:00:00, 17°23′60″N, 66°42′0″E",
-          "course": 313,
-          "speed": 15.7,
-          "nextport": "AEJBA",
-          "eta": "20170402",
-          "url": "url",
-          "marker-symbol": "d",
-          "marker-color": "#a52a2a",
-          "marker-size": "medium"} },
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [66.7, 17.4],[66.7, 17.4] ] },
+          "coordinates": [ [62.8, 24.7],[57.1, 25.7] ] },
+      "properties": {
+          "title": "EVER DIVINE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [57.1, 25.7],[57.1, 25.9] ] },
+      "properties": {
+          "title": "EVER DIVINE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [57.1, 25.9],[61.8, 21.8] ] },
+      "properties": {
+          "title": "EVER DIVINE",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [61.8, 21.8],[66.7, 17.4] ] },
       "properties": {
           "title": "EVER DIVINE",
           "stroke": "#a52a2a",

@@ -3,19 +3,313 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [237.66333333, 37.80666667] },
+          "type": "LineString",
+          "coordinates": [ [199.915, 54.065],[199.915, 54.065] ] },
       "properties": {
           "title": "EVER ELITE",
-          "description": "2017-03-30 19:28:00, 37°48′24″N, 122°20′12″W",
-          "course": 173,
-          "speed": 0,
-          "nextport": "TWTPE",
-          "eta": "20170417",
-          "url": "url",
-          "marker-symbol": "e",
-          "marker-color": "#0000ff",
-          "marker-size": "medium"} },
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [199.915, 54.065],[203.34, 54.01] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [203.34, 54.01],[206.80666667, 53.905] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [206.80666667, 53.905],[208.55333333, 53.42333333] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [208.55333333, 53.42333333],[210.06666667, 53.005] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [210.06666667, 53.005],[211.56666667, 52.58] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [211.56666667, 52.58],[214.50333333, 51.74] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [214.50333333, 51.74],[217.17333333, 50.89666667] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [217.17333333, 50.89666667],[218.33333333, 50.16833333] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [218.33333333, 50.16833333],[219.39666667, 49.47166667] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [219.39666667, 49.47166667],[220.45666667, 48.75] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [220.45666667, 48.75],[221.47166667, 48.03] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [221.47166667, 48.03],[222.545, 47.23] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [222.545, 47.23],[223.61833333, 46.395] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [223.61833333, 46.395],[224.55666667, 45.63833333] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [224.55666667, 45.63833333],[225.4, 44.93666667] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [225.4, 44.93666667],[226.16833333, 44.26833333] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [226.16833333, 44.26833333],[226.93, 43.595] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [226.93, 43.595],[227.84166667, 42.99166667] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [227.84166667, 42.99166667],[228.77333333, 42.41] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [228.77333333, 42.41],[229.76666667, 41.77166667] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [229.76666667, 41.77166667],[230.69333333, 41.15833333] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [230.69333333, 41.15833333],[231.65333333, 40.58] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [231.65333333, 40.58],[232.725, 40.07333333] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [232.725, 40.07333333],[234.66, 39.13666667] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [234.66, 39.13666667],[235.62, 38.66833333] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [235.62, 38.66833333],[236.54000000000002, 38.215] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.54000000000002, 38.215],[237.41666666999998, 37.78] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.41666666999998, 37.78],[237.66333333, 37.80666667] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.66333333, 37.80666667],[237.66333333, 37.80666667] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.66333333, 37.80666667],[237.66333333, 37.80666667] ] },
+      "properties": {
+          "title": "EVER ELITE",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {

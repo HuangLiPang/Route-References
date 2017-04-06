@@ -4,18 +4,66 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [66.7, 17.4] },
+          "coordinates": [62.8, 24.7] },
       "properties": {
           "title": "EVER DIVINE",
-          "description": "2017-03-30 00:00:00, 17°23′60″N, 66°42′0″E",
-          "course": 313,
-          "speed": 15.7,
-          "nextport": "AEJBA",
-          "eta": "20170402",
+          "description": "2017-04-04 00:00:00, 24°41′60″N, 62°47′60″E",
+          "course": 90,
+          "speed": 14.2,
+          "nextport": "PKKHI",
+          "eta": "20170405",
           "url": "url",
           "marker-symbol": "d",
           "marker-color": "#a52a2a",
           "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [62.8, 24.7] },
+      "properties": {
+          "title": "2017-04-04 00:00:00",
+          "description": "24°41′60″N, 62°47′60″E",
+          "course": 90,
+          "speed": 14.2,
+          "marker-size": "small",
+          "marker-color": "#a52a2a" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [57.1, 25.7] },
+      "properties": {
+          "title": "2017-04-03 00:00:00",
+          "description": "25°41′60″N, 57°6′0″E",
+          "course": 145,
+          "speed": 13.9,
+          "marker-size": "small",
+          "marker-color": "#a52a2a" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [57.1, 25.9] },
+      "properties": {
+          "title": "2017-04-01 00:00:00",
+          "description": "25°53′60″N, 57°6′0″E",
+          "course": 329,
+          "speed": 16.3,
+          "marker-size": "small",
+          "marker-color": "#a52a2a" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [61.8, 21.8] },
+      "properties": {
+          "title": "2017-03-31 00:00:00",
+          "description": "21°48′0″N, 61°47′60″E",
+          "course": 313,
+          "speed": 14.8,
+          "marker-size": "small",
+          "marker-color": "#a52a2a" } },
 
     { "type": "Feature",
       "geometry": {

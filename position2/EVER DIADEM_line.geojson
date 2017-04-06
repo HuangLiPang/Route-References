@@ -3,24 +3,38 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [53.6, -21.7] },
+          "type": "LineString",
+          "coordinates": [ [35.0, -28.9],[35.0, -28.9] ] },
       "properties": {
           "title": "EVER DIADEM",
-          "description": "2017-03-30 00:00:00, 21°41′60″S, 53°36′0″E",
-          "course": 235,
-          "speed": 14.4,
-          "nextport": "ZADRB",
-          "eta": "20170403",
-          "url": "url",
-          "marker-symbol": "d",
-          "marker-color": "#a52a2a",
-          "marker-size": "medium"} },
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [53.6, -21.7],[53.6, -21.7] ] },
+          "coordinates": [ [35.0, -28.9],[41.9, -27.4] ] },
+      "properties": {
+          "title": "EVER DIADEM",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [41.9, -27.4],[48.2, -25.1] ] },
+      "properties": {
+          "title": "EVER DIADEM",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [48.2, -25.1],[53.6, -21.7] ] },
       "properties": {
           "title": "EVER DIADEM",
           "stroke": "#a52a2a",

@@ -3,24 +3,278 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [263.11833333, 10.48] },
+          "type": "LineString",
+          "coordinates": [ [216.0, 25.0],[216.0, 25.0] ] },
       "properties": {
           "title": "EVER LIVING",
-          "description": "2017-03-30 15:28:00, 10°28′48″N, 96°52′54″W",
-          "course": 281,
-          "speed": 19,
-          "nextport": "CNXSM",
-          "eta": "20170418",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [263.11833333, 10.48],[263.11833333, 10.48] ] },
+          "coordinates": [ [216.0, 25.0],[227.31, 22.60333333] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [227.31, 22.60333333],[228.60166667, 22.25666667] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [228.60166667, 22.25666667],[229.89833333, 21.89666667] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [229.89833333, 21.89666667],[224.1, 23.4] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [224.1, 23.4],[232.51333333, 21.14666667] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [232.51333333, 21.14666667],[233.77333333, 20.77] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [233.77333333, 20.77],[235.03333333, 20.375] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [235.03333333, 20.375],[236.24666667, 19.99166667] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.24666667, 19.99166667],[237.54333333, 19.55833333] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.54333333, 19.55833333],[238.79500000000002, 19.14333333] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [238.79500000000002, 19.14333333],[240.02666667, 18.71666667] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [240.02666667, 18.71666667],[241.27666667, 18.27333333] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [241.27666667, 18.27333333],[244.905, 16.85] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [244.905, 16.85],[246.10333333, 16.34166667] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [246.10333333, 16.34166667],[247.31333333, 15.83] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [247.31333333, 15.83],[248.50333333, 15.32333333] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [248.50333333, 15.32333333],[249.69833333, 14.84666667] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [249.69833333, 14.84666667],[250.89499999999998, 14.37666667] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [250.89499999999998, 14.37666667],[252.095, 13.90666667] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [252.095, 13.90666667],[253.27666667, 13.41833333] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [253.27666667, 13.41833333],[254.45666667, 12.92666667] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [254.45666667, 12.92666667],[255.68, 12.40333333] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [255.68, 12.40333333],[256.88333333, 11.895] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [256.88333333, 11.895],[258.08166667, 11.48] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [258.08166667, 11.48],[259.33666667, 11.24] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [259.33666667, 11.24],[260.6, 10.99166667] ] },
+      "properties": {
+          "title": "EVER LIVING",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [260.6, 10.99166667],[263.11833333, 10.48] ] },
       "properties": {
           "title": "EVER LIVING",
           "stroke": "#ff0000",

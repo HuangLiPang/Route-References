@@ -3,24 +3,48 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [267.0, 11.7] },
+          "type": "LineString",
+          "coordinates": [ [279.1, -7.0],[279.1, -7.0] ] },
       "properties": {
           "title": "EVER SUPERB",
-          "description": "2017-03-30 00:00:00, 11°41′60″N, 93°0′0″W",
-          "course": 122,
-          "speed": 23.3,
-          "nextport": "COBVT",
-          "eta": "20170401",
-          "url": "url",
-          "marker-symbol": "s",
-          "marker-color": "#4b0082",
-          "marker-size": "medium"} },
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [267.0, 11.7],[267.0, 11.7] ] },
+          "coordinates": [ [279.1, -7.0],[279.1, 0.1] ] },
+      "properties": {
+          "title": "EVER SUPERB",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [279.1, 0.1],[281.1, 4.5] ] },
+      "properties": {
+          "title": "EVER SUPERB",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [281.1, 4.5],[274.1, 7.5] ] },
+      "properties": {
+          "title": "EVER SUPERB",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [274.1, 7.5],[267.0, 11.7] ] },
       "properties": {
           "title": "EVER SUPERB",
           "stroke": "#4b0082",

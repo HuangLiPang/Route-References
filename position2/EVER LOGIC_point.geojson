@@ -4,18 +4,30 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [11.5, 41.3] },
+          "coordinates": [5.1, 42.7] },
       "properties": {
           "title": "EVER LOGIC",
-          "description": "2017-03-29 00:00:00, 41°17′60″N, 11°30′0″E",
-          "course": 312,
-          "speed": 13.4,
-          "nextport": "ITGNA",
-          "eta": "20170330",
+          "description": "2017-04-04 00:00:00, 42°42′0″N, 5°5′60″E",
+          "course": 359,
+          "speed": 12.3,
+          "nextport": "FRFOS",
+          "eta": "20170404",
           "url": "url",
           "marker-symbol": "l",
           "marker-color": "#ff0000",
           "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [5.1, 42.7] },
+      "properties": {
+          "title": "2017-04-04 00:00:00",
+          "description": "42°42′0″N, 5°5′60″E",
+          "course": 359,
+          "speed": 12.3,
+          "marker-size": "small",
+          "marker-color": "#ff0000" } },
 
     { "type": "Feature",
       "geometry": {

@@ -3,24 +3,198 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [281.525, 12.12] },
+          "type": "LineString",
+          "coordinates": [ [258.66833333, 16.68],[258.66833333, 16.68] ] },
       "properties": {
           "title": "EVER LUCID",
-          "description": "2017-03-30 07:28:00, 12°7′12″N, 78°28′30″W",
-          "course": 233,
-          "speed": 10.6,
-          "nextport": "PAPAN",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [281.525, 12.12],[281.525, 12.12] ] },
+          "coordinates": [ [258.66833333, 16.68],[260.76333333, 15.62833333] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [260.76333333, 15.62833333],[261.72166667, 15.145] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [261.72166667, 15.145],[263.66666667, 14.16833333] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [263.66666667, 14.16833333],[264.62333333, 13.68] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [264.62333333, 13.68],[267.48, 12.235] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [267.48, 12.235],[268.50333333000003, 11.715] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [268.50333333000003, 11.715],[270.67, 10.62] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [270.67, 10.62],[271.78499999999997, 10.03] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [271.78499999999997, 10.03],[273.82833333, 9.03333333] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [273.82833333, 9.03333333],[274.83333333, 8.55666667] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [274.83333333, 8.55666667],[276.89166667, 7.57] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [276.89166667, 7.57],[277.915, 7.07666667] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [277.915, 7.07666667],[279.03, 6.96833333] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [279.03, 6.96833333],[280.04666667, 7.27] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.04666667, 7.27],[280.11333333, 9.44] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.11333333, 9.44],[280.11166667, 9.37333333] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.11166667, 9.37333333],[280.11166667, 9.37333333] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.11166667, 9.37333333],[280.11166667, 9.37333333] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.11166667, 9.37333333],[281.525, 12.12] ] },
       "properties": {
           "title": "EVER LUCID",
           "stroke": "#ff0000",
@@ -1290,7 +1464,17 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [245.05666667, 25.01666667],[241.4, 27.05333333] ] },
+          "coordinates": [ [245.05666667, 25.01666667],[280.11333333, 9.44] ] },
+      "properties": {
+          "title": "EVER LUCID",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.11333333, 9.44],[241.4, 27.05333333] ] },
       "properties": {
           "title": "EVER LUCID",
           "stroke": "#ff0000",

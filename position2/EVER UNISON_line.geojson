@@ -3,24 +3,128 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [226.74333333, 35.15333333] },
+          "type": "LineString",
+          "coordinates": [ [241.68666667, 27.54833333],[241.68666667, 27.54833333] ] },
       "properties": {
           "title": "EVER UNISON",
-          "description": "2017-03-30 19:29:00, 35°9′12″N, 133°15′24″W",
-          "course": 118,
-          "speed": 19.2,
-          "nextport": "MXMZO",
-          "eta": "20170402",
-          "url": "url",
-          "marker-symbol": "u",
-          "marker-color": "#9acd32",
-          "marker-size": "medium"} },
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [226.74333333, 35.15333333],[226.74333333, 35.15333333] ] },
+          "coordinates": [ [241.68666667, 27.54833333],[240.45666667, 28.29] ] },
+      "properties": {
+          "title": "EVER UNISON",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [240.45666667, 28.29],[239.21666667, 29.01333333] ] },
+      "properties": {
+          "title": "EVER UNISON",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [239.21666667, 29.01333333],[237.95833333000002, 29.73] ] },
+      "properties": {
+          "title": "EVER UNISON",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.95833333000002, 29.73],[236.69166667000002, 30.425] ] },
+      "properties": {
+          "title": "EVER UNISON",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.69166667000002, 30.425],[235.40833333, 31.10666667] ] },
+      "properties": {
+          "title": "EVER UNISON",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [235.40833333, 31.10666667],[234.10833333, 31.775] ] },
+      "properties": {
+          "title": "EVER UNISON",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [234.10833333, 31.775],[232.91, 32.29666667] ] },
+      "properties": {
+          "title": "EVER UNISON",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [232.91, 32.29666667],[232.22, 32.70666667] ] },
+      "properties": {
+          "title": "EVER UNISON",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [232.22, 32.70666667],[230.87, 33.34333333] ] },
+      "properties": {
+          "title": "EVER UNISON",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [230.87, 33.34333333],[229.50333333, 33.96333333] ] },
+      "properties": {
+          "title": "EVER UNISON",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [229.50333333, 33.96333333],[228.12333333, 34.57166667] ] },
+      "properties": {
+          "title": "EVER UNISON",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [228.12333333, 34.57166667],[226.74333333, 35.15333333] ] },
       "properties": {
           "title": "EVER UNISON",
           "stroke": "#9acd32",

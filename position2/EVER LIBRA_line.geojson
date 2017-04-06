@@ -3,24 +3,248 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [100.88333333, 12.22666667] },
+          "type": "LineString",
+          "coordinates": [ [113.69166667, 19.17833333],[113.69166667, 19.17833333] ] },
       "properties": {
           "title": "EVER LIBRA",
-          "description": "2017-03-30 19:28:00, 12°13′36″N, 100°52′60″E",
-          "course": 318,
-          "speed": 14.6,
-          "nextport": "THLCH",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [100.88333333, 12.22666667],[100.88333333, 12.22666667] ] },
+          "coordinates": [ [113.69166667, 19.17833333],[113.46, 18.23666667] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [113.46, 18.23666667],[112.96666667, 16.23333333] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [112.96666667, 16.23333333],[112.10833333, 14.43] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [112.10833333, 14.43],[111.65666667, 13.57833333] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [111.65666667, 13.57833333],[111.22, 12.72] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [111.22, 12.72],[110.33, 10.98833333] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [110.33, 10.98833333],[109.82166667, 10.17666667] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [109.82166667, 10.17666667],[108.53333333, 9.09] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [108.53333333, 9.09],[107.79333333, 8.68666667] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [107.79333333, 8.68666667],[104.18666667, 8.035] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [104.18666667, 8.035],[103.62666667, 8.67666667] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.62666667, 8.67666667],[103.05833333, 9.34833333] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.05833333, 9.34833333],[102.53333333, 10.08166667] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [102.53333333, 10.08166667],[101.98166667, 10.81666667] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.98166667, 10.81666667],[101.40833333, 11.57166667] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.40833333, 11.57166667],[100.83166667, 12.32666667] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.83166667, 12.32666667],[100.9, 13.05333333] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.9, 13.05333333],[100.9, 13.05333333] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.9, 13.05333333],[100.9, 13.05333333] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.9, 13.05333333],[100.9, 13.05333333] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.9, 13.05333333],[100.9, 13.05333333] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.9, 13.05333333],[100.9, 13.05333333] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.9, 13.05333333],[100.70166667, 13.01] ] },
+      "properties": {
+          "title": "EVER LIBRA",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.70166667, 13.01],[100.88333333, 12.22666667] ] },
       "properties": {
           "title": "EVER LIBRA",
           "stroke": "#ff0000",

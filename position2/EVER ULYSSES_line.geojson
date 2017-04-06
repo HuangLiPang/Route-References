@@ -3,24 +3,8 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [139.73333333, 35.04833333] },
-      "properties": {
-          "title": "EVER ULYSSES",
-          "description": "2017-03-30 19:28:00, 35°2′54″N, 139°43′60″E",
-          "course": 31,
-          "speed": 6.8,
-          "nextport": "JPTYO",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "u",
-          "marker-color": "#9acd32",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
-          "coordinates": [ [139.73333333, 35.04833333],[139.73333333, 35.04833333] ] },
+          "coordinates": [ [120.87833333, 35.825],[120.87833333, 35.825] ] },
       "properties": {
           "title": "EVER ULYSSES",
           "stroke": "#9acd32",
@@ -30,7 +14,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [139.73333333, 35.04833333],[140.66166667, 35.00333333] ] },
+          "coordinates": [ [120.87833333, 35.825],[120.875, 35.82166667] ] },
       "properties": {
           "title": "EVER ULYSSES",
           "stroke": "#9acd32",
@@ -40,127 +24,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [140.66166667, 35.00333333],[141.51, 35.83] ] },
-      "properties": {
-          "title": "EVER ULYSSES",
-          "stroke": "#9acd32",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [141.51, 35.83],[142.33, 36.60333333] ] },
-      "properties": {
-          "title": "EVER ULYSSES",
-          "stroke": "#9acd32",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [142.33, 36.60333333],[144.04666667, 38.17333333] ] },
-      "properties": {
-          "title": "EVER ULYSSES",
-          "stroke": "#9acd32",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [144.04666667, 38.17333333],[144.98, 38.98] ] },
-      "properties": {
-          "title": "EVER ULYSSES",
-          "stroke": "#9acd32",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [144.98, 38.98],[145.91, 39.765] ] },
-      "properties": {
-          "title": "EVER ULYSSES",
-          "stroke": "#9acd32",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [145.91, 39.765],[146.85333333, 40.54666667] ] },
-      "properties": {
-          "title": "EVER ULYSSES",
-          "stroke": "#9acd32",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [146.85333333, 40.54666667],[147.86, 41.33666667] ] },
-      "properties": {
-          "title": "EVER ULYSSES",
-          "stroke": "#9acd32",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [147.86, 41.33666667],[148.90333333, 42.13166667] ] },
-      "properties": {
-          "title": "EVER ULYSSES",
-          "stroke": "#9acd32",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [148.90333333, 42.13166667],[155.865, 46.75333333] ] },
-      "properties": {
-          "title": "EVER ULYSSES",
-          "stroke": "#9acd32",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [155.865, 46.75333333],[157.21333333, 47.505] ] },
-      "properties": {
-          "title": "EVER ULYSSES",
-          "stroke": "#9acd32",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [157.21333333, 47.505],[158.56666667, 48.24] ] },
-      "properties": {
-          "title": "EVER ULYSSES",
-          "stroke": "#9acd32",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [158.56666667, 48.24],[159.96666667, 48.965] ] },
-      "properties": {
-          "title": "EVER ULYSSES",
-          "stroke": "#9acd32",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [159.96666667, 48.965],[161.38833333, 49.64833333] ] },
+          "coordinates": [ [120.875, 35.82166667],[161.38833333, 49.64833333] ] },
       "properties": {
           "title": "EVER ULYSSES",
           "stroke": "#9acd32",

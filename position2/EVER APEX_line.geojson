@@ -3,24 +3,178 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [97.095, 12.62666667] },
+          "type": "LineString",
+          "coordinates": [ [100.36, 5.41833333],[100.36, 5.41833333] ] },
       "properties": {
           "title": "EVER APEX",
-          "description": "2017-03-29 23:30:00, 12°37′36″N, 97°5′42″E",
-          "course": 347,
-          "speed": 16.6,
-          "nextport": "MMYQT",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "a",
-          "marker-color": "#ffa500",
-          "marker-size": "medium"} },
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [97.095, 12.62666667],[97.095, 12.62666667] ] },
+          "coordinates": [ [100.36, 5.41833333],[100.20666667, 5.56666667] ] },
+      "properties": {
+          "title": "EVER APEX",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.20666667, 5.56666667],[100.20666667, 5.56666667] ] },
+      "properties": {
+          "title": "EVER APEX",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.20666667, 5.56666667],[98.9, 6.5] ] },
+      "properties": {
+          "title": "EVER APEX",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [98.9, 6.5],[98.23166667, 7.47] ] },
+      "properties": {
+          "title": "EVER APEX",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [98.23166667, 7.47],[98.00166667, 8.51666667] ] },
+      "properties": {
+          "title": "EVER APEX",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [98.00166667, 8.51666667],[97.69833333, 9.54333333] ] },
+      "properties": {
+          "title": "EVER APEX",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [97.69833333, 9.54333333],[97.50166667, 10.59333333] ] },
+      "properties": {
+          "title": "EVER APEX",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [97.50166667, 10.59333333],[97.29833333, 11.61666667] ] },
+      "properties": {
+          "title": "EVER APEX",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [97.29833333, 11.61666667],[97.08166667, 12.69333333] ] },
+      "properties": {
+          "title": "EVER APEX",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [97.08166667, 12.69333333],[96.84666667, 13.765] ] },
+      "properties": {
+          "title": "EVER APEX",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [96.84666667, 13.765],[96.61666667, 14.86333333] ] },
+      "properties": {
+          "title": "EVER APEX",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [96.61666667, 14.86333333],[96.22333333, 16.71833333] ] },
+      "properties": {
+          "title": "EVER APEX",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [96.22333333, 16.71833333],[96.115, 16.79] ] },
+      "properties": {
+          "title": "EVER APEX",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [96.115, 16.79],[96.12, 16.79666667] ] },
+      "properties": {
+          "title": "EVER APEX",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [96.12, 16.79666667],[96.12, 16.79666667] ] },
+      "properties": {
+          "title": "EVER APEX",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [96.12, 16.79666667],[96.8, 14.2] ] },
+      "properties": {
+          "title": "EVER APEX",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [96.8, 14.2],[97.095, 12.62666667] ] },
       "properties": {
           "title": "EVER APEX",
           "stroke": "#ffa500",

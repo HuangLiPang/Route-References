@@ -4,18 +4,90 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [25.8, 33.5] },
+          "coordinates": [-6.0, 48.2] },
       "properties": {
           "title": "THALASSA TYHI",
-          "description": "2017-03-30 00:00:00, 33°30′0″N, 25°48′0″E",
-          "course": 287,
-          "speed": 18.3,
+          "description": "2017-04-05 00:00:00, 48°12′0″N, 6°0′0″W",
+          "course": 27,
+          "speed": 12.9,
           "nextport": "NLRDM",
           "eta": "20170406",
           "url": "url",
           "marker-symbol": "t",
           "marker-color": "#00ff00",
           "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [-6.0, 48.2] },
+      "properties": {
+          "title": "2017-04-05 00:00:00",
+          "description": "48°12′0″N, 6°0′0″W",
+          "course": 27,
+          "speed": 12.9,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [-9.8, 42.3] },
+      "properties": {
+          "title": "2017-04-04 00:00:00",
+          "description": "42°17′60″N, 9°48′0″W",
+          "course": 1,
+          "speed": 15.6,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [-7.9, 36.4] },
+      "properties": {
+          "title": "2017-04-03 00:00:00",
+          "description": "36°23′60″N, 7°54′0″W",
+          "course": 288,
+          "speed": 18,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [0.8, 36.7] },
+      "properties": {
+          "title": "2017-04-02 00:00:00",
+          "description": "36°42′0″N, 0°48′0″E",
+          "course": 256,
+          "speed": 16.8,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [9.3, 37.7] },
+      "properties": {
+          "title": "2017-04-01 00:00:00",
+          "description": "37°42′0″N, 9°18′0″E",
+          "course": 282,
+          "speed": 17.5,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [17.0, 35.6] },
+      "properties": {
+          "title": "2017-03-31 00:00:00",
+          "description": "35°36′0″N, 17°0′0″E",
+          "course": 287,
+          "speed": 17.2,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
 
     { "type": "Feature",
       "geometry": {

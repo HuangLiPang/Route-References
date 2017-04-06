@@ -3,24 +3,348 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [237.6, 47.45333333] },
+          "type": "LineString",
+          "coordinates": [ [216.55166667, 51.34833333],[216.55166667, 51.34833333] ] },
       "properties": {
           "title": "EVER SUMMIT",
-          "description": "2017-03-30 19:28:00, 47°27′12″N, 122°24′0″W",
-          "course": 155,
-          "speed": 15.4,
-          "nextport": "CAVCR",
-          "eta": "20170401",
-          "url": "url",
-          "marker-symbol": "s",
-          "marker-color": "#4b0082",
-          "marker-size": "medium"} },
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [237.6, 47.45333333],[237.6, 47.45333333] ] },
+          "coordinates": [ [216.55166667, 51.34833333],[218.29333333, 50.92] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [218.29333333, 50.92],[220.04, 50.44833333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [220.04, 50.44833333],[221.725, 49.96333333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [221.725, 49.96333333],[223.35666667, 49.45833333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [223.35666667, 49.45833333],[225.00666667, 48.90833333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [225.00666667, 48.90833333],[226.62833333, 48.34] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [226.62833333, 48.34],[228.205, 47.74333333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [228.205, 47.74333333],[229.48, 47.63666667] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [229.48, 47.63666667],[230.845, 47.86166667] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [230.845, 47.86166667],[232.24333332999998, 48.09] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [232.24333332999998, 48.09],[233.6, 48.34166667] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [233.6, 48.34166667],[235.01, 48.52] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [235.01, 48.52],[236.59666667, 48.38166667] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.59666667, 48.38166667],[236.66333333, 49.275] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.66333333, 49.275],[236.92666667, 49.28833333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.92666667, 49.28833333],[236.92666667, 49.28833333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.92666667, 49.28833333],[236.92666667, 49.28833333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.92666667, 49.28833333],[236.92666667, 49.28833333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.92666667, 49.28833333],[236.92666667, 49.28833333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.92666667, 49.28833333],[236.92666667, 49.28833333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.92666667, 49.28833333],[236.92666667, 49.28833333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.92666667, 49.28833333],[236.90666667, 49.29333333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.90666667, 49.29333333],[236.79666666999998, 48.56833333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.79666666999998, 48.56833333],[237.35500000000002, 48.08833333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.35500000000002, 48.08833333],[237.61166667, 47.26333333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.61166667, 47.26333333],[237.62166667, 47.25333333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.62166667, 47.25333333],[237.62166667, 47.25333333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.62166667, 47.25333333],[237.62166667, 47.25333333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.62166667, 47.25333333],[237.62166667, 47.25333333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.62166667, 47.25333333],[237.62166667, 47.25333333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.62166667, 47.25333333],[237.62166667, 47.25333333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.62166667, 47.25333333],[237.62166667, 47.25333333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.62166667, 47.25333333],[237.62166667, 47.25333333] ] },
+      "properties": {
+          "title": "EVER SUMMIT",
+          "stroke": "#4b0082",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.62166667, 47.25333333],[237.6, 47.45333333] ] },
       "properties": {
           "title": "EVER SUMMIT",
           "stroke": "#4b0082",

@@ -3,24 +3,308 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [103.545, 1.36] },
+          "type": "LineString",
+          "coordinates": [ [70.42833333, 14.06333333],[70.42833333, 14.06333333] ] },
       "properties": {
           "title": "EVER LYRIC",
-          "description": "2017-03-30 19:28:00, 1°21′36″N, 103°32′42″E",
-          "course": 65,
-          "speed": 0,
-          "nextport": "LKCMB",
-          "eta": "20170404",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [103.545, 1.36],[103.545, 1.36] ] },
+          "coordinates": [ [70.42833333, 14.06333333],[71.40166667, 13.165] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [71.40166667, 13.165],[72.41166667, 12.25] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [72.41166667, 12.25],[73.39666667, 11.33666667] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [73.39666667, 11.33666667],[75.37166667, 9.49166667] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [75.37166667, 9.49166667],[76.34833333, 8.63] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [76.34833333, 8.63],[77.36333333, 7.84333333] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [77.36333333, 7.84333333],[78.58166667, 7.42] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [78.58166667, 7.42],[79.80666667, 7.00333333] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [79.80666667, 7.00333333],[79.85, 6.94333333] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [79.85, 6.94333333],[79.85, 6.94333333] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [79.85, 6.94333333],[79.85, 6.94333333] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [79.85, 6.94333333],[79.82666667, 6.98166667] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [79.82666667, 6.98166667],[79.965, 6.08166667] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [79.965, 6.08166667],[81.05333333, 5.83666667] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [81.05333333, 5.83666667],[82.35166667, 5.875] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [82.35166667, 5.875],[83.56833333, 5.92666667] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [83.56833333, 5.92666667],[84.74, 5.97] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [84.74, 5.97],[85.90166667, 5.99333333] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [85.90166667, 5.99333333],[88.34333333, 6.06666667] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [88.34333333, 6.06666667],[89.52333333, 6.11333333] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [89.52333333, 6.11333333],[90.74333333, 6.14666667] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [90.74333333, 6.14666667],[93.43666667, 6.23333333] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [93.43666667, 6.23333333],[94.73333333, 6.28] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [94.73333333, 6.28],[95.95666667, 6.09333333] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [95.95666667, 6.09333333],[98.29333333, 5.37666667] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [98.29333333, 5.37666667],[99.165, 4.545] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [99.165, 4.545],[101.00666667, 2.82333333] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.00666667, 2.82333333],[102.07, 2.12833333] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [102.07, 2.12833333],[103.11333333, 1.51666667] ] },
+      "properties": {
+          "title": "EVER LYRIC",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.11333333, 1.51666667],[103.545, 1.36] ] },
       "properties": {
           "title": "EVER LYRIC",
           "stroke": "#ff0000",

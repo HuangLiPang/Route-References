@@ -3,24 +3,28 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [1.0, 50.5] },
+          "type": "LineString",
+          "coordinates": [ [5.7, 53.6],[5.7, 53.6] ] },
       "properties": {
           "title": "THALASSA ELPIDA",
-          "description": "2017-03-30 00:00:00, 50°30′0″N, 1°0′0″E",
-          "course": 67,
-          "speed": 18,
-          "nextport": "NLRDM",
-          "eta": "20170330",
-          "url": "url",
-          "marker-symbol": "t",
-          "marker-color": "#00ff00",
-          "marker-size": "medium"} },
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [1.0, 50.5],[1.0, 50.5] ] },
+          "coordinates": [ [5.7, 53.6],[3.2, 52.0] ] },
+      "properties": {
+          "title": "THALASSA ELPIDA",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [3.2, 52.0],[1.0, 50.5] ] },
       "properties": {
           "title": "THALASSA ELPIDA",
           "stroke": "#00ff00",

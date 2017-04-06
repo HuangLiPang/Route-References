@@ -3,24 +3,368 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [259.1, 16.9] },
+          "type": "LineString",
+          "coordinates": [ [282.84333333, 3.83],[282.84333333, 3.83] ] },
       "properties": {
           "title": "ITAL LUNARE",
-          "description": "2017-03-30 00:00:00, 16°53′60″N, 100°54′0″W",
-          "course": 117,
-          "speed": 17.8,
-          "nextport": "GTZNJ",
-          "eta": "20170401",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [259.1, 16.9],[259.1, 16.9] ] },
+          "coordinates": [ [282.84333333, 3.83],[282.40999999999997, 3.85666667] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [282.40999999999997, 3.85666667],[282.43333333, 3.81666667] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [282.43333333, 3.81666667],[281.45666667, 4.30666667] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [281.45666667, 4.30666667],[280.47166667, 4.89666667] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [280.47166667, 4.89666667],[279.53333333, 5.39666667] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [279.53333333, 5.39666667],[279.54333333, 5.415] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [279.54333333, 5.415],[279.55333333, 5.42666667] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [279.55333333, 5.42666667],[279.06166667, 5.74833333] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [279.06166667, 5.74833333],[278.03333333, 6.37] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [278.03333333, 6.37],[276.99666666999997, 6.99666667] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [276.99666666999997, 6.99666667],[275.955, 7.625] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [275.955, 7.625],[274.945, 8.22833333] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [274.945, 8.22833333],[273.87, 8.88833333] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [273.87, 8.88833333],[272.76833333, 9.55] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [272.76833333, 9.55],[271.88833333, 10.20166667] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [271.88833333, 10.20166667],[271.23666667, 11.09333333] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [271.23666667, 11.09333333],[270.60333333, 12.01166667] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [270.60333333, 12.01166667],[269.905, 12.96333333] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [269.905, 12.96333333],[269.21666667, 13.915] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [269.21666667, 13.915],[269.21500000000003, 13.925] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [269.21500000000003, 13.925],[269.21500000000003, 13.925] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [269.21500000000003, 13.925],[269.21500000000003, 13.92333333] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [269.21500000000003, 13.92333333],[269.21500000000003, 13.925] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [269.21500000000003, 13.925],[269.22666667, 13.88] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [269.22666667, 13.88],[269.22666667, 13.87833333] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [269.22666667, 13.87833333],[269.22666667, 13.87833333] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [269.22666667, 13.87833333],[269.115, 13.73666667] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [269.115, 13.73666667],[267.95833333, 13.85] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [267.95833333, 13.85],[266.98333333, 14.125] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [266.98333333, 14.125],[266.62666667, 14.28666667] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [266.62666667, 14.28666667],[265.50166667, 14.65166667] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [265.50166667, 14.65166667],[264.34000000000003, 15.01666667] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [264.34000000000003, 15.01666667],[263.085, 15.42333333] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [263.085, 15.42333333],[262.61, 15.57833333] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [262.61, 15.57833333],[262.6, 15.58333333] ] },
+      "properties": {
+          "title": "ITAL LUNARE",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [262.6, 15.58333333],[259.1, 16.9] ] },
       "properties": {
           "title": "ITAL LUNARE",
           "stroke": "#ff0000",

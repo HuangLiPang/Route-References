@@ -3,24 +3,298 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [134.04333333, 37.25666667] },
+          "type": "LineString",
+          "coordinates": [ [197.10666667, 47.235],[197.10666667, 47.235] ] },
       "properties": {
           "title": "EVER LIVELY",
-          "description": "2017-03-30 19:28:00, 37°15′24″N, 134°2′36″E",
-          "course": 51,
-          "speed": 19.8,
-          "nextport": "USLAX",
-          "eta": "20170410",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [134.04333333, 37.25666667],[134.04333333, 37.25666667] ] },
+          "coordinates": [ [197.10666667, 47.235],[195.27666667, 47.465] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [195.27666667, 47.465],[193.425, 47.66666667] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [193.425, 47.66666667],[191.515, 47.84333333] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [191.515, 47.84333333],[189.58166667, 47.98] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [189.58166667, 47.98],[187.65, 48.095] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [187.65, 48.095],[185.64666667, 48.17833333] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [185.64666667, 48.17833333],[183.645, 48.22333333] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [183.645, 48.22333333],[181.6, 48.23166667] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [181.6, 48.23166667],[179.55, 48.205] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [179.55, 48.205],[177.51333333, 48.145] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [177.51333333, 48.145],[169.62166667, 47.55666667] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [169.62166667, 47.55666667],[167.6, 47.31333333] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [167.6, 47.31333333],[165.67166667, 47.05333333] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [165.67166667, 47.05333333],[163.735, 46.75333333] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [163.735, 46.75333333],[161.86, 46.42] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [161.86, 46.42],[160.01166667, 46.065] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [160.01166667, 46.065],[156.39333333, 45.255] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [156.39333333, 45.255],[154.64, 44.825] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [154.64, 44.825],[152.90666667, 44.36166667] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [152.90666667, 44.36166667],[149.35833333, 43.295] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [149.35833333, 43.295],[147.645, 42.72666667] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [147.645, 42.72666667],[144.24, 41.85] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [144.24, 41.85],[142.48666667, 41.63166667] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [142.48666667, 41.63166667],[140.725, 41.51833333] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [140.725, 41.51833333],[139.23166667, 40.71333333] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [139.23166667, 40.71333333],[137.92666667, 39.85666667] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [137.92666667, 39.85666667],[136.62, 38.98666667] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [136.62, 38.98666667],[135.34333333, 38.135] ] },
+      "properties": {
+          "title": "EVER LIVELY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [135.34333333, 38.135],[134.04333333, 37.25666667] ] },
       "properties": {
           "title": "EVER LIVELY",
           "stroke": "#ff0000",

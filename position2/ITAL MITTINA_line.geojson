@@ -3,24 +3,48 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [111.3, 10.3] },
+          "type": "LineString",
+          "coordinates": [ [104.2, 4.1],[104.2, 4.1] ] },
       "properties": {
           "title": "ITAL MITTINA",
-          "description": "2017-03-30 00:00:00, 10°18′0″N, 111°17′60″E",
-          "course": 243,
-          "speed": 17,
-          "nextport": "THLCH",
-          "eta": "20170401",
-          "url": "url",
-          "marker-symbol": "m",
-          "marker-color": "#808080",
-          "marker-size": "medium"} },
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [111.3, 10.3],[111.3, 10.3] ] },
+          "coordinates": [ [104.2, 4.1],[101.6, 11.3] ] },
+      "properties": {
+          "title": "ITAL MITTINA",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.6, 11.3],[101.0, 12.3] ] },
+      "properties": {
+          "title": "ITAL MITTINA",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.0, 12.3],[105.1, 8.0] ] },
+      "properties": {
+          "title": "ITAL MITTINA",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [105.1, 8.0],[111.3, 10.3] ] },
       "properties": {
           "title": "ITAL MITTINA",
           "stroke": "#808080",
@@ -50,47 +74,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [119.6, 17.8],[103.8, 1.1] ] },
-      "properties": {
-          "title": "ITAL MITTINA",
-          "stroke": "#808080",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.8, 1.1],[104.4, 3.6] ] },
-      "properties": {
-          "title": "ITAL MITTINA",
-          "stroke": "#808080",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [104.4, 3.6],[102.3, 10.3] ] },
-      "properties": {
-          "title": "ITAL MITTINA",
-          "stroke": "#808080",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [102.3, 10.3],[100.8, 12.5] ] },
-      "properties": {
-          "title": "ITAL MITTINA",
-          "stroke": "#808080",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.8, 12.5],[105.5, 8.1] ] },
+          "coordinates": [ [119.6, 17.8],[105.5, 8.1] ] },
       "properties": {
           "title": "ITAL MITTINA",
           "stroke": "#808080",

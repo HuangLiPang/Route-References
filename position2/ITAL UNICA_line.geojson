@@ -3,24 +3,328 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [83.94333333, 5.59833333] },
+          "type": "LineString",
+          "coordinates": [ [41.925, 15.11833333],[41.925, 15.11833333] ] },
       "properties": {
           "title": "ITAL UNICA",
-          "description": "2017-03-30 19:28:00, 5°35′54″N, 83°56′36″E",
-          "course": 266,
-          "speed": 15.8,
-          "nextport": "SAJED",
-          "eta": "20170407",
-          "url": "url",
-          "marker-symbol": "u",
-          "marker-color": "#9acd32",
-          "marker-size": "medium"} },
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [83.94333333, 5.59833333],[83.94333333, 5.59833333] ] },
+          "coordinates": [ [41.925, 15.11833333],[42.44833333, 14.03666667] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [42.44833333, 14.03666667],[43.16833333, 13.05] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [43.16833333, 13.05],[44.155, 12.34] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [44.155, 12.34],[45.44833333, 12.12666667] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [45.44833333, 12.12666667],[46.74333333, 12.50666667] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [46.74333333, 12.50666667],[48.05666667, 12.91666667] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [48.05666667, 12.91666667],[49.365, 13.325] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [49.365, 13.325],[50.68833333, 13.74666667] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [50.68833333, 13.74666667],[51.96, 14.13333333] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [51.96, 14.13333333],[53.21, 14.38666667] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [53.21, 14.38666667],[54.49833333, 13.99] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [54.49833333, 13.99],[55.79666667, 13.58833333] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [55.79666667, 13.58833333],[57.09666667, 13.18666667] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [57.09666667, 13.18666667],[59.6, 12.405] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [59.6, 12.405],[60.91333333, 11.99666667] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [60.91333333, 11.99666667],[62.12333333, 11.61666667] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [62.12333333, 11.61666667],[63.33666667, 11.23333333] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [63.33666667, 11.23333333],[64.58833333, 10.84] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [64.58833333, 10.84],[65.78166667, 10.445] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [65.78166667, 10.445],[66.97333333, 10.04] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [66.97333333, 10.04],[69.29666667, 9.24] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [69.29666667, 9.24],[71.625, 8.44333333] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [71.625, 8.44333333],[72.82333333, 8.03] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [72.82333333, 8.03],[74.06, 7.61333333] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [74.06, 7.61333333],[75.26333333, 7.19333333] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [75.26333333, 7.19333333],[76.34, 6.82333333] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [76.34, 6.82333333],[77.37166667, 6.47] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [77.37166667, 6.47],[78.38333333, 6.11833333] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [78.38333333, 6.11833333],[79.41333333, 5.76333333] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [79.41333333, 5.76333333],[81.67333333, 5.48166667] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [81.67333333, 5.48166667],[82.81, 5.53666667] ] },
+      "properties": {
+          "title": "ITAL UNICA",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [82.81, 5.53666667],[83.94333333, 5.59833333] ] },
       "properties": {
           "title": "ITAL UNICA",
           "stroke": "#9acd32",

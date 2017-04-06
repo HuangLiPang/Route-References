@@ -3,24 +3,8 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [139.3, 34.6] },
-      "properties": {
-          "title": "UNI PATRIOT",
-          "description": "2017-03-30 00:00:00, 34°36′0″N, 139°18′0″E",
-          "course": 86,
-          "speed": 15.3,
-          "nextport": "JPTYO",
-          "eta": "20170330",
-          "url": "url",
-          "marker-symbol": "p",
-          "marker-color": "#008000",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
-          "coordinates": [ [139.3, 34.6],[139.3, 34.6] ] },
+          "coordinates": [ [119.87833333, 23.21666667],[119.87833333, 23.21666667] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -30,7 +14,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [139.3, 34.6],[118.13666667, 23.44833333] ] },
+          "coordinates": [ [119.87833333, 23.21666667],[120.21833333, 24.14] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -40,7 +24,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [118.13666667, 23.44833333],[117.16333333, 22.96166667] ] },
+          "coordinates": [ [120.21833333, 24.14],[120.82333333, 25.04833333] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -50,7 +34,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [117.16333333, 22.96166667],[116.18833333, 22.465] ] },
+          "coordinates": [ [120.82333333, 25.04833333],[121.38166667, 25.16] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -60,7 +44,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [116.18833333, 22.465],[115.21833333, 22.175] ] },
+          "coordinates": [ [121.38166667, 25.16],[121.38166667, 25.16] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -70,7 +54,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [115.21833333, 22.175],[114.17, 22.205] ] },
+          "coordinates": [ [121.38166667, 25.16],[121.53, 25.525] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -80,7 +64,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.17, 22.205],[114.125, 22.33833333] ] },
+          "coordinates": [ [121.53, 25.525],[122.53, 25.98166667] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -90,7 +74,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.125, 22.33833333],[114.125, 22.33833333] ] },
+          "coordinates": [ [122.53, 25.98166667],[123.405, 26.35666667] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -100,7 +84,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.125, 22.33833333],[114.065, 22.35833333] ] },
+          "coordinates": [ [123.405, 26.35666667],[123.495, 26.39333333] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -110,7 +94,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.065, 22.35833333],[113.89333333, 22.46333333] ] },
+          "coordinates": [ [123.495, 26.39333333],[126.40166667, 27.89] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -120,7 +104,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [113.89333333, 22.46333333],[113.89333333, 22.46333333] ] },
+          "coordinates": [ [126.40166667, 27.89],[127.34666667, 28.38] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -130,7 +114,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [113.89333333, 22.46333333],[113.89333333, 22.46333333] ] },
+          "coordinates": [ [127.34666667, 28.38],[128.27166667, 28.85666667] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -140,7 +124,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [113.89333333, 22.46333333],[113.89333333, 22.46333333] ] },
+          "coordinates": [ [128.27166667, 28.85666667],[129.16833333, 29.31666667] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -150,7 +134,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [113.89333333, 22.46333333],[113.98833333, 22.345] ] },
+          "coordinates": [ [129.16833333, 29.31666667],[130.19166667, 29.79666667] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -160,7 +144,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [113.98833333, 22.345],[114.47166667, 22.09833333] ] },
+          "coordinates": [ [130.19166667, 29.79666667],[131.20666667, 30.32666667] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -170,7 +154,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.47166667, 22.09833333],[114.26, 21.275] ] },
+          "coordinates": [ [131.20666667, 30.32666667],[132.26333333, 30.91333333] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -180,7 +164,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.26, 21.275],[114.01833333, 20.27666667] ] },
+          "coordinates": [ [132.26333333, 30.91333333],[133.26, 31.48833333] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -190,7 +174,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [114.01833333, 20.27666667],[113.75666667, 19.215] ] },
+          "coordinates": [ [133.26, 31.48833333],[134.18, 32.02166667] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -200,7 +184,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [113.75666667, 19.215],[113.49166667, 18.14666667] ] },
+          "coordinates": [ [134.18, 32.02166667],[135.06333333, 32.62166667] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -210,7 +194,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [113.49166667, 18.14666667],[113.225, 17.06833333] ] },
+          "coordinates": [ [135.06333333, 32.62166667],[135.92666667, 33.22] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -220,7 +204,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [113.225, 17.06833333],[112.44166667, 15.14166667] ] },
+          "coordinates": [ [135.92666667, 33.22],[138.51333333, 34.59833333] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -230,7 +214,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [112.44166667, 15.14166667],[111.83, 14.12833333] ] },
+          "coordinates": [ [138.51333333, 34.59833333],[138.51833333, 35.03833333] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -240,7 +224,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [111.83, 14.12833333],[111.20166667, 13.08] ] },
+          "coordinates": [ [138.51833333, 35.03833333],[139.10333333, 34.64166667] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -250,7 +234,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [111.20166667, 13.08],[110.55833333, 12.015] ] },
+          "coordinates": [ [139.10333333, 34.64166667],[139.70333333, 35.4] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -260,7 +244,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [110.55833333, 12.015],[109.65666667, 11.22666667] ] },
+          "coordinates": [ [139.70333333, 35.4],[139.68, 35.43833333] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -270,7 +254,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [109.65666667, 11.22666667],[108.625, 10.74333333] ] },
+          "coordinates": [ [139.68, 35.43833333],[139.3, 34.6] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",
@@ -280,7 +264,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [108.625, 10.74333333],[107.6, 10.25333333] ] },
+          "coordinates": [ [139.3, 34.6],[107.6, 10.25333333] ] },
       "properties": {
           "title": "UNI PATRIOT",
           "stroke": "#008000",

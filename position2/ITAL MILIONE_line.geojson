@@ -3,24 +3,38 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [78.3, 7.3] },
+          "type": "LineString",
+          "coordinates": [ [66.8, 23.2],[66.8, 23.2] ] },
       "properties": {
           "title": "ITAL MILIONE",
-          "description": "2017-03-30 00:00:00, 7°17′60″N, 78°17′60″E",
-          "course": 282,
-          "speed": 16.4,
-          "nextport": "PKKHI",
-          "eta": "20170402",
-          "url": "url",
-          "marker-symbol": "m",
-          "marker-color": "#808080",
-          "marker-size": "medium"} },
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [78.3, 7.3],[78.3, 7.3] ] },
+          "coordinates": [ [66.8, 23.2],[70.2, 17.6] ] },
+      "properties": {
+          "title": "ITAL MILIONE",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [70.2, 17.6],[73.8, 12.1] ] },
+      "properties": {
+          "title": "ITAL MILIONE",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [73.8, 12.1],[78.3, 7.3] ] },
       "properties": {
           "title": "ITAL MILIONE",
           "stroke": "#808080",

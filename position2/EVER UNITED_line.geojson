@@ -3,24 +3,298 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [160.24166667, 47.08166667] },
+          "type": "LineString",
+          "coordinates": [ [227.5, 48.5],[227.5, 48.5] ] },
       "properties": {
           "title": "EVER UNITED",
-          "description": "2017-03-30 19:28:00, 47°4′54″N, 160°14′30″E",
-          "course": 68,
-          "speed": 18.4,
-          "nextport": "USTCM",
-          "eta": "20170406",
-          "url": "url",
-          "marker-symbol": "u",
-          "marker-color": "#9acd32",
-          "marker-size": "medium"} },
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [160.24166667, 47.08166667],[160.24166667, 47.08166667] ] },
+          "coordinates": [ [227.5, 48.5],[227.69666667, 48.49666667] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [227.69666667, 48.49666667],[225.77833333, 48.5] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [225.77833333, 48.5],[220.08, 48.5] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [220.08, 48.5],[216.4, 48.5] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [216.4, 48.5],[206.8, 49.955] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [206.8, 49.955],[204.905, 50.19666667] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [204.905, 50.19666667],[203.02166667, 50.405] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [203.02166667, 50.405],[201.16833333, 50.575] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [201.16833333, 50.575],[199.58666667, 50.875] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [199.58666667, 50.875],[210.54666667, 49.36833333] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [210.54666667, 49.36833333],[198.49666667, 51.76833333] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [198.49666667, 51.76833333],[196.55333333, 51.86166667] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [196.55333333, 51.86166667],[194.53833333, 51.78833333] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [194.53833333, 51.78833333],[192.50833333, 51.67833333] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [192.50833333, 51.67833333],[188.38333333, 51.35166667] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [188.38333333, 51.35166667],[184.35833333, 50.84833333] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [184.35833333, 50.84833333],[182.38333333, 50.58666667] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [182.38333333, 50.58666667],[180.42, 50.33666667] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [180.42, 50.33666667],[178.42, 50.18666667] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [178.42, 50.18666667],[176.44, 50.0] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [176.44, 50.0],[174.49666667, 49.78333333] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [174.49666667, 49.78333333],[172.56666667, 49.53666667] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [172.56666667, 49.53666667],[170.73, 49.26833333] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [170.73, 49.26833333],[168.94166667, 48.975] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [168.94166667, 48.975],[167.19666667, 48.65666667] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [167.19666667, 48.65666667],[165.39833333, 48.29666667] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [165.39833333, 48.29666667],[163.65666667, 47.92166667] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [163.65666667, 47.92166667],[161.94333333, 47.51666667] ] },
+      "properties": {
+          "title": "EVER UNITED",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [161.94333333, 47.51666667],[160.24166667, 47.08166667] ] },
       "properties": {
           "title": "EVER UNITED",
           "stroke": "#9acd32",

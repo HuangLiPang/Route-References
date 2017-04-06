@@ -3,64 +3,8 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [152.1, 22.0] },
-      "properties": {
-          "title": "EVER LEGEND",
-          "description": "2017-03-30 00:00:00, 22°0′0″N, 152°5′60″E",
-          "course": 276,
-          "speed": 16.8,
-          "nextport": "CNXSM",
-          "eta": "20170404",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
-          "coordinates": [ [152.1, 22.0],[152.1, 22.0] ] },
-      "properties": {
-          "title": "EVER LEGEND",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [152.1, 22.0],[159.6, 21.1] ] },
-      "properties": {
-          "title": "EVER LEGEND",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [159.6, 21.1],[167.6, 20.1] ] },
-      "properties": {
-          "title": "EVER LEGEND",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [167.6, 20.1],[175.7, 19.1] ] },
-      "properties": {
-          "title": "EVER LEGEND",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [175.7, 19.1],[183.0, 18.2] ] },
+          "coordinates": [ [183.0, 18.2],[183.0, 18.2] ] },
       "properties": {
           "title": "EVER LEGEND",
           "stroke": "#ff0000",

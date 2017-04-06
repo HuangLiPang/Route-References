@@ -4,14 +4,14 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [116.1, 17.1] },
+          "coordinates": [121.9, 26.5] },
       "properties": {
           "title": "THALASSA MANA",
-          "description": "2017-03-30 00:00:00, 17°6′0″N, 116°5′60″E",
-          "course": 40,
-          "speed": 15.1,
-          "nextport": "TWKSG",
-          "eta": "20170331",
+          "description": "2017-04-02 00:00:00, 26°30′0″N, 121°54′0″E",
+          "course": 44,
+          "speed": 20.7,
+          "nextport": "CNNBO",
+          "eta": "20170402",
           "url": "url",
           "marker-symbol": "t",
           "marker-color": "#00ff00",
@@ -20,48 +20,12 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [116.1, 17.1] },
+          "coordinates": [121.9, 26.5] },
       "properties": {
-          "title": "2017-03-30 00:00:00",
-          "description": "17°6′0″N, 116°5′60″E",
-          "course": 40,
-          "speed": 15.1,
-          "marker-size": "small",
-          "marker-color": "#00ff00" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [112.1, 12.2] },
-      "properties": {
-          "title": "2017-03-29 00:00:00",
-          "description": "12°11′60″N, 112°5′60″E",
-          "course": 36,
-          "speed": 15.5,
-          "marker-size": "small",
-          "marker-color": "#00ff00" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [108.3, 7.7] },
-      "properties": {
-          "title": "2017-03-28 00:00:00",
-          "description": "7°42′0″N, 108°17′60″E",
-          "course": 40,
-          "speed": 14.8,
-          "marker-size": "small",
-          "marker-color": "#00ff00" } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [105.1, 2.5] },
-      "properties": {
-          "title": "2017-03-27 00:00:00",
-          "description": "2°30′0″N, 105°5′60″E",
-          "course": 21,
-          "speed": 15.3,
+          "title": "2017-04-02 00:00:00",
+          "description": "26°30′0″N, 121°54′0″E",
+          "course": 44,
+          "speed": 20.7,
           "marker-size": "small",
           "marker-color": "#00ff00" } },
 

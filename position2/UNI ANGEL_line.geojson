@@ -3,24 +3,8 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [123.22333333, 11.78833333] },
-      "properties": {
-          "title": "UNI ANGEL",
-          "description": "2017-03-30 19:28:00, 11°47′18″N, 123°13′24″E",
-          "course": 94,
-          "speed": 14.8,
-          "nextport": "PHCEB",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "a",
-          "marker-color": "#ffa500",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
-          "coordinates": [ [123.22333333, 11.78833333],[123.22333333, 11.78833333] ] },
+          "coordinates": [ [123.76333333, 15.60166667],[123.76333333, 15.60166667] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -30,7 +14,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [123.22333333, 11.78833333],[122.70666667, 12.56833333] ] },
+          "coordinates": [ [123.76333333, 15.60166667],[123.37666667, 16.44166667] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -40,7 +24,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [122.70666667, 12.56833333],[121.85833333, 13.14333333] ] },
+          "coordinates": [ [123.37666667, 16.44166667],[122.98166667, 17.285] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -50,7 +34,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [121.85833333, 13.14333333],[120.20666667, 14.10833333] ] },
+          "coordinates": [ [122.98166667, 17.285],[122.58, 18.12666667] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -60,7 +44,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.20666667, 14.10833333],[119.75833333, 15.07166667] ] },
+          "coordinates": [ [122.58, 18.12666667],[122.20333333, 18.93166667] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -70,7 +54,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [119.75833333, 15.07166667],[119.56, 16.07833333] ] },
+          "coordinates": [ [122.20333333, 18.93166667],[121.17166667, 20.41] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -80,7 +64,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [119.56, 16.07833333],[119.64, 17.10666667] ] },
+          "coordinates": [ [121.17166667, 20.41],[120.64333333, 21.16833333] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -90,7 +74,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [119.64, 17.10666667],[119.74666667, 18.16833333] ] },
+          "coordinates": [ [120.64333333, 21.16833333],[120.20666667, 21.95166667] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -100,47 +84,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [119.74666667, 18.16833333],[119.77833333, 19.20333333] ] },
-      "properties": {
-          "title": "UNI ANGEL",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [119.77833333, 19.20333333],[119.96166667, 20.17333333] ] },
-      "properties": {
-          "title": "UNI ANGEL",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [119.96166667, 20.17333333],[120.06833333, 21.17333333] ] },
-      "properties": {
-          "title": "UNI ANGEL",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [120.06833333, 21.17333333],[120.16666667, 22.11] ] },
-      "properties": {
-          "title": "UNI ANGEL",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [120.16666667, 22.11],[120.33166667, 22.54833333] ] },
+          "coordinates": [ [120.20666667, 21.95166667],[120.33166667, 22.54833333] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -160,7 +104,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.33166667, 22.54833333],[120.33166667, 22.54833333] ] },
+          "coordinates": [ [120.33166667, 22.54833333],[120.01, 22.08833333] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -170,7 +114,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.33166667, 22.54833333],[120.33166667, 22.54833333] ] },
+          "coordinates": [ [120.01, 22.08833333],[119.55166667, 21.14] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -180,7 +124,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.33166667, 22.54833333],[120.33166667, 22.54833333] ] },
+          "coordinates": [ [119.55166667, 21.14],[119.26666667, 20.24666667] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -190,7 +134,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.33166667, 22.54833333],[120.33166667, 22.54833333] ] },
+          "coordinates": [ [119.26666667, 20.24666667],[119.26666667, 19.30333333] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -200,7 +144,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.33166667, 22.54833333],[120.14666667, 22.24333333] ] },
+          "coordinates": [ [119.26666667, 19.30333333],[123.92166667, 10.30666667] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -210,7 +154,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.14666667, 22.24333333],[119.88, 21.31333333] ] },
+          "coordinates": [ [123.92166667, 10.30666667],[123.92166667, 10.30666667] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -220,7 +164,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [119.88, 21.31333333],[119.71166667, 20.35666667] ] },
+          "coordinates": [ [123.92166667, 10.30666667],[123.92166667, 10.30666667] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -230,7 +174,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [119.71166667, 20.35666667],[119.74166667, 19.47] ] },
+          "coordinates": [ [123.92166667, 10.30666667],[123.92166667, 10.30666667] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",
@@ -240,7 +184,47 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [119.74166667, 19.47],[121.47166667, 13.36] ] },
+          "coordinates": [ [123.92166667, 10.30666667],[124.045, 10.30333333] ] },
+      "properties": {
+          "title": "UNI ANGEL",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [124.045, 10.30333333],[124.19833333, 10.98666667] ] },
+      "properties": {
+          "title": "UNI ANGEL",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [124.19833333, 10.98666667],[123.64166667, 11.67333333] ] },
+      "properties": {
+          "title": "UNI ANGEL",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [123.64166667, 11.67333333],[123.015, 12.17] ] },
+      "properties": {
+          "title": "UNI ANGEL",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [123.015, 12.17],[121.47166667, 13.36] ] },
       "properties": {
           "title": "UNI ANGEL",
           "stroke": "#ffa500",

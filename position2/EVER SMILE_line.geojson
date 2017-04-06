@@ -3,24 +3,8 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [120.33, 22.55] },
-      "properties": {
-          "title": "EVER SMILE",
-          "description": "2017-03-30 19:28:00, 22°33′0″N, 120°19′48″E",
-          "course": 160,
-          "speed": 0,
-          "nextport": "CNYYT",
-          "eta": "20170401",
-          "url": "url",
-          "marker-symbol": "s",
-          "marker-color": "#4b0082",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.33, 22.55],[120.33, 22.55] ] },
+          "coordinates": [ [121.38333333, 25.16],[121.38333333, 25.16] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -30,7 +14,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.33, 22.55],[120.33, 22.55] ] },
+          "coordinates": [ [121.38333333, 25.16],[121.06, 25.22166667] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -40,7 +24,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.33, 22.55],[120.235, 22.53] ] },
+          "coordinates": [ [121.06, 25.22166667],[120.40333333, 24.48666667] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -50,7 +34,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.235, 22.53],[119.915, 22.95833333] ] },
+          "coordinates": [ [120.40333333, 24.48666667],[119.88833333, 23.68333333] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -60,7 +44,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [119.915, 22.95833333],[120.08, 23.97333333] ] },
+          "coordinates": [ [119.88833333, 23.68333333],[120.06833333, 22.73] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -70,7 +54,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.08, 23.97333333],[120.71, 24.95833333] ] },
+          "coordinates": [ [120.06833333, 22.73],[120.32833333, 22.55] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -80,7 +64,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [120.71, 24.95833333],[121.54, 25.81333333] ] },
+          "coordinates": [ [120.32833333, 22.55],[120.32833333, 22.55] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -90,7 +74,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [121.54, 25.81333333],[122.44, 26.70333333] ] },
+          "coordinates": [ [120.32833333, 22.55],[120.32833333, 22.55] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -100,7 +84,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [122.44, 26.70333333],[123.25333333, 27.68666667] ] },
+          "coordinates": [ [120.32833333, 22.55],[120.32833333, 22.55] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -110,7 +94,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [123.25333333, 27.68666667],[124.115, 28.62666667] ] },
+          "coordinates": [ [120.32833333, 22.55],[120.33, 22.55] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -120,7 +104,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [124.115, 28.62666667],[124.99666667, 29.51833333] ] },
+          "coordinates": [ [120.33, 22.55],[119.745, 22.50166667] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -130,7 +114,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [124.99666667, 29.51833333],[125.86, 30.48] ] },
+          "coordinates": [ [119.745, 22.50166667],[118.69166667, 22.39333333] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -140,7 +124,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [125.86, 30.48],[126.72333333, 31.39666667] ] },
+          "coordinates": [ [118.69166667, 22.39333333],[117.48833333, 22.30333333] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -150,7 +134,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [126.72333333, 31.39666667],[127.59833333, 32.31166667] ] },
+          "coordinates": [ [117.48833333, 22.30333333],[116.25333333, 22.18] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -160,7 +144,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [127.59833333, 32.31166667],[128.50666667, 33.25166667] ] },
+          "coordinates": [ [116.25333333, 22.18],[115.06166667, 22.13] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -170,7 +154,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [128.50666667, 33.25166667],[129.535, 34.06] ] },
+          "coordinates": [ [115.06166667, 22.13],[114.10166667, 22.27666667] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -180,7 +164,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [129.535, 34.06],[130.60166667, 34.83666667] ] },
+          "coordinates": [ [114.10166667, 22.27666667],[114.125, 22.335] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -190,7 +174,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [130.60166667, 34.83666667],[131.72333333, 35.625] ] },
+          "coordinates": [ [114.125, 22.335],[114.125, 22.335] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -200,7 +184,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [131.72333333, 35.625],[132.82833333, 36.39666667] ] },
+          "coordinates": [ [114.125, 22.335],[114.125, 22.335] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -210,7 +194,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [132.82833333, 36.39666667],[133.96333333, 37.175] ] },
+          "coordinates": [ [114.125, 22.335],[114.1, 22.29166667] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -220,7 +204,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [133.96333333, 37.175],[135.14166667, 37.985] ] },
+          "coordinates": [ [114.1, 22.29166667],[114.45, 22.45166667] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -230,7 +214,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [135.14166667, 37.985],[138.76833333, 40.415] ] },
+          "coordinates": [ [114.45, 22.45166667],[114.38, 22.57833333] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -240,7 +224,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [138.76833333, 40.415],[139.995, 41.20833333] ] },
+          "coordinates": [ [114.38, 22.57833333],[114.38, 22.58] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -250,7 +234,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [139.995, 41.20833333],[141.24, 41.62333333] ] },
+          "coordinates": [ [114.38, 22.58],[114.27833333, 22.57666667] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -260,7 +244,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [141.24, 41.62333333],[142.82, 41.53333333] ] },
+          "coordinates": [ [114.27833333, 22.57666667],[114.29666667, 22.565] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",
@@ -270,177 +254,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [142.82, 41.53333333],[144.37333333, 41.755] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [144.37333333, 41.755],[145.905, 42.19] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [145.905, 42.19],[147.32833333, 42.79166667] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [147.32833333, 42.79166667],[148.37333333, 43.72166667] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [148.37333333, 43.72166667],[149.70666667, 44.50666667] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [149.70666667, 44.50666667],[151.06666667, 45.27] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [151.06666667, 45.27],[152.46666667, 46.04333333] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [152.46666667, 46.04333333],[153.87666667, 46.81166667] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [153.87666667, 46.81166667],[155.35833333, 47.59666667] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [155.35833333, 47.59666667],[156.82833333, 48.37] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [156.82833333, 48.37],[158.31333333, 49.14333333] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [158.31333333, 49.14333333],[159.82166667, 49.90833333] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [159.82166667, 49.90833333],[161.49666667, 50.51666667] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [161.49666667, 50.51666667],[163.25333333, 51.12333333] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [163.25333333, 51.12333333],[165.03333333, 51.72] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [165.03333333, 51.72],[166.83666667, 52.325] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [166.83666667, 52.325],[168.65833333, 52.92] ] },
-      "properties": {
-          "title": "EVER SMILE",
-          "stroke": "#4b0082",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [168.65833333, 52.92],[170.485, 53.51166667] ] },
+          "coordinates": [ [114.29666667, 22.565],[170.485, 53.51166667] ] },
       "properties": {
           "title": "EVER SMILE",
           "stroke": "#4b0082",

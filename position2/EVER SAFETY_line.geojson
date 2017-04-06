@@ -3,24 +3,8 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [122.46, 30.46333333] },
-      "properties": {
-          "title": "EVER SAFETY",
-          "description": "2017-03-17 07:56:00, 30°27′48″N, 122°27′36″E",
-          "course": 184,
-          "speed": 0.6,
-          "nextport": "CNZOS",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "s",
-          "marker-color": "#4b0082",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
-          "coordinates": [ [122.46, 30.46333333],[122.46, 30.46333333] ] },
+          "coordinates": [ [122.62333333, 29.91666667],[122.62333333, 29.91666667] ] },
       "properties": {
           "title": "EVER SAFETY",
           "stroke": "#4b0082",
@@ -30,7 +14,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [122.46, 30.46333333],[122.45, 30.465] ] },
+          "coordinates": [ [122.62333333, 29.91666667],[122.62333333, 29.91666667] ] },
       "properties": {
           "title": "EVER SAFETY",
           "stroke": "#4b0082",
@@ -40,7 +24,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [122.45, 30.465],[122.08166667, 30.60666667] ] },
+          "coordinates": [ [122.62333333, 29.91666667],[122.62333333, 29.91666667] ] },
       "properties": {
           "title": "EVER SAFETY",
           "stroke": "#4b0082",
@@ -50,7 +34,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [122.08166667, 30.60666667],[122.08166667, 30.60666667] ] },
+          "coordinates": [ [122.62333333, 29.91666667],[122.62333333, 29.91666667] ] },
       "properties": {
           "title": "EVER SAFETY",
           "stroke": "#4b0082",
@@ -60,7 +44,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [122.08166667, 30.60666667],[122.265, 30.55833333] ] },
+          "coordinates": [ [122.62333333, 29.91666667],[122.625, 29.93] ] },
       "properties": {
           "title": "EVER SAFETY",
           "stroke": "#4b0082",
@@ -70,7 +54,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [122.265, 30.55833333],[122.72, 30.445] ] },
+          "coordinates": [ [122.625, 29.93],[122.6, 30.43333333] ] },
       "properties": {
           "title": "EVER SAFETY",
           "stroke": "#4b0082",
@@ -80,7 +64,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [122.72, 30.445],[122.72, 30.44666667] ] },
+          "coordinates": [ [122.6, 30.43333333],[122.72, 30.44666667] ] },
       "properties": {
           "title": "EVER SAFETY",
           "stroke": "#4b0082",

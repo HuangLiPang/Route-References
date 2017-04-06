@@ -3,22 +3,6 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [66.48833333, 10.25333333] },
-      "properties": {
-          "title": "ITAL LIRICA",
-          "description": "2017-03-30 19:28:00, 10°15′12″N, 66°29′18″E",
-          "course": 109,
-          "speed": 16.8,
-          "nextport": "SGSGP",
-          "eta": "20170407",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
           "coordinates": [ [66.48833333, 10.25333333],[66.48833333, 10.25333333] ] },
       "properties": {

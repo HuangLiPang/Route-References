@@ -3,24 +3,8 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [99.5, 4.2] },
-      "properties": {
-          "title": "ITAL MODERMA",
-          "description": "2017-03-28 00:00:00, 4°12′0″N, 99°30′0″E",
-          "course": 133,
-          "speed": 18.2,
-          "nextport": "MYPKL",
-          "eta": "20170328",
-          "url": "url",
-          "marker-symbol": "m",
-          "marker-color": "#808080",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
-          "coordinates": [ [99.5, 4.2],[99.5, 4.2] ] },
+          "coordinates": [ [115.3, 16.0],[115.3, 16.0] ] },
       "properties": {
           "title": "ITAL MODERMA",
           "stroke": "#808080",
@@ -30,17 +14,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [99.5, 4.2],[92.7, 6.3] ] },
-      "properties": {
-          "title": "ITAL MODERMA",
-          "stroke": "#808080",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [92.7, 6.3],[84.8, 5.8] ] },
+          "coordinates": [ [115.3, 16.0],[84.8, 5.8] ] },
       "properties": {
           "title": "ITAL MODERMA",
           "stroke": "#808080",

@@ -3,24 +3,8 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [122.05833333, 29.88833333] },
-      "properties": {
-          "title": "UNI ACTIVE",
-          "description": "2017-03-30 19:29:00, 29°53′18″N, 122°3′30″E",
-          "course": 41,
-          "speed": 0,
-          "nextport": "TWKSG",
-          "eta": "20170401",
-          "url": "url",
-          "marker-symbol": "a",
-          "marker-color": "#ffa500",
-          "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
           "type": "LineString",
-          "coordinates": [ [122.05833333, 29.88833333],[122.05833333, 29.88833333] ] },
+          "coordinates": [ [120.38833333, 24.31],[120.38833333, 24.31] ] },
       "properties": {
           "title": "UNI ACTIVE",
           "stroke": "#ffa500",
@@ -30,7 +14,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [122.05833333, 29.88833333],[122.12833333, 29.92166667] ] },
+          "coordinates": [ [120.38833333, 24.31],[120.3, 24.2] ] },
       "properties": {
           "title": "UNI ACTIVE",
           "stroke": "#ffa500",
@@ -40,17 +24,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [122.12833333, 29.92166667],[122.59333333, 29.78] ] },
-      "properties": {
-          "title": "UNI ACTIVE",
-          "stroke": "#ffa500",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [122.59333333, 29.78],[120.865, 25.22166667] ] },
+          "coordinates": [ [120.3, 24.2],[120.865, 25.22166667] ] },
       "properties": {
           "title": "UNI ACTIVE",
           "stroke": "#ffa500",

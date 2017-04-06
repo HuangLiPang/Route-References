@@ -3,24 +3,298 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [45.52666667, 12.09833333] },
+          "type": "LineString",
+          "coordinates": [ [34.645, 31.83333333],[34.645, 31.83333333] ] },
       "properties": {
           "title": "ITAL UNIVERSO",
-          "description": "2017-03-30 19:28:00, 12°5′54″N, 45°31′36″E",
-          "course": 252,
-          "speed": 19.2,
-          "nextport": "EGSUZ",
-          "eta": "20170402",
-          "url": "url",
-          "marker-symbol": "u",
-          "marker-color": "#9acd32",
-          "marker-size": "medium"} },
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [45.52666667, 12.09833333],[45.52666667, 12.09833333] ] },
+          "coordinates": [ [34.645, 31.83333333],[34.645, 31.83333333] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [34.645, 31.83333333],[34.645, 31.83333333] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [34.645, 31.83333333],[34.645, 31.83333333] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [34.645, 31.83333333],[34.645, 31.83333333] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [34.645, 31.83333333],[34.645, 31.83333333] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [34.645, 31.83333333],[34.645, 31.83333333] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [34.645, 31.83333333],[34.645, 31.83333333] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [34.645, 31.83333333],[34.615, 31.86] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [34.615, 31.86],[34.22833333, 31.97166667] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [34.22833333, 31.97166667],[33.25, 31.95333333] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [33.25, 31.95333333],[32.38833333, 31.54166667] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [32.38833333, 31.54166667],[32.31333333, 30.90166667] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [32.31333333, 30.90166667],[32.56666667, 29.82333333] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [32.56666667, 29.82333333],[32.55333333, 29.80833333] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [32.55333333, 29.80833333],[33.79, 27.8] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [33.79, 27.8],[35.25666667, 25.805] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [35.25666667, 25.805],[35.92, 24.74833333] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [35.92, 24.74833333],[37.25, 22.59666667] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [37.25, 22.59666667],[37.92, 21.51166667] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [37.92, 21.51166667],[38.56, 20.46833333] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [38.56, 20.46833333],[39.21666667, 19.38] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [39.21666667, 19.38],[39.87166667, 18.28] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [39.87166667, 18.28],[40.51833333, 17.20333333] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [40.51833333, 17.20333333],[41.16833333, 16.10833333] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [41.16833333, 16.10833333],[41.81333333, 15.01666667] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [41.81333333, 15.01666667],[42.46, 13.91333333] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [42.46, 13.91333333],[43.23, 12.905] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [43.23, 12.905],[44.25, 12.20333333] ] },
+      "properties": {
+          "title": "ITAL UNIVERSO",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [44.25, 12.20333333],[45.52666667, 12.09833333] ] },
       "properties": {
           "title": "ITAL UNIVERSO",
           "stroke": "#9acd32",

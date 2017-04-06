@@ -3,19 +3,283 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [241.72833333, 33.74333333] },
+          "type": "LineString",
+          "coordinates": [ [219.645, 48.14666667],[219.645, 48.14666667] ] },
       "properties": {
           "title": "EVER LOTUS",
-          "description": "2017-03-30 19:28:00, 33°44′36″N, 118°16′18″W",
-          "course": 46,
-          "speed": 0,
-          "nextport": "USOKL",
-          "eta": "20170401",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [219.645, 48.14666667],[220.57, 47.69] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [220.57, 47.69],[221.54, 47.19666667] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [221.54, 47.19666667],[223.30166667, 46.32666667] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [223.30166667, 46.32666667],[224.21666667, 45.92833333] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [224.21666667, 45.92833333],[225.23166667, 45.36166667] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [225.23166667, 45.36166667],[226.36, 44.77166667] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [226.36, 44.77166667],[228.68, 43.46666667] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [228.68, 43.46666667],[230.03666667, 42.66833333] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [230.03666667, 42.66833333],[232.07666667, 41.37666667] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [232.07666667, 41.37666667],[232.97166667, 40.79666667] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [232.97166667, 40.79666667],[233.75, 40.25] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [233.75, 40.25],[234.51999999999998, 39.71666667] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [234.51999999999998, 39.71666667],[235.24833332999998, 39.195] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [235.24833332999998, 39.195],[236.01999999999998, 38.63333333] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.01999999999998, 38.63333333],[236.62, 38.17166667] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.62, 38.17166667],[237.625, 37.805] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.625, 37.805],[237.66166667, 37.80666667] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.66166667, 37.80666667],[237.66166667, 37.80666667] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.66166667, 37.80666667],[237.66166667, 37.80666667] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.66166667, 37.80666667],[237.59333333, 37.815] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.59333333, 37.815],[237.36333333, 37.17] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.36333333, 37.17],[238.03333333, 35.68166667] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [238.03333333, 35.68166667],[238.54166666999998, 35.02166667] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [238.54166666999998, 35.02166667],[239.15166667, 34.43333333] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [239.15166667, 34.43333333],[240.08499999999998, 34.22166667] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [240.08499999999998, 34.22166667],[241.67666667, 33.64166667] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [241.67666667, 33.64166667],[241.72833333, 33.74333333] ] },
+      "properties": {
+          "title": "EVER LOTUS",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {

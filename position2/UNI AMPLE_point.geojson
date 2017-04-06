@@ -4,30 +4,18 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [103.3, 1.3] },
+          "coordinates": [99.1, 6.0] },
       "properties": {
           "title": "UNI AMPLE",
-          "description": "2017-03-20 00:00:00, 1°18′0″N, 103°17′60″E",
-          "course": 130,
-          "speed": 15.2,
+          "description": "2017-03-19 00:00:00, 6°0′0″N, 99°5′60″E",
+          "course": 150,
+          "speed": 16.3,
           "nextport": "MYPTP",
           "eta": "20170320",
           "url": "url",
           "marker-symbol": "a",
           "marker-color": "#ffa500",
           "marker-size": "medium"} },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "Point",
-          "coordinates": [103.3, 1.3] },
-      "properties": {
-          "title": "2017-03-20 00:00:00",
-          "description": "1°18′0″N, 103°17′60″E",
-          "course": 130,
-          "speed": 15.2,
-          "marker-size": "small",
-          "marker-color": "#ffa500" } },
 
     { "type": "Feature",
       "geometry": {

@@ -4,18 +4,78 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [40.0, 18.5] },
+          "coordinates": [72.9, 8.8] },
       "properties": {
           "title": "THALASSA HELLAS",
-          "description": "2017-03-30 00:00:00, 18°30′0″N, 40°0′0″E",
-          "course": 150,
-          "speed": 19,
+          "description": "2017-04-04 00:00:00, 8°48′0″N, 72°54′0″E",
+          "course": 108,
+          "speed": 18.6,
           "nextport": "LKCMB",
           "eta": "20170405",
           "url": "url",
           "marker-symbol": "t",
           "marker-color": "#00ff00",
           "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [72.9, 8.8] },
+      "properties": {
+          "title": "2017-04-04 00:00:00",
+          "description": "8°48′0″N, 72°54′0″E",
+          "course": 108,
+          "speed": 18.6,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [65.6, 11.1] },
+      "properties": {
+          "title": "2017-04-03 00:00:00",
+          "description": "11°5′60″N, 65°35′60″E",
+          "course": 108,
+          "speed": 18.8,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [58.5, 13.2] },
+      "properties": {
+          "title": "2017-04-02 00:00:00",
+          "description": "13°11′60″N, 58°30′0″E",
+          "course": 106,
+          "speed": 18.8,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [50.9, 13.7] },
+      "properties": {
+          "title": "2017-04-01 00:00:00",
+          "description": "13°41′60″N, 50°53′60″E",
+          "course": 72,
+          "speed": 19.1,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [43.9, 12.3] },
+      "properties": {
+          "title": "2017-03-31 00:00:00",
+          "description": "12°18′0″N, 43°53′60″E",
+          "course": 114,
+          "speed": 18.4,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
 
     { "type": "Feature",
       "geometry": {

@@ -3,24 +3,328 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [260.91833333, 15.65666667] },
+          "type": "LineString",
+          "coordinates": [ [227.83833333, 39.53166667],[227.83833333, 39.53166667] ] },
       "properties": {
           "title": "EVER LAUREL",
-          "description": "2017-03-30 15:28:00, 15°39′24″N, 99°4′54″W",
-          "course": 298,
-          "speed": 16,
-          "nextport": "CNQND",
-          "eta": "20170418",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [260.91833333, 15.65666667],[260.91833333, 15.65666667] ] },
+          "coordinates": [ [227.83833333, 39.53166667],[228.77333333, 38.765] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [228.77333333, 38.765],[229.695, 38.00166667] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [229.695, 38.00166667],[230.62666667, 37.21333333] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [230.62666667, 37.21333333],[231.55333333, 36.405] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [231.55333333, 36.405],[232.45333333000002, 35.575] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [232.45333333000002, 35.575],[233.39166667, 34.7] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [233.39166667, 34.7],[234.25333333, 33.86666667] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [234.25333333, 33.86666667],[235.095, 33.04333333] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [235.095, 33.04333333],[235.9, 32.22333333] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [235.9, 32.22333333],[236.67166666999998, 31.42] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [236.67166666999998, 31.42],[237.44666667, 30.6] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [237.44666667, 30.6],[238.285, 29.845] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [238.285, 29.845],[239.3, 29.255] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [239.3, 29.255],[240.31, 28.67166667] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [240.31, 28.67166667],[241.37833333, 28.05333333] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [241.37833333, 28.05333333],[242.32999999999998, 27.4] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [242.32999999999998, 27.4],[243.24, 26.78333333] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [243.24, 26.78333333],[245.11, 25.47] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [245.11, 25.47],[246.89666667, 24.215] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [246.89666667, 24.215],[247.79333333, 23.585] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [247.79333333, 23.585],[248.68833333, 22.93666667] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [248.68833333, 22.93666667],[249.56333333, 22.31166667] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [249.56333333, 22.31166667],[250.43166667, 21.715] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [250.43166667, 21.715],[251.34166667, 21.12666667] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [251.34166667, 21.12666667],[252.22666667, 20.53] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [252.22666667, 20.53],[253.11166667, 19.93666667] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [253.11166667, 19.93666667],[254.02333333, 19.33333333] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [254.02333333, 19.33333333],[255.04666666999998, 18.65] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [255.04666666999998, 18.65],[255.95, 18.03666667] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [255.95, 18.03666667],[257.95333333, 17.08] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [257.95333333, 17.08],[258.95, 16.59666667] ] },
+      "properties": {
+          "title": "EVER LAUREL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [258.95, 16.59666667],[260.91833333, 15.65666667] ] },
       "properties": {
           "title": "EVER LAUREL",
           "stroke": "#ff0000",

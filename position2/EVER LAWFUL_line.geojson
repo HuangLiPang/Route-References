@@ -3,24 +3,38 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [294.3, 40.0] },
+          "type": "LineString",
+          "coordinates": [ [286.0, 20.3],[286.0, 20.3] ] },
       "properties": {
           "title": "EVER LAWFUL",
-          "description": "2017-03-26 00:00:00, 40°0′0″N, 65°42′0″W",
-          "course": 270,
-          "speed": 15.1,
-          "nextport": "USNYC",
-          "eta": "20170327",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [294.3, 40.0],[294.3, 40.0] ] },
+          "coordinates": [ [286.0, 20.3],[284.3, 25.7] ] },
+      "properties": {
+          "title": "EVER LAWFUL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [284.3, 25.7],[282.7, 33.7] ] },
+      "properties": {
+          "title": "EVER LAWFUL",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [282.7, 33.7],[294.3, 40.0] ] },
       "properties": {
           "title": "EVER LAWFUL",
           "stroke": "#ff0000",

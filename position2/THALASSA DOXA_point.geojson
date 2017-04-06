@@ -4,18 +4,78 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [64.2, 11.3] },
+          "coordinates": [34.0, 27.6] },
       "properties": {
           "title": "THALASSA DOXA",
-          "description": "2017-03-30 00:00:00, 11°18′0″N, 64°12′0″E",
-          "course": 287,
-          "speed": 19.5,
+          "description": "2017-04-04 00:00:00, 27°36′0″N, 34°0′0″E",
+          "course": 309,
+          "speed": 18.2,
           "nextport": "EGSUZ",
           "eta": "20170404",
           "url": "url",
           "marker-symbol": "t",
           "marker-color": "#00ff00",
           "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [34.0, 27.6] },
+      "properties": {
+          "title": "2017-04-04 00:00:00",
+          "description": "27°36′0″N, 34°0′0″E",
+          "course": 309,
+          "speed": 18.2,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [38.4, 21.1] },
+      "properties": {
+          "title": "2017-04-03 00:00:00",
+          "description": "21°6′0″N, 38°23′60″E",
+          "course": 331,
+          "speed": 18,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [42.2, 14.5] },
+      "properties": {
+          "title": "2017-04-02 00:00:00",
+          "description": "14°30′0″N, 42°12′0″E",
+          "course": 336,
+          "speed": 18.7,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [48.6, 13.2] },
+      "properties": {
+          "title": "2017-04-01 00:00:00",
+          "description": "13°11′60″N, 48°36′0″E",
+          "course": 252,
+          "speed": 19.2,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [56.4, 13.6] },
+      "properties": {
+          "title": "2017-03-31 00:00:00",
+          "description": "13°35′60″N, 56°23′60″E",
+          "course": 287,
+          "speed": 19.1,
+          "marker-size": "small",
+          "marker-color": "#00ff00" } },
 
     { "type": "Feature",
       "geometry": {

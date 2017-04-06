@@ -3,24 +3,328 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [100.76333333, 12.08833333] },
+          "type": "LineString",
+          "coordinates": [ [100.19166667, 5.56666667],[100.19166667, 5.56666667] ] },
       "properties": {
           "title": "UNI PERFECT",
-          "description": "2017-03-30 19:28:00, 12°5′18″N, 100°45′48″E",
-          "course": 169,
-          "speed": 14.8,
-          "nextport": "MYPKL",
-          "eta": "20170403",
-          "url": "url",
-          "marker-symbol": "p",
-          "marker-color": "#008000",
-          "marker-size": "medium"} },
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [100.76333333, 12.08833333],[100.76333333, 12.08833333] ] },
+          "coordinates": [ [100.19166667, 5.56666667],[99.42833333, 4.75166667] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [99.42833333, 4.75166667],[98.75, 3.92166667] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [98.75, 3.92166667],[98.71666667, 3.795] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [98.71666667, 3.795],[98.71666667, 3.795] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [98.71666667, 3.795],[98.71666667, 3.795] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [98.71666667, 3.795],[98.73166667, 3.82333333] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [98.73166667, 3.82333333],[99.355, 3.98666667] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [99.355, 3.98666667],[100.31, 3.44666667] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.31, 3.44666667],[101.155, 2.78] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.155, 2.78],[101.28833333, 2.92333333] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.28833333, 2.92333333],[101.28833333, 2.92333333] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.28833333, 2.92333333],[101.28666667, 2.92333333] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.28666667, 2.92333333],[101.28833333, 2.92333333] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.28833333, 2.92333333],[101.28666667, 2.92333333] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.28666667, 2.92333333],[101.285, 2.80666667] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.285, 2.80666667],[101.285, 2.81] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.285, 2.81],[101.28833333, 2.80666667] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.28833333, 2.80666667],[101.28666667, 2.80666667] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.28666667, 2.80666667],[101.285, 2.80833333] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.285, 2.80833333],[101.28666667, 2.80666667] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.28666667, 2.80666667],[101.80166667, 2.35666667] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.80166667, 2.35666667],[102.78, 1.68333333] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [102.78, 1.68333333],[103.715, 1.14666667] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.715, 1.14666667],[104.58166667, 1.67666667] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [104.58166667, 1.67666667],[104.25, 4.04] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [104.25, 4.04],[103.93833333, 5.23] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.93833333, 5.23],[103.63833333, 6.36166667] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.63833333, 6.36166667],[103.54166667, 7.44] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.54166667, 7.44],[102.40166667, 9.26166667] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [102.40166667, 9.26166667],[101.81333333, 10.185] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.81333333, 10.185],[101.23, 11.13333333] ] },
+      "properties": {
+          "title": "UNI PERFECT",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.23, 11.13333333],[100.76333333, 12.08833333] ] },
       "properties": {
           "title": "UNI PERFECT",
           "stroke": "#008000",
@@ -70,327 +374,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [100.89333333, 13.065],[101.29, 2.645] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.29, 2.645],[101.29833333, 2.94333333] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.29833333, 2.94333333],[101.29833333, 2.94333333] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.29833333, 2.94333333],[100.83166667, 2.95333333] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.83166667, 2.95333333],[100.32166667, 3.78] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.32166667, 3.78],[100.25333333, 5.56] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.25333333, 5.56],[100.36, 5.41666667] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.36, 5.41666667],[100.36, 5.41666667] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.36, 5.41666667],[100.36, 5.41666667] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.36, 5.41666667],[100.36, 5.41666667] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.36, 5.41666667],[100.36, 5.41666667] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.36, 5.41666667],[100.36, 5.41666667] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.36, 5.41666667],[100.36, 5.41666667] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.36, 5.41666667],[100.36, 5.41666667] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.36, 5.41666667],[100.36, 5.41666667] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.36, 5.41666667],[100.18, 5.565] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.18, 5.565],[100.085, 5.49] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.085, 5.49],[98.745, 3.91166667] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.745, 3.91166667],[98.71666667, 3.795] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.71666667, 3.795],[98.71666667, 3.795] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.71666667, 3.795],[98.71666667, 3.795] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.71666667, 3.795],[98.71666667, 3.795] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.71666667, 3.795],[98.71666667, 3.79666667] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.71666667, 3.79666667],[98.76166667, 3.94333333] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [98.76166667, 3.94333333],[100.46, 3.32] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [100.46, 3.32],[101.25333333, 2.85666667] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.25333333, 2.85666667],[101.29333333, 2.93333333] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.29333333, 2.93333333],[101.29333333, 2.93333333] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.29333333, 2.93333333],[101.29333333, 2.93333333] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.29333333, 2.93333333],[101.245, 2.76666667] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [101.245, 2.76666667],[102.09666667, 2.08333333] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [102.09666667, 2.08333333],[103.07666667, 1.48166667] ] },
-      "properties": {
-          "title": "UNI PERFECT",
-          "stroke": "#008000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [103.07666667, 1.48166667],[104.13833333, 1.26666667] ] },
+          "coordinates": [ [100.89333333, 13.065],[104.13833333, 1.26666667] ] },
       "properties": {
           "title": "UNI PERFECT",
           "stroke": "#008000",

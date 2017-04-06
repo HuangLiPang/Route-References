@@ -4,18 +4,54 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [273.5, 9.2] },
+          "coordinates": [285.6, 21.5] },
       "properties": {
           "title": "EVER LIFTING",
-          "description": "2017-03-30 00:00:00, 9°11′60″N, 86°30′0″W",
-          "course": 117,
-          "speed": 20.8,
-          "nextport": "PAPAN",
-          "eta": "20170331",
+          "description": "2017-04-04 00:00:00, 21°30′0″N, 74°24′0″W",
+          "course": 339,
+          "speed": 16.4,
+          "nextport": "USSVN",
+          "eta": "20170406",
           "url": "url",
           "marker-symbol": "l",
           "marker-color": "#ff0000",
           "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [285.6, 21.5] },
+      "properties": {
+          "title": "2017-04-04 00:00:00",
+          "description": "21°30′0″N, 74°24′0″W",
+          "course": 339,
+          "speed": 16.4,
+          "marker-size": "small",
+          "marker-color": "#ff0000" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [283.5, 15.5] },
+      "properties": {
+          "title": "2017-04-03 00:00:00",
+          "description": "15°30′0″N, 76°30′0″W",
+          "course": 28,
+          "speed": 16.6,
+          "marker-size": "small",
+          "marker-color": "#ff0000" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [280.1, 7.2] },
+      "properties": {
+          "title": "2017-03-31 00:00:00",
+          "description": "7°12′0″N, 79°54′0″W",
+          "course": 44,
+          "speed": 17.2,
+          "marker-size": "small",
+          "marker-color": "#ff0000" } },
 
     { "type": "Feature",
       "geometry": {

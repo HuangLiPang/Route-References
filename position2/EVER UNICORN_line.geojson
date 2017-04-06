@@ -3,24 +3,68 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [59.2, 12.7] },
+          "type": "LineString",
+          "coordinates": [ [103.0, 1.5],[103.0, 1.5] ] },
       "properties": {
           "title": "EVER UNICORN",
-          "description": "2017-03-30 00:00:00, 12°41′60″N, 59°12′0″E",
-          "course": 106,
-          "speed": 20.2,
-          "nextport": "MYPTP",
-          "eta": "20170405",
-          "url": "url",
-          "marker-symbol": "u",
-          "marker-color": "#9acd32",
-          "marker-size": "medium"} },
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [59.2, 12.7],[59.2, 12.7] ] },
+          "coordinates": [ [103.0, 1.5],[97.2, 5.6] ] },
+      "properties": {
+          "title": "EVER UNICORN",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [97.2, 5.6],[89.9, 6.1] ] },
+      "properties": {
+          "title": "EVER UNICORN",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [89.9, 6.1],[81.9, 5.8] ] },
+      "properties": {
+          "title": "EVER UNICORN",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [81.9, 5.8],[74.7, 8.2] ] },
+      "properties": {
+          "title": "EVER UNICORN",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [74.7, 8.2],[67.2, 10.6] ] },
+      "properties": {
+          "title": "EVER UNICORN",
+          "stroke": "#9acd32",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [67.2, 10.6],[59.2, 12.7] ] },
       "properties": {
           "title": "EVER UNICORN",
           "stroke": "#9acd32",

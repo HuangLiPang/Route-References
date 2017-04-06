@@ -4,18 +4,66 @@
     { "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [267.0, 11.7] },
+          "coordinates": [279.1, -7.0] },
       "properties": {
           "title": "EVER SUPERB",
-          "description": "2017-03-30 00:00:00, 11°41′60″N, 93°0′0″W",
-          "course": 122,
-          "speed": 23.3,
-          "nextport": "COBVT",
-          "eta": "20170401",
+          "description": "2017-04-04 00:00:00, 7°0′0″S, 80°54′0″W",
+          "course": 148,
+          "speed": 18,
+          "nextport": "PECAL",
+          "eta": "20170405",
           "url": "url",
           "marker-symbol": "s",
           "marker-color": "#4b0082",
           "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [279.1, -7.0] },
+      "properties": {
+          "title": "2017-04-04 00:00:00",
+          "description": "7°0′0″S, 80°54′0″W",
+          "course": 148,
+          "speed": 18,
+          "marker-size": "small",
+          "marker-color": "#4b0082" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [279.1, 0.1] },
+      "properties": {
+          "title": "2017-04-03 00:00:00",
+          "description": "0°6′0″N, 80°54′0″W",
+          "course": 203,
+          "speed": 18.3,
+          "marker-size": "small",
+          "marker-color": "#4b0082" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [281.1, 4.5] },
+      "properties": {
+          "title": "2017-04-01 00:00:00",
+          "description": "4°30′0″N, 78°54′0″W",
+          "course": 115,
+          "speed": 19.1,
+          "marker-size": "small",
+          "marker-color": "#4b0082" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [274.1, 7.5] },
+      "properties": {
+          "title": "2017-03-31 00:00:00",
+          "description": "7°30′0″N, 85°54′0″W",
+          "course": 115,
+          "speed": 19.8,
+          "marker-size": "small",
+          "marker-color": "#4b0082" } },
 
     { "type": "Feature",
       "geometry": {

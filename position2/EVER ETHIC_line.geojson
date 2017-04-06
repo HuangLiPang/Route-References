@@ -3,24 +3,358 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [194.40333333, 54.39] },
+          "type": "LineString",
+          "coordinates": [ [144.73333333, 41.85333333],[144.73333333, 41.85333333] ] },
       "properties": {
           "title": "EVER ETHIC",
-          "description": "2017-03-30 15:28:00, 54°23′24″N, 165°35′48″W",
-          "course": 272,
-          "speed": 14.2,
-          "nextport": "TWTPE",
-          "eta": "20170410",
-          "url": "url",
-          "marker-symbol": "e",
-          "marker-color": "#0000ff",
-          "marker-size": "medium"} },
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [194.40333333, 54.39],[194.40333333, 54.39] ] },
+          "coordinates": [ [144.73333333, 41.85333333],[145.97666667, 42.03] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [145.97666667, 42.03],[147.14666667, 42.27333333] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [147.14666667, 42.27333333],[148.035, 42.91333333] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [148.035, 42.91333333],[148.97666667, 43.55333333] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [148.97666667, 43.55333333],[149.94833333, 44.2] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [149.94833333, 44.2],[150.92833333, 44.83] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [150.92833333, 44.83],[151.96833333, 45.47666667] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [151.96833333, 45.47666667],[153.045, 46.115] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [153.045, 46.115],[154.09833333, 46.72166667] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [154.09833333, 46.72166667],[155.17333333, 47.32] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [155.17333333, 47.32],[156.36666667, 47.95] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [156.36666667, 47.95],[157.69, 48.62] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [157.69, 48.62],[158.88833333, 49.19333333] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [158.88833333, 49.19333333],[160.12166667, 49.76] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [160.12166667, 49.76],[161.33666667, 50.28] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [161.33666667, 50.28],[162.69166667, 50.83666667] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [162.69166667, 50.83666667],[163.63, 51.18] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [163.63, 51.18],[165.21333333, 51.76] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [165.21333333, 51.76],[166.61666667, 52.24] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [166.61666667, 52.24],[168.02166667, 52.70166667] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [168.02166667, 52.70166667],[169.50833333, 53.10166667] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [169.50833333, 53.10166667],[171.00333333, 53.485] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [171.00333333, 53.485],[172.54333333, 53.84] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [172.54333333, 53.84],[174.12333333, 54.01333333] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [174.12333333, 54.01333333],[175.72333333, 54.17166667] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [175.72333333, 54.17166667],[177.31666667, 54.30166667] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [177.31666667, 54.30166667],[178.91833333, 54.415] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [178.91833333, 54.415],[180.52333333, 54.50333333] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [180.52333333, 54.50333333],[182.125, 54.57333333] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [182.125, 54.57333333],[183.71, 54.61833333] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [183.71, 54.61833333],[185.31333333, 54.64333333] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [185.31333333, 54.64333333],[186.845, 54.65166667] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [186.845, 54.65166667],[188.35333333, 54.63666667] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [188.35333333, 54.63666667],[189.88666667, 54.60333333] ] },
+      "properties": {
+          "title": "EVER ETHIC",
+          "stroke": "#0000ff",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [189.88666667, 54.60333333],[194.40333333, 54.39] ] },
       "properties": {
           "title": "EVER ETHIC",
           "stroke": "#0000ff",

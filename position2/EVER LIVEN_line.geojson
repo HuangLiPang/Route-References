@@ -3,19 +3,313 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [285.85, 40.68] },
+          "type": "LineString",
+          "coordinates": [ [282.73666667, 14.235],[282.73666667, 14.235] ] },
       "properties": {
           "title": "EVER LIVEN",
-          "description": "2017-03-30 19:28:00, 40°40′48″N, 74°9′0″W",
-          "course": 297,
-          "speed": 0,
-          "nextport": "PACCT",
-          "eta": "20170406",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [282.73666667, 14.235],[283.23333333, 15.11833333] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [283.23333333, 15.11833333],[284.14, 16.68833333] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [284.14, 16.68833333],[284.63, 17.52833333] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [284.63, 17.52833333],[285.08666667, 18.33] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [285.08666667, 18.33],[285.5, 19.13666667] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [285.5, 19.13666667],[285.92666667000003, 19.98666667] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [285.92666667000003, 19.98666667],[286.15166667, 20.88333333] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [286.15166667, 20.88333333],[286.475, 21.84] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [286.475, 21.84],[286.755, 22.84166667] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [286.755, 22.84166667],[287.09833333, 24.955] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [287.09833333, 24.955],[287.27, 25.99333333] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [287.27, 25.99333333],[287.43666667, 26.985] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [287.43666667, 26.985],[287.6, 27.95666667] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [287.6, 27.95666667],[287.77333333, 28.96833333] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [287.77333333, 28.96833333],[287.94, 29.94666667] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [287.94, 29.94666667],[288.115, 30.93666667] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [288.115, 30.93666667],[288.28166667, 31.91333333] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [288.28166667, 31.91333333],[288.46, 32.87666667] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [288.46, 32.87666667],[288.81, 34.85166667] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [288.81, 34.85166667],[288.96666667, 35.74166667] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [288.96666667, 35.74166667],[289.32, 37.52333333] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [289.32, 37.52333333],[288.89833333, 38.25833333] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [288.89833333, 38.25833333],[288.14, 38.865] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [288.14, 38.865],[287.39666667, 39.45666667] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [287.39666667, 39.45666667],[286.68166667, 40.03166667] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [286.68166667, 40.03166667],[286.07666667, 40.49] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [286.07666667, 40.49],[285.85, 40.68] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [285.85, 40.68],[285.85, 40.68] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [285.85, 40.68],[285.85, 40.68] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [285.85, 40.68],[285.85, 40.68] ] },
+      "properties": {
+          "title": "EVER LIVEN",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {

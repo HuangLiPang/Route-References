@@ -3,19 +3,213 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [122.71333333, 29.82] },
+          "type": "LineString",
+          "coordinates": [ [133.00166667, 37.03166667],[133.00166667, 37.03166667] ] },
       "properties": {
           "title": "EVER LEGACY",
-          "description": "2017-03-30 19:28:00, 29°49′12″N, 122°42′48″E",
-          "course": 88,
-          "speed": 0,
-          "nextport": "CNNBO",
-          "eta": "20170331",
-          "url": "url",
-          "marker-symbol": "l",
-          "marker-color": "#ff0000",
-          "marker-size": "medium"} },
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [133.00166667, 37.03166667],[130.26666667, 35.33833333] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [130.26666667, 35.33833333],[128.91333333, 34.46333333] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [128.91333333, 34.46333333],[127.605, 33.55833333] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [127.605, 33.55833333],[126.31166667, 32.67166667] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [126.31166667, 32.67166667],[125.02833333, 31.78] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [125.02833333, 31.78],[123.835, 30.94] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [123.835, 30.94],[122.38333333, 30.53] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.38333333, 30.53],[122.15166667, 30.57166667] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.15166667, 30.57166667],[122.58333333, 30.45666667] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.58333333, 30.45666667],[122.57833333, 30.46] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.57833333, 30.46],[122.78666667, 29.99333333] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.78666667, 29.99333333],[122.12833333, 29.92] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.12833333, 29.92],[122.03333333, 29.89333333] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.03333333, 29.89333333],[122.03333333, 29.89333333] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.03333333, 29.89333333],[122.03333333, 29.89166667] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.03333333, 29.89166667],[122.25833333, 29.79333333] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.25833333, 29.79333333],[122.71333333, 29.82] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.71333333, 29.82],[122.71333333, 29.81833333] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.71333333, 29.81833333],[122.71166667, 29.82] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.71166667, 29.82],[122.71333333, 29.82] ] },
+      "properties": {
+          "title": "EVER LEGACY",
+          "stroke": "#ff0000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
@@ -140,217 +334,7 @@
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [122.0, 35.5],[137.68166667, 39.84666667] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [137.68166667, 39.84666667],[138.77833333, 40.48833333] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [138.77833333, 40.48833333],[140.95, 41.63166667] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [140.95, 41.63166667],[142.195, 41.65166667] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [142.195, 41.65166667],[143.86333333, 41.66] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [143.86333333, 41.66],[145.38, 41.79333333] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [145.38, 41.79333333],[146.7, 42.24333333] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [146.7, 42.24333333],[147.885, 42.83666667] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [147.885, 42.83666667],[148.81333333, 43.63166667] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [148.81333333, 43.63166667],[149.80333333, 44.45333333] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [149.80333333, 44.45333333],[150.83, 45.26166667] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [150.83, 45.26166667],[152.99666667, 46.87] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [152.99666667, 46.87],[154.34833333, 47.575] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [154.34833333, 47.575],[157.52833333, 48.215] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [157.52833333, 48.215],[160.81333333, 48.76666667] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [160.81333333, 48.76666667],[162.36333333, 48.98833333] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [162.36333333, 48.98833333],[163.89, 49.18666667] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [163.89, 49.18666667],[165.425, 49.365] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [165.425, 49.365],[170.06333333, 49.77666667] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [170.06333333, 49.77666667],[173.145, 49.94333333] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [173.145, 49.94333333],[174.71166667, 49.99833333] ] },
-      "properties": {
-          "title": "EVER LEGACY",
-          "stroke": "#ff0000",
-          "stroke-opacity": 1.0,
-          "stroke-width": 2 } },
-
-    { "type": "Feature",
-      "geometry": {
-          "type": "LineString",
-          "coordinates": [ [174.71166667, 49.99833333],[176.285, 50.03166667] ] },
+          "coordinates": [ [122.0, 35.5],[176.285, 50.03166667] ] },
       "properties": {
           "title": "EVER LEGACY",
           "stroke": "#ff0000",

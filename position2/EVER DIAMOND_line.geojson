@@ -3,24 +3,108 @@
 
     { "type": "Feature",
       "geometry": {
-          "type": "Point",
-          "coordinates": [89.24333333, 5.98] },
+          "type": "LineString",
+          "coordinates": [ [101.28833333, 2.75],[101.28833333, 2.75] ] },
       "properties": {
           "title": "EVER DIAMOND",
-          "description": "2017-03-30 11:29:00, 5°58′48″N, 89°14′36″E",
-          "course": 85,
-          "speed": 13.2,
-          "nextport": "MYPKL",
-          "eta": "20170403",
-          "url": "url",
-          "marker-symbol": "d",
-          "marker-color": "#a52a2a",
-          "marker-size": "medium"} },
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
 
     { "type": "Feature",
       "geometry": {
           "type": "LineString",
-          "coordinates": [ [89.24333333, 5.98],[89.24333333, 5.98] ] },
+          "coordinates": [ [101.28833333, 2.75],[101.29, 2.75] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.29, 2.75],[101.29333333, 2.74833333] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.29333333, 2.74833333],[101.28833333, 2.75] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.28833333, 2.75],[101.29333333, 2.75] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.29333333, 2.75],[101.29333333, 2.75] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.29333333, 2.75],[98.28333333, 5.41] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [98.28333333, 5.41],[95.565, 6.09] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [95.565, 6.09],[94.61166667, 6.15666667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [94.61166667, 6.15666667],[92.85333333, 6.09166667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [92.85333333, 6.09166667],[89.24333333, 5.98] ] },
       "properties": {
           "title": "EVER DIAMOND",
           "stroke": "#a52a2a",
