@@ -89,6 +89,6 @@ function change_tile() {
         tile_switch_empty = false;
     };
 }
-var fleets_layer = new L.mapbox.featureLayer(),
+var fleets_layer = new L.mapbox.featureLayer()/*,
 	trackLayer = new L.mapbox.featureLayer().loadURL("track/fleet.geojson"),
-    tracklineLayer = new L.mapbox.featureLayer().loadURL("track/fleet_line.geojson");
+    tracklineLayer = new L.mapbox.featureLayer().loadURL("track/fleet_line.geojson")*/;

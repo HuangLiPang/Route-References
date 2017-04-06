@@ -63,9 +63,9 @@
 
     h || c("Missing DIV with windyty id"),
         h.innerHTML = '<div id="map_container" style="width: 100%; height: 100%;"></div><div id="contrib">OSM & contributors</div><div id="legend"></div><canvas id="jpg_decoder" style="display: none;"></canvas><div id="globe_container"></div>',
-        b("WindytyV23.css"),
+        b("css/WindytyV23.css"),
         a("https://www.windytv.com/gfs/minifest.js", function () {
-            a("api.js?key=" + windytyInit.key, d)
+            a("js/api.js?key=" + windytyInit.key, d)
         }),
         setTimeout(function () {
             "function" == typeof ga ? e() : a("https://www.google-analytics.com/analytics.js", e)
