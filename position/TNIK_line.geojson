@@ -1,0 +1,840 @@
+{ "type" : "FeatureCollection",
+    "features" : [
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [104.60166667, 1.545] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "description": "2017-03-30 19:28:00, 1°32′42″N, 104°36′6″E",
+          "course": 227,
+          "speed": 12.2,
+          "nextport": "MYPTP",
+          "eta": "20170331",
+          "url": "url",
+          "marker-symbol": "t",
+          "marker-color": "#00ff00",
+          "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [104.60166667, 1.545],[104.60166667, 1.545] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [104.60166667, 1.545],[105.14833333, 2.16166667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [105.14833333, 2.16166667],[105.57666667, 3.23333333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [105.57666667, 3.23333333],[106.62166667, 3.96166667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [106.62166667, 3.96166667],[107.51166667, 4.87] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [107.51166667, 4.87],[109.68666667, 7.96166667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [109.68666667, 7.96166667],[110.46, 9.00666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [110.46, 9.00666667],[111.06333333, 10.10333333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [111.06333333, 10.10333333],[111.67833333, 11.23] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [111.67833333, 11.23],[112.30333333, 12.33333333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [112.30333333, 12.33333333],[112.74666667, 13.505] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [112.74666667, 13.505],[113.11166667, 14.73] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [113.11166667, 14.73],[113.48833333, 15.99666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [113.48833333, 15.99666667],[113.86166667, 17.24166667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [113.86166667, 17.24166667],[114.165, 18.54] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.165, 18.54],[114.30166667, 19.84] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.30166667, 19.84],[114.47666667, 21.135] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.47666667, 21.135],[114.47333333, 22.41833333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.47333333, 22.41833333],[114.37833333, 22.53] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.37833333, 22.53],[114.32333333, 22.55833333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.32333333, 22.55833333],[114.28666667, 22.56833333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.28666667, 22.56833333],[114.28666667, 22.56833333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.28666667, 22.56833333],[114.28666667, 22.56833333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.28666667, 22.56833333],[114.28666667, 22.56833333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.28666667, 22.56833333],[114.28666667, 22.56833333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.28666667, 22.56833333],[114.89333333, 22.29833333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.89333333, 22.29833333],[116.23333333, 22.43333333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [116.23333333, 22.43333333],[118.74666667, 24.05666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [118.74666667, 24.05666667],[119.99333333, 24.95333333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [119.99333333, 24.95333333],[120.29666667, 25.16166667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.29666667, 25.16166667],[120.4, 25.225] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.4, 25.225],[121.35666667, 25.15166667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [121.35666667, 25.15166667],[121.38333333, 25.16] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [121.38333333, 25.16],[121.38333333, 25.16] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [121.38333333, 25.16],[121.16, 25.46833333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [121.16, 25.46833333],[121.60333333, 26.39666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [121.60333333, 26.39666667],[122.18166667, 27.34666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.18166667, 27.34666667],[122.49833333, 28.39166667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.49833333, 28.39166667],[122.49666667, 28.62666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.49666667, 28.62666667],[122.49666667, 28.735] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.49666667, 28.735],[122.53333333, 29.53333333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.53333333, 29.53333333],[122.045, 29.89] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.045, 29.89],[122.045, 29.89] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.045, 29.89],[122.045, 29.89] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.045, 29.89],[122.045, 29.89] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.045, 29.89],[122.045, 29.89] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.045, 29.89],[122.045, 29.89] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.045, 29.89],[122.045, 29.89] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.045, 29.89],[122.045, 29.89] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.045, 29.89],[122.045, 29.89] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.045, 29.89],[122.045, 29.89] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.045, 29.89],[122.06333333, 29.895] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.06333333, 29.895],[122.76166667, 29.79666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.76166667, 29.79666667],[122.34166667, 30.53833333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.34166667, 30.53833333],[122.04833333, 30.63] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.04833333, 30.63],[122.04833333, 30.63] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.04833333, 30.63],[122.04833333, 30.63] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.04833333, 30.63],[122.04833333, 30.63] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.04833333, 30.63],[122.04833333, 30.63] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.04833333, 30.63],[122.04833333, 30.63] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.04833333, 30.63],[122.04833333, 30.63] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.04833333, 30.63],[122.04833333, 30.63] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.04833333, 30.63],[122.29333333, 30.55333333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.29333333, 30.55333333],[122.9, 30.58333333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.9, 30.58333333],[123.02, 30.57833333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [123.02, 30.57833333],[123.475, 30.41666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [123.475, 30.41666667],[120.835, 25.34166667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.835, 25.34166667],[119.99833333, 24.2] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [119.99833333, 24.2],[119.92833333, 22.74333333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [119.92833333, 22.74333333],[120.315, 22.55666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.315, 22.55666667],[120.315, 22.55666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.315, 22.55666667],[120.315, 22.55666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.315, 22.55666667],[120.315, 22.55666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.315, 22.55666667],[120.315, 22.55666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.315, 22.55666667],[120.315, 22.55666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.315, 22.55666667],[120.315, 22.55666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.315, 22.55666667],[120.315, 22.55666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.315, 22.55666667],[120.315, 22.55666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.315, 22.55666667],[120.315, 22.55666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.315, 22.55666667],[120.315, 22.55666667] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.315, 22.55666667],[120.31666667, 22.555] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.31666667, 22.555],[119.62333333, 21.76333333] ] },
+      "properties": {
+          "title": "THALASSA NIKI",
+          "stroke": "#00ff00",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } }
+    ]
+}

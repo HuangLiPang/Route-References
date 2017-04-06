@@ -1,0 +1,56 @@
+{ "type" : "FeatureCollection",
+    "features" : [
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [109.5, 14.9] },
+      "properties": {
+          "title": "UNI AHEAD",
+          "description": "2017-03-29 00:00:00, 14°54′0″N, 109°30′0″E",
+          "course": 347,
+          "speed": 14.5,
+          "nextport": "VNDNG",
+          "eta": "20170329",
+          "url": "url",
+          "marker-symbol": "a",
+          "marker-color": "#ffa500",
+          "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [109.5, 14.9] },
+      "properties": {
+          "title": "2017-03-29 00:00:00",
+          "description": "14°54′0″N, 109°30′0″E",
+          "course": 347,
+          "speed": 14.5,
+          "marker-size": "small",
+          "marker-color": "#ffa500" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [109.8, 9.3] },
+      "properties": {
+          "title": "2017-03-28 00:00:00",
+          "description": "9°18′0″N, 109°47′60″E",
+          "course": 3,
+          "speed": 14.6,
+          "marker-size": "small",
+          "marker-color": "#ffa500" } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [106.3, 4.7] },
+      "properties": {
+          "title": "2017-03-27 00:00:00",
+          "description": "4°42′0″N, 106°17′60″E",
+          "course": 44,
+          "speed": 15.7,
+          "marker-size": "small",
+          "marker-color": "#ffa500" } }
+    ]
+}

@@ -1,0 +1,90 @@
+{ "type" : "FeatureCollection",
+    "features" : [
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [14.9, 42.9] },
+      "properties": {
+          "title": "UNI PHOENIX",
+          "description": "2017-03-30 00:00:00, 42°53′60″N, 14°54′0″E",
+          "course": 131,
+          "speed": 14.8,
+          "nextport": "GRPIR",
+          "eta": "20170401",
+          "url": "url",
+          "marker-symbol": "p",
+          "marker-color": "#008000",
+          "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [14.9, 42.9],[14.9, 42.9] ] },
+      "properties": {
+          "title": "UNI PHOENIX",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [14.9, 42.9],[18.1, 40.9] ] },
+      "properties": {
+          "title": "UNI PHOENIX",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [18.1, 40.9],[23.7, 37.7] ] },
+      "properties": {
+          "title": "UNI PHOENIX",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [23.7, 37.7],[29.5, 34.9] ] },
+      "properties": {
+          "title": "UNI PHOENIX",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [29.5, 34.9],[27.7, 33.9] ] },
+      "properties": {
+          "title": "UNI PHOENIX",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [27.7, 33.9],[19.6, 39.0] ] },
+      "properties": {
+          "title": "UNI PHOENIX",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [19.6, 39.0],[14.8, 43.3] ] },
+      "properties": {
+          "title": "UNI PHOENIX",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } }
+    ]
+}

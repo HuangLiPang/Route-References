@@ -1,0 +1,560 @@
+{ "type" : "FeatureCollection",
+    "features" : [
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [89.24333333, 5.98] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "description": "2017-03-30 11:29:00, 5°58′48″N, 89°14′36″E",
+          "course": 85,
+          "speed": 13.2,
+          "nextport": "MYPKL",
+          "eta": "20170403",
+          "url": "url",
+          "marker-symbol": "d",
+          "marker-color": "#a52a2a",
+          "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [89.24333333, 5.98],[89.24333333, 5.98] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [89.24333333, 5.98],[84.70666667, 5.84166667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [84.70666667, 5.84166667],[83.78833333, 5.81666667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [83.78833333, 5.81666667],[80.26, 5.78833333] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [80.26, 5.78833333],[79.75666667, 6.52] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [79.75666667, 6.52],[79.85, 6.94833333] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [79.85, 6.94833333],[79.85, 6.94833333] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [79.85, 6.94833333],[79.85, 6.94833333] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [79.85, 6.94833333],[79.72666667, 7.0] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [79.72666667, 7.0],[76.11666667, 8.635] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [76.11666667, 8.635],[75.635, 9.44666667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [75.635, 9.44666667],[75.16833333, 10.27166667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [75.16833333, 10.27166667],[74.26166667, 11.92666667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [74.26166667, 11.92666667],[73.74833333, 12.72333333] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [73.74833333, 12.72333333],[71.96, 14.895] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [71.96, 14.895],[71.31333333, 15.695] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [71.31333333, 15.695],[70.44333333, 17.36] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [70.44333333, 17.36],[70.01833333, 18.16833333] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [70.01833333, 18.16833333],[69.57666667, 18.98666667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [69.57666667, 18.98666667],[69.1, 19.9] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [69.1, 19.9],[62.8, 24.7] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [62.8, 24.7],[57.1, 25.9] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [57.1, 25.9],[58.72666667, 24.40666667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [58.72666667, 24.40666667],[61.98, 21.61166667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [61.98, 21.61166667],[62.77833333, 20.91666667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [62.77833333, 20.91666667],[63.51666667, 20.27] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [63.51666667, 20.27],[67.33, 16.89666667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [67.33, 16.89666667],[68.145, 16.16333333] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [68.145, 16.16333333],[70.55, 13.99333333] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [70.55, 13.99333333],[71.31, 13.29666667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [71.31, 13.29666667],[71.66333333, 12.98] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [71.66333333, 12.98],[72.09166667, 12.58833333] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [72.09166667, 12.58833333],[72.825, 11.91333333] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [72.825, 11.91333333],[75.01833333, 9.78833333] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [75.01833333, 9.78833333],[76.44, 8.325] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [76.44, 8.325],[77.14666667, 7.64833333] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [77.14666667, 7.64833333],[78.22166667, 7.39] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [78.22166667, 7.39],[79.21166667, 7.15] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [79.21166667, 7.15],[79.76, 6.47833333] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [79.76, 6.47833333],[80.58666667, 5.81666667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [80.58666667, 5.81666667],[81.74666667, 5.835] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [81.74666667, 5.835],[82.9, 5.87666667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [82.9, 5.87666667],[86.33666667, 5.95666667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [86.33666667, 5.95666667],[87.495, 5.98666667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [87.495, 5.98666667],[88.635, 6.02] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [88.635, 6.02],[93.16, 6.09333333] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [93.16, 6.09333333],[94.39, 6.15333333] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [94.39, 6.15333333],[96.82, 5.93] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [96.82, 5.93],[97.935, 5.56166667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [97.935, 5.56166667],[98.81, 4.87166667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [98.81, 4.87166667],[101.28166667, 2.91666667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.28166667, 2.91666667],[101.28166667, 2.91666667] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [101.28166667, 2.91666667],[104.7, 1.9] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [104.7, 1.9],[103.3, 7.6] ] },
+      "properties": {
+          "title": "EVER DIAMOND",
+          "stroke": "#a52a2a",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } }
+    ]
+}

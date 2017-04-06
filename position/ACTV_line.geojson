@@ -1,0 +1,100 @@
+{ "type" : "FeatureCollection",
+    "features" : [
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [122.05833333, 29.88833333] },
+      "properties": {
+          "title": "UNI ACTIVE",
+          "description": "2017-03-30 19:29:00, 29°53′18″N, 122°3′30″E",
+          "course": 41,
+          "speed": 0,
+          "nextport": "TWKSG",
+          "eta": "20170401",
+          "url": "url",
+          "marker-symbol": "a",
+          "marker-color": "#ffa500",
+          "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.05833333, 29.88833333],[122.05833333, 29.88833333] ] },
+      "properties": {
+          "title": "UNI ACTIVE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.05833333, 29.88833333],[122.12833333, 29.92166667] ] },
+      "properties": {
+          "title": "UNI ACTIVE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.12833333, 29.92166667],[122.59333333, 29.78] ] },
+      "properties": {
+          "title": "UNI ACTIVE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.59333333, 29.78],[120.865, 25.22166667] ] },
+      "properties": {
+          "title": "UNI ACTIVE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [120.865, 25.22166667],[121.14, 26.21666667] ] },
+      "properties": {
+          "title": "UNI ACTIVE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [121.14, 26.21666667],[121.64, 27.14166667] ] },
+      "properties": {
+          "title": "UNI ACTIVE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [121.64, 27.14166667],[122.09166667, 28.06833333] ] },
+      "properties": {
+          "title": "UNI ACTIVE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [122.09166667, 28.06833333],[122.48833333, 29.04] ] },
+      "properties": {
+          "title": "UNI ACTIVE",
+          "stroke": "#ffa500",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } }
+    ]
+}

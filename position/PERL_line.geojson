@@ -1,0 +1,50 @@
+{ "type" : "FeatureCollection",
+    "features" : [
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [114.9, 6.7] },
+      "properties": {
+          "title": "EVER PEARL",
+          "description": "2017-03-25 00:00:00, 6°42′0″N, 114°54′0″E",
+          "course": 221,
+          "speed": 16.7,
+          "nextport": "MYKFF",
+          "eta": "20170326",
+          "url": "url",
+          "marker-symbol": "p",
+          "marker-color": "#008000",
+          "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.9, 6.7],[114.9, 6.7] ] },
+      "properties": {
+          "title": "EVER PEARL",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [114.9, 6.7],[117.6, 17.6] ] },
+      "properties": {
+          "title": "EVER PEARL",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [117.6, 17.6],[114.13, 22.32833333] ] },
+      "properties": {
+          "title": "EVER PEARL",
+          "stroke": "#008000",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } }
+    ]
+}

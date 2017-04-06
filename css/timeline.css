@@ -1,0 +1,165 @@
+#timeline {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    height: 80px;
+    width: 35%;
+    min-width: 450px;
+    z-index: 20;
+    opacity: 0.3;
+    transition: opacity 0.7s 5s;
+}
+
+#timeline:hover {
+    opacity: 0.6;
+    transition: 0.2s 0s;
+}
+
+#track {
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    bottom: 10px;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 3px;
+    background-color: white;
+    overflow: hidden;
+    outline: none;
+    background: none;
+    height: 10px;
+    position: absolute;
+    opacity: 0.6;
+    z-index: 20;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 10px;
+    background: white;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 32px;
+    width: 8px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+    z-index: 20;
+    margin-top: 0px;
+}
+
+#calendar {
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.8;
+    border-color: white;
+    bottom: 25px;
+    width: 100%;
+    height: 30px;
+    z-index: 20;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+#calendarpointer-pointer {
+    position: absolute;
+    width: 0.5%;
+    height: inherit;
+    top: 0px;
+    background-color: red;
+    border-radius: 3px;
+}
+
+#calendar-table {
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+
+#calendar-table-tr {
+    padding: 0px;
+    border: 0px;
+    white-space: nowrap;
+}
+
+#calendar-table-0,
+#calendar-table-1,
+#calendar-table-2,
+#calendar-table-3,
+#calendar-table-4,
+#calendar-table-5,
+#calendar-table-6 {
+    height: 100%;
+    width: 14.2857%;
+    cursor: pointer;
+    z-index: 50;
+}
+
+#popup {
+    font-family: sans-serif;
+    position: relative;
+    width: 100%;
+    left: 0%;
+    cursor: default;
+    z-index: 50;
+    height: 15px;
+    top: 5px;
+}
+
+#timePopup {
+
+    font-size: 14px;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    border-radius: 6px;
+    z-index: 50;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (max-width: 500px) {
+    #timeline {
+        width: 90%;
+        min-width: 0px;
+        left: 0px;
+        opacity: 0.6;
+        overflow: hidden;
+        transition: 0s 0s;
+    }
+    #calendar {
+        font-size: 12px;
+    }
+    #calendar,
+    #calendarpointer,
+    calendarpointer-pointer {
+        height: 24px;
+    }
+    #popup {
+        top: 13px;
+    }
+    #timePopup {
+        font-size: 12px;
+    }
+    input[type='range']::-webkit-slider-runnable-track,
+    input[type='range'],
+    #track {
+        height: 12px;
+    }
+    #track {
+        bottom: 8px;
+    }
+}

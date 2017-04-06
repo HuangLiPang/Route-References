@@ -1,0 +1,140 @@
+{ "type" : "FeatureCollection",
+    "features" : [
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [111.3, 10.3] },
+      "properties": {
+          "title": "ITAL MITTINA",
+          "description": "2017-03-30 00:00:00, 10°18′0″N, 111°17′60″E",
+          "course": 243,
+          "speed": 17,
+          "nextport": "THLCH",
+          "eta": "20170401",
+          "url": "url",
+          "marker-symbol": "m",
+          "marker-color": "#808080",
+          "marker-size": "medium"} },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [111.3, 10.3],[111.3, 10.3] ] },
+      "properties": {
+          "title": "ITAL MITTINA",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [111.3, 10.3],[117.8, 13.2] ] },
+      "properties": {
+          "title": "ITAL MITTINA",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [117.8, 13.2],[119.6, 17.8] ] },
+      "properties": {
+          "title": "ITAL MITTINA",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [119.6, 17.8],[103.8, 1.1] ] },
+      "properties": {
+          "title": "ITAL MITTINA",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [103.8, 1.1],[104.4, 3.6] ] },
+      "properties": {
+          "title": "ITAL MITTINA",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [104.4, 3.6],[102.3, 10.3] ] },
+      "properties": {
+          "title": "ITAL MITTINA",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [102.3, 10.3],[100.8, 12.5] ] },
+      "properties": {
+          "title": "ITAL MITTINA",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [100.8, 12.5],[105.5, 8.1] ] },
+      "properties": {
+          "title": "ITAL MITTINA",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [105.5, 8.1],[111.5, 10.4] ] },
+      "properties": {
+          "title": "ITAL MITTINA",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [111.5, 10.4],[117.8, 13.2] ] },
+      "properties": {
+          "title": "ITAL MITTINA",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [117.8, 13.2],[119.7, 17.5] ] },
+      "properties": {
+          "title": "ITAL MITTINA",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } },
+
+    { "type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [ [119.7, 17.5],[119.9, 22.5] ] },
+      "properties": {
+          "title": "ITAL MITTINA",
+          "stroke": "#808080",
+          "stroke-opacity": 1.0,
+          "stroke-width": 2 } }
+    ]
+}

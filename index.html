@@ -7,32 +7,31 @@
 	<link rel="shortcut icon" href="route.ico">
 
 	<!-- Include meta tag to ensure proper rendering and touch zooming -->
-	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
 	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-	<script type="text/javascript" src="leaflet-arc.min.js"></script>
-	<script type="text/javascript" src="route.js"></script>
+	<script type="text/javascript" src="js/leaflet-arc.min.js"></script>
 	<script type="text/javascript" src="easybutton/easybutton.js"></script>
-	<script type="text/javascript" src="ShowWindyty.js"></script>
-	<script type="text/javascript" src="ECA/ECAs.js"></script>
-	<script type="text/javascript" src="Defiant.js"></script>
-	<script type="text/javascript" src="https://leaflet.github.io/Leaflet.label/leaflet.label.js"></script>
-	
-	<link type="text/css" rel="stylesheet" href="ShowWindyty.css" />
-	<link type="text/css" rel="stylesheet" href="timeline.css" />
+	<script type="text/javascript" src="js/ShowWindyty.js"></script>
+	<script type="text/javascript" src="js/Defiant.js"></script>
+	<script type="text/javascript" src="js/tracksymbol.js"></script>
+	<script type="text/javascript" src="js/leaflet-label.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="css/timeline.css" />
 	<link type="text/css" rel="stylesheet" href="easybutton/easybutton.css" />
-	<link type="text/css" rel="stylesheet" href="sidebar.css" />
-	<link type="text/css" rel="stylesheet" href="searchbar.css" />
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="https://leaflet.github.io/Leaflet.label/leaflet.label.css" rel="stylesheet">
-	
+	<link type="text/css" rel="stylesheet" href="css/sidebar.css" />
+	<link type="text/css" rel="stylesheet" href="css/searchbar.css" />
+	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="css/leaflet-label.css">
+
 	<link rel='stylesheet' href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' />
+	<link type="text/css" rel="stylesheet" href="css/ShowWindyty.css" />
 </head>
 
 <body>
-	<div data-role='page' id="container">
+	<div data-role='page' id="container" class="container">
 		<div class="windytylogo">
 			<a href="https://www.windytv.com" title="Windytv" target="wndt">
 				<img class="ww" src="https://www.windytv.com/img/ikona.svg">
@@ -42,7 +41,7 @@
 		<div id="menu" class="side_menu">
 			<a class="closebtn" onclick="closeNav()" href="javascript:void(0)"><span class="closebtn_pro">&times;</span></a>
 			<div class='menu_nav'>
-				<select id="line" onchange="changeline()" class="menu_line"></select>
+				<select id="line" class="menu_line"></select>
 				<select id="route" class="menu_route" disabled>
 				</select>
 				<a id="GPX" class="menu_GPX disable" href="javascript:void(0)">Download GPX</a>
@@ -53,8 +52,8 @@
 						<img class='mobileicon' src="Icons/wind-sign.png"> Wind</a>
 					<a id='W_temp' class="menu_temp" href="javascript:void(0)">
 						<img class='mobileicon' src="Icons/temp-sign.png"> Temperature</a>
-					<a id='W_rain' class="menu_rain" href="javascript:void(0)">
-						<img class='mobileicon' src="Icons/rain-sign.png"> Rain</a>
+					<a id='W_clouds' class="menu_clouds" href="javascript:void(0)">
+						<img class='mobileicon' src="Icons/clouds-sign.png"> clouds</a>
 					<a id='W_press' class="menu_press" href="javascript:void(0)">
 						<img class='mobileicon' src="Icons/pressure-sign.png"> Pressure</a>
 					<a id='W_waves' class="menu_waves" href="javascript:void(0)">
@@ -65,8 +64,6 @@
 				<div class='W_functions'>
 					<a id='W_measuring' class="menu_measuring" href="javascript:void(0)">
 						<img class='mobileicon' src="Icons/measuring-sign.png"> Measuring</a>
-					<a id='W_change_tile' class="menu_change_tile" href="javascript:void(0)">
-						<img class='mobileicon' src="Icons/maptile-sign.png"> Maps</a>
 					<a id='W_animation' class="menu_animation" href="javascript:void(0)">
 						<img class='mobileicon' src="Icons/animation_toggle-sign.png"> Animation</a>
 					<a id='W_gradient' class="menu_gradient" href="javascript:void(0)">
@@ -97,7 +94,6 @@
 				</div>
 			</div>
 		</div>
-
 		<div id='open' onclick="openNav()" onmouseenter="bar_move(this)" onmouseleave="bar_move(this)" class='open'>
 			<div class='bar1'></div>
 			<div class='bar2'></div>
@@ -106,60 +102,57 @@
 
 		<div id='search_bar'>
 			<div class="box">
-			  <div class="container-1">
-				  <span class="icon"><i class="fa fa-search"></i></span>
-				  <input type="search" id="from_harbor" placeholder="From" />
-			  </div>
+				<div class="container-1">
+					<span class="icon"><i class="fa fa-search"></i></span>
+					<input type="search" id="from_harbor" placeholder="From" />
+				</div>
 			</div>
 			<div class="box">
-			  <div class="container-1">
-				  <span class="icon"><i class="fa fa-search"></i></span>
-				  <input type="search" id="to_harbor" placeholder="To" />
-			  </div>
+				<div class="container-1">
+					<span class="icon"><i class="fa fa-search"></i></span>
+					<input type="search" id="to_harbor" placeholder="To" />
+				</div>
 			</div>
 			<ol type='1' id='search_result'></ol>
 		</div>
-		
+
 		<div data-role='main' id="windyty"></div>
-		<div id="timeline">
-			<div id='calendar'>
-				<table id='calendar-table'>
-					<tr id='calendar-table-tr'>
-						<td id='calendar-table-0'></td>
-						<td id='calendar-table-1'></td>
-						<td id='calendar-table-2'></td>
-						<td id='calendar-table-3'></td>
-						<td id='calendar-table-4'></td>
-						<td id='calendar-table-5'></td>
-						<td id='calendar-table-6'></td>
-					</tr>
-				</table>
-				<div id='calendarpointer-pointer'></div>
-			</div>
-			<div data-role='rangeslider' id='track'>
-				<input type="range" id="slider" value="0">
-			</div>
-			<div id="popup">
-				<pre id="timePopup"></pre>
+		<div class="row">
+			<div id="timeline" class="col-xs-10 col-sm-5 timeline">
+				<div id='calendar' class="calendar">
+					<table id='calendar-table'>
+						<tr id='calendar-table-tr'>
+							<td id='calendar-table-0'></td>
+							<td id='calendar-table-1'></td>
+							<td id='calendar-table-2'></td>
+							<td id='calendar-table-3'></td>
+							<td id='calendar-table-4'></td>
+							<td id='calendar-table-5'></td>
+							<td id='calendar-table-6'></td>
+						</tr>
+					</table>
+					<div id='calendarpointer-pointer' class="pointer"></div>
+				</div>
+				<div data-role='rangeslider' id='track'>
+					<input type="range" id="slider" value="0">
+				</div>
+				<div id="popup" class="timeDisplay">
+					<pre id="timePopup"></pre>
+				</div>
 			</div>
 		</div>
-
-		<div id='mouseposition' class='mouseposition'>
+		<div id='mouseposition' class='mouseposition hidden-xs'>
 			<p class='mousemove'>Cursor: <code id='cursor'></code></p>
 		</div>
 
-		<div id='markerposition'>
-
+		<div id='markerposition' class="markerposition">
 			<pre id=distance_kilometer>0.000 km</pre>
 			<pre id=distance_nauticalmile>0.000 nm</pre>
-
 		</div>
 	</div>
-	
+
 	<div id='test'></div>
-	
-	<script type="text/javascript" src="map_function.js"></script>
-	<script async defer type="text/javascript" src="boot.js"></script>
+	<script async defer type="text/javascript" src="js/boot.js"></script>
 </body>
 
 </html>

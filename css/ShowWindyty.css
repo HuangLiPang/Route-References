@@ -1,0 +1,94 @@
+* {
+	font-family: sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#windyty {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.mouseposition {
+	position: absolute;
+	bottom: 17px;
+    right: 40px;
+    padding: 3px;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    z-index: 5;
+    border-radius: 3px;
+    opacity: 0.2;
+}
+.mousemove {
+    padding: 0px;
+    margin: 0px;
+}
+#markerposition {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    bottom: 47px;
+    right: 40px;
+    padding: 3px;
+    z-index: 5;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+#distance_kilometer {
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+#distance_nauticalmile {
+    background: rgba(0, 0, 0, 0);
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    color: #fff;
+}
+#test {}
+.windytylogo {
+    z-index: 2;
+    top: 5px;
+    position: absolute;
+    left: 45%;
+    display: block;
+}
+.leaflet-popup .leaflet-popup-content-wrapper {
+    border-radius: 3px;
+}
+.leaflet-popup .leaflet-popup-content {
+    margin: 3px;
+    padding: 2px;
+}
+
+@media screen and (max-width: 787px) {
+    .mouseposition {
+        display: none;
+    }
+    #markerposition {
+        bottom: 80px;
+    }
+    .windytylogo {
+        display: none;
+    }
+}
+.fleetLabels{
+	border: 0;
+	opacity: 0.3;
+	padding: 1px;
+}
+.fleetLabels::before{
+	left: -7px;
+	color: white;
+	opacity: 0.5;
+}
