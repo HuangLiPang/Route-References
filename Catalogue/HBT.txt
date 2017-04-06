@@ -25,4 +25,10 @@
 '<option value="/PRSP/PRSP-QND-TPE.geojson">PRSP-QND-TPE</option>'+
 '<option value="/PRSP/PRSP-TPE-KSG.geojson">PRSP-TPE-KSG</option>'+
 '<option value="/PRSP/PRSP-XGA-QND.geojson">PRSP-XGA-QND</option>'+
-'<option value="/PRSP/PRSP-YJG-DLI.geojson">PRSP-YJG-DLI</option>
+'<option value="/PRSP/PRSP-YJG-DLI.geojson">PRSP-YJG-DLI</option>'+
+'<optgroup label="QND-KSG">'+
+'<option value="/QND-KSG/UNI-ACTIVE.geojson">UNI-ACTIVE</option>'+
+'<option value="/QND-KSG/UNI-PROBITY.geojson">UNI-PROBITY</option>'+
+'<option value="/QND-KSG/UNI-PROMOTE.geojson">UNI-PROMOTE</option>'+
+'<option value="/QND-KSG/UNI-PROSPER.geojson">UNI-PROSPER</option>'+
+'<option value="/QND-KSG/WNI.geojson">WNI</option>

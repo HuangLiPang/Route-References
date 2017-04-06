@@ -90,24 +90,8 @@
              "path": "GeoJSON/ADR/SALU/SALU-PSD-ASH.geojson"
              },
             {
-             "harbor": "PTP-SUZ",
-             "path": "GeoJSON/ADR/SALU/SALU-PTP-SUZ.geojson"
-             },
-            {
-             "harbor": "QND-SHG(YSN)",
-             "path": "GeoJSON/ADR/SALU/SALU-QND-SHG(YSN).geojson"
-             },
-            {
              "harbor": "QND-SHG",
              "path": "GeoJSON/ADR/SALU/SALU-QND-SHG.geojson"
-             },
-            {
-             "harbor": "QND-YSN",
-             "path": "GeoJSON/ADR/SALU/SALU-QND-YSN.geojson"
-             },
-            {
-             "harbor": "SHG(YSN)-NBO",
-             "path": "GeoJSON/ADR/SALU/SALU-SHG(YSN)-NBO.geojson"
              },
             {
              "harbor": "SHG-NBO",
@@ -128,10 +112,6 @@
             {
              "harbor": "XHK-PTP",
              "path": "GeoJSON/ADR/SALU/SALU-XHK-PTP.geojson"
-             },
-            {
-             "harbor": "YSN-NBO",
-             "path": "GeoJSON/ADR/SALU/SALU-YSN-NBO.geojson"
              },
             {
              "harbor": "YYT-XHK",
@@ -298,8 +278,8 @@
              "path": "GeoJSON/AGI/RDNT/RDNT-KHI-MUN.geojson"
              },
             {
-             "harbor": "LCH-SGP",
-             "path": "GeoJSON/AGI/RDNT/RDNT-LCH-SGP.geojson"
+             "harbor": "LCH-SIN",
+             "path": "GeoJSON/AGI/RDNT/RDNT-LCH-SIN.geojson"
              },
             {
              "harbor": "MUN-CMB",
@@ -318,8 +298,8 @@
              "path": "GeoJSON/AGI/RDNT/RDNT-SGP-LCH.geojson"
              },
             {
-             "harbor": "SGP-PKL",
-             "path": "GeoJSON/AGI/RDNT/RDNT-SGP-PKL.geojson"
+             "harbor": "SIN-PKL",
+             "path": "GeoJSON/AGI/RDNT/RDNT-SIN-PKL.geojson"
              }        
             ]
           },
@@ -575,10 +555,6 @@
             {
              "harbor": "PKL-LCH",
              "path": "GeoJSON/APG/LTUS/LTUS-PKL-LCH.geojson"
-             },
-            {
-             "harbor": "PTP-CMB",
-             "path": "GeoJSON/APG/LTUS/LTUS-PTP-CMB.geojson"
              },
             {
              "harbor": "SHG-NBO",
@@ -904,6 +880,10 @@
              "path": "GeoJSON/AUE3/SUMM/SUMM-HKG-YYT.geojson"
              },
             {
+             "harbor": "JAX-CHS whale",
+             "path": "GeoJSON/AUE3/SUMM/SUMM-JAX-CHS whale.geojson"
+             },
+            {
              "harbor": "JAX-CHS",
              "path": "GeoJSON/AUE3/SUMM/SUMM-JAX-CHS.geojson"
              },
@@ -1131,10 +1111,6 @@
              "path": "GeoJSON/CES/LODG/LODG-HBG-RDM.geojson"
              },
             {
-             "harbor": "HBG-RDM2",
-             "path": "GeoJSON/CES/LODG/LODG-HBG-RDM2.geojson"
-             },
-            {
              "harbor": "LHV-PSD",
              "path": "GeoJSON/CES/LODG/LODG-LHV-PSD.geojson"
              },
@@ -1180,20 +1156,12 @@
              "path": "GeoJSON/CES/LOGC/LOGC-HBG-RDM.geojson"
              },
             {
-             "harbor": "HBG-RDM2",
-             "path": "GeoJSON/CES/LOGC/LOGC-HBG-RDM2.geojson"
-             },
-            {
              "harbor": "NBO-SHG",
              "path": "GeoJSON/CES/LOGC/LOGC-NBO-SHG.geojson"
              },
             {
              "harbor": "RDM-LHV",
              "path": "GeoJSON/CES/LOGC/LOGC-RDM-LHV.geojson"
-             },
-            {
-             "harbor": "RDM-LHV2",
-             "path": "GeoJSON/CES/LOGC/LOGC-RDM-LHV2.geojson"
              },
             {
              "harbor": "SHG-TPE",
@@ -3781,10 +3749,6 @@
              "path": "GeoJSON/TPS/SMLE/SMLE-HKG-KSG.geojson"
              },
             {
-             "harbor": "KSG-TPE",
-             "path": "GeoJSON/TPS/SMLE/SMLE-KSG-TPE.geojson"
-             },
-            {
              "harbor": "KSG-YYT",
              "path": "GeoJSON/TPS/SMLE/SMLE-KSG-YYT.geojson"
              },
@@ -3910,32 +3874,32 @@
              "path": "GeoJSON/TWT/ASNT/ASNT-LCH-BKK.geojson"
              },
             {
-             "harbor": "LCH-HKG E",
-             "path": "GeoJSON/TWT/ASNT/ASNT-LCH-HKG E.geojson"
+             "harbor": "LCH-HKG",
+             "path": "GeoJSON/TWT/ASNT/ASNT-LCH-HKG.geojson"
              },
             {
-             "harbor": "LCH-HKG W",
-             "path": "GeoJSON/TWT/ASNT/ASNT-LCH-HKG W.geojson"
+             "harbor": "LCH-HKG2",
+             "path": "GeoJSON/TWT/ASNT/ASNT-LCH-HKG2.geojson"
              },
             {
-             "harbor": "LCH-XHG E",
-             "path": "GeoJSON/TWT/ASNT/ASNT-LCH-XHG E.geojson"
+             "harbor": "LCH-XHGE",
+             "path": "GeoJSON/TWT/ASNT/ASNT-LCH-XHGE.geojson"
              },
             {
-             "harbor": "LCH-XHG W",
-             "path": "GeoJSON/TWT/ASNT/ASNT-LCH-XHG W.geojson"
+             "harbor": "LCH-XHGW",
+             "path": "GeoJSON/TWT/ASNT/ASNT-LCH-XHGW.geojson"
              },
             {
              "harbor": "TCG-KSG",
              "path": "GeoJSON/TWT/ASNT/ASNT-TCG-KSG.geojson"
              },
             {
-             "harbor": "XHK-KSG N",
-             "path": "GeoJSON/TWT/ASNT/ASNT-XHK-KSG N.geojson"
-             },
-            {
              "harbor": "XHK-KSG",
              "path": "GeoJSON/TWT/ASNT/ASNT-XHK-KSG.geojson"
+             },
+            {
+             "harbor": "XHK-TCG",
+             "path": "GeoJSON/TWT/ASNT/ASNT-XHK-TCG.geojson"
              }        
             ]
           },
@@ -3959,28 +3923,28 @@
              "path": "GeoJSON/TWT/ASUR/ASUR-LCH-BKK.geojson"
              },
             {
-             "harbor": "LCH-HKG East 2",
-             "path": "GeoJSON/TWT/ASUR/ASUR-LCH-HKG East 2.geojson"
+             "harbor": "LCH-HKG",
+             "path": "GeoJSON/TWT/ASUR/ASUR-LCH-HKG.geojson"
              },
             {
-             "harbor": "LCH-HKG Eest",
-             "path": "GeoJSON/TWT/ASUR/ASUR-LCH-HKG Eest.geojson"
+             "harbor": "LCH-HKG2",
+             "path": "GeoJSON/TWT/ASUR/ASUR-LCH-HKG2.geojson"
              },
             {
-             "harbor": "LCH-HKG West",
-             "path": "GeoJSON/TWT/ASUR/ASUR-LCH-HKG West.geojson"
+             "harbor": "LCH-HKG3",
+             "path": "GeoJSON/TWT/ASUR/ASUR-LCH-HKG3.geojson"
              },
             {
-             "harbor": "LCH-XHK East",
-             "path": "GeoJSON/TWT/ASUR/ASUR-LCH-XHK East.geojson"
+             "harbor": "LCH-XHK",
+             "path": "GeoJSON/TWT/ASUR/ASUR-LCH-XHK.geojson"
              },
             {
-             "harbor": "LCH-XHK West 2",
-             "path": "GeoJSON/TWT/ASUR/ASUR-LCH-XHK West 2.geojson"
+             "harbor": "LCH-XHK2",
+             "path": "GeoJSON/TWT/ASUR/ASUR-LCH-XHK2.geojson"
              },
             {
-             "harbor": "LCH-XHK West",
-             "path": "GeoJSON/TWT/ASUR/ASUR-LCH-XHK West.geojson"
+             "harbor": "LCH-XHK3",
+             "path": "GeoJSON/TWT/ASUR/ASUR-LCH-XHK3.geojson"
              },
             {
              "harbor": "TCG-KSG",
@@ -4170,10 +4134,6 @@
             {
              "harbor": "HKG-NBO",
              "path": "GeoJSON/WSA/UNIO/UNIO-HKG-NBO.geojson"
-             },
-            {
-             "harbor": "KSG-YYT",
-             "path": "GeoJSON/WSA/UNIO/UNIO-KSG-YYT.geojson"
              },
             {
              "harbor": "MZO-BVT",

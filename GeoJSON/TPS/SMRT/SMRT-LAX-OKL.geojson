@@ -6,7 +6,7 @@
          "title": "WPT#1",
          "description": "33°41.2' N, -118°14.2' W",
          "marker-symbol": "star",
-         "marker-color": "#72CF71",
+         "marker-color": "#7148D6",
          "marker-size": "large"
       },
       "geometry": {
@@ -20,7 +20,7 @@
          "title": "WPT#2",
          "description": "33°38.2' N, -118°16.0' W",
          "marker-symbol": "2",
-         "marker-color": "#72CF71"
+         "marker-color": "#7148D6"
       },
       "geometry": {
           "type": "Point",
@@ -33,7 +33,7 @@
          "title": "WPT#3",
          "description": "33°38.2' N, -118°20.5' W",
          "marker-symbol": "3",
-         "marker-color": "#72CF71"
+         "marker-color": "#7148D6"
       },
       "geometry": {
           "type": "Point",
@@ -46,7 +46,7 @@
          "title": "WPT#4",
          "description": "34°4.3' N, -119°15.5' W",
          "marker-symbol": "4",
-         "marker-color": "#72CF71"
+         "marker-color": "#7148D6"
       },
       "geometry": {
           "type": "Point",
@@ -59,7 +59,7 @@
          "title": "WPT#5",
          "description": "34°30.0' N, -121°8.5' W",
          "marker-symbol": "5",
-         "marker-color": "#72CF71"
+         "marker-color": "#7148D6"
       },
       "geometry": {
           "type": "Point",
@@ -72,7 +72,7 @@
          "title": "WPT#6",
          "description": "36°21.0' N, -122°39.7' W",
          "marker-symbol": "6",
-         "marker-color": "#72CF71"
+         "marker-color": "#7148D6"
       },
       "geometry": {
           "type": "Point",
@@ -85,7 +85,7 @@
          "title": "WPT#7",
          "description": "37°38.0' N, -122°39.7' W",
          "marker-symbol": "7",
-         "marker-color": "#72CF71"
+         "marker-color": "#7148D6"
       },
       "geometry": {
           "type": "Point",
@@ -96,20 +96,20 @@
     { "type": "Feature",
       "properties": {
          "title": "WPT#8",
-         "description": "37°45.0' N, -122°10.5' W",
+         "description": "37°45.0' N, -122°40.5' W",
          "marker-symbol": "8",
-         "marker-color": "#72CF71"
+         "marker-color": "#7148D6"
       },
       "geometry": {
           "type": "Point",
-          "coordinates": [-122.175,37.75]
+          "coordinates": [-122.675,37.75]
       }
     },
     
     { "type": "Feature",
       "properties": {
           "title": "#1=>#2 COG:218.0",
-          "stroke": "#72CF71",
+          "stroke": "#7148D6",
           "stroke-width": "5"
        },
       "geometry": {
@@ -122,7 +122,7 @@
     { "type": "Feature",
       "properties": {
           "title": "#2=>#3 COG:270.0",
-          "stroke": "#72CF71",
+          "stroke": "#7148D6",
           "stroke-width": "5"
        },
       "geometry": {
@@ -135,7 +135,7 @@
     { "type": "Feature",
       "properties": {
           "title": "#3=>#4 COG:300.0",
-          "stroke": "#72CF71",
+          "stroke": "#7148D6",
           "stroke-width": "5"
        },
       "geometry": {
@@ -148,7 +148,7 @@
     { "type": "Feature",
       "properties": {
           "title": "#4=>#5 COG:285.0",
-          "stroke": "#72CF71",
+          "stroke": "#7148D6",
           "stroke-width": "5"
        },
       "geometry": {
@@ -161,7 +161,7 @@
     { "type": "Feature",
       "properties": {
           "title": "#5=>#6 COG:326.0",
-          "stroke": "#72CF71",
+          "stroke": "#7148D6",
           "stroke-width": "5"
        },
       "geometry": {
@@ -174,7 +174,7 @@
     { "type": "Feature",
       "properties": {
           "title": "#6=>#7 COG:0.0",
-          "stroke": "#72CF71",
+          "stroke": "#7148D6",
           "stroke-width": "5"
        },
       "geometry": {
@@ -186,14 +186,14 @@
      },
     { "type": "Feature",
       "properties": {
-          "title": "#7=>#8 COG:75.0",
-          "stroke": "#72CF71",
+          "title": "#7=>#8 COG:354.0",
+          "stroke": "#7148D6",
           "stroke-width": "5"
        },
       "geometry": {
           "type": "LineString",
           "coordinates": [
-          [-122.6616667,37.65],[-122.175, 37.75]
+          [-122.6616667,37.65],[-122.675, 37.75]
           ]
        }
      }
