@@ -62,7 +62,8 @@
         h = document.getElementById("windyty");
 
     h || c("Missing DIV with windyty id"),
-        h.innerHTML = '<div id="map_container" style="width: 100%; height: 100%;"></div><div id="contrib">OSM & contributors</div><div id="legend"></div><canvas id="jpg_decoder" style="display: none;"></canvas><div id="globe_container"></div>',
+        h.innerHTML = '<div id="map_container" style="width: 100%; height: 100%;"></div><div id="contrib">OSM & contributors</div><div id="legend"></div><canvas id="jpg_decoder" style="display: none;"></canvas><div id="globe_container"></div><a class="logo" href="https://www.windytv.com" target="wndt"><img class="w" src="https://www.windytv.com/img/ikona.svg"><img class="text" src="https://www.windytv.com/img/logo-windytv.svg"></a>',
+      
         b("css/WindytyV23.css"),
         a("https://www.windytv.com/gfs/minifest.js", function () {
             a("js/api.js?key=" + windytyInit.key, d)

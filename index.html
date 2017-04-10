@@ -8,16 +8,17 @@
 
 	<!-- Include meta tag to ensure proper rendering and touch zooming -->
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-
+  
 	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-	<script type="text/javascript" src="js/leaflet-arc.min.js"></script>
-	<script type="text/javascript" src="easybutton/easybutton.js"></script>
-	<script type="text/javascript" src="js/ShowWindyty.js"></script>
-	<script type="text/javascript" src="js/Defiant.js"></script>
-	<script type="text/javascript" src="js/tracksymbol.js"></script>
-	<script type="text/javascript" src="js/leaflet-label.js"></script>
+	<script src="js/leaflet-arc.min.js"></script>
+	<script src="easybutton/easybutton.js"></script>
+	<script src="js/ShowWindyty.js"></script>
+	<script src="js/Defiant.js"></script>
+	<script src="js/tracksymbol.js"></script>
+	<script src="js/leaflet-label.js"></script>
+  <script src="js/leaflet-nauticscale.js"></script>
 
 	<link type="text/css" rel="stylesheet" href="css/timeline.css" />
 	<link type="text/css" rel="stylesheet" href="easybutton/easybutton.css" />
@@ -25,19 +26,14 @@
 	<link type="text/css" rel="stylesheet" href="css/searchbar.css" />
 	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 	<link type="text/css" rel="stylesheet" href="css/leaflet-label.css">
-
-	<link rel='stylesheet' href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' />
-	<link type="text/css" rel="stylesheet" href="css/ShowWindyty.css" />
+	<link type="text/css" rel='stylesheet' href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' />
+  <link type="text/css" rel="stylesheet" href="css/ShowWindyty.css" />
+  
 </head>
 
 <body>
 	<div data-role='page' id="container" class="container">
-		<div class="windytylogo">
-			<a href="https://www.windytv.com" title="Windytv" target="wndt">
-				<img class="ww" src="https://www.windytv.com/img/ikona.svg">
-				<img class="wtext" src="https://www.windytv.com/img/logo-windytv.svg">
-			</a>
-		</div>
+		
 		<div id="menu" class="side_menu">
 			<a class="closebtn" onclick="closeNav()" href="javascript:void(0)"><span class="closebtn_pro">&times;</span></a>
 			<div class='menu_nav'>
@@ -152,7 +148,7 @@
 	</div>
 
 	<div id='test'></div>
-	<script async defer type="text/javascript" src="js/boot.js"></script>
+	<script async defer src="js/boot.js"></script>
 </body>
 
 </html>

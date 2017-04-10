@@ -2914,7 +2914,7 @@
             var e = L.map("map_container", {
                 zoomControl: !1,
                 keyboard: !1,
-                worldCopyJump: !0
+                worldCopyJump: !1,
             });
             return c.include(e, {
                 ident: "maps",

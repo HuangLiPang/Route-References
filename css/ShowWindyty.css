@@ -28,16 +28,16 @@ body {
     margin: 0px;
 }
 #markerposition {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
     position: absolute;
     bottom: 47px;
     right: 40px;
-    padding: 3px;
+    padding: 4px;
     z-index: 5;
     border-radius: 3px;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: 0.5s;
 }
 #distance_kilometer {
     background: rgba(0, 0, 0, 0);
@@ -56,19 +56,23 @@ body {
     color: #fff;
 }
 #test {}
-.windytylogo {
-    z-index: 2;
-    top: 5px;
+
+#windyty .logo {
     position: absolute;
-    left: 45%;
-    display: block;
+    top: 5px;
+    left: 50%;
+    height: 22px;
+    margin-left: -50px;
+    cursor: pointer;
+    display: block
 }
+
 .leaflet-popup .leaflet-popup-content-wrapper {
-    border-radius: 3px;
+    border-radius: 8px;
 }
 .leaflet-popup .leaflet-popup-content {
-    margin: 3px;
-    padding: 2px;
+    margin: 8px;
+    padding: 0px;
 }
 
 @media screen and (max-width: 787px) {
@@ -82,13 +86,14 @@ body {
         display: none;
     }
 }
+
 .fleetLabels{
 	border: 0;
-	opacity: 0.3;
-	padding: 1px;
+	padding: 0px 4px 0px 4px
 }
+
 .fleetLabels::before{
 	left: -7px;
-	color: white;
-	opacity: 0.5;
+	color: black;
+	opacity: 0.4
 }

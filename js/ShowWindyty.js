@@ -103,13 +103,19 @@ var windytyInit = {
 // windyty主函式
 function windytyMain(map) {
 	//Default map center
-	map.setView([25.154, 121.377], 6).setMaxBounds([[-50, -30], [70, 330]]);
-	//Leaflet scale
-	L.control.scale({
+	map
+  //.setView([25.154, 121.377], 6)
+  .setMaxBounds([[-50, -30], [70, 330]]);
+	
+  //Leaflet scale with nautical mile
+	L.control.scalenautic({
 		position: 'topright',
-		maxWidth: 100
+		maxWidth: 100,
+    metric: true,
+    imperial: false,
+    nautic: true
 	}).addTo(map);
-
+  
 	//
 	////animation control
 	var W_animation = {
@@ -516,15 +522,15 @@ function windytyMain(map) {
 							iconUrl: 'Icons/wind.png',
 							iconSize: [0, 0],
 							iconAnchor: [0, 0],
-							labelAnchor: [20, 0]
+							labelAnchor: [16, 0]
 						}),
 						fleet_label = L.marker(ship.coordinates, {
 							icon: labelIcon
-						}).bindLabel(ship.title.replace(/^EVER /, '').replace(/^UNI /, ''), {
+						}).bindLabel(ship.title.replace(/^(EVER|UNI|THALASSA|ITAL)/, ''), {
 							noHide: true,
 							direction: 'right',
 							className: 'fleetLabels'
-						}).addTo(W_layerGroup.fleets[ship.type]);
+            }).addTo(W_layerGroup.fleets[ship.type]);
 					fleet_marker.on('click', W_fleetPosition.showLine);
 				}
 			},
