@@ -1,94 +1,101 @@
-//Side bar
-////////////
-function openNav() {
-	document.getElementById("menu").style.width = "230px";
-	document.getElementById('open').style.opacity = 0;
-	document.getElementById('open').style.cursor = 'default';
-	document.getElementById('open').style.transition = '0.5s 0s';
-	window['windyty'].setAttribute('onclick', 'closeNav()');
-	document.getElementsByClassName('container-1')[0].style.opacity = 0;
-	document.getElementsByClassName('container-1')[1].style.opacity = 0;
-	document.getElementsByClassName('container-1')[0].style.transition = '0.5s 0s';
-	document.getElementsByClassName('container-1')[1].style.transition = '0.5s 0s';
-	document.getElementById('search_result').style.opacity = 0;
-	document.getElementById('search_result').style.transition = '0.5s 0s';
-}
-
-function closeNav() {
-	document.getElementById("menu").style.width = "0";
-	document.getElementById('open').style.opacity = 1;
-	document.getElementById('open').style.cursor = 'pointer';
-	document.getElementById('open').style.transition = '0.5s 0.4s';
-	window['windyty'].removeAttribute('onclick');
-	document.getElementsByClassName('container-1')[0].style.opacity = 1;
-	document.getElementsByClassName('container-1')[1].style.opacity = 1;
-	document.getElementsByClassName('container-1')[0].style.transition = '0.5s 0.4s';
-	document.getElementsByClassName('container-1')[1].style.transition = '0.5s 0.4s';
-	document.getElementById('search_result').style.opacity = 1;
-	document.getElementById('search_result').style.transition = '0.5s 0.4s';
-}
-var about_key = true;
-
-function showabout() {
-
-	if (about_key) {
-		document.getElementsByClassName("logo_image")[0].style.left = '0px';
-		about_key = false;
-	} else {
-		document.getElementsByClassName("logo_image")[0].style.left = '-230px';
-		about_key = true;
+(function(window){
+	//Side bar
+	function openNav() {
+		document.getElementById("menu").style.width = "230px";
+		document.getElementById('open').style.opacity = 0;
+		document.getElementById('open').style.cursor = 'default';
+		document.getElementById('open').style.transition = '0.5s 0s';
+		window['windyty'].setAttribute('onclick', 'closeNav()');
+		document.getElementsByClassName('container-1')[0].style.opacity = 0;
+		document.getElementsByClassName('container-1')[1].style.opacity = 0;
+		document.getElementsByClassName('container-1')[0].style.transition = '0.5s 0s';
+		document.getElementsByClassName('container-1')[1].style.transition = '0.5s 0s';
+		document.getElementById('search_result').style.opacity = 0;
+		document.getElementById('search_result').style.transition = '0.5s 0s';
 	}
-}
 
-function bar_move(bar) {
-	bar.classList.toggle("barchange");
-}
+	function closeNav() {
+		document.getElementById("menu").style.width = "0";
+		document.getElementById('open').style.opacity = 1;
+		document.getElementById('open').style.cursor = 'pointer';
+		document.getElementById('open').style.transition = '0.5s 0.4s';
+		window['windyty'].removeAttribute('onclick');
+		document.getElementsByClassName('container-1')[0].style.opacity = 1;
+		document.getElementsByClassName('container-1')[1].style.opacity = 1;
+		document.getElementsByClassName('container-1')[0].style.transition = '0.5s 0.4s';
+		document.getElementsByClassName('container-1')[1].style.transition = '0.5s 0.4s';
+		document.getElementById('search_result').style.opacity = 1;
+		document.getElementById('search_result').style.transition = '0.5s 0.4s';
+	}
+	var about_key = true;
 
+	function showabout() {
+
+		if (about_key) {
+			document.getElementsByClassName("logo_image")[0].style.left = '0px';
+			about_key = false;
+		} else {
+			document.getElementsByClassName("logo_image")[0].style.left = '-230px';
+			about_key = true;
+		}
+	}
+
+	function bar_move(bar) {
+		bar.classList.toggle("barchange");
+	}
+	
+	window.openNav = openNav;
+	window.closeNav = closeNav;
+	window.showabout = showabout;
+	window.bar_move = bar_move;
+})(this);
 //Mapbox API token
 L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5bHpmN3ZnNm11dSJ9.1kSYNfN3L-uzTzqmBsIekw';
-//tilelayer style variable
-var W_layerGroup = {
-	routeGroup: new L.layerGroup(),
-	markerGroup: new L.layerGroup(),
-	marker: new L.mapbox.featureLayer(),
-	line: new L.mapbox.featureLayer(),
-	routeAnimate: new L.mapbox.featureLayer(),
-	track: new L.mapbox.featureLayer().loadURL("position/fleet.geojson"),
-//	trackLine: new L.mapbox.featureLayer().loadURL("position/fleet_line.geojson"),
-	ECAsNOxLayer: new L.mapbox.featureLayer().loadURL("ECA/eca.geojson").on('ready', function () {
+(function(window){
+	var W_layerGroup = {
+		routeGroup: new L.layerGroup(),
+		markerGroup: new L.layerGroup(),
+		marker: new L.mapbox.featureLayer(),
+		line: new L.mapbox.featureLayer(),
+		routeAnimate: new L.mapbox.featureLayer(),
+		track: new L.mapbox.featureLayer().loadURL("position/fleet.geojson"),
+	//	trackLine: new L.mapbox.featureLayer().loadURL("position/fleet_line.geojson"),
+		ECAsNOxLayer: new L.mapbox.featureLayer().loadURL("ECA/eca.geojson").on('ready', function () {
+			this.setStyle({
+				"color": "white",
+				"weight": "2"
+			})
+		}),
+		fleets: {
+			l: new L.mapbox.featureLayer(),
+			s: new L.mapbox.featureLayer(),
+			e: new L.mapbox.featureLayer(),
+			u: new L.mapbox.featureLayer(),
+			d: new L.mapbox.featureLayer(),
+			a: new L.mapbox.featureLayer(),
+			p: new L.mapbox.featureLayer(),
+			c: new L.mapbox.featureLayer(),
+			t: new L.mapbox.featureLayer()
+		},
+		fleetsLine: {
+			layer: new L.layerGroup()
+		}
+	};
+
+	W_layerGroup.ECAsNOxLayer.on('mouseover', function () {
+		this.setStyle({
+			"color": "#ff0000",
+			"weight": "5"
+		})
+	});
+	W_layerGroup.ECAsNOxLayer.on('mouseout', function () {
 		this.setStyle({
 			"color": "white",
 			"weight": "2"
 		})
-	}),
-	fleets: {
-		l: new L.mapbox.featureLayer(),
-		s: new L.mapbox.featureLayer(),
-		e: new L.mapbox.featureLayer(),
-		u: new L.mapbox.featureLayer(),
-		d: new L.mapbox.featureLayer(),
-		a: new L.mapbox.featureLayer(),
-		p: new L.mapbox.featureLayer(),
-		c: new L.mapbox.featureLayer(),
-		t: new L.mapbox.featureLayer()
-	},
-	fleetsLine: {
-		layer: new L.layerGroup()
-	}
-};
-
-W_layerGroup.ECAsNOxLayer.on('mouseover', function () {
-	this.setStyle({
-		"color": "#ff0000",
-		"weight": "5"
-	})
-});
-W_layerGroup.ECAsNOxLayer.on('mouseout', function () {
-	this.setStyle({
-		"color": "white",
-		"weight": "2"
-	})
-});
+	});
+	window.W_layerGroup = W_layerGroup;
+})(this);
 
 //起始 windyty
 var windytyInit = {
