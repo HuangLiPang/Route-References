@@ -49,13 +49,12 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5b
 //tilelayer style variable
 var W_layerGroup = {
 	routeGroup: new L.layerGroup(),
-	tile: new L.layerGroup(),
 	markerGroup: new L.layerGroup(),
 	marker: new L.mapbox.featureLayer(),
 	line: new L.mapbox.featureLayer(),
 	routeAnimate: new L.mapbox.featureLayer(),
 	track: new L.mapbox.featureLayer().loadURL("position/fleet.geojson"),
-	trackLine: new L.mapbox.featureLayer().loadURL("position/fleet_line.geojson"),
+//	trackLine: new L.mapbox.featureLayer().loadURL("position/fleet_line.geojson"),
 	ECAsNOxLayer: new L.mapbox.featureLayer().loadURL("ECA/eca.geojson").on('ready', function () {
 		this.setStyle({
 			"color": "white",
@@ -104,18 +103,18 @@ var windytyInit = {
 function windytyMain(map) {
 	//Default map center
 	map
-  //.setView([25.154, 121.377], 6)
-  .setMaxBounds([[-50, -30], [70, 330]]);
-	
-  //Leaflet scale with nautical mile
+		//.setView([25.154, 121.377], 6)
+		.setMaxBounds([[-50, -30], [70, 330]]);
+
+	//Leaflet scale with nautical mile
 	L.control.scalenautic({
 		position: 'topright',
 		maxWidth: 100,
-    metric: true,
-    imperial: false,
-    nautic: true
+		metric: true,
+		imperial: false,
+		nautic: true
 	}).addTo(map);
-  
+
 	//
 	////animation control
 	var W_animation = {
@@ -477,17 +476,17 @@ function windytyMain(map) {
 						});
 			},
 			showLine: function (ship) {
-//				console.log(ship);
+				//console.log(ship);
 				var shipName = ship.target._popup._contentNode.firstChild.innerHTML;
 				if (!W_layerGroup.fleetsLine[shipName]) {
-					W_layerGroup.fleetsLine[shipName] = new L.layerGroup(); 
+					W_layerGroup.fleetsLine[shipName] = new L.layerGroup();
 					L.mapbox.featureLayer().loadURL("position2/" + shipName + "_line.geojson").addTo(W_layerGroup.fleetsLine[shipName]);
 					W_layerGroup.fleetsLine[shipName].addTo(W_layerGroup.fleetsLine.layer);
-					console.log(W_layerGroup.fleetsLine);
+					//console.log(W_layerGroup.fleetsLine);
 				} else {
 					W_layerGroup.fleetsLine[shipName].clearLayers();
 					delete W_layerGroup.fleetsLine[shipName];
-					console.log(W_layerGroup.fleetsLine);
+					//console.log(W_layerGroup.fleetsLine);
 				}
 			},
 			plotMarker: function (a, b) {
@@ -530,7 +529,7 @@ function windytyMain(map) {
 							noHide: true,
 							direction: 'right',
 							className: 'fleetLabels'
-            }).addTo(W_layerGroup.fleets[ship.type]);
+						}).addTo(W_layerGroup.fleets[ship.type]);
 					fleet_marker.on('click', W_fleetPosition.showLine);
 				}
 			},
@@ -789,7 +788,6 @@ function windytyMain(map) {
 	//LayerGroups
 	W_layerGroup.routeGroup.addTo(map); //Route layerGroup
 	W_layerGroup.markerGroup.addTo(map); //Measure marker layerGroups
-	W_layerGroup.tile.addTo(map); //Tile layerGroups
 	W_layerGroup.fleetsLine.layer.addTo(map);
 	W_layerGroup.marker.addTo(W_layerGroup.markerGroup);
 	W_layerGroup.line.addTo(W_layerGroup.markerGroup);
