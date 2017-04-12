@@ -75,7 +75,8 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5b
 			a: new L.mapbox.featureLayer(),
 			p: new L.mapbox.featureLayer(),
 			c: new L.mapbox.featureLayer(),
-			t: new L.mapbox.featureLayer()
+			t: new L.mapbox.featureLayer(),
+			labels: new L.mapbox.featureLayer()
 		},
 		fleetsLine: {
 			layer: new L.layerGroup()
@@ -487,7 +488,7 @@ function windytyMain(map) {
 				var shipName = ship.target._popup._contentNode.firstChild.innerHTML;
 				if (!W_layerGroup.fleetsLine[shipName]) {
 					W_layerGroup.fleetsLine[shipName] = new L.layerGroup();
-					L.mapbox.featureLayer().loadURL("position2/" + shipName + "_line.geojson").addTo(W_layerGroup.fleetsLine[shipName]);
+					L.mapbox.featureLayer().loadURL("position_line/" + shipName + "_line.geojson").addTo(W_layerGroup.fleetsLine[shipName]);
 					W_layerGroup.fleetsLine[shipName].addTo(W_layerGroup.fleetsLine.layer);
 					//console.log(W_layerGroup.fleetsLine);
 				} else {
@@ -496,10 +497,9 @@ function windytyMain(map) {
 					//console.log(W_layerGroup.fleetsLine);
 				}
 			},
-			plotMarker: function (a, b) {
+			plotMarker: function (a) {
 				//a = everG.type
 				a.forEach(plot);
-
 				function plot(ship) {
 					var fleet_marker_option = {
 							size: 27,
@@ -523,8 +523,15 @@ function windytyMain(map) {
 						'Next port: ' + ship['next port'] + '<br>' +
 						'ETA: ' + ship.eta,
 						fleet_marker = L.trackSymbol(ship.coordinates, fleet_marker_option)
-						.bindPopup(fleet_popup).addTo(W_layerGroup.fleets[ship.type]),
-						labelIcon = L.icon({
+						.bindPopup(fleet_popup).addTo(W_layerGroup.fleets[ship.type]);
+					fleet_marker.on('click', W_fleetPosition.showLine);
+				}
+			},
+			plotLabel: function (a) {
+				//a = everG.type
+				a.forEach(plot);
+				function plot(ship){
+					var labelIcon = L.icon({
 							iconUrl: 'Icons/wind.png',
 							iconSize: [0, 0],
 							iconAnchor: [0, 0],
@@ -535,18 +542,46 @@ function windytyMain(map) {
 						}).bindLabel(ship.title.replace(/^(EVER|UNI|THALASSA|ITAL)/, ''), {
 							noHide: true,
 							direction: 'right',
-							className: 'fleetLabels'
-						}).addTo(W_layerGroup.fleets[ship.type]);
-					fleet_marker.on('click', W_fleetPosition.showLine);
+							className: 'fleetLabels ' + ship.type + '-typeFleets'
+						}).addTo(W_layerGroup.fleets['labels']);
 				}
 			},
 			overlays: {
-				'ECA zones': W_layerGroup.ECAsNOxLayer.addTo(map)
+				'ECA zones': W_layerGroup.ECAsNOxLayer.addTo(map),
+				Labels: W_layerGroup.fleets['labels'].addTo(map)
 			},
-			zoomChange: function () {
+			zoomChangeFleetsSpeed: function () {
 				for (var obj in W_fleetPosition.everG) {
 					W_layerGroup.fleets[obj].clearLayers();
-					W_fleetPosition.plotMarker(W_fleetPosition.everG[obj], map.getZoom());
+					W_fleetPosition.plotMarker(W_fleetPosition.everG[obj]);
+				}
+			},
+			overlayChangeLabels: function (overlay) {
+				var layer = overlay.name;
+				if(layer === 'Labels'){
+					for(var ship in W_fleetPosition.everG){
+						if(!map.hasLayer(W_layerGroup.fleets[ship]))
+							toggleDisplay(false, ship);
+						else
+							toggleDisplay(true, ship);
+					}
+				}
+				else if(layer.search(/-TYPEs/) !== -1){
+					var shipType = layer[29].toLowerCase();
+					if(!map.hasLayer(W_layerGroup.fleets[shipType]))
+						toggleDisplay(false, shipType);
+					else
+						toggleDisplay(true, shipType);	
+				}
+				function toggleDisplay(boolean, ship){
+					var x = document.getElementsByClassName(ship + '-typeFleets'),
+						i = 0, length = x.length;
+					if(boolean)
+						for(i = 0; i < length; i++)
+							x[i].style.display = "block";
+					else
+						for(i = 0; i < length; i++)
+							x[i].style.display = "none";
 				}
 			}
 		},
@@ -737,7 +772,8 @@ function windytyMain(map) {
 	W_layerGroup.fleetsLine.layer.addTo(map);
 	//overlays加入船位
 	for (var obj in W_fleetPosition.everG) {
-		W_fleetPosition.plotMarker(W_fleetPosition.everG[obj], map.getZoom());
+		W_fleetPosition.plotMarker(W_fleetPosition.everG[obj]);
+		W_fleetPosition.plotLabel(W_fleetPosition.everG[obj]);
 		W_fleetPosition.overlays['<span style="color:' + W_fleetPosition.everG[obj][0].color + ';">' + obj.toUpperCase() + '-TYPEs</span>'] = W_layerGroup.fleets[obj].addTo(map);
 	};
 	var layer_controls = L.control.layers(W_tileLayer, W_fleetPosition.overlays, {
@@ -745,13 +781,13 @@ function windytyMain(map) {
 		"collapsed": true
 	}).addTo(map);
 
-	map.on('zoomend', W_fleetPosition.zoomChange);
+	map.on('zoomend', W_fleetPosition.zoomChangeFleetsSpeed);
 	map.on('baselayerchange', function () {
-		W_weatherControl.checkTile();
-		//hide the baselayer if tilelayer is changed
+		W_weatherControl.checkTile();//hide the baselayer if tilelayer is changed
 		W_distance.drive();
 	});
 
+	map.on('overlayadd overlayremove', W_fleetPosition.overlayChangeLabels);
 	// detect window size for leaflet easybutton
 	W_easybutton.control();
 
