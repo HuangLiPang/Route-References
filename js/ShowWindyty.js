@@ -218,13 +218,20 @@ function windytyMain(map) {
 				W_dynamic.timer = null;
 				W_dynamic.marker = null;
 				//
-				//
+				W_route.clearHistory();
 				document.getElementById('slider').value = W.timeline.start + W_timeline.present.HourSec();
 				W.setTimestamp(document.getElementById('timePopup').value);
 				document.getElementById('timePopup').innerHTML = W_timeline.present.Time();
 				document.getElementById('timePopup').style.left = ((((parseInt(document.getElementById('slider').value) - W.timeline.start) / 3600000) / 168) * 100 - 10) + '%';
 				document.getElementById('calendarpointer-pointer').style.left = (((parseInt(document.getElementById('slider').value) - W.timeline.start) / 3600000) / 168) * 100 + '%';
 				W_route.initLine();
+			},
+			clearHistory: function () {
+				for(var shipName in W_layerGroup.fleetsLine)
+					if(shipName !== "layer"){
+						W_layerGroup.fleetsLine[shipName].clearLayers();
+						delete W_layerGroup.fleetsLine[shipName];
+					}
 			}
 		},
 		W_easybar_sem = {
@@ -490,11 +497,11 @@ function windytyMain(map) {
 					W_layerGroup.fleetsLine[shipName] = new L.layerGroup();
 					L.mapbox.featureLayer().loadURL("position_line/" + shipName + "_line.geojson").addTo(W_layerGroup.fleetsLine[shipName]);
 					W_layerGroup.fleetsLine[shipName].addTo(W_layerGroup.fleetsLine.layer);
-					//console.log(W_layerGroup.fleetsLine);
+//					console.log(W_layerGroup.fleetsLine);
 				} else {
 					W_layerGroup.fleetsLine[shipName].clearLayers();
 					delete W_layerGroup.fleetsLine[shipName];
-					//console.log(W_layerGroup.fleetsLine);
+//					console.log(W_layerGroup.fleetsLine);
 				}
 			},
 			plotMarker: function (a) {
@@ -779,7 +786,7 @@ function windytyMain(map) {
 	};
 	var layer_controls = L.control.layers(W_tileLayer, W_fleetPosition.overlays, {
 		"position": 'topright',
-		"collapsed": false
+		"collapsed": true
 	}).addTo(map);
 	//Add a separator in overlay
 	var leafletOverlays = document.querySelector(".leaflet-control-layers-overlays"),
