@@ -112,7 +112,7 @@ function windytyMain(map) {
 	//Default map center
 	map
 		//.setView([25.154, 121.377], 6)
-		.setMaxBounds([[-50, -30], [70, 330]]);
+		.setMaxBounds([[-50, -50], [70, 370]]);
 
 	//Leaflet scale with nautical mile
 	L.control.scalenautic({
@@ -690,6 +690,7 @@ function windytyMain(map) {
 					displayNM = (displayKM / 1.852).toFixed(3);
 				W_distance.km.innerHTML = displayKM + ' km';
 				W_distance.nm.innerHTML = displayNM + " nm";
+                if (m1.lng > m2.lng) { m2 = [m1, m1=m2][0] }; //fix greatcircle line               
 				W_layerGroup.line.clearLayers();
 				W_distance.line = L.polyline([[m1.lat, m1.lng], [m2.lat, m2.lng]]).bindPopup('<p style="margin: 0px; padding: 0px; font-size: 16px;">Rhumb Line</p>');
 				W_distance.greatcircle = L.Polyline.Arc([m1.lat, m1.lng], [m2.lat, m2.lng], {
