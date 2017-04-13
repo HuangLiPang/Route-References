@@ -778,9 +778,14 @@ function windytyMain(map) {
 	};
 	var layer_controls = L.control.layers(W_tileLayer, W_fleetPosition.overlays, {
 		"position": 'topright',
-		"collapsed": true
+		"collapsed": false
 	}).addTo(map);
-
+	//Add a separator in overlay
+	var leafletOverlays = document.querySelector(".leaflet-control-layers-overlays"),
+		newSeparator = document.createElement("div");
+	newSeparator.setAttribute("class", "leaflet-control-layers-separator");
+	leafletOverlays.insertBefore(newSeparator, leafletOverlays.childNodes[2]);
+	
 	map.on('zoomend', W_fleetPosition.zoomChangeFleetsSpeed);
 	map.on('baselayerchange', function () {
 		W_weatherControl.checkTile();//hide the baselayer if tilelayer is changed
