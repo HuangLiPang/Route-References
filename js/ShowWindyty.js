@@ -1,4 +1,4 @@
-(function(window){
+(function (window) {
 	//Side bar
 	function openNav() {
 		document.getElementById("menu").style.width = "230px";
@@ -43,7 +43,7 @@
 	function bar_move(bar) {
 		bar.classList.toggle("barchange");
 	}
-	
+
 	window.openNav = openNav;
 	window.closeNav = closeNav;
 	window.showabout = showabout;
@@ -51,7 +51,7 @@
 })(this);
 //Mapbox API token
 L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5bHpmN3ZnNm11dSJ9.1kSYNfN3L-uzTzqmBsIekw';
-(function(window){
+(function (window) {
 	var W_layerGroup = {
 		routeGroup: new L.layerGroup(),
 		markerGroup: new L.layerGroup(),
@@ -59,7 +59,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5b
 		line: new L.mapbox.featureLayer(),
 		routeAnimate: new L.mapbox.featureLayer(),
 		track: new L.mapbox.featureLayer().loadURL("position/fleet.geojson"),
-	//	trackLine: new L.mapbox.featureLayer().loadURL("position/fleet_line.geojson"),
+		//	trackLine: new L.mapbox.featureLayer().loadURL("position/fleet_line.geojson"),
 		ECAsNOxLayer: new L.mapbox.featureLayer().loadURL("ECA/eca.geojson").on('ready', function () {
 			this.setStyle({
 				"color": "white",
@@ -100,20 +100,14 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5b
 
 //起始 windyty
 var windytyInit = {
-	// Required: API key
-	key: 'f647J2Y278pjYbG',
-	// Optional: Initial state of the map
-	lat: 25.154,
-	lon: 121.377,
+	key: 'f647J2Y278pjYbG',	// Required: API key
+	lat: 25.154,	// Optional: Initial state of the map
+	lon: 121.377,	//Default map center
 	zoom: 6
 };
 // windyty主函式
 function windytyMain(map) {
-	//Default map center
-	map
-		//.setView([25.154, 121.377], 6)
-		.setMaxBounds([[-50, -50], [70, 370]]);
-
+	map.setMaxBounds([[-50, -50], [70, 370]]);
 	//Leaflet scale with nautical mile
 	L.control.scalenautic({
 		position: 'topright',
@@ -122,32 +116,32 @@ function windytyMain(map) {
 		imperial: false,
 		nautic: true
 	}).addTo(map);
-
+	
 	//
 	////animation control
 	var W_animation = {
+		canvas1: document.getElementsByClassName("leaflet-canvas1 leaflet-zoom-animated")[0],
 		gradient2: document.getElementsByClassName("leaflet-canvas2 leaflet-zoom-animated")[0],
 		gradient3: document.getElementsByClassName("leaflet-canvas3 leaflet-zoom-animated")[0],
 		gradcheck: {},
 		key: 1,
-		canvas1: document.getElementsByClassName("leaflet-canvas1 leaflet-zoom-animated")[0],
 		keep: function () {
 			if (!W_animation.key) {
+				console.log(W_animation.canvas1);
 				W.animation.stop();
-				document.getElementsByClassName("leaflet-canvas1 leaflet-zoom-animated")[0].style.opacity = 0;
+				W_animation.canvas1.style.opacity = 0;
 				setTimeout(function () {
-					document.getElementsByClassName("leaflet-canvas1 leaflet-zoom-animated")[0].style.transition = 'opacity 0.001s';
-					document.getElementsByClassName("leaflet-canvas1 leaflet-zoom-animated")[0].style.WebkitTransition = 'opacity 0.001s';
+					W_animation.canvas1.style.transition = 'opacity 0.001s';
+					W_animation.canvas1.style.WebkitTransition = 'opacity 0.001s';
 				}, 500);
 				W_animation.key = 0;
 			}
 		}
 	}
 	W_animation.canvas1.addEventListener('transitionend', W_animation.keep);
-	//Because 'transitionstart' event didn't exist in W3C rules, it is a little tricky to change the transition time into 0.001s to fool your eyes.
+	//Because 'transitionstart' event didn't exist in W3C rules, it is tricky to change the transition time into 0.001s to fool your eyes.
 	////
 	//
-
 	var W_route = {
 			path: "", //String variable for for the data path of the route
 			geojson: "", //Variable for geojson data path
@@ -227,8 +221,8 @@ function windytyMain(map) {
 				W_route.initLine();
 			},
 			clearHistory: function () {
-				for(var shipName in W_layerGroup.fleetsLine)
-					if(shipName !== "layer"){
+				for (var shipName in W_layerGroup.fleetsLine)
+					if (shipName !== "layer") {
 						W_layerGroup.fleetsLine[shipName].clearLayers();
 						delete W_layerGroup.fleetsLine[shipName];
 					}
@@ -240,59 +234,66 @@ function windytyMain(map) {
 			count: 1
 		},
 		W_weatherControl = {
-			state: 'wind',
-			baselayerState: 'full',
+			weather: ["wind", "temp", "clouds", "pressure", "waves", "currents"],
+			state: "wind",
+			baselayerState: "full",
 			change: function () {
+				var tileCheck = function(){
+					if (W_easybar_sem.statebar){
+						if (map.hasLayer(W_tileLayer.Normal)) {
+							for (var tile in W_tileLayer)
+								layer_controls.removeLayer(W_tileLayer[tile]);
+						} 
+						else{
+							for (var tile in W_tileLayer) {
+								if (map.hasLayer(W_tileLayer[tile])) 
+									map.removeLayer(W_tileLayer[tile]);
+								layer_controls.removeLayer(W_tileLayer[tile]);
+							}
+							map.addLayer(W_tileLayer.Normal);
+							$(".leaflet-layer:first").show();
+						}
+						W_weatherControl.baselayerState = 'empty';
+					}
+				},
+				timeline = document.getElementById("timeline");
 				if (W_weatherControl.state === 'currents') {
 					W.setOverlay("currents");
-					document.getElementById("timeline").style.display = "none";
-					if (map.hasLayer(W_tileLayer.Normal)) {
-						for (var obj in W_tileLayer)
-							layer_controls.removeLayer(W_tileLayer[obj]);
-					} else {
-						for (var obj in W_tileLayer) {
-							if (map.hasLayer(W_tileLayer[obj])) {
-								map.removeLayer(W_tileLayer[obj]);
-							}
-							layer_controls.removeLayer(W_tileLayer[obj]);
-						}
-						map.addLayer(W_tileLayer.Normal);
-						$(".leaflet-layer:first").show();
-					}
-					W_weatherControl.baselayerState = 'empty';
+					timeline.style.display = "none";
+					tileCheck();
 				} else if (W_weatherControl.state === 'waves') {
 					W.setOverlay("waves");
-					document.getElementById("timeline").style.display = "block";
-					if (map.hasLayer(W_tileLayer.Normal)) {
-						for (var obj in W_tileLayer)
-							layer_controls.removeLayer(W_tileLayer[obj]);
-					} else {
-						for (var obj in W_tileLayer) {
-							if (map.hasLayer(W_tileLayer[obj])) {
-								map.removeLayer(W_tileLayer[obj]);
-							}
-							layer_controls.removeLayer(W_tileLayer[obj]);
-						}
-						map.addLayer(W_tileLayer.Normal);
-						$(".leaflet-layer:first").show();
-					}
-					W_weatherControl.baselayerState = 'empty';
+					timeline.style.display = "block";
+					tileCheck();
 				} else {
-					document.getElementById("timeline").style.display = "block";
-					if (W_weatherControl.baselayerState === 'empty')
+					timeline.style.display = "block";
+					if (W_weatherControl.baselayerState === 'empty' && W_easybar_sem.statebar)
 						for (var obj in W_tileLayer)
 							layer_controls.addBaseLayer(W_tileLayer[obj], obj);
 					W_weatherControl.baselayerState === 'full';
 				}
 			},
-			checkTile: function () {
+			check: function () {
 				if (map.hasLayer(W_tileLayer.Normal)) {
 					$(".leaflet-layer:first").show();
 				} else {
 					$(".leaflet-layer:first").hide();
+					
 				}
+			},
+			button: function(){
+				//use console.log(this) to check
+				//console.log(this)
+				var weather;
+				if(this.id)
+					weather = this.id.replace(/^(W_)/, "");	//sidebar buttons
+				else
+					weather = this.options.id;	//easybuttons
+				W_weatherControl.state = weather;
+				if(!(weather === "currents" || weather === "waves"))
+					W.setOverlay(weather);
+				W_weatherControl.change();
 			}
-
 		},
 		W_gadget = {
 			measuring: function () {
@@ -329,103 +330,6 @@ function windytyMain(map) {
 			}
 		},
 		W_easybutton = {
-			wind: L.easyButton({
-				states: [{
-					stateName: "wind-button",
-					onClick: function () {
-						W_weatherControl.state = 'wind';
-						W.setOverlay("wind");
-						W_weatherControl.change();
-					},
-					title: "Wind",
-					icon: '<img src="Icons/wind.png">'
-				}]
-			}),
-			temp: L.easyButton({
-				states: [{
-					stateName: "temp-button",
-					onClick: function () {
-						W_weatherControl.state = 'temp';
-						W.setOverlay("temp");
-						W_weatherControl.change();
-					},
-					title: "Temperature",
-					icon: '<img src="Icons/temp.png">'
-					}]
-			}),
-			clouds: L.easyButton({
-				states: [{
-					stateName: "clouds-button",
-					onClick: function () {
-						W_weatherControl.state = 'clouds';
-						W.setOverlay("clouds");
-						W_weatherControl.change();
-					},
-					title: "clouds",
-					icon: '<img src="Icons/clouds.png">'
-					}]
-			}),
-			pressure: L.easyButton({
-				states: [{
-					stateName: "pressure-button",
-					onClick: function () {
-						W_weatherControl.state = 'pressure';
-						W.setOverlay("pressure");
-						W_weatherControl.change();
-					},
-					title: "Pressure",
-					icon: '<img src="Icons/pressure.png">'
-					}]
-			}),
-			waves: L.easyButton({
-				states: [{
-					stateName: "waves-button",
-					onClick: function () {
-						W_weatherControl.state = 'waves';
-						W_weatherControl.change();
-					},
-					title: "Waves",
-					icon: '<img src="Icons/waves.png">'
-					}]
-			}),
-			currents: L.easyButton({
-				states: [{
-					stateName: "currents-button",
-					onClick: function () {
-						W_weatherControl.state = 'currents';
-						W_weatherControl.change();
-					},
-					title: "Currents",
-					icon: '<img src="Icons/currents.png">'
-					}],
-				id: 'current'
-			}),
-			gradient: L.easyButton({
-				states: [{
-					stateName: "Gradient-button",
-					onClick: W_gadget.gradient,
-					title: "Gradient",
-					icon: '<img src="Icons/gradient.png">'
-					}],
-				id: 'gradient'
-			}),
-			animation: L.easyButton({
-				states: [{
-					stateName: "animation-button",
-					onClick: W_gadget.animation,
-					title: "Animation",
-					icon: '<img src="Icons/animation_toggle.png">'
-					}],
-				id: 'animation'
-			}),
-			measuring: L.easyButton({
-				states: [{
-					stateName: "measure-button",
-					onClick: W_gadget.measuring,
-					title: "Measure Distance",
-					icon: '<img src="Icons/measuring.png">'
-					}]
-			}),
 			control: function () {
 				var h = $(window).height(),
 					w = Math.max($(window).width(), window.innerWidth);
@@ -442,25 +346,13 @@ function windytyMain(map) {
 						W_easybar.control.addTo(map);
 						layer_controls.addTo(map);
 						W_easybar_sem.statebar = true;
+						if(W_weatherControl.state === 'waves' || W_weatherControl.state === 'currents')
+							W_weatherControl.change();
 					}
 				}
 			}
 		},
-		W_easybar = {
-			state: L.easyBar([
-				W_easybutton.wind,
-				W_easybutton.temp,
-				W_easybutton.clouds,
-				W_easybutton.pressure,
-				W_easybutton.waves,
-				W_easybutton.currents
-			]).addTo(map),
-			control: L.easyBar([
-				W_easybutton.measuring,
-				W_easybutton.animation,
-				W_easybutton.gradient
-			]).addTo(map)
-		},
+		W_easybar = {},
 		W_fleetPosition = {
 			everG: {
 				l: [],
@@ -497,16 +389,17 @@ function windytyMain(map) {
 					W_layerGroup.fleetsLine[shipName] = new L.layerGroup();
 					L.mapbox.featureLayer().loadURL("position_line/" + shipName + "_line.geojson").addTo(W_layerGroup.fleetsLine[shipName]);
 					W_layerGroup.fleetsLine[shipName].addTo(W_layerGroup.fleetsLine.layer);
-//					console.log(W_layerGroup.fleetsLine);
+					//					console.log(W_layerGroup.fleetsLine);
 				} else {
 					W_layerGroup.fleetsLine[shipName].clearLayers();
 					delete W_layerGroup.fleetsLine[shipName];
-//					console.log(W_layerGroup.fleetsLine);
+					//					console.log(W_layerGroup.fleetsLine);
 				}
 			},
 			plotMarker: function (a) {
 				//a = everG.type
 				a.forEach(plot);
+
 				function plot(ship) {
 					var fleet_marker_option = {
 							size: 27,
@@ -537,9 +430,10 @@ function windytyMain(map) {
 			plotLabel: function (a) {
 				//a = everG.type
 				a.forEach(plot);
-				function plot(ship){
+
+				function plot(ship) {
 					var labelIcon = L.icon({
-							iconUrl: 'Icons/wind.png',
+							iconUrl: 'Icons/easybutton/wind.png',
 							iconSize: [0, 0],
 							iconAnchor: [0, 0],
 							labelAnchor: [16, 0]
@@ -565,29 +459,30 @@ function windytyMain(map) {
 			},
 			overlayChangeLabels: function (overlay) {
 				var layer = overlay.name;
-				if(layer === 'Labels'){
-					for(var ship in W_fleetPosition.everG){
-						if(!map.hasLayer(W_layerGroup.fleets[ship]))
+				if (layer === 'Labels') {
+					for (var ship in W_fleetPosition.everG) {
+						if (!map.hasLayer(W_layerGroup.fleets[ship]))
 							toggleDisplay(false, ship);
 						else
 							toggleDisplay(true, ship);
 					}
-				}
-				else if(layer.search(/-TYPEs/) !== -1){
+				} else if (layer.search(/-TYPEs/) !== -1) {
 					var shipType = layer[29].toLowerCase();
-					if(!map.hasLayer(W_layerGroup.fleets[shipType]))
+					if (!map.hasLayer(W_layerGroup.fleets[shipType]))
 						toggleDisplay(false, shipType);
 					else
-						toggleDisplay(true, shipType);	
+						toggleDisplay(true, shipType);
 				}
-				function toggleDisplay(boolean, ship){
+
+				function toggleDisplay(boolean, ship) {
 					var x = document.getElementsByClassName(ship + '-typeFleets'),
-						i = 0, length = x.length;
-					if(boolean)
-						for(i = 0; i < length; i++)
+						i = 0,
+						length = x.length;
+					if (boolean)
+						for (i = 0; i < length; i++)
 							x[i].style.display = "block";
 					else
-						for(i = 0; i < length; i++)
+						for (i = 0; i < length; i++)
 							x[i].style.display = "none";
 				}
 			}
@@ -598,7 +493,7 @@ function windytyMain(map) {
 				minZoom: 3,
 				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 			}),
-			Satellite: L.mapbox.tileLayer("mapbox.streets-satellite", {
+			/*Satellite: L.mapbox.tileLayer("mapbox.streets-satellite", {
 				format: 'jpg70',
 				zIndex: 200,
 				maxZoom: 19,
@@ -616,7 +511,7 @@ function windytyMain(map) {
 				attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri',
 				maxZoom: 13,
 				minZoom: 3
-			}),
+			}),*/
 			Normal: L.tileLayer("", {
 				maxZoom: 11,
 				minZoom: 3
@@ -655,7 +550,7 @@ function windytyMain(map) {
 				color: 'red',
 				vertices: 200
 			}),
-			//'Polyline' with great circle and 'polyline' with leaflet polyline
+			//'Polyline' is used for great circle and 'polyline' is used for leaflet polyline
 			//cf. polyline([[coordinate1],[coordinate2]])
 			//    Polyline([coordinate1],[coordinate2])
 			centerPosition: function () {
@@ -694,10 +589,12 @@ function windytyMain(map) {
 				var m1 = W_distance.marker1.getLatLng(),
 					m2 = W_distance.marker2.getLatLng();
 				displayKM = (m1.distanceTo(m2) / 1000).toFixed(3),
-					displayNM = (displayKM / 1.852).toFixed(3);
+				displayNM = (displayKM / 1.852).toFixed(3);
 				W_distance.km.innerHTML = displayKM + ' km';
 				W_distance.nm.innerHTML = displayNM + " nm";
-                if (m1.lng > m2.lng) { m2 = [m1, m1=m2][0] }; //fix greatcircle line               
+				if (m1.lng > m2.lng)
+					[m1, m2] = [m2, m1];
+					//m2 = [m1, m1 = m2][0]; //fix greatcircle line               
 				W_layerGroup.line.clearLayers();
 				W_distance.line = L.polyline([[m1.lat, m1.lng], [m2.lat, m2.lng]]).bindPopup('<p style="margin: 0px; padding: 0px; font-size: 16px;">Rhumb Line</p>');
 				W_distance.greatcircle = L.Polyline.Arc([m1.lat, m1.lng], [m2.lat, m2.lng], {
@@ -774,15 +671,47 @@ function windytyMain(map) {
 
 	W_route.initLine();
 
+	!function(){
+		var state = [], 
+			control = [];
+		W_weatherControl.weather.forEach(function(weather){
+			W_easybutton[weather] = L.easyButton({
+				states: [{
+					stateName: weather + "-button",
+					onClick: W_weatherControl.button,
+					title: weather,
+					icon: '<img src="Icons/easybutton/' + weather + '.png">'
+				}],
+				id: weather
+			});
+			state.push(W_easybutton[weather]);
+			document.getElementById('W_' + weather).onclick = W_weatherControl.button;
+		});
+		for(var gadget in W_gadget){
+			W_easybutton[gadget] = L.easyButton({
+				states: [{
+					stateName: gadget + "-button",
+					onClick: W_gadget[gadget],
+					title: gadget,
+					icon: '<img src="Icons/easybutton/' + gadget + '.png">'
+				}],
+				id: gadget
+			});
+			control.push(W_easybutton[gadget]);
+			document.getElementById('W_' + gadget).onclick = W_gadget[gadget];
+		}
+		W_easybar["state"] = L.easyBar(state).addTo(map);
+		W_easybar["control"] = L.easyBar(control).addTo(map);
+	}();
 	////Layers control
 	////toGeoJSON works when geojsons are loaded(featureLayer.loadURL) outside the windytyMain function.
 	W_layerGroup.track.toGeoJSON().features.forEach(W_fleetPosition.fleetTypeCat);
 	W_layerGroup.fleetsLine.layer.addTo(map);
 	//overlays加入船位
-	for (var obj in W_fleetPosition.everG) {
-		W_fleetPosition.plotMarker(W_fleetPosition.everG[obj]);
-		W_fleetPosition.plotLabel(W_fleetPosition.everG[obj]);
-		W_fleetPosition.overlays['<span style="color:' + W_fleetPosition.everG[obj][0].color + ';">' + obj.toUpperCase() + '-TYPEs</span>'] = W_layerGroup.fleets[obj].addTo(map);
+	for (var ship in W_fleetPosition.everG) {
+		W_fleetPosition.plotMarker(W_fleetPosition.everG[ship]);
+		W_fleetPosition.plotLabel(W_fleetPosition.everG[ship]);
+		W_fleetPosition.overlays['<span style="color:' + W_fleetPosition.everG[ship][0].color + ';">' + ship.toUpperCase() + '-TYPEs</span>'] = W_layerGroup.fleets[ship].addTo(map);
 	};
 	var layer_controls = L.control.layers(W_tileLayer, W_fleetPosition.overlays, {
 		"position": 'topright',
@@ -793,10 +722,10 @@ function windytyMain(map) {
 		newSeparator = document.createElement("div");
 	newSeparator.setAttribute("class", "leaflet-control-layers-separator");
 	leafletOverlays.insertBefore(newSeparator, leafletOverlays.childNodes[2]);
-	
+
 	map.on('zoomend', W_fleetPosition.zoomChangeFleetsSpeed);
 	map.on('baselayerchange', function () {
-		W_weatherControl.checkTile();//hide the baselayer if tilelayer is changed
+		W_weatherControl.check(); //hide the baselayer if tilelayer is changed
 		W_distance.drive();
 	});
 
@@ -807,39 +736,6 @@ function windytyMain(map) {
 	$(document).ready(function () {
 		$(window).resize(W_easybutton.control);
 	});
-
-	document.getElementById('W_wind').onclick = function () {
-		W_weatherControl.state = 'wind';
-		W.setOverlay("wind");
-		W_weatherControl.change();
-	};
-	document.getElementById('W_temp').onclick = function () {
-		W_weatherControl.state = 'temp';
-		W.setOverlay("temp");
-		W_weatherControl.change();
-	};
-	document.getElementById('W_clouds').onclick = function () {
-		W_weatherControl.state = 'clouds';
-		W.setOverlay("clouds");
-		W_weatherControl.change();
-	};
-	document.getElementById('W_press').onclick = function () {
-		W_weatherControl.state = 'pressure';
-		W.setOverlay("pressure");
-		W_weatherControl.change();
-	};;
-	document.getElementById('W_waves').onclick = function () {
-		W_weatherControl.state = 'waves';
-		W_weatherControl.change();
-	};
-	document.getElementById('W_currents').onclick = function () {
-		W_weatherControl.state = 'currents';
-		W_weatherControl.change();
-	};
-	document.getElementById('W_measuring').onclick = W_gadget.measuring;
-	//change_tile function is not in windytyMain()
-	document.getElementById('W_animation').onclick = W_gadget.animation;
-	document.getElementById('W_gradient').onclick = W_gadget.gradient;
 
 	//LayerGroups
 	W_layerGroup.routeGroup.addTo(map); //Route layerGroup
@@ -906,7 +802,7 @@ function windytyMain(map) {
 	W_timeline.slider.display.style.left = ((((parseInt(document.getElementById('slider').value) - W.timeline.start) / 3600000) / 168) * 100 - 1) + '%';
 	document.getElementById('calendarpointer-pointer').style.left = (((parseInt(document.getElementById('slider').value) - W.timeline.start) / 3600000) / 168) * 100 + '%';
 
-	for (i = 0; i < W_timeline.weekdays.length; i++) {
+	for (i = 0; i < 7; i++) {
 		var j = (i + W_timeline.present.Weekday) % 7,
 			table_name = 'calendar-table-',
 			date_counter = i * 86400000;
