@@ -91,7 +91,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5b
 	});
 	W_layerGroup.ECAsNOxLayer.on('mouseout', function () {
 		this.setStyle({
-			"color": "white",
+			"color": "#fff",
 			"weight": "2"
 		})
 	});
@@ -127,7 +127,6 @@ function windytyMain(map) {
 		key: 1,
 		keep: function () {
 			if (!W_animation.key) {
-				console.log(W_animation.canvas1);
 				W.animation.stop();
 				W_animation.canvas1.style.opacity = 0;
 				setTimeout(function () {
@@ -139,6 +138,7 @@ function windytyMain(map) {
 		}
 	}
 	W_animation.canvas1.addEventListener('transitionend', W_animation.keep);
+
 	//Because 'transitionstart' event didn't exist in W3C rules, it is tricky to change the transition time into 0.001s to fool your eyes.
 	////
 	//
@@ -243,12 +243,14 @@ function windytyMain(map) {
 						if (map.hasLayer(W_tileLayer.Normal)) {
 							for (var tile in W_tileLayer)
 								layer_controls.removeLayer(W_tileLayer[tile]);
+							W_easybutton.addSeparator();
 						} 
 						else{
 							for (var tile in W_tileLayer) {
 								if (map.hasLayer(W_tileLayer[tile])) 
 									map.removeLayer(W_tileLayer[tile]);
 								layer_controls.removeLayer(W_tileLayer[tile]);
+								W_easybutton.addSeparator();
 							}
 							map.addLayer(W_tileLayer.Normal);
 							$(".leaflet-layer:first").show();
@@ -267,18 +269,69 @@ function windytyMain(map) {
 					tileCheck();
 				} else {
 					timeline.style.display = "block";
-					if (W_weatherControl.baselayerState === 'empty' && W_easybar_sem.statebar)
+					if (W_weatherControl.baselayerState === 'empty' && W_easybar_sem.statebar){
 						for (var obj in W_tileLayer)
 							layer_controls.addBaseLayer(W_tileLayer[obj], obj);
+						W_easybutton.addSeparator();
+					}
 					W_weatherControl.baselayerState === 'full';
 				}
 			},
 			check: function () {
 				if (map.hasLayer(W_tileLayer.Normal)) {
 					$(".leaflet-layer:first").show();
+					/*W_gadget.animation();
+					W_gadget.gradient();*/
+					document.querySelectorAll('div.leaflet-overlay-pane canvas').forEach(function(canvas){
+						canvas.style.display = 'block';
+					});
+					W_weatherControl.weather.forEach(function(weather){
+						W_easybutton[weather].enable();
+					});
+					if(!W_easybar_sem.statebar){
+						W_weatherControl.weather.forEach(function(weather){
+							$('#W_' + weather).removeClass("disable");
+							document.getElementById('W_' + weather).addEventListener('click', W_weatherControl.button);
+						});
+					}
+					document.getElementById("timeline").style.display = "block";
+					W_layerGroup.ECAsNOxLayer.setStyle({
+							"color": "#fff",
+							"weight": "2"
+					});
+					W_layerGroup.ECAsNOxLayer.on('mouseout', function () {
+						this.setStyle({
+							"color": "#fff",
+							"weight": "2"
+						})
+					});
 				} else {
 					$(".leaflet-layer:first").hide();
-					
+					/*W_gadget.animation();
+					W_gadget.gradient();*/
+					document.querySelectorAll('div.leaflet-overlay-pane canvas').forEach(function(canvas){
+						canvas.style.display = 'none';
+					});
+					W_weatherControl.weather.forEach(function(weather){
+						W_easybutton[weather].disable();
+					});
+					if(!W_easybar_sem.statebar){
+						W_weatherControl.weather.forEach(function(weather){
+							$('#W_' + weather).addClass("disable");
+							document.getElementById('W_' + weather).removeEventListener('click', W_weatherControl.button);
+						});
+					}
+					document.getElementById("timeline").style.display = "none";
+					W_layerGroup.ECAsNOxLayer.setStyle({
+							"color": "#EC7063",
+							"weight": "2"
+					});
+					W_layerGroup.ECAsNOxLayer.on('mouseout', function () {
+						this.setStyle({
+							"color": "#EC7063",
+							"weight": "2"
+						})
+					});
 				}
 			},
 			button: function(){
@@ -345,11 +398,18 @@ function windytyMain(map) {
 						W_easybar.state.addTo(map);
 						W_easybar.control.addTo(map);
 						layer_controls.addTo(map);
+						W_easybutton.addSeparator();
 						W_easybar_sem.statebar = true;
 						if(W_weatherControl.state === 'waves' || W_weatherControl.state === 'currents')
 							W_weatherControl.change();
 					}
 				}
+			},
+			addSeparator: function(){
+				var leafletOverlays = document.querySelector(".leaflet-control-layers-overlays"),
+					newSeparator = document.createElement("div");
+				newSeparator.setAttribute("class", "leaflet-control-layers-separator");
+				leafletOverlays.insertBefore(newSeparator, leafletOverlays.childNodes[2]);
 			}
 		},
 		W_easybar = {},
@@ -685,9 +745,9 @@ function windytyMain(map) {
 				id: weather
 			});
 			state.push(W_easybutton[weather]);
-			document.getElementById('W_' + weather).onclick = W_weatherControl.button;
+			document.getElementById('W_' + weather).addEventListener('click', W_weatherControl.button);
 		});
-		for(var gadget in W_gadget){
+/*		for(var gadget in W_gadget){
 			W_easybutton[gadget] = L.easyButton({
 				states: [{
 					stateName: gadget + "-button",
@@ -699,7 +759,35 @@ function windytyMain(map) {
 			});
 			control.push(W_easybutton[gadget]);
 			document.getElementById('W_' + gadget).onclick = W_gadget[gadget];
-		}
+		}*/
+		W_easybutton['measuring'] = L.easyButton({
+			states: [{
+				stateName: "measuring-button",
+				onClick: W_gadget['measuring'],
+				title: 'measuring',
+				icon: '<img src="Icons/easybutton/measuring.png">'
+				}],
+			id: 'measuring'
+		});
+		control.push(W_easybutton['measuring']);
+		document.getElementById('W_measuring').onclick = W_gadget['measuring'];
+		
+		document.getElementById('W_maptile').addEventListener('click', function () {
+			if(W_weatherControl.state === 'currents' || W_weatherControl.state === 'waves'){
+				W.setOverlay("wind");
+			}
+			//set the weather to the wind mode in order to make measuring line work.
+			if (map.hasLayer(W_tileLayer.Normal)) {
+				map.removeLayer(W_tileLayer.Normal);
+				map.addLayer(W_tileLayer.OpenStreetMap);
+			}
+			else{
+				map.removeLayer(W_tileLayer.OpenStreetMap);
+				map.addLayer(W_tileLayer.Normal);
+			}
+			W_weatherControl.check(); //hide the baselayer if tilelayer is changed
+			W_distance.drive();
+		});
 		W_easybar["state"] = L.easyBar(state).addTo(map);
 		W_easybar["control"] = L.easyBar(control).addTo(map);
 	}();
@@ -718,10 +806,7 @@ function windytyMain(map) {
 		"collapsed": true
 	}).addTo(map);
 	//Add a separator in overlay
-	var leafletOverlays = document.querySelector(".leaflet-control-layers-overlays"),
-		newSeparator = document.createElement("div");
-	newSeparator.setAttribute("class", "leaflet-control-layers-separator");
-	leafletOverlays.insertBefore(newSeparator, leafletOverlays.childNodes[2]);
+	W_easybutton.addSeparator();
 
 	map.on('zoomend', W_fleetPosition.zoomChangeFleetsSpeed);
 	map.on('baselayerchange', function () {
@@ -732,7 +817,6 @@ function windytyMain(map) {
 	map.on('overlayadd overlayremove', W_fleetPosition.overlayChangeLabels);
 	// detect window size for leaflet easybutton
 	W_easybutton.control();
-
 	$(document).ready(function () {
 		$(window).resize(W_easybutton.control);
 	});
