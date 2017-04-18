@@ -240,7 +240,7 @@ function windytyMain(map) {
 			change: function () {
 				var tileCheck = function(){
 					if (W_easybar_sem.statebar){
-						if (map.hasLayer(W_tileLayer.Normal)) {
+						if (map.hasLayer(W_tileLayer.Weather)) {
 							for (var tile in W_tileLayer)
 								layer_controls.removeLayer(W_tileLayer[tile]);
 							W_easybutton.addSeparator();
@@ -252,7 +252,7 @@ function windytyMain(map) {
 								layer_controls.removeLayer(W_tileLayer[tile]);
 								W_easybutton.addSeparator();
 							}
-							map.addLayer(W_tileLayer.Normal);
+							map.addLayer(W_tileLayer.Weather);
 							$(".leaflet-layer:first").show();
 						}
 						W_weatherControl.baselayerState = 'empty';
@@ -278,10 +278,10 @@ function windytyMain(map) {
 				}
 			},
 			check: function () {
-				if (map.hasLayer(W_tileLayer.Normal)) {
+				if (map.hasLayer(W_tileLayer.Weather)) {
 					$(".leaflet-layer:first").show();
-					/*W_gadget.animation();
-					W_gadget.gradient();*/
+					if(map.getZoom() > 11)
+						map.setZoom(11);
 					document.querySelectorAll('div.leaflet-overlay-pane canvas').forEach(function(canvas){
 						canvas.style.display = 'block';
 					});
@@ -307,8 +307,6 @@ function windytyMain(map) {
 					});
 				} else {
 					$(".leaflet-layer:first").hide();
-					/*W_gadget.animation();
-					W_gadget.gradient();*/
 					document.querySelectorAll('div.leaflet-overlay-pane canvas').forEach(function(canvas){
 						canvas.style.display = 'none';
 					});
@@ -572,7 +570,7 @@ function windytyMain(map) {
 				maxZoom: 13,
 				minZoom: 3
 			}),*/
-			Normal: L.tileLayer("", {
+			Weather: L.tileLayer("", {
 				maxZoom: 11,
 				minZoom: 3
 			}).addTo(map)
@@ -664,7 +662,7 @@ function windytyMain(map) {
 				W_distance.line.setStyle({
 					color: 'white'
 				});
-				if (map.hasLayer(W_tileLayer.Normal) || map.hasLayer(W_tileLayer.Satellite)) {
+				if (map.hasLayer(W_tileLayer.Weather) || map.hasLayer(W_tileLayer.Satellite)) {
 					W_distance.line.setStyle({
 						color: 'white'
 					});
@@ -777,13 +775,13 @@ function windytyMain(map) {
 				W.setOverlay("wind");
 			}
 			//set the weather to the wind mode in order to make measuring line work.
-			if (map.hasLayer(W_tileLayer.Normal)) {
-				map.removeLayer(W_tileLayer.Normal);
+			if (map.hasLayer(W_tileLayer.Weather)) {
+				map.removeLayer(W_tileLayer.Weather);
 				map.addLayer(W_tileLayer.OpenStreetMap);
 			}
 			else{
 				map.removeLayer(W_tileLayer.OpenStreetMap);
-				map.addLayer(W_tileLayer.Normal);
+				map.addLayer(W_tileLayer.Weather);
 			}
 			W_weatherControl.check(); //hide the baselayer if tilelayer is changed
 			W_distance.drive();
