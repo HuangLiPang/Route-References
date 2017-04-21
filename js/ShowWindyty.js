@@ -116,7 +116,7 @@ function windytyMain(map) {
 		imperial: false,
 		nautic: true
 	}).addTo(map);
-	
+/*
 	//
 	////animation control
 	var W_animation = {
@@ -141,7 +141,7 @@ function windytyMain(map) {
 
 	//Because 'transitionstart' event didn't exist in W3C rules, it is tricky to change the transition time into 0.001s to fool your eyes.
 	////
-	//
+*/
 	var W_route = {
 			path: "", //String variable for for the data path of the route
 			geojson: "", //Variable for geojson data path
@@ -213,11 +213,13 @@ function windytyMain(map) {
 				W_dynamic.marker = null;
 				//
 				W_route.clearHistory();
-				document.getElementById('slider').value = W.timeline.start + W_timeline.present.HourSec();
-				W.setTimestamp(document.getElementById('timePopup').value);
-				document.getElementById('timePopup').innerHTML = W_timeline.present.Time();
-				document.getElementById('timePopup').style.left = ((((parseInt(document.getElementById('slider').value) - W.timeline.start) / 3600000) / 168) * 100 - 10) + '%';
-				document.getElementById('calendarpointer-pointer').style.left = (((parseInt(document.getElementById('slider').value) - W.timeline.start) / 3600000) / 168) * 100 + '%';
+				var timePopup = document.getElementById('timePopup'),
+					slider = document.getElementById('slider');
+				slider.value = W.timeline.start + W_timeline.present.HourSec();
+				W.setTimestamp(timePopup.value);
+				timePopup.innerHTML = W_timeline.present.Time();
+				timePopup.style.left = ((((parseInt(slider.value) - W.timeline.start) / 3600000) / 168) * 100 - 1) + '%';
+				document.getElementById('calendarpointer-pointer').style.left = (((parseInt(slider.value) - W.timeline.start) / 3600000) / 168) * 100 + '%';
 				W_route.initLine();
 			},
 			clearHistory: function () {
@@ -230,106 +232,56 @@ function windytyMain(map) {
 		},
 		W_easybar_sem = {
 			statebar: true,
-			Switch: true,
-			count: 1
 		},
 		W_weatherControl = {
 			weather: ["wind", "temp", "clouds", "pressure", "waves", "currents"],
 			state: "wind",
 			baselayerState: "full",
 			change: function () {
-				var tileCheck = function(){
+				var tileCheckForLayerControl = function(){
 					if (W_easybar_sem.statebar){
 						if (map.hasLayer(W_tileLayer.Weather)) {
 							for (var tile in W_tileLayer)
 								layer_controls.removeLayer(W_tileLayer[tile]);
-							W_easybutton.addSeparator();
 						} 
 						else{
 							for (var tile in W_tileLayer) {
 								if (map.hasLayer(W_tileLayer[tile])) 
 									map.removeLayer(W_tileLayer[tile]);
 								layer_controls.removeLayer(W_tileLayer[tile]);
-								W_easybutton.addSeparator();
 							}
 							map.addLayer(W_tileLayer.Weather);
 							$(".leaflet-layer:first").show();
 						}
+						W_easybutton.addSeparator();
 						W_weatherControl.baselayerState = 'empty';
+					}
+					else{
+						$('#W_maptile').addClass("disable");
+						document.getElementById('W_maptile').removeEventListener('click', W_gadget.map); 
 					}
 				},
 				timeline = document.getElementById("timeline");
-				if (W_weatherControl.state === 'currents') {
+				if (this.state === 'currents') {
 					W.setOverlay("currents");
 					timeline.style.display = "none";
-					tileCheck();
-				} else if (W_weatherControl.state === 'waves') {
+					tileCheckForLayerControl();
+				} else if (this.state === 'waves') {
 					W.setOverlay("waves");
 					timeline.style.display = "block";
-					tileCheck();
+					tileCheckForLayerControl();
 				} else {
 					timeline.style.display = "block";
-					if (W_weatherControl.baselayerState === 'empty' && W_easybar_sem.statebar){
+					if (this.baselayerState === 'empty' && W_easybar_sem.statebar){
 						for (var obj in W_tileLayer)
 							layer_controls.addBaseLayer(W_tileLayer[obj], obj);
 						W_easybutton.addSeparator();
 					}
-					W_weatherControl.baselayerState === 'full';
-				}
-			},
-			check: function () {
-				if (map.hasLayer(W_tileLayer.Weather)) {
-					$(".leaflet-layer:first").show();
-					if(map.getZoom() > 11)
-						map.setZoom(11);
-					document.querySelectorAll('div.leaflet-overlay-pane canvas').forEach(function(canvas){
-						canvas.style.display = 'block';
-					});
-					W_weatherControl.weather.forEach(function(weather){
-						W_easybutton[weather].enable();
-					});
 					if(!W_easybar_sem.statebar){
-						W_weatherControl.weather.forEach(function(weather){
-							$('#W_' + weather).removeClass("disable");
-							document.getElementById('W_' + weather).addEventListener('click', W_weatherControl.button);
-						});
+						$('#W_maptile').removeClass("disable");
+						document.getElementById('W_maptile').addEventListener('click', W_gadget.map);  
 					}
-					document.getElementById("timeline").style.display = "block";
-					W_layerGroup.ECAsNOxLayer.setStyle({
-							"color": "#fff",
-							"weight": "2"
-					});
-					W_layerGroup.ECAsNOxLayer.on('mouseout', function () {
-						this.setStyle({
-							"color": "#fff",
-							"weight": "2"
-						})
-					});
-				} else {
-					$(".leaflet-layer:first").hide();
-					document.querySelectorAll('div.leaflet-overlay-pane canvas').forEach(function(canvas){
-						canvas.style.display = 'none';
-					});
-					W_weatherControl.weather.forEach(function(weather){
-						W_easybutton[weather].disable();
-					});
-					if(!W_easybar_sem.statebar){
-						W_weatherControl.weather.forEach(function(weather){
-							$('#W_' + weather).addClass("disable");
-							document.getElementById('W_' + weather).removeEventListener('click', W_weatherControl.button);
-						});
-					}
-					document.getElementById("timeline").style.display = "none";
-					W_layerGroup.ECAsNOxLayer.setStyle({
-							"color": "#EC7063",
-							"weight": "2"
-					});
-					W_layerGroup.ECAsNOxLayer.on('mouseout', function () {
-						this.setStyle({
-							"color": "#EC7063",
-							"weight": "2"
-						})
-					});
+					this.baselayerState === 'full';
 				}
 			},
 			button: function(){
@@ -351,6 +303,76 @@ function windytyMain(map) {
 				W_distance.button();
 				W_distance.showMarker();
 			},
+			withMapChange: function () {
+				if (map.hasLayer(W_tileLayer.Weather)) {
+					if(map.getZoom() > 11)
+						map.setZoom(11);
+					//Toggle windyty layers
+					$(".leaflet-layer:first").show();
+					document.querySelectorAll('div.leaflet-overlay-pane canvas').forEach(function(canvas){
+						canvas.style.display = 'block';
+					});
+					//Weather buttons control
+					if(W_easybar_sem.statebar)
+						W_weatherControl.weather.forEach(function(weather){
+							W_easybutton[weather].enable();
+						});
+					else
+						W_weatherControl.weather.forEach(function(weather){
+							$('#W_' + weather).removeClass("disable");
+							document.getElementById('W_' + weather).addEventListener('click', W_weatherControl.button);
+						});
+					document.getElementById("timeline").style.display = "block";
+					W_layerGroup.ECAsNOxLayer.setStyle({
+							"color": "#fff",
+							"weight": "2"
+					});
+					W_layerGroup.ECAsNOxLayer.on('mouseout', function () {
+						this.setStyle({
+							"color": "#fff",
+							"weight": "2"
+						})
+					});
+				} else {
+					$(".leaflet-layer:first").hide();
+					document.querySelectorAll('div.leaflet-overlay-pane canvas').forEach(function(canvas){
+						canvas.style.display = 'none';
+					});
+					if(W_easybar_sem.statebar)
+						W_weatherControl.weather.forEach(function(weather){
+						W_easybutton[weather].disable();
+					});
+					else
+						W_weatherControl.weather.forEach(function(weather){
+							$('#W_' + weather).addClass("disable");
+							document.getElementById('W_' + weather).removeEventListener('click', W_weatherControl.button);
+						});
+					document.getElementById("timeline").style.display = "none";
+					W_layerGroup.ECAsNOxLayer.setStyle({
+							"color": "#EC7063",
+							"weight": "2"
+					});
+					W_layerGroup.ECAsNOxLayer.on('mouseout', function () {
+						this.setStyle({
+							"color": "#EC7063",
+							"weight": "2"
+						})
+					});
+				}
+				W_distance.drive();
+			},
+			map: function(){
+				if (map.hasLayer(W_tileLayer.Weather)) {
+					map.removeLayer(W_tileLayer.Weather);
+					map.addLayer(W_tileLayer.OpenStreetMap);
+				}
+				else{
+					map.removeLayer(W_tileLayer.OpenStreetMap);
+					map.addLayer(W_tileLayer.Weather);
+				}
+				W_gadget.withMapChange();
+			}
+			/*,
 			animation: function () {
 				if (W_animation.key) {
 					W.animation.stop();
@@ -378,7 +400,7 @@ function windytyMain(map) {
 				} else if (W_animation.gradient3.style.opacity == 0 && W_animation.gradient2.style.opacity == 0) {
 					W_animation.gradcheck.style.opacity = 1;
 				}
-			}
+			}*/
 		},
 		W_easybutton = {
 			control: function () {
@@ -602,6 +624,7 @@ function windytyMain(map) {
 			buttonSwitch: false,
 			markerSwitch: false,
 			line: L.polyline([[25.154, 121.377], [27.154, 123.377]], {
+				color: 'white',
 				zIndex: 200
 			}),
 			greatcircle: L.Polyline.Arc([25.154, 121.377], [27.154, 123.377], {
@@ -745,19 +768,6 @@ function windytyMain(map) {
 			state.push(W_easybutton[weather]);
 			document.getElementById('W_' + weather).addEventListener('click', W_weatherControl.button);
 		});
-/*		for(var gadget in W_gadget){
-			W_easybutton[gadget] = L.easyButton({
-				states: [{
-					stateName: gadget + "-button",
-					onClick: W_gadget[gadget],
-					title: gadget,
-					icon: '<img src="Icons/easybutton/' + gadget + '.png">'
-				}],
-				id: gadget
-			});
-			control.push(W_easybutton[gadget]);
-			document.getElementById('W_' + gadget).onclick = W_gadget[gadget];
-		}*/
 		W_easybutton['measuring'] = L.easyButton({
 			states: [{
 				stateName: "measuring-button",
@@ -768,29 +778,13 @@ function windytyMain(map) {
 			id: 'measuring'
 		});
 		control.push(W_easybutton['measuring']);
-		document.getElementById('W_measuring').onclick = W_gadget['measuring'];
-		
-		document.getElementById('W_maptile').addEventListener('click', function () {
-			if(W_weatherControl.state === 'currents' || W_weatherControl.state === 'waves'){
-				W.setOverlay("wind");
-			}
-			//set the weather to the wind mode in order to make measuring line work.
-			if (map.hasLayer(W_tileLayer.Weather)) {
-				map.removeLayer(W_tileLayer.Weather);
-				map.addLayer(W_tileLayer.OpenStreetMap);
-			}
-			else{
-				map.removeLayer(W_tileLayer.OpenStreetMap);
-				map.addLayer(W_tileLayer.Weather);
-			}
-			W_weatherControl.check(); //hide the baselayer if tilelayer is changed
-			W_distance.drive();
-		});
+		document.getElementById('W_measuring').addEventListener('click', W_gadget['measuring']);
+		document.getElementById('W_maptile').addEventListener('click', W_gadget.map);
 		W_easybar["state"] = L.easyBar(state).addTo(map);
 		W_easybar["control"] = L.easyBar(control).addTo(map);
 	}();
-	////Layers control
-	////toGeoJSON works when geojsons are loaded(featureLayer.loadURL) outside the windytyMain function.
+	//parse ships
+	//toGeoJSON works when geojsons are loaded(featureLayer.loadURL) outside the windytyMain function.
 	W_layerGroup.track.toGeoJSON().features.forEach(W_fleetPosition.fleetTypeCat);
 	W_layerGroup.fleetsLine.layer.addTo(map);
 	//overlays加入船位
@@ -799,6 +793,7 @@ function windytyMain(map) {
 		W_fleetPosition.plotLabel(W_fleetPosition.everG[ship]);
 		W_fleetPosition.overlays['<span style="color:' + W_fleetPosition.everG[ship][0].color + ';">' + ship.toUpperCase() + '-TYPEs</span>'] = W_layerGroup.fleets[ship].addTo(map);
 	};
+	//Layers control
 	var layer_controls = L.control.layers(W_tileLayer, W_fleetPosition.overlays, {
 		"position": 'topright',
 		"collapsed": true
@@ -807,10 +802,7 @@ function windytyMain(map) {
 	W_easybutton.addSeparator();
 
 	map.on('zoomend', W_fleetPosition.zoomChangeFleetsSpeed);
-	map.on('baselayerchange', function () {
-		W_weatherControl.check(); //hide the baselayer if tilelayer is changed
-		W_distance.drive();
-	});
+	map.on('baselayerchange', W_gadget.withMapChange);
 
 	map.on('overlayadd overlayremove', W_fleetPosition.overlayChangeLabels);
 	// detect window size for leaflet easybutton
@@ -848,7 +840,7 @@ function windytyMain(map) {
 				return W_timeline.months[this.Month] + ' ' + this.Date + '  ' + W_timeline.weekdays[this.Weekday] + ' ' + this.Hour + ':00'
 			}
 		},
-		End: 7 * 24 * 3600000,
+		length: 7 * 24 * 3600000,
 		slider: {
 			range: document.getElementById('slider'),
 			display: document.getElementById('timePopup'),
@@ -876,7 +868,7 @@ function windytyMain(map) {
 
 	W_timeline.slider.range.min = W.timeline.start;
 	W_timeline.slider.range.step = 3600000; //3600000 seconds = 1 hour
-	W_timeline.slider.range.max = W.timeline.start + W_timeline.End;
+	W_timeline.slider.range.max = W.timeline.start + W_timeline.length;
 	W_timeline.slider.range.value = W.timeline.start + W_timeline.present.HourSec();
 	//W.timeline.start gives 0:00 of the day as input time, and adding 'presentHourSec' to give present time as input
 	W_timeline.slider.range.addEventListener('input', W_timeline.slider.change);
