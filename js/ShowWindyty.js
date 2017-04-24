@@ -811,6 +811,14 @@ function windytyMain(map) {
 		$(window).resize(W_easybutton.control);
 	});
 
+	if(L.Browser.mobile){
+		document.querySelector(".leaflet-touch .leaflet-control-layers-toggle").style.width = "30px";
+		document.querySelector(".leaflet-touch .leaflet-control-layers-toggle").style.height = "30px";
+		document.querySelectorAll(".easy-button-button .button-state").forEach(function(tag){
+			tag.style.left = "-15%";
+		});
+	}
+	
 	//LayerGroups
 	W_layerGroup.routeGroup.addTo(map); //Route layerGroup
 	W_layerGroup.markerGroup.addTo(map); //Measure marker layerGroups
@@ -875,7 +883,9 @@ function windytyMain(map) {
 	W_timeline.slider.display.innerHTML = W_timeline.present.Time();
 	W_timeline.slider.display.style.left = ((((parseInt(document.getElementById('slider').value) - W.timeline.start) / 3600000) / 168) * 100 - 1) + '%';
 	document.getElementById('calendarpointer-pointer').style.left = (((parseInt(document.getElementById('slider').value) - W.timeline.start) / 3600000) / 168) * 100 + '%';
-
+	
+	//loop for displaying the present date
+	//Calendar quick click
 	for (i = 0; i < 7; i++) {
 		var j = (i + W_timeline.present.Weekday) % 7,
 			table_name = 'calendar-table-',
@@ -885,21 +895,16 @@ function windytyMain(map) {
 		document.getElementById(table_name).innerHTML = W_timeline.weekdays[j] + ' ' + W_timeline.present.Date;
 		document.getElementById(table_name).onclick = W_timeline.select;
 	}
-	//loop for displaying the present date
-	//Calendar quick click
 
-	//M
-	//Marker Distance
+	//Measuring Distance
 	var displayKM = (W_distance.marker1.getLatLng().distanceTo(W_distance.marker2.getLatLng()) / 1000).toFixed(3),
 		displayNM = (displayKM / 1.852).toFixed(3);
 	W_distance.marker1.on('move', W_distance.drive);
 	W_distance.marker2.on('move', W_distance.drive);
 	map.on('move', W_distance.centerPosition);
 
-	//@@
-	//Mouse position
+	//Cursor position
 	map.on('mousemove', cursor);
-
 	function cursor(a) {
 		var lat = Math.abs(a.latlng.lat.toPrecision(9)),
 			lng = Math.abs(a.latlng.wrap(-180, 180).lng.toPrecision(9)),
@@ -935,9 +940,6 @@ function windytyMain(map) {
 			}
 		}
 	}
-	//Mouse position
-	//@@
-	//
 
 	//
 	////Search Bar
