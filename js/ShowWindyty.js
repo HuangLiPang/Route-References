@@ -469,17 +469,16 @@ function windytyMain(map) {
 					W_layerGroup.fleetsLine[shipName] = new L.layerGroup();
 					L.mapbox.featureLayer().loadURL("position_line/" + shipName + "_line.geojson").addTo(W_layerGroup.fleetsLine[shipName]);
 					W_layerGroup.fleetsLine[shipName].addTo(W_layerGroup.fleetsLine.layer);
-					//					console.log(W_layerGroup.fleetsLine);
+					//console.log(W_layerGroup.fleetsLine);
 				} else {
 					W_layerGroup.fleetsLine[shipName].clearLayers();
 					delete W_layerGroup.fleetsLine[shipName];
-					//					console.log(W_layerGroup.fleetsLine);
+					//console.log(W_layerGroup.fleetsLine);
 				}
 			},
 			plotMarker: function (a) {
 				//a = everG.type
 				a.forEach(plot);
-
 				function plot(ship) {
 					var fleet_marker_option = {
 							size: 27,
@@ -803,7 +802,6 @@ function windytyMain(map) {
 
 	map.on('zoomend', W_fleetPosition.zoomChangeFleetsSpeed);
 	map.on('baselayerchange', W_gadget.withMapChange);
-
 	map.on('overlayadd overlayremove', W_fleetPosition.overlayChangeLabels);
 	// detect window size for leaflet easybutton
 	W_easybutton.control();
@@ -831,8 +829,7 @@ function windytyMain(map) {
 	document.getElementById("route").onchange = W_route.create;
 	document.getElementById('reset').onclick = W_route.clear;
 
-	//
-	////timeline
+	//timeline
 	var W_timeline = {
 		weekdays: ['Sun.', 'Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.'],
 		months: ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'],
@@ -945,121 +942,157 @@ function windytyMain(map) {
 	////Search Bar
 
 	//string splice
-	String.prototype.splice = function (idx, rem, str) {
-		return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
+	String.prototype.splice = function (index, remainder, string) {
+		return this.slice(0, index) + string + this.slice(index + Math.abs(remainder));
 	};
-
-	var r_search = {
-		key: '',
-		harbor: '//*[contains(harbor, "")]/harbor',
-		path: '//*[contains(harbor, "")]/path',
-		s_harbor: function (key, str) {
-			return JSON.search(key, str);
-		},
-		s_path: function (key, str) {
-			return JSON.search(key, str);
+	/*var searchTarget = function (start, end) {
+		var searchStart = "//*[contains(start, '')]/",
+			searchEnd = "//*[contains(end, '')]/",
+			searchHarbor = "//*[contains(harbor, '')]/",
+			searchArray = ["start", "end", "harbor", "path", "distanceInNM"],
+			target = {};
+		start = start.toUpperCase();
+		end = end.toUpperCase();
+		function checkStartEnd(_start, _end, target) {
+			var searchBar = window["search_bar"],
+				searchResult = window["search_result"];
+			searchBar.style.height = '50%';
+			searchResult.style.height = '100%';
+			if (_start === '' && _end === '') {
+				searchBar.style.height = '0%';
+				searchResult.style.height = '0%';
+				return undefined;
+			} 
+			else if (_start !== '' && _end === ''){
+				var search = searchStart.splice(21, 0, _start);
+				searchArray.forEach(function(item){
+					if(item !== "end")
+						target[item] = search + item;
+				});
+			}
+			else if (_start === '' && _end !== ''){
+				var search = searchEnd.splice(21, 0, _end);
+				searchArray.forEach(function(item){
+					if(item !== "start")
+						target[item] = search + item;
+				});
+			}
+			else{
+				var search = searchStart.splice(21, 0, _start + "-" + _end);
+				searchArray.forEach(function(item){
+					if(item !== "start" && item !== "end")
+						target[item] = search + item;
+				});
+			}
 		}
-	};
-	var search_event = function () {
-		$.getJSON("Route_Catalogue.json", function (result) {
-			var from_harbor = $('#from_harbor').val().toUpperCase(),
-				to_harbor = $('#to_harbor').val().toUpperCase(),
-				h = r_search.harbor.splice(22, 0, checkto(from_harbor, to_harbor)),
-				p = r_search.path.splice(22, 0, checkto(from_harbor, to_harbor)),
-				rh = r_search.s_harbor(result, h),
-				rp = r_search.s_harbor(result, p);
-			iterateItems(rh.length, rh, rp);
-		});
-	};
+	},
+		routeCatalogue = undefined;*/
+	var r_search = {
+			key: '',
+			harbor: '//*[contains(harbor, "")]/harbor',
+			path: '//*[contains(harbor, "")]/path',
+			distance: '//*[contains(harbor, "")]/distanceInNM',
+			s_harbor: function (json, key) {
+				return JSON.search(json, key);
+			},
+			s_path: function (json, key) {
+				return JSON.search(json, key);
+			}
+		},
+		search_event = function () {
+			$.getJSON("Route_Catalogue.json", function (result) {
+				var from_harbor = $('#from_harbor').val().toUpperCase(),
+					to_harbor = $('#to_harbor').val().toUpperCase(),
+					h = r_search.harbor.splice(22, 0, checkto(from_harbor, to_harbor)),
+					p = r_search.path.splice(22, 0, checkto(from_harbor, to_harbor)),
+					d = r_search.distance.splice(22, 0, checkto(from_harbor, to_harbor)),
+					rh = r_search.s_harbor(result, h),
+					rp = r_search.s_harbor(result, p),
+					rd = r_search.s_harbor(result, d);
+//				console.log(rh);
+//				console.log(rp);
+				showSearchItems(rh.length, rh, rp, rd);
+			});
+		};
 	$(document).ready(function () {
 		$("[id$=harbor]").on({
 			keyup: search_event,
 			mouseup: search_event
 		});
+		var loadCatalogue = function(){
+			$.getJSON("Route_Catalogue.json", function (result) {
+				if(!routeCatalogue){
+					routeCatalogue = result;
+//					console.log("Catalogue loaded");
+//					console.log(JSON.stringify(routeCatalogue));
+				}
+			});
+			window['search_bar'].removeEventListener('mouseover', loadCatalogue);
+			//Only execute once.
+		};
+//		window['search_bar'].addEventListener('mouseover', loadCatalogue);
 	});
 
-	function iterateItems(max, a, b) {
-		var r, s, h, rsh;
-		$('#search_result').empty();
-		if (max === 0) {
-			$('#search_bar').css({
-				'height': '0%'
-			});
-			$('#search_result').css({
-				'height': '0%'
-			});
+	function showSearchItems(length, harbors, paths, distances) {
+		var route, ship, harbor, distance, all;
+		var searchBar = window["search_bar"],
+			searchResult = window["search_result"];
+		while(searchResult.childNodes[0])
+			searchResult.removeChild(searchResult.childNodes[0]);
+		if (length === 0) {
+			searchBar.style.height = '0%';
+			searchResult.style.height = '0%';
 		} else {
-			for (i = 0; i < max; i++) {
-				r = $("<p></p>").text(b[i].slice(8, 11)).prepend("Route: ");
-				s = $("<p></p>").text(b[i].slice(12, 16)).prepend("Ship: ");
-				h = $("<p></p>").html('<div id="mark" style="display: inline">' + a[i] + '</div>').prepend("Harbor: ");
-				rsh = $("<li></li>").append(r, s, h).attr({
+			for (var i = 0; i < length; i++) {
+				route = $("<p></p>").text("Route: " + paths[i].slice(8, 11));
+				ship = $("<p></p>").text("Ship: " + paths[i].slice(12, 16));
+				distance = $("<p></p>").text("Distance: " + distances[i] + " nm");
+				harbor = $("<p></p>").html('<div id="mark" style="display: inline">' + harbors[i] + '</div>').prepend("Harbor: ");
+				all = $("<li></li>").append(route, ship, harbor, distance).attr({
 					id: 'search' + i
 				});
-				$('#search_result').append(rsh);
-				$("li p").css({
-					'margin': '0px'
-				});
-				$("li").css({
-					'margin': '20px 0px 20px 0px '
-				});
+				$('#search_result').append(all);
 				var x = function () {
-					var a = b[i];
+					var path = paths[i];
 					return function () {
-						searchclick(a);
+						searchClick(path);
 					};
 				};
 				//要先建立一個scope來存放位址才不會被覆蓋掉
 				$('#search' + i).one('click', x());
 			}
+			searchResult.querySelectorAll("li p").forEach(function(p){p.style.margin = "0px";});
+			searchResult.querySelectorAll("li").forEach(function(li){li.style.margin = "20px 0px";});
 		}
-		keymark($('#from_harbor').val().toUpperCase(), $("[id$=mark]").text());
-		keymark($('#to_harbor').val().toUpperCase(), $("[id$=mark]").text());
+		keyMark(window["from_harbor"].value.toUpperCase());
+		keyMark(window["to_harbor"].value.toUpperCase());
 	}
 
-	function checkto(a, b) {
-		if (b === '' && a === '') {
-			$('#search_bar').css({
-				'height': '0%'
-			});
-			$('#search_result').css({
-				'height': '0%'
-			});
-			return 'xxx';
-		} else if (b === '' && a !== '') {
-			$('#search_bar').css({
-				'height': '50%'
-			});
-			$('#search_result').css({
-				'height': '100%'
-			});
-			return a;
-		} else if (b !== '' && a === '') {
-			$('#search_bar').css({
-				'height': '50%'
-			});
-			$('#search_result').css({
-				'height': '100%'
-			});
-			return b;
-		} else {
-			$('#search_bar').css({
-				'height': '50%'
-			});
-			$('#search_result').css({
-				'height': '100%'
-			});
-			return a + '-' + b;
-		}
+	function checkto(start, end) {
+		var searchBar = window["search_bar"],
+			searchResult = window["search_result"];
+		searchBar.style.height = '50%';
+		searchResult.style.height = '100%';
+		if (start === '' && end === '') {
+			searchBar.style.height = '0%';
+			searchResult.style.height = '0%';
+			return undefined;
+		} 
+		else if (start !== '' && end === '')
+			return start;
+		else if (start === '' && end !== '')
+			return end;
+		else
+			return start + '-' + end;
 	}
 
-	function keymark(key, str) {
+	function keyMark(key) {
 		$("[id$=mark]").html(function (n, c) {
 			return c.replace(key, '<mark>' + key + '</mark>');
 		});
 	}
 
-	function searchclick(a) {
+	function searchClick(a) {
 		var geoLayer = new L.mapbox.featureLayer();
 		geoLayer.loadURL(a).addTo(W_layerGroup.routeGroup);
 		geoLayer.on('ready', function () {
