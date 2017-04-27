@@ -100,9 +100,9 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5b
 
 //起始 windyty
 var windytyInit = {
-	key: 'f647J2Y278pjYbG',	// Required: API key
-	lat: 25.154,	// Optional: Initial state of the map
-	lon: 121.377,	//Default map center
+	key: 'f647J2Y278pjYbG', // Required: API key
+	lat: 25.154, // Optional: Initial state of the map
+	lon: 121.377, //Default map center
 	zoom: 6
 };
 // windyty主函式
@@ -116,32 +116,32 @@ function windytyMain(map) {
 		imperial: false,
 		nautic: true
 	}).addTo(map);
-/*
-	//
-	////animation control
-	var W_animation = {
-		canvas1: document.getElementsByClassName("leaflet-canvas1 leaflet-zoom-animated")[0],
-		gradient2: document.getElementsByClassName("leaflet-canvas2 leaflet-zoom-animated")[0],
-		gradient3: document.getElementsByClassName("leaflet-canvas3 leaflet-zoom-animated")[0],
-		gradcheck: {},
-		key: 1,
-		keep: function () {
-			if (!W_animation.key) {
-				W.animation.stop();
-				W_animation.canvas1.style.opacity = 0;
-				setTimeout(function () {
-					W_animation.canvas1.style.transition = 'opacity 0.001s';
-					W_animation.canvas1.style.WebkitTransition = 'opacity 0.001s';
-				}, 500);
-				W_animation.key = 0;
+	/*
+		//
+		////animation control
+		var W_animation = {
+			canvas1: document.getElementsByClassName("leaflet-canvas1 leaflet-zoom-animated")[0],
+			gradient2: document.getElementsByClassName("leaflet-canvas2 leaflet-zoom-animated")[0],
+			gradient3: document.getElementsByClassName("leaflet-canvas3 leaflet-zoom-animated")[0],
+			gradcheck: {},
+			key: 1,
+			keep: function () {
+				if (!W_animation.key) {
+					W.animation.stop();
+					W_animation.canvas1.style.opacity = 0;
+					setTimeout(function () {
+						W_animation.canvas1.style.transition = 'opacity 0.001s';
+						W_animation.canvas1.style.WebkitTransition = 'opacity 0.001s';
+					}, 500);
+					W_animation.key = 0;
+				}
 			}
 		}
-	}
-	W_animation.canvas1.addEventListener('transitionend', W_animation.keep);
+		W_animation.canvas1.addEventListener('transitionend', W_animation.keep);
 
-	//Because 'transitionstart' event didn't exist in W3C rules, it is tricky to change the transition time into 0.001s to fool your eyes.
-	////
-*/
+		//Because 'transitionstart' event didn't exist in W3C rules, it is tricky to change the transition time into 0.001s to fool your eyes.
+		////
+	*/
 	var W_route = {
 			path: "", //String variable for for the data path of the route
 			geojson: "", //Variable for geojson data path
@@ -238,30 +238,28 @@ function windytyMain(map) {
 			state: "wind",
 			baselayerState: "full",
 			change: function () {
-				var tileCheckForLayerControl = function(){
-					if (W_easybar_sem.statebar){
-						if (map.hasLayer(W_tileLayer.Weather)) {
-							for (var tile in W_tileLayer)
-								layer_controls.removeLayer(W_tileLayer[tile]);
-						} 
-						else{
-							for (var tile in W_tileLayer) {
-								if (map.hasLayer(W_tileLayer[tile])) 
-									map.removeLayer(W_tileLayer[tile]);
-								layer_controls.removeLayer(W_tileLayer[tile]);
+				var tileCheckForLayerControl = function () {
+						if (W_easybar_sem.statebar) {
+							if (map.hasLayer(W_tileLayer.Weather)) {
+								for (var tile in W_tileLayer)
+									layer_controls.removeLayer(W_tileLayer[tile]);
+							} else {
+								for (var tile in W_tileLayer) {
+									if (map.hasLayer(W_tileLayer[tile]))
+										map.removeLayer(W_tileLayer[tile]);
+									layer_controls.removeLayer(W_tileLayer[tile]);
+								}
+								map.addLayer(W_tileLayer.Weather);
+								$(".leaflet-layer:first").show();
 							}
-							map.addLayer(W_tileLayer.Weather);
-							$(".leaflet-layer:first").show();
+							W_easybutton.addSeparator();
+							W_weatherControl.baselayerState = 'empty';
+						} else {
+							$('#W_maptile').addClass("disable");
+							document.getElementById('W_maptile').removeEventListener('click', W_gadget.map);
 						}
-						W_easybutton.addSeparator();
-						W_weatherControl.baselayerState = 'empty';
-					}
-					else{
-						$('#W_maptile').addClass("disable");
-						document.getElementById('W_maptile').removeEventListener('click', W_gadget.map); 
-					}
-				},
-				timeline = document.getElementById("timeline");
+					},
+					timeline = document.getElementById("timeline");
 				if (this.state === 'currents') {
 					W.setOverlay("currents");
 					timeline.style.display = "none";
@@ -272,28 +270,28 @@ function windytyMain(map) {
 					tileCheckForLayerControl();
 				} else {
 					timeline.style.display = "block";
-					if (this.baselayerState === 'empty' && W_easybar_sem.statebar){
+					if (this.baselayerState === 'empty' && W_easybar_sem.statebar) {
 						for (var obj in W_tileLayer)
 							layer_controls.addBaseLayer(W_tileLayer[obj], obj);
 						W_easybutton.addSeparator();
 					}
-					if(!W_easybar_sem.statebar){
+					if (!W_easybar_sem.statebar) {
 						$('#W_maptile').removeClass("disable");
-						document.getElementById('W_maptile').addEventListener('click', W_gadget.map);  
+						document.getElementById('W_maptile').addEventListener('click', W_gadget.map);
 					}
 					this.baselayerState === 'full';
 				}
 			},
-			button: function(){
+			button: function () {
 				//use console.log(this) to check
 				//console.log(this)
 				var weather;
-				if(this.id)
-					weather = this.id.replace(/^(W_)/, "");	//sidebar buttons
+				if (this.id)
+					weather = this.id.replace(/^(W_)/, ""); //sidebar buttons
 				else
-					weather = this.options.id;	//easybuttons
+					weather = this.options.id; //easybuttons
 				W_weatherControl.state = weather;
-				if(!(weather === "currents" || weather === "waves"))
+				if (!(weather === "currents" || weather === "waves"))
 					W.setOverlay(weather);
 				W_weatherControl.change();
 			}
@@ -305,27 +303,27 @@ function windytyMain(map) {
 			},
 			withMapChange: function () {
 				if (map.hasLayer(W_tileLayer.Weather)) {
-					if(map.getZoom() > 11)
+					if (map.getZoom() > 11)
 						map.setZoom(11);
 					//Toggle windyty layers
 					$(".leaflet-layer:first").show();
-					document.querySelectorAll('div.leaflet-overlay-pane canvas').forEach(function(canvas){
+					document.querySelectorAll('div.leaflet-overlay-pane canvas').forEach(function (canvas) {
 						canvas.style.display = 'block';
 					});
 					//Weather buttons control
-					if(W_easybar_sem.statebar)
-						W_weatherControl.weather.forEach(function(weather){
+					if (W_easybar_sem.statebar)
+						W_weatherControl.weather.forEach(function (weather) {
 							W_easybutton[weather].enable();
 						});
 					else
-						W_weatherControl.weather.forEach(function(weather){
+						W_weatherControl.weather.forEach(function (weather) {
 							$('#W_' + weather).removeClass("disable");
 							document.getElementById('W_' + weather).addEventListener('click', W_weatherControl.button);
 						});
 					document.getElementById("timeline").style.display = "block";
 					W_layerGroup.ECAsNOxLayer.setStyle({
-							"color": "#fff",
-							"weight": "2"
+						"color": "#fff",
+						"weight": "2"
 					});
 					W_layerGroup.ECAsNOxLayer.on('mouseout', function () {
 						this.setStyle({
@@ -335,22 +333,22 @@ function windytyMain(map) {
 					});
 				} else {
 					$(".leaflet-layer:first").hide();
-					document.querySelectorAll('div.leaflet-overlay-pane canvas').forEach(function(canvas){
+					document.querySelectorAll('div.leaflet-overlay-pane canvas').forEach(function (canvas) {
 						canvas.style.display = 'none';
 					});
-					if(W_easybar_sem.statebar)
-						W_weatherControl.weather.forEach(function(weather){
-						W_easybutton[weather].disable();
-					});
+					if (W_easybar_sem.statebar)
+						W_weatherControl.weather.forEach(function (weather) {
+							W_easybutton[weather].disable();
+						});
 					else
-						W_weatherControl.weather.forEach(function(weather){
+						W_weatherControl.weather.forEach(function (weather) {
 							$('#W_' + weather).addClass("disable");
 							document.getElementById('W_' + weather).removeEventListener('click', W_weatherControl.button);
 						});
 					document.getElementById("timeline").style.display = "none";
 					W_layerGroup.ECAsNOxLayer.setStyle({
-							"color": "#EC7063",
-							"weight": "2"
+						"color": "#EC7063",
+						"weight": "2"
 					});
 					W_layerGroup.ECAsNOxLayer.on('mouseout', function () {
 						this.setStyle({
@@ -361,12 +359,11 @@ function windytyMain(map) {
 				}
 				W_distance.drive();
 			},
-			map: function(){
+			map: function () {
 				if (map.hasLayer(W_tileLayer.Weather)) {
 					map.removeLayer(W_tileLayer.Weather);
 					map.addLayer(W_tileLayer.OpenStreetMap);
-				}
-				else{
+				} else {
 					map.removeLayer(W_tileLayer.OpenStreetMap);
 					map.addLayer(W_tileLayer.Weather);
 				}
@@ -420,12 +417,12 @@ function windytyMain(map) {
 						layer_controls.addTo(map);
 						W_easybutton.addSeparator();
 						W_easybar_sem.statebar = true;
-						if(W_weatherControl.state === 'waves' || W_weatherControl.state === 'currents')
+						if (W_weatherControl.state === 'waves' || W_weatherControl.state === 'currents')
 							W_weatherControl.change();
 					}
 				}
 			},
-			addSeparator: function(){
+			addSeparator: function () {
 				var leafletOverlays = document.querySelector(".leaflet-control-layers-overlays"),
 					newSeparator = document.createElement("div");
 				newSeparator.setAttribute("class", "leaflet-control-layers-separator");
@@ -479,6 +476,7 @@ function windytyMain(map) {
 			plotMarker: function (a) {
 				//a = everG.type
 				a.forEach(plot);
+
 				function plot(ship) {
 					var fleet_marker_option = {
 							size: 27,
@@ -669,12 +667,12 @@ function windytyMain(map) {
 				var m1 = W_distance.marker1.getLatLng(),
 					m2 = W_distance.marker2.getLatLng();
 				displayKM = (m1.distanceTo(m2) / 1000).toFixed(3),
-				displayNM = (displayKM / 1.852).toFixed(3);
+					displayNM = (displayKM / 1.852).toFixed(3);
 				W_distance.km.innerHTML = displayKM + ' km';
 				W_distance.nm.innerHTML = displayNM + " nm";
 				if (m1.lng > m2.lng)
 					[m1, m2] = [m2, m1];
-					//m2 = [m1, m1 = m2][0]; //fix greatcircle line               
+				//m2 = [m1, m1 = m2][0]; //fix greatcircle line               
 				W_layerGroup.line.clearLayers();
 				W_distance.line = L.polyline([[m1.lat, m1.lng], [m2.lat, m2.lng]]).bindPopup('<p style="margin: 0px; padding: 0px; font-size: 16px;">Rhumb Line</p>');
 				W_distance.greatcircle = L.Polyline.Arc([m1.lat, m1.lng], [m2.lat, m2.lng], {
@@ -751,10 +749,10 @@ function windytyMain(map) {
 
 	W_route.initLine();
 
-	!function(){
-		var state = [], 
+	! function () {
+		var state = [],
 			control = [];
-		W_weatherControl.weather.forEach(function(weather){
+		W_weatherControl.weather.forEach(function (weather) {
 			W_easybutton[weather] = L.easyButton({
 				states: [{
 					stateName: weather + "-button",
@@ -809,14 +807,14 @@ function windytyMain(map) {
 		$(window).resize(W_easybutton.control);
 	});
 
-	if(L.Browser.mobile){
+	if (L.Browser.mobile) {
 		document.querySelector(".leaflet-touch .leaflet-control-layers-toggle").style.width = "30px";
 		document.querySelector(".leaflet-touch .leaflet-control-layers-toggle").style.height = "30px";
-		document.querySelectorAll(".easy-button-button .button-state").forEach(function(tag){
+		document.querySelectorAll(".easy-button-button .button-state").forEach(function (tag) {
 			tag.style.left = "-15%";
 		});
 	}
-	
+
 	//LayerGroups
 	W_layerGroup.routeGroup.addTo(map); //Route layerGroup
 	W_layerGroup.markerGroup.addTo(map); //Measure marker layerGroups
@@ -880,7 +878,7 @@ function windytyMain(map) {
 	W_timeline.slider.display.innerHTML = W_timeline.present.Time();
 	W_timeline.slider.display.style.left = ((((parseInt(document.getElementById('slider').value) - W.timeline.start) / 3600000) / 168) * 100 - 1) + '%';
 	document.getElementById('calendarpointer-pointer').style.left = (((parseInt(document.getElementById('slider').value) - W.timeline.start) / 3600000) / 168) * 100 + '%';
-	
+
 	//loop for displaying the present date
 	//Calendar quick click
 	for (i = 0; i < 7; i++) {
@@ -902,6 +900,7 @@ function windytyMain(map) {
 
 	//Cursor position
 	map.on('mousemove', cursor);
+
 	function cursor(a) {
 		var lat = Math.abs(a.latlng.lat.toPrecision(9)),
 			lng = Math.abs(a.latlng.wrap(-180, 180).lng.toPrecision(9)),
@@ -940,163 +939,120 @@ function windytyMain(map) {
 
 	//
 	////Search Bar
-
+	
 	//string splice
 	String.prototype.splice = function (index, remainder, string) {
 		return this.slice(0, index) + string + this.slice(index + Math.abs(remainder));
 	};
-	/*var searchTarget = function (start, end) {
-		var searchStart = "//*[contains(start, '')]/",
-			searchEnd = "//*[contains(end, '')]/",
-			searchHarbor = "//*[contains(harbor, '')]/",
-			searchArray = ["start", "end", "harbor", "path", "distanceInNM"],
-			target = {};
-		start = start.toUpperCase();
-		end = end.toUpperCase();
-		function checkStartEnd(_start, _end, target) {
+	var searchTarget = function (start, end) {
+			var searchStart = "//*[contains(start, '')]/",
+				searchEnd = "//*[contains(end, '')]/",
+				searchHarbor = "//*[contains(harbor, '')]/",
+				searchArray = ["start", "end", "harbor", "path", "distanceInNM"],
+				target = {};
+			start = start.toUpperCase();
+			end = end.toUpperCase();
 			var searchBar = window["search_bar"],
-				searchResult = window["search_result"];
+				searchResult = window["search_result"],
+				search;
 			searchBar.style.height = '50%';
 			searchResult.style.height = '100%';
-			if (_start === '' && _end === '') {
+			if (start !== '' && end === '') {
+				search = searchStart.splice(21, 0, start);
+				searchArray.forEach(function (item) {
+					if (item !== "end")
+						target[item] = JSON.search(routeCatalogue, search + item);
+				});
+			} else if (start === '' && end !== '') {
+				search = searchEnd.splice(19, 0, end);
+				searchArray.forEach(function (item) {
+					if (item !== "start")
+						target[item] = JSON.search(routeCatalogue, search + item);
+				});
+			} else if (start !== '' && end !== '') {
+				search = searchHarbor.splice(22, 0, start + "-" + end);
+				searchArray.forEach(function (item) {
+					if (item !== "start" && item !== "end")
+						target[item] = JSON.search(routeCatalogue, search + item); //JSON.search(json, key)
+				});
+			} else {
 				searchBar.style.height = '0%';
 				searchResult.style.height = '0%';
-				return undefined;
-			} 
-			else if (_start !== '' && _end === ''){
-				var search = searchStart.splice(21, 0, _start);
-				searchArray.forEach(function(item){
-					if(item !== "end")
-						target[item] = search + item;
-				});
+				return;
 			}
-			else if (_start === '' && _end !== ''){
-				var search = searchEnd.splice(21, 0, _end);
-				searchArray.forEach(function(item){
-					if(item !== "start")
-						target[item] = search + item;
-				});
-			}
-			else{
-				var search = searchStart.splice(21, 0, _start + "-" + _end);
-				searchArray.forEach(function(item){
-					if(item !== "start" && item !== "end")
-						target[item] = search + item;
-				});
-			}
-		}
-	},
-		routeCatalogue = undefined;*/
-	var r_search = {
-			key: '',
-			harbor: '//*[contains(harbor, "")]/harbor',
-			path: '//*[contains(harbor, "")]/path',
-			distance: '//*[contains(harbor, "")]/distanceInNM',
-			s_harbor: function (json, key) {
-				return JSON.search(json, key);
-			},
-			s_path: function (json, key) {
-				return JSON.search(json, key);
-			}
+			showSearchItems(target.harbor.length, target.harbor, target.path, target.distanceInNM);
+
 		},
-		search_event = function () {
-			$.getJSON("Route_Catalogue.json", function (result) {
-				var from_harbor = $('#from_harbor').val().toUpperCase(),
-					to_harbor = $('#to_harbor').val().toUpperCase(),
-					h = r_search.harbor.splice(22, 0, checkto(from_harbor, to_harbor)),
-					p = r_search.path.splice(22, 0, checkto(from_harbor, to_harbor)),
-					d = r_search.distance.splice(22, 0, checkto(from_harbor, to_harbor)),
-					rh = r_search.s_harbor(result, h),
-					rp = r_search.s_harbor(result, p),
-					rd = r_search.s_harbor(result, d);
-//				console.log(rh);
-//				console.log(rp);
-				showSearchItems(rh.length, rh, rp, rd);
+		routeCatalogue = undefined,
+		searchEvent = function () {
+			searchTarget(window["from_harbor"].value, window["to_harbor"].value);
+		},
+		showSearchItems = function (length, harbors, paths, distances) {
+			var route, ship, harbor, distance, all,
+				searchBar = window["search_bar"],
+				searchResult = window["search_result"];
+			while (searchResult.childNodes[0])
+				searchResult.removeChild(searchResult.childNodes[0]);
+			if (length === 0) {
+				searchBar.style.height = '0%';
+				searchResult.style.height = '0%';
+			} else {
+				for (var i = 0; i < length; i++) {
+					route = $("<p></p>").text("Route: " + paths[i].slice(8, 11));
+					ship = $("<p></p>").text("Ship: " + paths[i].slice(12, 16));
+					distance = $("<p></p>").text("Distance: " + distances[i] + " nm");
+					harbor = $("<p></p>").html('<div id="mark" style="display: inline">' + harbors[i] + '</div>').prepend("Harbor: ");
+					all = $("<li></li>").append(route, ship, harbor, distance).attr({
+						id: 'search' + i
+					});
+					$('#search_result').append(all);
+					var showhitoryRoute = function () {
+						var path = paths[i];
+						return function () {
+							searchClick(path);
+						};
+					};
+					//要先建立一個scope來存放位址才不會被覆蓋掉
+					$('#search' + i).one('click', showhitoryRoute());
+				}
+				searchResult.querySelectorAll("li p").forEach(function (p) {
+					p.style.margin = "0px";
+				});
+				searchResult.querySelectorAll("li").forEach(function (li) {
+					li.style.margin = "20px 0px";
+				});
+			}
+			keyMark(window["from_harbor"].value.toUpperCase());
+			keyMark(window["to_harbor"].value.toUpperCase());
+		},
+		keyMark = function (key) {
+			$("[id$=mark]").html(function (n, c) {
+				return c.replace(key, '<mark>' + key + '</mark>');
+			});
+		},
+		searchClick = function (path) {
+			var geoLayer = new L.mapbox.featureLayer();
+			geoLayer.loadURL(path).addTo(W_layerGroup.routeGroup);
+			geoLayer.on('ready', function () {
+				map.fitBounds(geoLayer.getBounds());
 			});
 		};
 	$(document).ready(function () {
 		$("[id$=harbor]").on({
-			keyup: search_event,
-			mouseup: search_event
+			keyup: searchEvent,
+			mouseup: function () {
+				setTimeout(searchEvent, 1);
+			}
 		});
-		var loadCatalogue = function(){
-			$.getJSON("Route_Catalogue.json", function (result) {
-				if(!routeCatalogue){
-					routeCatalogue = result;
-//					console.log("Catalogue loaded");
-//					console.log(JSON.stringify(routeCatalogue));
+		var loadCatalogue = function () {
+			$.getJSON("Route_Catalogue.json", function (json) {
+				if (!routeCatalogue) {
+					routeCatalogue = json;
 				}
 			});
 			window['search_bar'].removeEventListener('mouseover', loadCatalogue);
 			//Only execute once.
 		};
-//		window['search_bar'].addEventListener('mouseover', loadCatalogue);
+		window['search_bar'].addEventListener('mouseover', loadCatalogue);
 	});
-
-	function showSearchItems(length, harbors, paths, distances) {
-		var route, ship, harbor, distance, all;
-		var searchBar = window["search_bar"],
-			searchResult = window["search_result"];
-		while(searchResult.childNodes[0])
-			searchResult.removeChild(searchResult.childNodes[0]);
-		if (length === 0) {
-			searchBar.style.height = '0%';
-			searchResult.style.height = '0%';
-		} else {
-			for (var i = 0; i < length; i++) {
-				route = $("<p></p>").text("Route: " + paths[i].slice(8, 11));
-				ship = $("<p></p>").text("Ship: " + paths[i].slice(12, 16));
-				distance = $("<p></p>").text("Distance: " + distances[i] + " nm");
-				harbor = $("<p></p>").html('<div id="mark" style="display: inline">' + harbors[i] + '</div>').prepend("Harbor: ");
-				all = $("<li></li>").append(route, ship, harbor, distance).attr({
-					id: 'search' + i
-				});
-				$('#search_result').append(all);
-				var x = function () {
-					var path = paths[i];
-					return function () {
-						searchClick(path);
-					};
-				};
-				//要先建立一個scope來存放位址才不會被覆蓋掉
-				$('#search' + i).one('click', x());
-			}
-			searchResult.querySelectorAll("li p").forEach(function(p){p.style.margin = "0px";});
-			searchResult.querySelectorAll("li").forEach(function(li){li.style.margin = "20px 0px";});
-		}
-		keyMark(window["from_harbor"].value.toUpperCase());
-		keyMark(window["to_harbor"].value.toUpperCase());
-	}
-
-	function checkto(start, end) {
-		var searchBar = window["search_bar"],
-			searchResult = window["search_result"];
-		searchBar.style.height = '50%';
-		searchResult.style.height = '100%';
-		if (start === '' && end === '') {
-			searchBar.style.height = '0%';
-			searchResult.style.height = '0%';
-			return undefined;
-		} 
-		else if (start !== '' && end === '')
-			return start;
-		else if (start === '' && end !== '')
-			return end;
-		else
-			return start + '-' + end;
-	}
-
-	function keyMark(key) {
-		$("[id$=mark]").html(function (n, c) {
-			return c.replace(key, '<mark>' + key + '</mark>');
-		});
-	}
-
-	function searchClick(a) {
-		var geoLayer = new L.mapbox.featureLayer();
-		geoLayer.loadURL(a).addTo(W_layerGroup.routeGroup);
-		geoLayer.on('ready', function () {
-			map.fitBounds(geoLayer.getBounds());
-		});
-	}
 }
