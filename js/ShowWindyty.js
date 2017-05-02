@@ -58,7 +58,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5b
 		marker: new L.mapbox.featureLayer(),
 		line: new L.mapbox.featureLayer(),
 		routeAnimate: new L.mapbox.featureLayer(),
-		track: new L.mapbox.featureLayer().loadURL("position/fleet.geojson"),
+		track: new L.mapbox.featureLayer().loadURL("position_line/fleet.geojson"),
 		//	trackLine: new L.mapbox.featureLayer().loadURL("position/fleet_line.geojson"),
 		ECAsNOxLayer: new L.mapbox.featureLayer().loadURL("ECA/eca.geojson").on('ready', function () {
 			this.setStyle({
@@ -74,8 +74,8 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5b
 			d: new L.mapbox.featureLayer(),
 			a: new L.mapbox.featureLayer(),
 			p: new L.mapbox.featureLayer(),
-			c: new L.mapbox.featureLayer(),
-			t: new L.mapbox.featureLayer(),
+//			c: new L.mapbox.featureLayer(),
+//			t: new L.mapbox.featureLayer(),
 			labels: new L.mapbox.featureLayer()
 		},
 		fleetsLine: {
@@ -438,9 +438,9 @@ function windytyMain(map) {
 				u: [],
 				d: [],
 				a: [],
-				p: [],
+				p: []/*,
 				c: [],
-				t: []
+				t: []*/
 			},
 			fleetTypeCat: function (a) {
 				//a = W_layerGroup.track.toGeoJSON().features[i]
@@ -450,6 +450,7 @@ function windytyMain(map) {
 							title: a.properties.title,
 							coordinates: [a.geometry.coordinates[1], a.geometry.coordinates[0]],
 							description: a.properties.description,
+							time: a.properties.time,
 							course: a.properties.course,
 							speed: a.properties.speed,
 							symbol: a.properties.symbol,
@@ -493,8 +494,8 @@ function windytyMain(map) {
 							heading: ship.course * Math.PI / 180.0
 						},
 						fleet_popup = '<b>' + ship.title + '</b>' + '<br>' +
-						'Time: ' + ship.description.slice(0, 19) + '<br>' +
-						'Position: ' + ship.description.slice(20) + '<br>' +
+						'Time: ' + ship.time + '<br>' +
+						'Position: ' + ship.description + '<br>' +
 						'Speed: ' + ship.speed + '<br>' +
 						'Heading: ' + ship.course + '<br>' +
 						'Next port: ' + ship['next port'] + '<br>' +
@@ -517,7 +518,7 @@ function windytyMain(map) {
 						}),
 						fleet_label = L.marker(ship.coordinates, {
 							icon: labelIcon
-						}).bindLabel(ship.title.replace(/^(EVER|UNI|THALASSA|ITAL)/, ''), {
+						}).bindLabel(ship.title.replace(/^(EVER|UNI-|THALASSA|ITAL)/, ''), {
 							noHide: true,
 							direction: 'right',
 							className: 'fleetLabels ' + ship.type + '-typeFleets'
