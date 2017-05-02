@@ -672,8 +672,8 @@ function windytyMain(map) {
 				W_distance.km.innerHTML = displayKM + ' km';
 				W_distance.nm.innerHTML = displayNM + " nm";
 				if (m1.lng > m2.lng)
-					[m1, m2] = [m2, m1];
-				//m2 = [m1, m1 = m2][0]; //fix greatcircle line               
+//					[m1, m2] = [m2, m1];
+					m2 = [m1, m1 = m2][0]; //fix greatcircle line               
 				W_layerGroup.line.clearLayers();
 				W_distance.line = L.polyline([[m1.lat, m1.lng], [m2.lat, m2.lng]]).bindPopup('<p style="margin: 0px; padding: 0px; font-size: 16px;">Rhumb Line</p>');
 				W_distance.greatcircle = L.Polyline.Arc([m1.lat, m1.lng], [m2.lat, m2.lng], {
