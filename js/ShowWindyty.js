@@ -287,11 +287,11 @@ function windytyMain(map) {
 				//console.log(this)
 				var weather;
 				if (this.id)
-					weather = this.id.replace(/^(W_)/, ""); //sidebar buttons
+					weather = this.id.replace(/^(W_)/, "");	//sidebar buttons
 				else
-					weather = this.options.id; //easybuttons
+					weather = this.options.id;	//easybuttons
 				W_weatherControl.state = weather;
-				if (!(weather === "currents" || weather === "waves"))
+				if (weather !== "currents" && weather !== "waves")
 					W.setOverlay(weather);
 				W_weatherControl.change();
 			}
@@ -409,8 +409,7 @@ function windytyMain(map) {
 						W_easybar.control.removeFrom(map);
 						layer_controls.removeFrom(map);
 						W_easybar_sem.statebar = false;
-						if (W_weatherControl.state === 'waves' || W_weatherControl.state === 'currents')
-							W_weatherControl.change();
+						W_weatherControl.change();
 					}
 				} else {
 					if (!(w < 767 || h < 646)) {
@@ -419,10 +418,10 @@ function windytyMain(map) {
 						layer_controls.addTo(map);
 						W_easybutton.addSeparator();
 						W_easybar_sem.statebar = true;
-						if (W_weatherControl.state === 'waves' || W_weatherControl.state === 'currents')
-							W_weatherControl.change();
 					}
 				}
+				W_weatherControl.change();
+				W_gadget.withMapChange();
 			},
 			addSeparator: function () {
 				var leafletOverlays = document.querySelector(".leaflet-control-layers-overlays"),
