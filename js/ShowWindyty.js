@@ -107,6 +107,8 @@ var windytyInit = {
 };
 // windyty主函式
 function windytyMain(map) {
+	NodeList.prototype.forEach = Array.prototype.forEach;
+	HTMLCollection.prototype.forEach = Array.prototype.forEach;
 	map.setMaxBounds([[-50, -50], [70, 370]]);
 	//Leaflet scale with nautical mile
 	L.control.scalenautic({
