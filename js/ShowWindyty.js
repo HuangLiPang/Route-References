@@ -269,7 +269,8 @@ function windytyMain(map) {
 					timeline.style.display = "block";
 					tileCheckForLayerControl();
 				} else {
-					timeline.style.display = "block";
+					if(map.hasLayer(W_tileLayer.Weather))
+						timeline.style.display = "block";
 					if (this.baselayerState === 'empty' && W_easybar_sem.statebar) {
 						for (var obj in W_tileLayer)
 							layer_controls.addBaseLayer(W_tileLayer[obj], obj);
@@ -362,9 +363,9 @@ function windytyMain(map) {
 			map: function () {
 				if (map.hasLayer(W_tileLayer.Weather)) {
 					map.removeLayer(W_tileLayer.Weather);
-					map.addLayer(W_tileLayer.Ocean);
+					map.addLayer(W_tileLayer['Streets Map']);
 				} else {
-					map.removeLayer(W_tileLayer.Ocean);
+					map.removeLayer(W_tileLayer['Streets Map']);
 					map.addLayer(W_tileLayer.Weather);
 				}
 				W_gadget.withMapChange();
@@ -420,8 +421,8 @@ function windytyMain(map) {
 						W_easybar_sem.statebar = true;
 					}
 				}
-				W_weatherControl.change();
 				W_gadget.withMapChange();
+				W_weatherControl.change();
 			},
 			addSeparator: function () {
 				var leafletOverlays = document.querySelector(".leaflet-control-layers-overlays"),
@@ -578,18 +579,18 @@ function windytyMain(map) {
 				minZoom: 3,
 				maxNativeZoom: 19,
 				minNativeZoom: 3
-			}),
+			}),*/
 			'Streets Map': L.mapbox.tileLayer("mapbox.streets", {
 				format: 'jpg70',
 				zIndex: 200,
 				maxZoom: 19,
 				minZoom: 3
-			}),*/
+			}),/*
 			Ocean: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}', {
 				attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri',
-				maxZoom: 13,
+				maxZoom: 9,
 				minZoom: 3
-			}),
+			}),*/
 			Weather: L.tileLayer("", {
 				maxZoom: 11,
 				minZoom: 3
@@ -749,7 +750,6 @@ function windytyMain(map) {
 		};
 
 	W_route.initLine();
-
 	! function () {
 		var state = [],
 			control = [];
@@ -802,6 +802,11 @@ function windytyMain(map) {
 	map.on('zoomend', W_fleetPosition.zoomChangeFleetsSpeed);
 	map.on('baselayerchange', W_gadget.withMapChange);
 	map.on('overlayadd overlayremove', W_fleetPosition.overlayChangeLabels);
+	//set min zoom level in Street Map
+	map.on('zoomend', function(){
+		if (map.hasLayer(W_tileLayer['Streets Map']) && map.getZoom() < 3)
+			map.setZoom(3);
+	});
 	// detect window size for leaflet easybutton
 	W_easybutton.control();
 	$(document).ready(function () {
