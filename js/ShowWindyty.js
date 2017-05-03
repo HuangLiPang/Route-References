@@ -58,9 +58,9 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5b
 		marker: new L.mapbox.featureLayer(),
 		line: new L.mapbox.featureLayer(),
 		routeAnimate: new L.mapbox.featureLayer(),
-		track: new L.mapbox.featureLayer().loadURL("position_line/fleet.geojson"),
+		track: new L.mapbox.featureLayer().loadURL("data/position_line/fleet.geojson"),
 		//	trackLine: new L.mapbox.featureLayer().loadURL("position/fleet_line.geojson"),
-		ECAsNOxLayer: new L.mapbox.featureLayer().loadURL("ECA/eca.geojson").on('ready', function () {
+		ECAsNOxLayer: new L.mapbox.featureLayer().loadURL("data/ECA/eca.geojson").on('ready', function () {
 			this.setStyle({
 				"color": "white",
 				"weight": "2"
@@ -150,8 +150,8 @@ function windytyMain(map) {
 			//Load lines
 			initLine: function () {
 				$(document).ready(function () {
-					$("#line").empty().load("initial_line.txt");
-					$("#route").empty().load("Catalogue/ADL.txt").prop("disabled", true);
+					$("#line").empty().load("data/initial_line.txt");
+					$("#route").empty().load("data/Catalogue/ADL.txt").prop("disabled", true);
 					document.getElementsByClassName('menu_route')[0].style.cursor = 'not-allowed';
 				});
 			},
@@ -165,16 +165,16 @@ function windytyMain(map) {
 				var lineIndex = document.getElementById("line").selectedIndex,
 					lineOption = document.getElementById("line").options;
 				W_route.path = lineOption[lineIndex].text;
-				var lineTXT = "Catalogue/" + W_route.path + ".txt"
+				var lineTXT = "data/Catalogue/" + W_route.path + ".txt"
 				$(document).ready(function () {
 					$("#route").empty().load(lineTXT).prop("disabled", false);
 				});
 				document.getElementsByClassName('menu_route')[0].style.cursor = 'pointer';
 			},
 			create: function () {
-				W_route.geojson = "GeoJSON/" + W_route.path + route.value;
-				W_route.gpx = "GPX/" + W_route.path + route.value.replace('.geojson', '.gpx');
-				W_route.csv = "CSV/" + W_route.path + route.value.replace('.geojson', '.csv');
+				W_route.geojson = "data/GeoJSON/" + W_route.path + route.value;
+				W_route.gpx = "data/GPX/" + W_route.path + route.value.replace('.geojson', '.gpx');
+				W_route.csv = "data/CSV/" + W_route.path + route.value.replace('.geojson', '.csv');
 				var geoLayer = new L.mapbox.featureLayer();
 				geoLayer.loadURL(W_route.geojson).addTo(W_layerGroup.routeGroup);
 				geoLayer.on('ready', function () {
@@ -362,9 +362,9 @@ function windytyMain(map) {
 			map: function () {
 				if (map.hasLayer(W_tileLayer.Weather)) {
 					map.removeLayer(W_tileLayer.Weather);
-					map.addLayer(W_tileLayer.OpenStreetMap);
+					map.addLayer(W_tileLayer.Ocean);
 				} else {
-					map.removeLayer(W_tileLayer.OpenStreetMap);
+					map.removeLayer(W_tileLayer.Ocean);
 					map.addLayer(W_tileLayer.Weather);
 				}
 				W_gadget.withMapChange();
@@ -409,6 +409,8 @@ function windytyMain(map) {
 						W_easybar.control.removeFrom(map);
 						layer_controls.removeFrom(map);
 						W_easybar_sem.statebar = false;
+						if (W_weatherControl.state === 'waves' || W_weatherControl.state === 'currents')
+							W_weatherControl.change();
 					}
 				} else {
 					if (!(w < 767 || h < 646)) {
@@ -465,7 +467,7 @@ function windytyMain(map) {
 				var shipName = ship.target._popup._contentNode.firstChild.innerHTML;
 				if (!W_layerGroup.fleetsLine[shipName]) {
 					W_layerGroup.fleetsLine[shipName] = new L.layerGroup();
-					L.mapbox.featureLayer().loadURL("position_line/" + shipName + "_line.geojson").addTo(W_layerGroup.fleetsLine[shipName]);
+					L.mapbox.featureLayer().loadURL("data/position_line/" + shipName + "_line.geojson").addTo(W_layerGroup.fleetsLine[shipName]);
 					W_layerGroup.fleetsLine[shipName].addTo(W_layerGroup.fleetsLine.layer);
 					//console.log(W_layerGroup.fleetsLine);
 				} else {
@@ -477,7 +479,6 @@ function windytyMain(map) {
 			plotMarker: function (a) {
 				//a = everG.type
 				a.forEach(plot);
-
 				function plot(ship) {
 					var fleet_marker_option = {
 							size: 27,
@@ -566,12 +567,12 @@ function windytyMain(map) {
 			}
 		},
 		W_tileLayer = {
-			OpenStreetMap: L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			/*OpenStreetMap: L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				maxZoom: 19,
 				minZoom: 3,
 				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 			}),
-			/*Satellite: L.mapbox.tileLayer("mapbox.streets-satellite", {
+			Satellite: L.mapbox.tileLayer("mapbox.streets-satellite", {
 				format: 'jpg70',
 				zIndex: 200,
 				maxZoom: 19,
@@ -584,12 +585,12 @@ function windytyMain(map) {
 				zIndex: 200,
 				maxZoom: 19,
 				minZoom: 3
-			}),
+			}),*/
 			Ocean: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}', {
 				attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri',
 				maxZoom: 13,
 				minZoom: 3
-			}),*/
+			}),
 			Weather: L.tileLayer("", {
 				maxZoom: 11,
 				minZoom: 3
@@ -672,8 +673,8 @@ function windytyMain(map) {
 				W_distance.km.innerHTML = displayKM + ' km';
 				W_distance.nm.innerHTML = displayNM + " nm";
 				if (m1.lng > m2.lng)
-//					[m1, m2] = [m2, m1];
-					m2 = [m1, m1 = m2][0]; //fix greatcircle line               
+//					[m1, m2] = [m2, m1];	//ES6 Destructuring assignment
+					m2 = [m1, m1 = m2][0];	//fix greatcircle line               
 				W_layerGroup.line.clearLayers();
 				W_distance.line = L.polyline([[m1.lat, m1.lng], [m2.lat, m2.lng]]).bindPopup('<p style="margin: 0px; padding: 0px; font-size: 16px;">Rhumb Line</p>');
 				W_distance.greatcircle = L.Polyline.Arc([m1.lat, m1.lng], [m2.lat, m2.lng], {
@@ -999,8 +1000,8 @@ function windytyMain(map) {
 				searchResult.style.height = '0%';
 			} else {
 				for (var i = 0; i < length; i++) {
-					route = $("<p></p>").text("Route: " + paths[i].slice(8, 11));
-					ship = $("<p></p>").text("Ship: " + paths[i].slice(12, 16));
+					route = $("<p></p>").text("Route: " + paths[i].slice(13, 16));
+					ship = $("<p></p>").text("Ship: " + paths[i].slice(17, 21));
 					distance = $("<p></p>").text("Distance: " + distances[i] + " nm");
 					harbor = $("<p></p>").html('<div id="mark" style="display: inline">' + harbors[i] + '</div>').prepend("Harbor: ");
 					all = $("<li></li>").append(route, ship, harbor, distance).attr({
@@ -1046,7 +1047,7 @@ function windytyMain(map) {
 			}
 		});
 		var loadCatalogue = function () {
-			$.getJSON("Route_Catalogue.json", function (json) {
+			$.getJSON("data/Route_Catalogue.json", function (json) {
 				if (!routeCatalogue) {
 					routeCatalogue = json;
 				}

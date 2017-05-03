@@ -19,7 +19,7 @@ def haversine(lon1, lat1, lon2, lat2):
     r = 6371 # Radius of earth in kilometers. Use 3956 for miles
     return c * r
 def distanceSum(file):
-    with open(file) as geojsonFile:
+    with open(file[5:]) as geojsonFile:
         geojson = json.load(geojsonFile)
     coordinates = []
     distance = 0
@@ -91,7 +91,7 @@ for root, dirs, files in os.walk("Catalogue"):
                 harbors = line[line.find('-') + 1 : line.find(geojson)]
                 start = harbors[0:3]
                 end = harbors[4:]
-                paths = 'GeoJSON/' + routeName + line[16 : line.find(geojson) + 8]
+                paths = 'data/GeoJSON/' + routeName + line[16 : line.find(geojson) + 8]
                 output += harbor_head % (start, end, harbors, paths, round(distanceSum(paths), 3))
         output = output[:-1] + ship_tail
         output = output[:-1] + routes_tail
