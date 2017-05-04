@@ -197,6 +197,7 @@ function windytyMain(map) {
 			clear: function () {
 				W_layerGroup.routeGroup.clearLayers();
 				map.setView([25.154, 121.377], 6);
+//				map.fitBounds([[19, 112], [31, 129]]);
 				W_route.path = "";
 				W_route.geojson = "";
 				W_route.gpx = "";
@@ -244,12 +245,12 @@ function windytyMain(map) {
 						if (W_easybar_sem.statebar) {
 							if (map.hasLayer(W_tileLayer.Weather)) {
 								for (var tile in W_tileLayer)
-									layer_controls.removeLayer(W_tileLayer[tile]);
+									layerControls.removeLayer(W_tileLayer[tile]);
 							} else {
 								for (var tile in W_tileLayer) {
 									if (map.hasLayer(W_tileLayer[tile]))
 										map.removeLayer(W_tileLayer[tile]);
-									layer_controls.removeLayer(W_tileLayer[tile]);
+									layerControls.removeLayer(W_tileLayer[tile]);
 								}
 								map.addLayer(W_tileLayer.Weather);
 								$(".leaflet-layer:first").show();
@@ -275,7 +276,7 @@ function windytyMain(map) {
 						timeline.style.display = "block";
 					if (this.baselayerState === 'empty' && W_easybar_sem.statebar) {
 						for (var obj in W_tileLayer)
-							layer_controls.addBaseLayer(W_tileLayer[obj], obj);
+							layerControls.addBaseLayer(W_tileLayer[obj], obj);
 						W_easybutton.addSeparator();
 					}
 					if (!W_easybar_sem.statebar) {
@@ -410,7 +411,8 @@ function windytyMain(map) {
 					if (w < 767 || h < 646) {
 						W_easybar.state.removeFrom(map);
 						W_easybar.control.removeFrom(map);
-						layer_controls.removeFrom(map);
+						searchControl.removeFrom(map);
+						layerControls.removeFrom(map);
 						W_easybar_sem.statebar = false;
 						W_weatherControl.change();
 					}
@@ -418,7 +420,8 @@ function windytyMain(map) {
 					if (!(w < 767 || h < 646)) {
 						W_easybar.state.addTo(map);
 						W_easybar.control.addTo(map);
-						layer_controls.addTo(map);
+						searchControl.addTo(map);
+						layerControls.addTo(map);
 						W_easybutton.addSeparator();
 						W_easybar_sem.statebar = true;
 					}
@@ -513,6 +516,7 @@ function windytyMain(map) {
 				a.forEach(plot);
 
 				function plot(ship) {
+//					console.log(ship);
 					var labelIcon = L.icon({
 							iconUrl: 'Icons/easybutton/wind.png',
 							iconSize: [0, 0],
@@ -520,7 +524,8 @@ function windytyMain(map) {
 							labelAnchor: [16, 0]
 						}),
 						fleet_label = L.marker(ship.coordinates, {
-							icon: labelIcon
+							icon: labelIcon,
+							ship: ship.title
 						}).bindLabel(ship.title.replace(/^(EVER|UNI-|THALASSA|ITAL)/, ''), {
 							noHide: true,
 							direction: 'right',
@@ -793,11 +798,23 @@ function windytyMain(map) {
 		W_fleetPosition.plotLabel(W_fleetPosition.everG[ship]);
 		W_fleetPosition.overlays['<span style="color:' + W_fleetPosition.everG[ship][0].color + ';">' + ship.toUpperCase() + '-TYPEs</span>'] = W_layerGroup.fleets[ship].addTo(map);
 	};
-	//Layers control
-	var layer_controls = L.control.layers(W_tileLayer, W_fleetPosition.overlays, {
+	
+	//Controls
+	var searchControl = new L.Control.Search({
+		position:'topright',		
+		layer: W_layerGroup.fleets.labels,
+		initial: false,
+		zoom: 8,
+		marker: false,
+		propertyName: 'ship',
+		textErr: 'Ship not found...',
+		textPlaceholder: 'Ship Name'
+	}).addTo(map),
+		layerControls = L.control.layers(W_tileLayer, W_fleetPosition.overlays, {
 		"position": 'topright',
 		"collapsed": true
 	}).addTo(map);
+	
 	//Add a separator in overlay
 	W_easybutton.addSeparator();
 

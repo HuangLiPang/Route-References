@@ -8,7 +8,7 @@
 
 	<!-- Include meta tag to ensure proper rendering and touch zooming -->
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-  
+
 	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -18,22 +18,24 @@
 	<script src="js/Defiant.js"></script>
 	<script src="js/tracksymbol.js"></script>
 	<script src="js/leaflet-label.js"></script>
-  <script src="js/leaflet-nauticscale.js"></script>
+	<script src="js/leaflet-nauticscale.js"></script>
+	<script src="js/leaflet-search.js"></script>
 
 	<link type="text/css" rel="stylesheet" href="css/timeline.css" />
 	<link type="text/css" rel="stylesheet" href="css/easybutton.css" />
 	<link type="text/css" rel="stylesheet" href="css/sidebar.css" />
 	<link type="text/css" rel="stylesheet" href="css/searchbar.css" />
 	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-	<link type="text/css" rel="stylesheet" href="css/leaflet-label.css">
+	<link type="text/css" rel="stylesheet" href="css/leaflet-label.css" />
 	<link type="text/css" rel='stylesheet' href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' />
-  <link type="text/css" rel="stylesheet" href="css/ShowWindyty.css" />
-  
+	<link type="text/css" rel="stylesheet" href="css/ShowWindyty.css" />
+	<link type="text/css" rel="stylesheet" href="css/leaflet-search.css" />
+
 </head>
 
 <body>
 	<div data-role='page' id="container" class="container">
-		
+
 		<div id="menu" class="side_menu">
 			<a class="closebtn" onclick="closeNav()" href="javascript:void(0)"><span class="closebtn_pro">&times;</span></a>
 			<div class='menu_nav'>
@@ -60,7 +62,7 @@
 				<div class='W_functions'>
 					<a id='W_measuring' class="menu_measuring" href="javascript:void(0)">
 						<img class='mobileicon' src="Icons/sidebar/measuring-sign.png"> Measuring</a>
-<!--
+					<!--
 					<a id='W_animation' class="menu_animation" href="javascript:void(0)">
 						<img class='mobileicon' src="Icons/sidebar/animation_toggle-sign.png"> Animation</a>
 					<a id='W_gradient' class="menu_gradient" href="javascript:void(0)">
