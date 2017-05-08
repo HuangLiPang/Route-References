@@ -107,6 +107,7 @@ var windytyInit = {
 };
 // windyty主函式
 function windytyMain(map) {
+	//Add forEach to NodeList and HTMLCollection for old version Chrome.
 	NodeList.prototype.forEach = Array.prototype.forEach;
 	HTMLCollection.prototype.forEach = Array.prototype.forEach;
 	map.setMaxBounds([[-50, -50], [70, 370]]);
@@ -219,10 +220,10 @@ function windytyMain(map) {
 				var timePopup = document.getElementById('timePopup'),
 					slider = document.getElementById('slider');
 				slider.value = W.timeline.start + W_timeline.present.HourSec();
-				W.setTimestamp(timePopup.value);
 				timePopup.innerHTML = W_timeline.present.Time();
 				timePopup.style.left = ((((parseInt(slider.value) - W.timeline.start) / 3600000) / 168) * 100 - 1) + '%';
 				document.getElementById('calendarpointer-pointer').style.left = (((parseInt(slider.value) - W.timeline.start) / 3600000) / 168) * 100 + '%';
+				W.setTimestamp(parseInt(slider.value));
 				W_route.initLine();
 			},
 			clearHistory: function () {
@@ -1012,8 +1013,12 @@ function windytyMain(map) {
 		searchEvent = function () {
 			searchTarget(window["from_harbor"].value, window["to_harbor"].value);
 		},
+		parseRouteShip = function(path, harbor){
+			var temp = path.replace(/^data\/GeoJSON\//, "").replace(/\.geojson$/, "").replace('-' + harbor, "");
+				return temp.split('/');
+		},
 		showSearchItems = function (length, harbors, paths, distances) {
-			var route, ship, harbor, distance, all,
+			var route, ship, harbor, distance, all, routeShipArray,
 				searchBar = window["search_bar"],
 				searchResult = window["search_result"];
 			while (searchResult.childNodes[0])
@@ -1023,8 +1028,9 @@ function windytyMain(map) {
 				searchResult.style.height = '0%';
 			} else {
 				for (var i = 0; i < length; i++) {
-					route = $("<p></p>").text("Route: " + paths[i].slice(13, 16));
-					ship = $("<p></p>").text("Ship: " + paths[i].slice(17, 21));
+					routeShipArray = parseRouteShip(paths[i], harbors[i]);
+					route = $("<p></p>").text("Route: " + routeShipArray[0]);
+					ship = $("<p></p>").text("Ship: " + routeShipArray[1]);
 					distance = $("<p></p>").text("Distance: " + distances[i] + " nm");
 					harbor = $("<p></p>").html('<div id="mark" style="display: inline">' + harbors[i] + '</div>').prepend("Harbor: ");
 					all = $("<li></li>").append(route, ship, harbor, distance).attr({
