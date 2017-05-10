@@ -434,7 +434,7 @@ function windytyMain(map) {
 				var leafletOverlays = document.querySelector(".leaflet-control-layers-overlays"),
 					newSeparator = document.createElement("div");
 				newSeparator.setAttribute("class", "leaflet-control-layers-separator");
-				leafletOverlays.insertBefore(newSeparator, leafletOverlays.childNodes[2]);
+				leafletOverlays.insertBefore(newSeparator, leafletOverlays.childNodes[3]);
 			}
 		},
 		W_easybar = {},
@@ -536,6 +536,7 @@ function windytyMain(map) {
 			},
 			overlays: {
 				'ECA zones': W_layerGroup.ECAsNOxLayer.addTo(map),
+				OpenSeaMap: L.tileLayer('http://tiles.openseamap.org/seamark/{z}/{x}/{y}.png').addTo(map),
 				Labels: W_layerGroup.fleets['labels'].addTo(map)
 			},
 			zoomChangeFleetsSpeed: function () {
@@ -755,7 +756,61 @@ function windytyMain(map) {
 					W_dynamic.timer = setTimeout(W_dynamic.tick, W_dynamic.interval);
 				};
 			}
-		};
+		},
+		W_timeline = {
+			weekdays: ['Sun.', 'Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.'],
+			months: ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'],
+			present: {
+				Hour: new Date().getHours(),
+				HourSec: function () {
+					return this.Hour * 3600000
+				},
+				Weekday: new Date().getDay(),
+				Date: new Date().getDate(),
+				Month: new Date().getMonth(),
+				Time: function () {
+					return W_timeline.months[this.Month] + ' ' + this.Date + '  ' + W_timeline.weekdays[this.Weekday] + ' ' + this.Hour + ':00'
+				}
+			},
+			length: 7 * 24 * 3600000,
+			slider: {
+				range: document.getElementById('slider'),
+				display: document.getElementById('timePopup'),
+				calendarPointer: (((parseInt(document.getElementById('slider').value) - W.timeline.start) / 3600000) / 168) * 100,
+				change: function () {
+					var slider_time = new Date(parseInt(event.target.value));
+					W_timeline.slider.display.innerHTML = W_timeline.months[slider_time.getMonth()] + ' ' + slider_time.getDate() + '  ' + W_timeline.weekdays[slider_time.getDay()] + ' ' + slider_time.getHours() + ':00';
+					W.setTimestamp(event.target.value); //event.target represent the slider
+					var calendar_pointer_left = (((parseInt(event.target.value) - W.timeline.start) / 3600000) / 168) * 100;
+					document.getElementById('calendarpointer-pointer').style.left = calendar_pointer_left + '%';
+					document.getElementById('timePopup').style.left = (calendar_pointer_left - 1) + '%';
+				}
+			},
+			select: function (date) {
+				var n = parseInt(date.target.id[15]),
+					slider_time = new Date(n * 24 * 3600000 + W_timeline.present.HourSec() + W.timeline.start),
+					calendar_pointer_left = (((n * 24 * 3600000 + W_timeline.present.HourSec()) / 3600000) / 168) * 100;
+				W_timeline.slider.display.innerHTML = W_timeline.months[slider_time.getMonth()] + ' ' + slider_time.getDate() + '  ' + W_timeline.weekdays[slider_time.getDay()] + ' ' + slider_time.getHours() + ':00';
+				document.getElementById('calendarpointer-pointer').style.left = calendar_pointer_left + '%';
+				W_timeline.slider.display.style.left = (calendar_pointer_left - 1) + '%';
+				W_timeline.slider.range.value = n * 24 * 3600000 + W_timeline.present.HourSec() + W.timeline.start;
+				W.setTimestamp(n * 24 * 3600000 + W_timeline.present.HourSec() + W.timeline.start);
+			}
+		}/*,
+		W_weatherDisplay = {
+			display: W.timeline.start + W_timeline.present.HourSec(),
+			maxTime: W.timeline.start + 3600000 * 24 * 7,
+			walkTime: function(){
+				var slider = window['slider'],
+					timePopup = window['timePopup'],
+					calendarPointer = window['calendarpointer-pointer'];
+				slider.value += 3600000;
+				W.setTimestamp(parseInt(slider.value));
+				W_weatherDisplay.play = setTimeout(W_weatherDisplay.walkTime, 2500);
+			},
+			play: setTimeout(W_weatherDisplay.walkTime, 2500),
+			stop: clearTimeout(W_weatherDisplay.play)
+		}*/;
 
 	W_route.initLine();
 	! function () {
@@ -826,6 +881,8 @@ function windytyMain(map) {
 	map.on('zoomend', function(){
 		if (map.hasLayer(W_tileLayer['Streets Map']) && map.getZoom() < 3)
 			map.setZoom(3);
+		if (map.hasLayer(W_tileLayer.Weather) && map.getZoom() > 11)
+			map.setZoom(11);
 	});
 	// detect window size for leaflet easybutton
 	W_easybutton.control();
@@ -852,48 +909,6 @@ function windytyMain(map) {
 	document.getElementById("line").onchange = W_route.changeLine;
 	document.getElementById("route").onchange = W_route.create;
 	document.getElementById('reset').onclick = W_route.clear;
-
-	//timeline
-	var W_timeline = {
-		weekdays: ['Sun.', 'Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.'],
-		months: ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'],
-		present: {
-			Hour: new Date().getHours(),
-			HourSec: function () {
-				return this.Hour * 3600000
-			},
-			Weekday: new Date().getDay(),
-			Date: new Date().getDate(),
-			Month: new Date().getMonth(),
-			Time: function () {
-				return W_timeline.months[this.Month] + ' ' + this.Date + '  ' + W_timeline.weekdays[this.Weekday] + ' ' + this.Hour + ':00'
-			}
-		},
-		length: 7 * 24 * 3600000,
-		slider: {
-			range: document.getElementById('slider'),
-			display: document.getElementById('timePopup'),
-			calendarPointer: (((parseInt(document.getElementById('slider').value) - W.timeline.start) / 3600000) / 168) * 100,
-			change: function () {
-				var slider_time = new Date(parseInt(event.target.value));
-				W_timeline.slider.display.innerHTML = W_timeline.months[slider_time.getMonth()] + ' ' + slider_time.getDate() + '  ' + W_timeline.weekdays[slider_time.getDay()] + ' ' + slider_time.getHours() + ':00';
-				W.setTimestamp(event.target.value); //event.target represent the slider
-				var calendar_pointer_left = (((parseInt(event.target.value) - W.timeline.start) / 3600000) / 168) * 100;
-				document.getElementById('calendarpointer-pointer').style.left = calendar_pointer_left + '%';
-				document.getElementById('timePopup').style.left = (calendar_pointer_left - 1) + '%';
-			}
-		},
-		select: function (date) {
-			var n = parseInt(date.target.id[15]),
-				slider_time = new Date(n * 24 * 3600000 + W_timeline.present.HourSec() + W.timeline.start),
-				calendar_pointer_left = (((n * 24 * 3600000 + W_timeline.present.HourSec()) / 3600000) / 168) * 100;
-			W_timeline.slider.display.innerHTML = W_timeline.months[slider_time.getMonth()] + ' ' + slider_time.getDate() + '  ' + W_timeline.weekdays[slider_time.getDay()] + ' ' + slider_time.getHours() + ':00';
-			document.getElementById('calendarpointer-pointer').style.left = calendar_pointer_left + '%';
-			W_timeline.slider.display.style.left = (calendar_pointer_left - 1) + '%';
-			W_timeline.slider.range.value = n * 24 * 3600000 + W_timeline.present.HourSec() + W.timeline.start;
-			W.setTimestamp(n * 24 * 3600000 + W_timeline.present.HourSec() + W.timeline.start);
-		}
-	};
 
 	W_timeline.slider.range.min = W.timeline.start;
 	W_timeline.slider.range.step = 3600000; //3600000 seconds = 1 hour
