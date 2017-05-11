@@ -796,7 +796,8 @@ function windytyMain(map) {
 				W_timeline.slider.range.value = n * 24 * 3600000 + W_timeline.present.HourSec() + W.timeline.start;
 				W.setTimestamp(n * 24 * 3600000 + W_timeline.present.HourSec() + W.timeline.start);
 			}
-		}/*,
+		};
+	/*,
 		W_weatherDisplay = {
 			display: W.timeline.start + W_timeline.present.HourSec(),
 			maxTime: W.timeline.start + 3600000 * 24 * 7,
@@ -810,7 +811,7 @@ function windytyMain(map) {
 			},
 			play: setTimeout(W_weatherDisplay.walkTime, 2500),
 			stop: clearTimeout(W_weatherDisplay.play)
-		}*/;
+		}*/
 
 	W_route.initLine();
 	! function () {
@@ -879,7 +880,7 @@ function windytyMain(map) {
 	map.on('overlayadd overlayremove', W_fleetPosition.overlayChangeLabels);
 	//set min zoom level in Street Map
 	map.on('zoomend', function(){
-		if (map.hasLayer(W_tileLayer['Streets Map']) && map.getZoom() < 3)
+		if (map.getZoom() < 3)
 			map.setZoom(3);
 		if (map.hasLayer(W_tileLayer.Weather) && map.getZoom() > 11)
 			map.setZoom(11);
@@ -965,16 +966,13 @@ function windytyMain(map) {
 		}
 		var cursor_pos = latdeg.toString() + '° ' + latmin.toString() + "' " + ns + ', ' + lngdeg.toString() + '° ' + lngmin.toString() + "' " + we;
 		window['cursor'].innerHTML = cursor_pos;
-		//window['cursor'] equals to ducument.getElementById('cursor')
 		window['mouseposition'].style.opacity = 0.6;
 		window['mouseposition'].style.transition = 'opacity 0.5s';
 		window['mouseposition'].style.WebkitTransition = 'opacity 0.5s';
 		setTimeout(fadeout, 3000);
-
 		function fadeout() {
-			if (cursor_pos == window['cursor'].innerHTML) {
+			if (cursor_pos == window['cursor'].innerHTML)
 				window['mouseposition'].style.opacity = 0.2;
-			}
 		}
 	}
 
