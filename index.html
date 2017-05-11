@@ -34,7 +34,7 @@
 </head>
 
 <body>
-	<div data-role='page' id="container" class="container">
+	<div id="container">
 
 		<div id="menu" class="side_menu">
 			<a class="closebtn" onclick="closeNav()" href="javascript:void(0)"><span class="closebtn_pro">&times;</span></a>
@@ -75,8 +75,8 @@
 				<div class='logo_image'>
 					<div class="logos">
 						<a href="https://www.windytv.com" title="Windytv" target="wndt">
-							<img class="ww" src="https://www.windytv.com/img/logo.svg">
-							<img class="wtext" src="https://www.windytv.com/img/logo-windytv.svg">
+							<img class="windytv_logo" src="https://www.windytv.com/img/logo.svg">
+							<img class="windytv_text" src="https://www.windytv.com/img/logo-windytv.svg">
 						</a>
 					</div>
 					<div class="logos">
@@ -118,38 +118,36 @@
 			<ol type='1' id='search_result'></ol>
 		</div>
 
-		<div data-role='main' id="windyty"></div>
-		<div class="row">
-			<div id="timeline" class="col-xs-10 col-sm-5 timeline">
-				<div id='calendar' class="calendar">
-					<table id='calendar-table'>
-						<tr id='calendar-table-tr'>
-							<td id='calendar-table-0'></td>
-							<td id='calendar-table-1'></td>
-							<td id='calendar-table-2'></td>
-							<td id='calendar-table-3'></td>
-							<td id='calendar-table-4'></td>
-							<td id='calendar-table-5'></td>
-							<td id='calendar-table-6'></td>
-						</tr>
-					</table>
-					<div id='calendarpointer-pointer' class="pointer"></div>
-				</div>
-				<div data-role='rangeslider' id='track'>
-					<input type="range" id="slider" value="0">
-				</div>
-				<div id="popup" class="timeDisplay">
-					<pre id="timePopup"></pre>
-				</div>
+		<div id="windyty"></div>
+		<div id="timeline">
+			<div id='calendar'>
+				<table id='calendar-table'>
+					<tr id='calendar-table-tr'>
+						<td id='calendar-table-0'></td>
+						<td id='calendar-table-1'></td>
+						<td id='calendar-table-2'></td>
+						<td id='calendar-table-3'></td>
+						<td id='calendar-table-4'></td>
+						<td id='calendar-table-5'></td>
+						<td id='calendar-table-6'></td>
+					</tr>
+				</table>
+				<div id='calendarpointer-pointer'></div>
+			</div>
+			<div id='track'>
+				<input type="range" id="slider" value="0">
+			</div>
+			<div id="popup">
+				<pre id="timePopup"></pre>
 			</div>
 		</div>
-		<div id='mouseposition' class='mouseposition hidden-xs'>
-			<p class='mousemove'>Cursor: <code id='cursor'></code></p>
+		<div id='mouseposition'>
+			<p>Cursor: <code id='cursor'></code></p>
 		</div>
 
-		<div id='markerposition' class="markerposition">
-			<pre id=distance_kilometer>0.000 km</pre>
-			<pre id=distance_nauticalmile>0.000 nm</pre>
+		<div id='markerposition'>
+			<pre id='distance_kilometer'>0.000 km</pre>
+			<pre id='distance_nauticalmile'>0.000 nm</pre>
 		</div>
 	</div>
 

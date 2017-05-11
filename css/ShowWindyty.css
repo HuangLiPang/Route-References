@@ -11,7 +11,7 @@ body {
     height: 100%;
     z-index: 1;
 }
-.mouseposition {
+#mouseposition {
 	position: absolute;
 	bottom: 17px;
     right: 40px;
@@ -21,15 +21,13 @@ body {
     color: #fff;
     z-index: 5;
     border-radius: 3px;
-    opacity: 0.2;
 }
-.mousemove {
+#mouseposition p {
     padding: 0px;
     margin: 0px;
 }
 #markerposition {
     background: rgba(0, 0, 0, 0.8);
-    color: #fff;
     position: absolute;
     bottom: 47px;
     right: 40px;
@@ -39,15 +37,7 @@ body {
     opacity: 0;
     transition: 0.5s;
 }
-#distance_kilometer {
-    background: rgba(0, 0, 0, 0);
-    color: #fff;
-    font-size: 16px;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-}
-#distance_nauticalmile {
+#markerposition pre {
     background: rgba(0, 0, 0, 0);
     font-size: 16px;
     padding: 0px;
@@ -76,14 +66,11 @@ body {
 }
 
 @media screen and (max-width: 787px) {
-    .mouseposition {
+    #mouseposition {
         display: none;
     }
     #markerposition {
         bottom: 80px;
-    }
-    .windytylogo {
-        display: none;
     }
 }
 
