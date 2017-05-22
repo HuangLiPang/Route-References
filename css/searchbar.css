@@ -28,19 +28,19 @@
 	overflow-y: auto;
 	background-color: rgba(0, 0, 0, 0.05);
 }
-.box{
+.search-box{
   	margin: 0px;
   	width: 100%;
   	height: 40px;
 }
-.container-1{
+.search-container{
   width: 100%;
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
 }
-.container-1 input#from_harbor,
-.container-1 input#to_harbor{
+.search-container input#from_harbor,
+.search-container input#to_harbor{
   width: 100%;
   height: 40px;
   background: white;
@@ -53,26 +53,26 @@
   border-radius: 5px;
 }
 
-.container-1 input#from_harbor::-webkit-input-placeholder,
-.container-1 input#to_harbor::-webkit-input-placeholder{
+.search-container input#from_harbor::-webkit-input-placeholder,
+.search-container input#to_harbor::-webkit-input-placeholder{
    color: #65737e;
 }
  
-.container-1 input#from_harbor:-moz-placeholder,
-.container-1 input#to_harbor::-webkit-input-placeholder{ /* Firefox 18- */
+.search-container input#from_harbor:-moz-placeholder,
+.search-container input#to_harbor::-webkit-input-placeholder{ /* Firefox 18- */
    color: #65737e;  
 }
  
-.container-1 input#from_harbor::-moz-placeholder,
-.container-1 input#to_harbor::-webkit-input-placeholder{  /* Firefox 19+ */
+.search-container input#from_harbor::-moz-placeholder,
+.search-container input#to_harbor::-webkit-input-placeholder{  /* Firefox 19+ */
    color: #65737e;  
 }
  
-.container-1 input#from_harbor:-ms-input-placeholder,
-.container-1 input#to_harbor::-webkit-input-placeholder{  
+.search-container input#from_harbor:-ms-input-placeholder,
+.search-container input#to_harbor::-webkit-input-placeholder{  
    color: #65737e;  
 }
-.container-1 .icon{
+.search-container .search-icon{
   position: absolute;
   top: 50%;
   margin-left: 10px;
@@ -80,12 +80,12 @@
   z-index: 1;
   color: #4f5b66;
 }
-.container-1 input#from_harbor:hover, 
-.container-1 input#from_harbor:focus, 
-.container-1 input#from_harbor:active,
-.container-1 input#to_harbor:hover,
-.container-1 input#to_harbor:focus, 
-.container-1 input#to_harbor:active{
+.search-container input#from_harbor:hover, 
+.search-container input#from_harbor:focus, 
+.search-container input#from_harbor:active,
+.search-container input#to_harbor:hover,
+.search-container input#to_harbor:focus, 
+.search-container input#to_harbor:active{
     outline:none;
     background: #ffffff;
   }

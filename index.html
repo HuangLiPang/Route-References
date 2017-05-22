@@ -1,158 +1,143 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-	<meta charset="utf-8">
-	<title>Route References</title>
-	<link rel="shortcut icon" href="route.ico">
+  <meta charset="utf-8">
+  <title>Route References</title>
+  <link rel="shortcut icon" href="route.ico">
 
-	<!-- Include meta tag to ensure proper rendering and touch zooming -->
-	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
-	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-	<script src="js/leaflet-arc.min.js"></script>
-	<script src="js/easybutton.js"></script>
-	<script src="js/ShowWindyty.js"></script>
-	<script src="js/Defiant.js"></script>
-	<script src="js/tracksymbol.js"></script>
-	<script src="js/leaflet-label.js"></script>
-	<script src="js/leaflet-nauticscale.js"></script>
-	<script src="js/leaflet-search.js"></script>
+  <script src="js/leaflet-arc.min.js"></script>
+  <script src="js/easybutton.js"></script>
+  <script src="js/ShowWindyty.js"></script>
+  <script src="js/Defiant.js"></script>
+  <script src="js/tracksymbol.js"></script>
+  <script src="js/leaflet-label.js"></script>
+  <script src="js/leaflet-nauticscale.js"></script>
+  <script src="js/leaflet-search.js"></script>
 
-	<link type="text/css" rel="stylesheet" href="css/timeline.css" />
-	<link type="text/css" rel="stylesheet" href="css/easybutton.css" />
-	<link type="text/css" rel="stylesheet" href="css/sidebar.css" />
-	<link type="text/css" rel="stylesheet" href="css/searchbar.css" />
-	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-	<link type="text/css" rel="stylesheet" href="css/leaflet-label.css" />
-	<link type="text/css" rel='stylesheet' href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' />
-	<link type="text/css" rel="stylesheet" href="css/ShowWindyty.css" />
-	<link type="text/css" rel="stylesheet" href="css/leaflet-search.css" />
+  <link type="text/css" rel="stylesheet" href="css/timeline.css" />
+  <link type="text/css" rel="stylesheet" href="css/easybutton.css" />
+  <link type="text/css" rel="stylesheet" href="css/sidebar.css" />
+  <link type="text/css" rel="stylesheet" href="css/searchbar.css" />
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="css/leaflet-label.css" />
+  <link type="text/css" rel='stylesheet' href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' />
+  <link type="text/css" rel="stylesheet" href="css/ShowWindyty.css" />
+  <link type="text/css" rel="stylesheet" href="css/leaflet-search.css" />
 
 </head>
-
 <body>
-	<div id="container">
-
-		<div id="menu" class="side_menu">
-			<a class="closebtn" onclick="closeNav()" href="javascript:void(0)"><span class="closebtn_pro">&times;</span></a>
-			<div class='menu_nav'>
-				<select id="line" class="menu_line"></select>
-				<select id="route" class="menu_route" disabled>
+  <div id="container">
+    <div id="menu" class="side_menu">
+      <a class="closebtn" onclick="closeNav()" href="javascript:void(0)"><span class="closebtn_pro">&times;</span></a>
+      <div class='menu_nav'>
+        <select id="line" class="menu_line"></select>
+        <select id="route" class="menu_route" disabled>
 				</select>
-				<a id="GPX" class="menu_GPX disable" href="javascript:void(0)">Download GPX</a>
-				<a id="CSV" class="menu_CSV disable" href="javascript:void(0)">Download CSV</a>
-				<a id="reset" class="menu_RESET" href="javascript:void(0)">Reset</a>
-				<div class='W_animate'>
-					<a id='W_wind' class="menu_wind" href="javascript:void(0)">
-						<img class='mobileicon' src="Icons/sidebar/wind-sign.png"> Wind</a>
-					<a id='W_temp' class="menu_temp" href="javascript:void(0)">
-						<img class='mobileicon' src="Icons/sidebar/temp-sign.png"> Temperature</a>
-					<a id='W_clouds' class="menu_clouds" href="javascript:void(0)">
-						<img class='mobileicon' src="Icons/sidebar/clouds-sign.png"> clouds</a>
-					<a id='W_pressure' class="menu_press" href="javascript:void(0)">
-						<img class='mobileicon' src="Icons/sidebar/pressure-sign.png"> Pressure</a>
-					<a id='W_waves' class="menu_waves" href="javascript:void(0)">
-						<img class='mobileicon' src="Icons/sidebar/waves-sign.png"> Waves</a>
-					<a id='W_currents' class="menu_currents" href="javascript:void(0)">
-						<img class='mobileicon' src="Icons/sidebar/currents-sign.png"> Currents</a>
-				</div>
-				<div class='W_functions'>
-					<a id='W_measuring' class="menu_measuring" href="javascript:void(0)">
-						<img class='mobileicon' src="Icons/sidebar/measuring-sign.png"> Measuring</a>
-					<!--
-					<a id='W_animation' class="menu_animation" href="javascript:void(0)">
-						<img class='mobileicon' src="Icons/sidebar/animation_toggle-sign.png"> Animation</a>
-					<a id='W_gradient' class="menu_gradient" href="javascript:void(0)">
-						<img class='mobileicon' src="Icons/sidebar/gradient-sign.png"> Gradient</a>
--->
-					<a id='W_maptile' class="menu_maptile" href="javascript:void(0)">
-						<img class='mobileicon' src="Icons/sidebar/maptile-sign.png"> Map</a>
-				</div>
-				<a class='menu_about' onclick="showabout()" href="javascript:void(0)">About</a>
-				<div class='logo_image'>
-					<div class="logos">
-						<a href="https://www.windytv.com" title="Windytv" target="wndt">
-							<img class="windytv_logo" src="https://www.windytv.com/img/logo.svg">
-							<img class="windytv_text" src="https://www.windytv.com/img/logo-windytv.svg">
-						</a>
-					</div>
-					<div class="logos">
-						<a class='mapbox-maplogo' href="https://www.mapbox.com/" title="Mapbox" target="_blank"></a>
-					</div>
-					<div class="logos">
-						<a href="http://www.leafletjs.com" title="Leaflet" target="leaflet">
-							<img class="image" src="Icons/leafletLogo.png">
-						</a>
-					</div>
-					<div class="logos">
-						<a href="http://www.flaticon.com" title="Flaticon" target="flaticon">
-							<img class="image" src="https://media.freepik.com/flaticon/img/flaticon-logo.svg">
-						</a>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<div id='open' onclick="openNav()" onmouseenter="bar_move(this)" onmouseleave="bar_move(this)" class='open'>
-			<div class='bar1'></div>
-			<div class='bar2'></div>
-			<div class='bar3'></div>
-		</div>
-
-		<div id='search_bar'>
-			<div class="box">
-				<div class="container-1">
-					<span class="icon"><i class="fa fa-search"></i></span>
-					<input type="search" id="from_harbor" placeholder="From" />
-				</div>
-			</div>
-			<div class="box">
-				<div class="container-1">
-					<span class="icon"><i class="fa fa-search"></i></span>
-					<input type="search" id="to_harbor" placeholder="To" />
-				</div>
-			</div>
-			<ol type='1' id='search_result'></ol>
-		</div>
-
-		<div id="windyty"></div>
-		<div id="timeline">
-			<div id='calendar'>
-				<table id='calendar-table'>
-					<tr id='calendar-table-tr'>
-						<td id='calendar-table-0'></td>
-						<td id='calendar-table-1'></td>
-						<td id='calendar-table-2'></td>
-						<td id='calendar-table-3'></td>
-						<td id='calendar-table-4'></td>
-						<td id='calendar-table-5'></td>
-						<td id='calendar-table-6'></td>
-					</tr>
-				</table>
-				<div id='calendarpointer-pointer'></div>
-			</div>
-			<div id='track'>
-				<input type="range" id="slider" value="0">
-			</div>
-			<div id="popup">
-				<pre id="timePopup"></pre>
-			</div>
-		</div>
-		<div id='mouseposition'>
-			<p>Cursor: <code id='cursor'></code></p>
-		</div>
-
-		<div id='markerposition'>
-			<pre id='distance_kilometer'>0.000 km</pre>
-			<pre id='distance_nauticalmile'>0.000 nm</pre>
-		</div>
-	</div>
-
-	<div id='test'></div>
-	<script async defer src="js/boot.js"></script>
+        <a id="GPX" class="menu_GPX disable" href="javascript:void(0)">Download GPX</a>
+        <a id="CSV" class="menu_CSV disable" href="javascript:void(0)">Download CSV</a>
+        <a id="reset" class="menu_RESET" href="javascript:void(0)">Reset</a>
+        <div class='W_animate'>
+          <a id='W_wind' class="menu_wind" href="javascript:void(0)">
+            <img class='mobileicon' src="Icons/sidebar/wind-sign.png"> Wind</a>
+          <a id='W_temp' class="menu_temp" href="javascript:void(0)">
+            <img class='mobileicon' src="Icons/sidebar/temp-sign.png"> Temperature</a>
+          <a id='W_clouds' class="menu_clouds" href="javascript:void(0)">
+            <img class='mobileicon' src="Icons/sidebar/clouds-sign.png"> clouds</a>
+          <a id='W_pressure' class="menu_press" href="javascript:void(0)">
+            <img class='mobileicon' src="Icons/sidebar/pressure-sign.png"> Pressure</a>
+          <a id='W_waves' class="menu_waves" href="javascript:void(0)">
+            <img class='mobileicon' src="Icons/sidebar/waves-sign.png"> Waves</a>
+          <a id='W_currents' class="menu_currents" href="javascript:void(0)">
+            <img class='mobileicon' src="Icons/sidebar/currents-sign.png"> Currents</a>
+        </div>
+        <div class='W_functions'>
+          <a id='W_measuring' class="menu_measuring" href="javascript:void(0)">
+            <img class='mobileicon' src="Icons/sidebar/measuring-sign.png"> Measuring</a>
+          <a id='W_maptile' class="menu_maptile" href="javascript:void(0)">
+            <img class='mobileicon' src="Icons/sidebar/maptile-sign.png"> Map</a>
+        </div>
+        <a class='menu_about' onclick="showabout()" href="javascript:void(0)">About</a>
+        <div class='logo_image'>
+          <div class="logos">
+            <a href="https://www.windytv.com" title="Windytv" target="wndt">
+              <img class="windytv_logo" src="https://www.windytv.com/img/logo.svg">
+              <img class="windytv_text" src="https://www.windytv.com/img/logo-windytv.svg">
+            </a>
+          </div>
+          <div class="logos">
+            <a class='mapbox-maplogo' href="https://www.mapbox.com/" title="Mapbox" target="_blank"></a>
+          </div>
+          <div class="logos">
+            <a href="http://www.leafletjs.com" title="Leaflet" target="leaflet">
+              <img class="image" src="Icons/leafletLogo.png">
+            </a>
+          </div>
+          <div class="logos">
+            <a href="http://www.flaticon.com" title="Flaticon" target="flaticon">
+              <img class="image" src="https://media.freepik.com/flaticon/img/flaticon-logo.svg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='open' onclick="openNav()" onmouseenter="bar_move(this)" onmouseleave="bar_move(this)" class='open'>
+      <div class='bar1'></div>
+      <div class='bar2'></div>
+      <div class='bar3'></div>
+    </div>
+    <div id='search_bar'>
+      <div class="search-box">
+        <div class="search-container">
+          <span class="search-icon"><i class="fa fa-search"></i></span>
+          <input type="search" id="from_harbor" placeholder="From" />
+        </div>
+      </div>
+      <div class="search-box">
+        <div class="search-container">
+          <span class="search-icon"><i class="fa fa-search"></i></span>
+          <input type="search" id="to_harbor" placeholder="To" />
+        </div>
+      </div>
+      <ol type='1' id='search_result'></ol>
+    </div>
+    <div id="windyty"></div>
+    <div id="timeline">
+      <div id='calendar'>
+        <table id='calendar-table'>
+          <tr id='calendar-table-tr'>
+            <td id='calendar-table-0'></td>
+            <td id='calendar-table-1'></td>
+            <td id='calendar-table-2'></td>
+            <td id='calendar-table-3'></td>
+            <td id='calendar-table-4'></td>
+            <td id='calendar-table-5'></td>
+            <td id='calendar-table-6'></td>
+          </tr>
+        </table>
+        <div id='calendarpointer-pointer'></div>
+      </div>
+      <div id='track'>
+        <input type="range" id="slider" value="0">
+      </div>
+      <div id="popup">
+        <pre id="timePopup"></pre>
+      </div>
+    </div>
+    <div id='mouseposition'>
+      <p>Cursor: <code id='cursor'></code></p>
+    </div>
+    <div id='markerposition'>
+      <pre id='distance_kilometer'>0.000 km</pre>
+      <pre id='distance_nauticalmile'>0.000 nm</pre>
+    </div>
+  </div>
+  <div id='test'></div>
+  <script async defer src="js/boot.js"></script>
 </body>
-
 </html>
