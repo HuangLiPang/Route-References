@@ -80,10 +80,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5b
         },
         fleetsLine: {
             layer: new L.layerGroup()
-        },
-        marineTraffic: L.tileLayer('https://tiles.marinetraffic.com/ais_helpers/shiptilesingle.aspx?output=png&sat=1&grouping=shiptype&tile_size=512&legends=1&zoom={z}&x={x}&y={y}', {
-                  tileSize: 512,
-                })
+        }
     };
 
     W_layerGroup.ECAsNOxLayer.on('mouseover', function () {
@@ -369,9 +366,9 @@ function windytyMain(map) {
             map: function () {
                 if (map.hasLayer(W_tileLayer.Weather)) {
                     map.removeLayer(W_tileLayer.Weather);
-                    map.addLayer(W_tileLayer['Streets Map']);
+                    map.addLayer(W_tileLayer['Nautical Map']/*W_tileLayer['Streets Map']*/);
                 } else {
-                    map.removeLayer(W_tileLayer['Streets Map']);
+                    map.removeLayer(W_tileLayer['Nautical Map']/*W_tileLayer['Streets Map']*/);
                     map.addLayer(W_tileLayer.Weather);
                 }
                 W_gadget.withMapChange();
@@ -436,7 +433,7 @@ function windytyMain(map) {
                 var leafletOverlays = document.querySelector(".leaflet-control-layers-overlays"),
                     newSeparator = document.createElement("div");
                 newSeparator.setAttribute("class", "leaflet-control-layers-separator");
-                leafletOverlays.insertBefore(newSeparator, leafletOverlays.childNodes[4]);
+                leafletOverlays.insertBefore(newSeparator, leafletOverlays.childNodes[3]);
             }
         },
         W_easybar = {},
@@ -541,8 +538,7 @@ function windytyMain(map) {
             overlays: {
                 'ECA zones': W_layerGroup.ECAsNOxLayer.addTo(map),
                 OpenSeaMap: L.tileLayer('http://tiles.openseamap.org/seamark/{z}/{x}/{y}.png').addTo(map),
-                Labels: W_layerGroup.fleets['labels'].addTo(map),
-                'Global Marine Traffic': W_layerGroup.marineTraffic.addTo(map)
+                Labels: W_layerGroup.fleets['labels'].addTo(map)
             },
             zoomChangeFleetsSpeed: function () {
                 for (var obj in W_fleetPosition.everG) {
@@ -593,10 +589,16 @@ function windytyMain(map) {
             	minZoom: 3,
             	maxNativeZoom: 19,
             	minNativeZoom: 3
-            }),*/
+            }),
             'Streets Map': L.mapbox.tileLayer("mapbox.streets", {
                 format: 'jpg70',
                 zIndex: 200,
+                maxZoom: 19,
+                minZoom: 3
+            }),*/
+            'Nautical Map': L.tileLayer("http://wms.transas.com/TMS/1.0.0/TX97/{z}/{x}/{y}.png?token=114c0d17-9ca1-4edf-9b9b-6e1aff73fbf0", {
+                edgeBufferTiles: 2,
+                tms: !0,
                 maxZoom: 19,
                 minZoom: 3
             }),
@@ -866,8 +868,6 @@ function windytyMain(map) {
         W_fleetPosition.plotLabel(W_fleetPosition.everG[ship]);
         W_fleetPosition.overlays['<span style="color:' + W_fleetPosition.everG[ship][0].color + ';">' + ship.toUpperCase() + '-TYPEs</span>'] = W_layerGroup.fleets[ship].addTo(map);
     };
-    map.removeLayer(W_layerGroup.marineTraffic);
-    
     //Controls
     var searchControl = new L.Control.Search({
             position: 'topright',

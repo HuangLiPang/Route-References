@@ -73,7 +73,8 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 #calendarpointer-pointer {
-	position: absolute;
+	opacity: 0.8;
+    position: absolute;
 	width: 0.5%;
 	height: inherit;
 	top: 0px;
