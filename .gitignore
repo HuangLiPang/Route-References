@@ -1,7 +1,10 @@
 # Route data #
-Catalogue/
-CSV/
-GeoJSON/
-GPX/
-position_line/
-Route_Catalogue.json
+*.geojson
+
+data/Catalogue/
+data/CSV/
+data/GeoJSON/
+data/GFS/
+data/GPX/
+data/position_line/
+data/Route_Catalogue.json
