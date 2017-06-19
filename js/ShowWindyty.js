@@ -464,6 +464,7 @@ function windytyMain(map) {
                             symbol: a.properties.symbol,
                             color: a.properties['marker-color'],
                             type: a.properties['marker-symbol'],
+                            'previous port': a.properties.preport,
                             'next port': a.properties.nextport,
                             eta: a.properties.eta
                         });
@@ -506,6 +507,7 @@ function windytyMain(map) {
                         'Position: ' + ship.description + '<br>' +
                         'Speed: ' + ship.speed + '<br>' +
                         'Heading: ' + ship.course + '<br>' +
+                        'Previous port: ' + ship['previous port'] + '<br>' +
                         'Next port: ' + ship['next port'] + '<br>' +
                         'ETA: ' + ship.eta,
                         fleet_marker = L.trackSymbol(ship.coordinates, fleet_marker_option)
