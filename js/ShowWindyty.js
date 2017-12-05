@@ -879,7 +879,8 @@ function windytyMain(map) {
     for (var ship in W_fleetPosition.everG) {
         W_fleetPosition.plotMarker(W_fleetPosition.everG[ship]);
         W_fleetPosition.plotLabel(W_fleetPosition.everG[ship]);
-        W_fleetPosition.overlays['<span style="color:' + W_fleetPosition.everG[ship][0].color + ';">' + ship.toUpperCase() + '-TYPEs</span>'] = W_layerGroup.fleets[ship].addTo(map);
+        if(W_fleetPosition.everG[ship].length !== 0 && W_fleetPosition.everG[ship][0]["color"] !== undefined)
+            W_fleetPosition.overlays['<span style="color:' + W_fleetPosition.everG[ship][0]["color"] + ';">' + ship.toUpperCase() + '-TYPEs</span>'] = W_layerGroup.fleets[ship].addTo(map);
     };
     //Controls
     var searchControl = new L.Control.Search({
