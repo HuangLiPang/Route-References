@@ -58,9 +58,9 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5b
         marker: new L.mapbox.featureLayer(),
         line: new L.mapbox.featureLayer(),
         routeAnimate: new L.mapbox.featureLayer(),
-        track: new L.mapbox.featureLayer().loadURL("data/position_line/fleet.geojson"),
-        //	trackLine: new L.mapbox.featureLayer().loadURL("position/fleet_line.geojson"),
-        ECAsNOxLayer: new L.mapbox.featureLayer().loadURL("data/ECA/eca.geojson").on('ready', function () {
+        track: new L.mapbox.featureLayer().loadURL("https://route.robodock.net/data/position_line/fleet.geojson"),
+        //	trackLine: new L.mapbox.featureLayer().loadURL("https://route.robodock.net/data/position/fleet_line.geojson"),
+        ECAsNOxLayer: new L.mapbox.featureLayer().loadURL("https://route.robodock.net/data/ECA/eca.geojson").on('ready', function () {
             this.setStyle({
                 "color": "white",
                 "weight": "2"
@@ -74,8 +74,11 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiaHVhbmdsaXBhbmciLCJhIjoiY2luOGJoeWV3MDU0dDN5b
             d: new L.mapbox.featureLayer(),
             a: new L.mapbox.featureLayer(),
             p: new L.mapbox.featureLayer(),
-            //			c: new L.mapbox.featureLayer(),
-            //			t: new L.mapbox.featureLayer(),
+            c: new L.mapbox.featureLayer(),
+            t: new L.mapbox.featureLayer(),
+            b: new L.mapbox.featureLayer(),
+            i: new L.mapbox.featureLayer(),
+            x: new L.mapbox.featureLayer(),
             labels: new L.mapbox.featureLayer()
         },
         fleetsLine: {
@@ -103,13 +106,14 @@ var windytyInit = {
     key: 'f647J2Y278pjYbG', // Required: API key
     lat: 25.154, // Optional: Initial state of the map
     lon: 121.377, //Default map center
-    zoom: 6
+    zoom: 5
 };
 // windyty主函式
 function windytyMain(map) {
     //Add forEach to NodeList and HTMLCollection for old version Chrome.
     NodeList.prototype.forEach = Array.prototype.forEach;
     HTMLCollection.prototype.forEach = Array.prototype.forEach;
+    W.setOverlay('pressure');
     map.setMaxBounds([[-50, -50], [70, 370]]);
     //Leaflet scale with nautical mile
     L.control.scalenautic({
@@ -153,8 +157,8 @@ function windytyMain(map) {
             //Load lines
             initLine: function () {
                 $(document).ready(function () {
-                    $("#line").empty().load("data/initial_line.txt");
-                    $("#route").empty().load("data/Catalogue/ADL.txt").prop("disabled", true);
+                    $("#line").empty().load("https://route.robodock.net/data/initial_line.txt");
+                    $("#route").empty().load("https://route.robodock.net/data/Catalogue/ADL.txt").prop("disabled", true);
                     document.getElementsByClassName('menu_route')[0].style.cursor = 'not-allowed';
                 });
             },
@@ -168,16 +172,16 @@ function windytyMain(map) {
                 var lineIndex = document.getElementById("line").selectedIndex,
                     lineOption = document.getElementById("line").options;
                 W_route.path = lineOption[lineIndex].text;
-                var lineTXT = "data/Catalogue/" + W_route.path + ".txt"
+                var lineTXT = "https://route.robodock.net/data/Catalogue/" + W_route.path + ".txt"
                 $(document).ready(function () {
                     $("#route").empty().load(lineTXT).prop("disabled", false);
                 });
                 document.getElementsByClassName('menu_route')[0].style.cursor = 'pointer';
             },
             create: function () {
-                W_route.geojson = "data/GeoJSON/" + W_route.path + route.value;
-                W_route.gpx = "data/GPX/" + W_route.path + route.value.replace('.geojson', '.gpx');
-                W_route.csv = "data/CSV/" + W_route.path + route.value.replace('.geojson', '.csv');
+                W_route.geojson = "https://route.robodock.net/data/GeoJSON/" + W_route.path + route.value;
+                W_route.gpx = "https://route.robodock.net/data/GPX/" + W_route.path + route.value.replace('.geojson', '.gpx');
+                W_route.csv = "https://route.robodock.net/data/CSV/" + W_route.path + route.value.replace('.geojson', '.csv');
                 var geoLayer = new L.mapbox.featureLayer();
                 geoLayer.loadURL(W_route.geojson).addTo(W_layerGroup.routeGroup);
                 geoLayer.on('ready', function () {
@@ -445,10 +449,12 @@ function windytyMain(map) {
                 u: [],
                 d: [],
                 a: [],
-                p: []
-                /*,
-                				c: [],
-                				t: []*/
+                p: [],
+                c: [],
+                t: [],
+                b: [],
+                i: [],
+                x: []
             },
             fleetTypeCat: function (a) {
                 //a = W_layerGroup.track.toGeoJSON().features[i]
@@ -474,7 +480,7 @@ function windytyMain(map) {
                 var shipName = ship.target._popup._contentNode.firstChild.innerHTML;
                 if (!W_layerGroup.fleetsLine[shipName]) {
                     W_layerGroup.fleetsLine[shipName] = new L.layerGroup();
-                    L.mapbox.featureLayer().loadURL("data/position_line/" + shipName + "_line.geojson").addTo(W_layerGroup.fleetsLine[shipName]);
+                    L.mapbox.featureLayer().loadURL("https://route.robodock.net/data/position_line/" + shipName + "_line.geojson").addTo(W_layerGroup.fleetsLine[shipName]);
                     W_layerGroup.fleetsLine[shipName].addTo(W_layerGroup.fleetsLine.layer);
                     //console.log(W_layerGroup.fleetsLine);
                 } else {
@@ -538,8 +544,13 @@ function windytyMain(map) {
                 }
             },
             overlays: {
-                'ECA zones': W_layerGroup.ECAsNOxLayer.addTo(map),
+                'ECA zones': W_layerGroup.ECAsNOxLayer,
                 OpenSeaMap: L.tileLayer('http://tiles.openseamap.org/seamark/{z}/{x}/{y}.png').addTo(map),
+                GFS_Pressure: L.mapbox.featureLayer().loadURL('https://route.robodock.net/data/GFS/latest.gfs.pressure.0p50.geojson'),
+                ECMWF_pressure: L.tileLayer.wms('https://apps.ecmwf.int/wms?token=public&', {
+                                    layers: 'msl_public',
+                                    format: 'image/png'
+                                }),
                 Labels: W_layerGroup.fleets['labels'].addTo(map)
             },
             zoomChangeFleetsSpeed: function () {
@@ -868,7 +879,8 @@ function windytyMain(map) {
     for (var ship in W_fleetPosition.everG) {
         W_fleetPosition.plotMarker(W_fleetPosition.everG[ship]);
         W_fleetPosition.plotLabel(W_fleetPosition.everG[ship]);
-        W_fleetPosition.overlays['<span style="color:' + W_fleetPosition.everG[ship][0].color + ';">' + ship.toUpperCase() + '-TYPEs</span>'] = W_layerGroup.fleets[ship].addTo(map);
+        if(W_fleetPosition.everG[ship].length !== 0 && W_fleetPosition.everG[ship][0]["color"] !== undefined)
+            W_fleetPosition.overlays['<span style="color:' + W_fleetPosition.everG[ship][0]["color"] + ';">' + ship.toUpperCase() + '-TYPEs</span>'] = W_layerGroup.fleets[ship].addTo(map);
     };
     //Controls
     var searchControl = new L.Control.Search({
